@@ -152,7 +152,7 @@ This task uses the saved reproducible manual protocol. Distinguish paper/synthet
 
 ## W2-T2 — Implement the first migration recipe
 
-**Wave:** W2 · **Prerequisites:** W1-T1, W1-T2
+**Wave:** W2 · **Prerequisites:** W1-T1, W1-T2, W2-T1
 
 Use deterministic transforms where possible and bounded AI proposals where needed.
 
@@ -248,7 +248,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W3-T2 — Build review and rollback guidance
 
-**Wave:** W3 · **Prerequisites:** W2-T1, W2-T2
+**Wave:** W3 · **Prerequisites:** W2-T1, W2-T2, W3-T1
 
 Present affected contracts, evidence and the exact proposed changes.
 
@@ -440,7 +440,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W5-T2 — Rehearse data migration and recovery
 
-**Wave:** W5 · **Prerequisites:** W4-T1, W4-T2
+**Wave:** W5 · **Prerequisites:** W4-T1, W4-T2, W5-T1
 
 Add a bounded schema-change fixture with backup and restoration.
 
@@ -536,7 +536,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W6-T2 — Publish recipe maintenance and regression checks
 
-**Wave:** W6 · **Prerequisites:** W5-T1, W5-T2
+**Wave:** W6 · **Prerequisites:** W5-T1, W5-T2, W6-T1
 
 Define ownership, deprecation and compatibility testing for the catalog.
 

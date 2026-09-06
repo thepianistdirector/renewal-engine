@@ -114,7 +114,8 @@
       ],
       "dependencies": [
         "W1-T1",
-        "W1-T2"
+        "W1-T2",
+        "W2-T1"
       ],
       "status": "PLANNED",
       "body": "Use deterministic transforms where possible and bounded AI proposals where needed.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
@@ -146,7 +147,8 @@
       ],
       "dependencies": [
         "W2-T1",
-        "W2-T2"
+        "W2-T2",
+        "W3-T1"
       ],
       "status": "PLANNED",
       "body": "Present affected contracts, evidence and the exact proposed changes.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
@@ -210,7 +212,8 @@
       ],
       "dependencies": [
         "W4-T1",
-        "W4-T2"
+        "W4-T2",
+        "W5-T1"
       ],
       "status": "PLANNED",
       "body": "Add a bounded schema-change fixture with backup and restoration.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
@@ -242,7 +245,8 @@
       ],
       "dependencies": [
         "W5-T1",
-        "W5-T2"
+        "W5-T2",
+        "W6-T1"
       ],
       "status": "PLANNED",
       "body": "Define ownership, deprecation and compatibility testing for the catalog.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."

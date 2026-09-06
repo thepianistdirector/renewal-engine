@@ -1,7 +1,7 @@
 {
   "name": "Renewal Engine",
   "slug": "renewal-engine",
-  "stage": "Planning only — no product implementation",
+  "stage": "Planning; task contracts prepared, execution and product implementation not approved or completed",
   "waves": [
     {
       "id": "W1",
@@ -247,5 +247,6 @@
       "status": "PLANNED",
       "body": "Define ownership, deprecation and compatibility testing for the catalog.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
     }
-  ]
+  ],
+  "taskContractsFile": "task-contracts.json"
 }

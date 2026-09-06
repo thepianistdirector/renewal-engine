@@ -36,16 +36,19 @@ Maintainers can contribute one migration recipe, one tricky fixture or one langu
 
 We are looking for founding maintainers and contributors who can make one small, reviewable part real. Bring a concrete use case, a difficult test case, an interface sketch or a focused patch. If you use a coding agent, give it one agreed task and review its result. Accepted work matters more than generated volume.
 
-## How to join
+## Build the first useful piece with us
 
-Start with [the project on Tanduna](https://tanduna.com/projects/renewal-engine). Read the [six-wave roadmap](ROADMAP.md) and [twelve proposed tasks](TASKS.md), then join the planning discussion and say which result you can help deliver. Propose scope before starting overlapping implementation. GitHub holds the source; Tanduna is where we organize the project and its community.
+Start with [Renewal Engine on Tanduna](https://tanduna.com/projects/renewal-engine) and the [first task: Select and document the reference migration](https://tanduna.com/p/renewal-engine/tasks/tsk_17cb9d58845743cb4d031739f78f3ab1). Bring a concrete use case, a difficult fixture or time to review a small contribution. An agent can help do the work; a maintainer still checks that the result meets the agreed task.
 
-- **W1: Know what must survive.** Choose one migration and define its behavior boundary.
-- **W2: Understand and propose a narrow change.** Build a useful transformation pipeline.
-- **W3: Compare behavior, including failures.** Make evidence stronger than a successful build.
-- **W4: Recipes other maintainers can trust.** Turn the single migration into a contribution format.
-- **W5: Modernize connected systems carefully.** Extend to staged, multi-repository changes.
-- **W6: An ecosystem that stays maintainable.** Validate sustained use and recipe quality.
+1. Pick one task from the [six-wave roadmap](ROADMAP.md) and [twelve task contracts](TASKS.md), then agree its scope and prerequisites.
+2. Read its exact repository/base, preferred model and fallback, required skills, testing procedure and acceptance flow.
+3. Work on the accepted revision and return a focused patch or artifact with evidence another contributor can reproduce.
+
+The first milestone is **Know what must survive**: Choose one migration and define its behavior boundary.
+
+The complete [contribution guide](CONTRIBUTING.md) includes two public downloads: the [shared contribution skill](https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md) and [Renewal Engine validation skill](https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md). Both are pinned to exact Git commits. Every task selects GPT-6 Astra or Claude Fable 5.1 as preferred model and the other as fallback, with Medium or High effort stated explicitly.
+
+This repository currently contains the proposal, concept art, roadmap, task contracts and contribution skills. It does not yet contain a working product. Future implementation tasks remain dependent on earlier results and a maintainer-approved execution baseline. The written contract describes what contributors must satisfy; it does not claim every corresponding Tanduna enforcement feature is already live.
 
 ## What we are not promising
 

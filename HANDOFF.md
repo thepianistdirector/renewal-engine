@@ -7,6 +7,8 @@ competing task or Goal. The actual destination metadata reports OpenAI
 
 Repository: https://github.com/thepianistdirector/renewal-engine
 Starting branch/base: main at f434e00913f5df6c78721300ca68625401d87a41, clean.
+Current development branch: codex/renewal-engine-0.1. Implementation checkpoint:
+ab9af59 (local only; later evidence-only commits may follow).
 All current edits belong to this owner-directed increment. No push, release,
 Tanduna write, host package installation or shared configuration change has been
 performed. The first three existing commits supply a consistent owner author

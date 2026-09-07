@@ -1,0 +1,20 @@
+{
+  "report_sha256": "dec007c8e468ff338279e0bfd798260fb74db0e5c2428ba57aa38446fd140351",
+  "inspected_source_sha256": "ef59c9ffc150f70cf9af72bc32b26067d882ea527e477edce7eb30413f9b5a28",
+  "candidate_source_sha256": "12705a89cf530b0f9f52f801ccf0b1b3c260c1dedb7855215ee20d032da980f8",
+  "scope": "agent-driven source-inspection report; no reference execution or human certification",
+  "screenshots": [
+    {
+      "file": "report-mobile-v2.png",
+      "sha256": "384c496c5ace79e452631205f3723354d1114de195a95a238dd71347256342b4",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "report-mobile-expanded-v2.png",
+      "sha256": "6f06f21125ed0ccaeff033d45eac307ab69868b408fa9db18c54d725e415affb",
+      "width": 390,
+      "height": 3503
+    }
+  ]
+}

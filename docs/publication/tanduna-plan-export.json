@@ -3,7 +3,7 @@
   "artifactKind": "publication-review-export",
   "notAnApiPayload": true,
   "generatedFrom": "project-plan.json",
-  "canonicalSha256": "f84fee30c952861515d2f36d70d7a5e995a32dbbdb70e194ea852c85a580fb29",
+  "canonicalSha256": "23097237e6b11d4ffb68a1d120e80a1d0de1d4ff9b771fb83c28c983106fc295",
   "project": {
     "slug": "renewal-engine",
     "name": "Renewal Engine",

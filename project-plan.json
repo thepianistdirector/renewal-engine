@@ -3,7 +3,7 @@
   "name": "Renewal Engine",
   "slug": "renewal-engine",
   "canonicalSource": "project-plan.json",
-  "stage": "Local development candidate implemented; original fixture decision, actual differential proof, external/human evidence and public release/publication incomplete",
+  "stage": "Blocked on the pending original-fixture decision; local candidate implemented and tested, actual reference execution and public completion still incomplete",
   "planningAsOf": "2026-09-07",
   "modelPolicy": {
     "model": "gpt-6-astra",
@@ -10959,5 +10959,11 @@
     "justification": "218 distinct outcomes cover the 26 owner-proposed families. The first 50 rows decompose the immediate risk-bearing 0.1; later rows are high-level capability, evidence and maintenance outcomes. No recipe-by-platform multiplication or implementation-complete claims.",
     "limits": "Additional language and model-assistance waves are exploratory options requiring explicit admission decisions. No concrete language, framework, isolation backend or additional recipe is promised before selection.",
     "duplicateReview": "Titles and outcome strings are unique; semantic scope boundaries distinguish initial minimal evidence from later general reusable capabilities. Human semantic review remains required before native publication."
+  },
+  "nativeGoal": {
+    "threadId": "01a07e1c-3ed5-7f90-9b4d-f5c4977ad123",
+    "status": "blocked",
+    "reason": "Original-fixture selection approval remains pending across three consecutive goal turns; independent local work completed.",
+    "objectiveUnchanged": true
   }
 }

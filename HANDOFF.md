@@ -1,9 +1,18 @@
 # Renewal Engine execution handoff
 
-The native Goal is **active and incomplete**, attached to Codex task
+The native Goal is **blocked and incomplete**, attached to Codex task
 `01a07e1c-3ed5-7f90-9b4d-f5c4977ad123`. Continue this owner; do not create a
 competing task or Goal. The actual destination metadata reports OpenAI
 `gpt-6-astra`, high effort. Planning and critic agents were Astra leaves.
+
+Blocked audit: the original-fixture decision remained unresolved through the
+owner-triggered implementation turn and two subsequent goal continuations.
+Independent implementation, package, browser and process-evidence work is
+complete for this increment. The next required reference execution depends on
+that owner decision; no live process is being awaited. Dependency/resource
+authorization remains recorded and must not be requested again. Resume this
+same Goal after the fixture decision, preserving the entire public-release and
+native-publication objective.
 
 Repository: https://github.com/thepianistdirector/renewal-engine
 Starting branch/base: main at f434e00913f5df6c78721300ca68625401d87a41, clean.

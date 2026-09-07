@@ -1,8 +1,8 @@
 # Renewal Engine roadmap
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `f84fee30c952861515d2f36d70d7a5e995a32dbbdb70e194ea852c85a580fb29`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `23097237e6b11d4ffb68a1d120e80a1d0de1d4ff9b771fb83c28c983106fc295`.
 
-Local development candidate implemented; original fixture decision, actual differential proof, external/human evidence and public release/publication incomplete
+Blocked on the pending original-fixture decision; local candidate implemented and tested, actual reference execution and public completion still incomplete
 
 218 outcome tasks in 26 waves. 0.1: 50; later 0.x: 72; long-term: 80; exploratory: 16.
 

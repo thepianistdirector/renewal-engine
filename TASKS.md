@@ -1,6 +1,6 @@
 # Renewal Engine task outcomes
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `f84fee30c952861515d2f36d70d7a5e995a32dbbdb70e194ea852c85a580fb29`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `23097237e6b11d4ffb68a1d120e80a1d0de1d4ff9b771fb83c28c983106fc295`.
 
 Statuses are evidence levels, not a claim that planning proves implementation. Change `project-plan.json`, retain evidence, then regenerate all views. Frozen historical contracts are preserved separately.
 

@@ -18,8 +18,9 @@ exception type/message/args/all attributes, and warning category/message/source
 line. JSON encodes exception tuples as arrays on both sides; no exception fields
 are discarded. Warning filenames are program.py on both sides; run manifests
 retain full source hashes. Traceback frames and arbitrary external effects are
-unmeasured. No credentials, network, shell, dynamic code loading or package
-installation is part of the fixture.
+unmeasured. The driver loads only the hash-pinned local fixture using runpy;
+unreviewed source loading, credentials, network, shell and package installation
+are excluded from this workflow.
 
 Expected policy: only the exact ConfigParser.readfp DeprecationWarning is absent
 from the target. Any other observed difference is a regression. The independent

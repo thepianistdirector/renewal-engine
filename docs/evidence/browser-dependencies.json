@@ -1,0 +1,71 @@
+{
+  "scope": "development-only locally extracted libraries; no host packages installed; not distributed in product",
+  "agent_browser": "0.36.0 Apache-2.0",
+  "packages": [
+    {
+      "package": "at-spi2-atk-2.26.2-1.el8.x86_64.rpm",
+      "metadata": "at-spi2-atk|2.26.2-1.el8|LGPLv2+",
+      "sha256": "ea0a4c413f9c23de510256d2c99ac870438bf8b95e6ba155ab9a134e672fdb85"
+    },
+    {
+      "package": "at-spi2-core-2.28.0-1.el8.x86_64.rpm",
+      "metadata": "at-spi2-core|2.28.0-1.el8|LGPLv2+",
+      "sha256": "3f34083b191a471c62353d8a9e9cd262e16d8b624a2f4d7414a5f0326f4461f6"
+    },
+    {
+      "package": "atk-2.28.1-1.el8.x86_64.rpm",
+      "metadata": "atk|2.28.1-1.el8|LGPLv2+",
+      "sha256": "882e6d686af8a7d3bd5080e43ba2a5cfab625b3384dcfcf25aa3971c4902ebf9"
+    },
+    {
+      "package": "avahi-libs-0.7-27.el8_10.1.x86_64.rpm",
+      "metadata": "avahi-libs|0.7-27.el8_10.1|LGPLv2+",
+      "sha256": "22c7386ab6b731641b22371abdacc6867617b001e40fdc7677fb4f2c7b11e2fe"
+    },
+    {
+      "package": "cairo-1.15.12-6.el8.x86_64.rpm",
+      "metadata": "cairo|1.15.12-6.el8|LGPLv2 or MPLv1.1",
+      "sha256": "68bc20d9d2959635aa877f588e9cd3fb44562976fcdb2c6c4057620cbe78a81d"
+    },
+    {
+      "package": "cups-libs-2.2.6-68.el8_10.x86_64.rpm",
+      "metadata": "cups-libs|2.2.6-68.el8_10|LGPLv2 and zlib",
+      "sha256": "569a95c3f900b08c9a98d288ef2f1de4efeacbc267ed5a792ad9c826b6e0c540"
+    },
+    {
+      "package": "fribidi-1.0.4-9.el8.x86_64.rpm",
+      "metadata": "fribidi|1.0.4-9.el8|LGPLv2+ and UCD",
+      "sha256": "c4e39bfb5d2189b21e6785e79e213e3f5cf42e44a868cc55e741c7f8a75ba7d2"
+    },
+    {
+      "package": "graphite2-1.3.10-10.el8.x86_64.rpm",
+      "metadata": "graphite2|1.3.10-10.el8|(LGPLv2+ or GPLv2+ or MPL) and (Netscape or GPLv2+ or LGPLv2+)",
+      "sha256": "4ea7d9a9c186f0643c2df8f060a3c085261a12f812ad8e062944847752f5f618"
+    },
+    {
+      "package": "harfbuzz-1.7.5-4.el8.x86_64.rpm",
+      "metadata": "harfbuzz|1.7.5-4.el8|MIT",
+      "sha256": "61a039f3de406bc5ca3a761bcbc36c4724832a209c45187d25568c872225a59a"
+    },
+    {
+      "package": "libXft-2.3.3-1.el8.x86_64.rpm",
+      "metadata": "libXft|2.3.3-1.el8|MIT",
+      "sha256": "c80023863bd41be320866f2ca4377694a52ed508f27afdebd1d4fb6dcc956b36"
+    },
+    {
+      "package": "libdatrie-0.2.9-7.el8.x86_64.rpm",
+      "metadata": "libdatrie|0.2.9-7.el8|LGPLv2+",
+      "sha256": "11365d789d47e43b27cc08a4a8cc24024589fde0f64ae9a60987107060130a19"
+    },
+    {
+      "package": "libthai-0.1.27-2.el8.x86_64.rpm",
+      "metadata": "libthai|0.1.27-2.el8|LGPLv2+",
+      "sha256": "e878dc3b251e1b171945b8b4ea1363cede36e2d50aff6be47a1f796c31c5d3f4"
+    },
+    {
+      "package": "pango-1.42.4-8.el8.x86_64.rpm",
+      "metadata": "pango|1.42.4-8.el8|LGPLv2+",
+      "sha256": "382505d5d7c00fcd919eab817c0d2d7af21c6492282d85498cd1d3a4a35d54c2"
+    }
+  ]
+}

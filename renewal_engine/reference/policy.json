@@ -1,0 +1,12 @@
+{
+  "id": "configparser-warning-only-v1",
+  "baseline": "3.11.16",
+  "target": "3.12.14",
+  "warning": {
+    "category": "DeprecationWarning",
+    "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+    "filename": "program.py"
+  },
+  "warning_lines": {"default": 6, "positional": 13, "keyword": 20},
+  "allowed_change": "Remove exactly one matching readfp warning; all other measured fields must be identical."
+}

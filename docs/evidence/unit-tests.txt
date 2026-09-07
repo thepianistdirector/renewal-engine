@@ -1,0 +1,32 @@
+test_html_escapes_untrusted_fields (test_artifacts.ArtifactTests.test_html_escapes_untrusted_fields) ... ok
+test_restart_after_interrupted_candidate (test_artifacts.ArtifactTests.test_restart_after_interrupted_candidate) ... ok
+test_saved_evidence_and_source_preservation (test_artifacts.ArtifactTests.test_saved_evidence_and_source_preservation) ... ok
+test_saved_verification_rejects_false_success (test_artifacts.ArtifactTests.test_saved_verification_rejects_false_success) ... ok
+test_single_file_shadow_context (test_artifacts.ArtifactTests.test_single_file_shadow_context) ... ok
+test_source_not_executed_and_shadow_reported (test_artifacts.ArtifactTests.test_source_not_executed_and_shadow_reported) ... ok
+test_symlink_and_overlap_rejected (test_artifacts.ArtifactTests.test_symlink_and_overlap_rejected) ... ok
+test_effect_or_output_change_fails (test_comparison.ComparatorTests.test_effect_or_output_change_fails) ... ok
+test_only_declared_warning_change_passes (test_comparison.ComparatorTests.test_only_declared_warning_change_passes) ... ok
+test_warning_not_normalized_broadly (test_comparison.ComparatorTests.test_warning_not_normalized_broadly) ... ok
+test_wrong_diagnostics_and_dropped_fields_fail (test_comparison.ComparatorTests.test_wrong_diagnostics_and_dropped_fields_fail) ... ok
+test_descendant_killed_after_leader_exits (test_execution.ExecutionTests.test_descendant_killed_after_leader_exits) ... ok
+test_environment_credentials_scrubbed (test_execution.ExecutionTests.test_environment_credentials_scrubbed) ... ok
+test_raw_bytes_are_not_silently_normalized (test_execution.ExecutionTests.test_raw_bytes_are_not_silently_normalized) ... ok
+test_timeout_and_output_limits (test_execution.ExecutionTests.test_timeout_and_output_limits) ... ok
+test_wrong_runtime_refused (test_execution.ExecutionTests.test_wrong_runtime_refused) ... ok
+test_alias_and_keyword_mapping (test_recipe.RecipeTests.test_alias_and_keyword_mapping) ... ok
+test_changed_source_invalidates_edits (test_recipe.RecipeTests.test_changed_source_invalidates_edits) ... ok
+test_exact_patch_and_unrelated_bytes (test_recipe.RecipeTests.test_exact_patch_and_unrelated_bytes) ... ok
+test_no_final_newline_patch (test_recipe.RecipeTests.test_no_final_newline_patch) ... ok
+test_shadow_and_encoding_refusal (test_recipe.RecipeTests.test_shadow_and_encoding_refusal) ... ok
+test_support_belongs_to_exact_call (test_recipe.RecipeTests.test_support_belongs_to_exact_call) ... ok
+test_unsupported_never_changes (test_recipe.RecipeTests.test_unsupported_never_changes) ... ok
+test_utf8_crlf_and_multiline_offsets (test_recipe.RecipeTests.test_utf8_crlf_and_multiline_offsets) ... ok
+test_false_summary_and_changed_files_rejected (test_workflow.WorkflowTests.test_false_summary_and_changed_files_rejected) ... ok
+test_interruption_during_comparison_retains_evidence (test_workflow.WorkflowTests.test_interruption_during_comparison_retains_evidence) ... ok
+test_orchestration_and_reopen_synthetic_only (test_workflow.WorkflowTests.test_orchestration_and_reopen_synthetic_only) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 1.889s
+
+OK

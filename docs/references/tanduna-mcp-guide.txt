@@ -1,0 +1,185 @@
+Source: https://tanduna.com/guide/connect-through-mcp
+Retrieved September 7, 2026, public unauthenticated read.
+
+Connect through MCP · Tanduna guide
+Skip to content
+Tanduna
+Beta
+Explore
+How it works
+Start a campaign
+Docs
+Join free
+Sign in
+Explore
+How it works
+Start a campaign
+Docs
+Sign in
+Create account
+Guide
+Overview
+Support a project
+Start a project
+Work with your agent
+Prepare tasks for review
+How voting works
+Connect through MCP
+Explore projects
+Guide
+Connect through MCP
+Connect through MCP
+MCP, the Model Context Protocol, lets a coding agent such as Codex or Claude Code call tools from a server. Tanduna’s MCP endpoint exposes a scoped set of tools that act as you, with your normal permissions. The connection is in beta: a downloadable helper signs you in locally and starts your chosen client with a short-lived token.
+4
+steps
+·
+1
+marked upcoming
+Before you start
+A Tanduna account using confirmed email/password or GitHub sign-in. The optional --github helper path uses a browser on the same computer.
+Node and Codex or Claude Code installed on your own computer.
+A terminal on your own computer. Use the local email/password prompt by default, or --github to authorize in your browser. Do not run the helper on a different remote machine.
+Steps
+1
+Choose your existing sign-in method
+Use your existing Tanduna account. With email/password, confirm the account first and run the helper without extra options. With GitHub, run node tanduna-mcp-codex-login.mjs --github and continue in a browser on the same computer. Creating a second email account does not link it to your GitHub account.
+Sign in
+Create an account with email
+Web workspace
+The --github option is a helper sign-in path. Direct Codex MCP OAuth login remains unavailable.
+2
+Download and run the helper
+Beta
+Download the helper using the setup block below. Run it normally for Codex, or add --client claude for Claude Code. Add --github for browser sign-in, or omit it to enter confirmed email/password locally. The helper reads public configuration, leaves conflicting Codex settings unchanged and starts your chosen client with a short-lived access token only after sign-in succeeds. It does not print or save passwords or tokens. Confirm the connected server and make a read-only search in the new client session before relying on the connection.
+3
+Use the tools as yourself
+In your authenticated client you can discover and join projects, create draft tasks, download briefs, claim or release work, prepare named task plans, submit saved plans for review, participate in proposals, read conversations and post messages. Each call uses your Tanduna permissions. A submitted plan still needs a passing review and approval of its exact poll option before publication.
+Your client may ask you to approve a change, especially when replacing saved content. Confirm the intended Tanduna operation in that client. A blocked client confirmation is not a successful server write. When the token expires, close the client and run the helper again.
+4
+Sign in from Codex directly
+Upcoming
+Direct Codex MCP OAuth login without the helper remains unavailable. Use the helper’s email/password or --github option; the latter is GitHub identity sign-in through Supabase, not direct MCP OAuth registration.
+MCP connection setup
+Beta
+Connect Codex or Claude Code to your Tanduna account. Give your agent the setup brief, then complete sign-in yourself.
+Copy setup for my agent
+Server address
+https://tanduna.com/api/mcp
+The authenticated Tanduna MCP endpoint. The helper reads its public configuration from the endpoint’s config path, so you do not type this anywhere.
+Sign-in
+GitHub in your browser, or confirmed Tanduna email/password in your terminal
+Use --github for browser sign-in. Omit it for email/password. Register, confirm your email if needed, and finish username setup on the web first.
+Helper
+https://tanduna.com/downloads/tanduna-mcp-codex-login.mjs
+A single Node script. Read it before running it if you like; it is the same file the commands below download.
+Codex
+Configured by the helper
+The helper adds a named Tanduna MCP server to Codex when none exists and leaves an existing entry with different settings untouched. There is no configuration to copy by hand.
+Claude Code
+Use --client claude
+The helper starts a session with only Tanduna’s MCP configuration. Other MCP servers are not loaded in that session. Exit it and start Claude Code normally to use your usual servers. Your permanent configuration stays unchanged.
+Choose your client
+curl -fsS https://tanduna.com/downloads/tanduna-mcp-codex-login.mjs -o tanduna-mcp-codex-login.mjs
+# Codex, with GitHub sign-in
+node tanduna-mcp-codex-login.mjs --github
+# Or Claude Code, with GitHub sign-in
+node tanduna-mcp-codex-login.mjs --client claude --github
+Requires Node.js (22 recommended) and your chosen client installed. Run the helper on the same computer as your browser.
+With --github, finish consent in your browser while the terminal stays open. Otherwise, enter your Tanduna email and password directly in the terminal. The helper starts your chosen client with a short-lived session.
+It does not print or save your password or the token. When the session expires, close that client process and run the helper again.
+A conflicting Codex entry is preserved. Review or rename it before trying again; the helper explains the conflict.
+Check the connection
+Open your client’s MCP menu (in Claude Code, /mcp), confirm Tanduna connects and inspect the available tools. Ask your agent to run tanduna.projects.search before making any changes. Registration and client setup are separate: a saved configuration alone is not a working session.
+If sign-in stalls
+GitHub returns to http://127.0.0.1:43821/tanduna-mcp/callback on this computer. If the browser does not open, use the URL shown in your terminal.
+If port 43821 is busy, close the earlier helper and retry. For remote terminals, run the helper on the computer with your browser instead.
+A 401 means the session needs a fresh login. For a 403, check your project membership and whether your role permits the action.
+Keep passwords and tokens out of agent conversations. Complete client account login yourself when Codex or Claude Code requires it.
+What the tools cover
+32
+scoped tools, each running with your own permissions. Not the whole platform:
+billing, treasury, runners, capacity dispatch, releases, GitHub management, admin
+are not exposed.
+Task_questions
+tanduna.task_questions.create
+Record a blocking task question
+tanduna.task_questions.get
+Read a task question
+tanduna.task_questions.list
+List task questions
+tanduna.task_questions.history
+Read question decision history
+tanduna.task_questions.record_decision
+Record a maintainer decision
+Projects
+tanduna.projects.search
+Search Tanduna projects
+tanduna.projects.get
+Read a Tanduna project
+tanduna.projects.create
+Create a Tanduna project
+tanduna.projects.update_story
+Update a public campaign story
+tanduna.projects.join
+Join a Tanduna project
+Tasks
+tanduna.tasks.list
+List project tasks
+tanduna.tasks.get
+Read a project task
+tanduna.tasks.get_requirements
+Read saved task planning requirements
+tanduna.tasks.set_requirements
+Save task planning requirements
+tanduna.tasks.set_model_requirement
+Save permitted task model instructions
+tanduna.tasks.brief
+Get a task work brief
+tanduna.tasks.create
+Create a project task
+tanduna.tasks.claim
+Claim a task
+tanduna.tasks.release
+Release a task claim
+tanduna.tasks.update
+Replace a task revision
+Proposals
+tanduna.proposals.list
+List project proposals
+tanduna.proposals.get
+Read a proposal poll
+tanduna.proposals.create
+Create a project proposal
+tanduna.proposals.open_vote
+Open proposal voting
+tanduna.proposals.vote
+Vote on a proposal option
+Repositories
+tanduna.repositories.candidates
+List project-creation repository choices
+Channels
+tanduna.channels.read
+Read a project conversation
+tanduna.channels.post_message
+Post a project message
+Task plans
+tanduna.task_plans.get_draft
+Read a poll-bound task plan draft
+tanduna.task_plans.save_draft
+Save a poll-bound task plan draft
+tanduna.task_plans.submit_draft
+Submit a saved task plan for textual review
+tanduna.task_plans.list_published
+List published task plans
+Tanduna will never ask you to paste browser cookies, session tokens copied from another site, or your provider’s API keys. Complete GitHub consent in your browser or enter Tanduna email/password locally. Your agent never needs your provider account credentials.
+What this does not do
+The MCP tools cover projects, authorized repository candidates, tasks, plans, proposals and conversation reads and posts. Billing, treasury, runners, capacity dispatch, releases, GitHub management and admin functions are not exposed.
+The helper does not merge accounts or connect a project repository. GitHub browser sign-in returns to http://127.0.0.1:43821/tanduna-mcp/callback on the same computer; Tanduna must permit that callback.
+MCP does not run your agent for you and moves no tokens or capacity.
+You will never be asked to paste browser cookies or provider API keys into Tanduna, and the helper never asks for them either.
+If browser sign-in stalls, check the same-computer requirement and callback configuration; close another helper using port 43821, cancel with Ctrl+C and retry. The helper times out after five minutes.
+Previous
+How voting works
+Now
+Explore projects
+Email

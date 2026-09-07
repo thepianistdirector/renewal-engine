@@ -1,0 +1,256 @@
+{
+  "name": "Renewal Engine",
+  "slug": "renewal-engine",
+  "stage": "Planning; task contracts prepared, execution and product implementation not approved or completed",
+  "waves": [
+    {
+      "id": "W1",
+      "title": "Know what must survive",
+      "outcome": "Choose one migration and define its behavior boundary.",
+      "taskIds": [
+        "W1-T1",
+        "W1-T2"
+      ]
+    },
+    {
+      "id": "W2",
+      "title": "Understand and propose a narrow change",
+      "outcome": "Build a useful transformation pipeline.",
+      "taskIds": [
+        "W2-T1",
+        "W2-T2"
+      ]
+    },
+    {
+      "id": "W3",
+      "title": "Compare behavior, including failures",
+      "outcome": "Make evidence stronger than a successful build.",
+      "taskIds": [
+        "W3-T1",
+        "W3-T2"
+      ]
+    },
+    {
+      "id": "W4",
+      "title": "Recipes other maintainers can trust",
+      "outcome": "Turn the single migration into a contribution format.",
+      "taskIds": [
+        "W4-T1",
+        "W4-T2"
+      ]
+    },
+    {
+      "id": "W5",
+      "title": "Modernize connected systems carefully",
+      "outcome": "Extend to staged, multi-repository changes.",
+      "taskIds": [
+        "W5-T1",
+        "W5-T2"
+      ]
+    },
+    {
+      "id": "W6",
+      "title": "An ecosystem that stays maintainable",
+      "outcome": "Validate sustained use and recipe quality.",
+      "taskIds": [
+        "W6-T1",
+        "W6-T2"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "W1-T1",
+      "wave": "W1",
+      "title": "Select and document the reference migration",
+      "goal": "Pick a maintained open-source fixture and a bounded dependency or framework change.",
+      "acceptanceCriteria": [
+        "Record licensing, source revisions, supported runtime and the specific migration objective.",
+        "List behavior that must remain stable and areas that are intentionally out of scope."
+      ],
+      "dependencies": [],
+      "status": "PLANNED",
+      "body": "Pick a maintained open-source fixture and a bounded dependency or framework change.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W1-T2",
+      "wave": "W1",
+      "title": "Capture characterization fixtures",
+      "goal": "Record representative inputs, outputs, side effects and important error behavior.",
+      "acceptanceCriteria": [
+        "Fixtures run against the original application and fail for a deliberate behavioral regression.",
+        "Sensitive or nondeterministic values are handled explicitly rather than silently ignored."
+      ],
+      "dependencies": [
+        "W1-T1"
+      ],
+      "status": "PLANNED",
+      "body": "Record representative inputs, outputs, side effects and important error behavior.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W2-T1",
+      "wave": "W2",
+      "title": "Map affected code and migration dependencies",
+      "goal": "Identify call sites, configuration and interfaces involved in the chosen change.",
+      "acceptanceCriteria": [
+        "The map links each proposed edit to a concrete migration requirement.",
+        "Uncertain or unsupported patterns are surfaced for human review."
+      ],
+      "dependencies": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Identify call sites, configuration and interfaces involved in the chosen change.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W2-T2",
+      "wave": "W2",
+      "title": "Implement the first migration recipe",
+      "goal": "Use deterministic transforms where possible and bounded AI proposals where needed.",
+      "acceptanceCriteria": [
+        "The recipe produces a reviewable patch without unrelated rewrites.",
+        "Repeated application is stable or explicitly refuses an already migrated source."
+      ],
+      "dependencies": [
+        "W1-T1",
+        "W1-T2",
+        "W2-T1"
+      ],
+      "status": "PLANNED",
+      "body": "Use deterministic transforms where possible and bounded AI proposals where needed.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W3-T1",
+      "wave": "W3",
+      "title": "Build differential execution",
+      "goal": "Run old and new versions against the characterization fixtures in isolated environments.",
+      "acceptanceCriteria": [
+        "Reports distinguish expected changes, regressions and unmeasured behavior.",
+        "The deliberately wrong transformation is detected."
+      ],
+      "dependencies": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Run old and new versions against the characterization fixtures in isolated environments.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W3-T2",
+      "wave": "W3",
+      "title": "Build review and rollback guidance",
+      "goal": "Present affected contracts, evidence and the exact proposed changes.",
+      "acceptanceCriteria": [
+        "A maintainer can reject individual changes and reproduce the comparison.",
+        "Document how to return to the prior source and data state within the bounded migration."
+      ],
+      "dependencies": [
+        "W2-T1",
+        "W2-T2",
+        "W3-T1"
+      ],
+      "status": "PLANNED",
+      "body": "Present affected contracts, evidence and the exact proposed changes.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W4-T1",
+      "wave": "W4",
+      "title": "Publish a migration recipe kit",
+      "goal": "Define prerequisites, transformations, fixtures and supported version ranges.",
+      "acceptanceCriteria": [
+        "A second maintainer can author and run a recipe using only the documented interfaces.",
+        "Unsupported versions stop with an explicit reason."
+      ],
+      "dependencies": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Define prerequisites, transformations, fixtures and supported version ranges.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W4-T2",
+      "wave": "W4",
+      "title": "Add local and private-code operation",
+      "goal": "Package execution so repositories and credentials remain under owner control.",
+      "acceptanceCriteria": [
+        "A run can complete without uploading source to a hosted service.",
+        "Any optional model request shows its data boundary and requires explicit configuration."
+      ],
+      "dependencies": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Package execution so repositories and credentials remain under owner control.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W5-T1",
+      "wave": "W5",
+      "title": "Model migration ordering and compatibility windows",
+      "goal": "Represent dependencies between separately deployed components.",
+      "acceptanceCriteria": [
+        "A staged fixture demonstrates old/new compatibility during the transition.",
+        "An unsafe ordering is rejected or clearly marked as requiring coordinated downtime."
+      ],
+      "dependencies": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Represent dependencies between separately deployed components.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W5-T2",
+      "wave": "W5",
+      "title": "Rehearse data migration and recovery",
+      "goal": "Add a bounded schema-change fixture with backup and restoration.",
+      "acceptanceCriteria": [
+        "The chosen migration demonstrates recovery from an interrupted data step.",
+        "The report distinguishes reversible source changes from irreversible data loss risks."
+      ],
+      "dependencies": [
+        "W4-T1",
+        "W4-T2",
+        "W5-T1"
+      ],
+      "status": "PLANNED",
+      "body": "Add a bounded schema-change fixture with backup and restoration.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W6-T1",
+      "wave": "W6",
+      "title": "Pilot migrations with volunteer maintainers",
+      "goal": "Run selected recipes on approved repositories through normal maintainer review.",
+      "acceptanceCriteria": [
+        "Report accepted, rejected and revised patches without treating patch generation as adoption.",
+        "Capture missed behavior and incorporate it into fixtures."
+      ],
+      "dependencies": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Run selected recipes on approved repositories through normal maintainer review.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W6-T2",
+      "wave": "W6",
+      "title": "Publish recipe maintenance and regression checks",
+      "goal": "Define ownership, deprecation and compatibility testing for the catalog.",
+      "acceptanceCriteria": [
+        "A changed dependency that invalidates a recipe is caught by a reproducible check.",
+        "Maintainers can see the last verified versions and remaining gaps."
+      ],
+      "dependencies": [
+        "W5-T1",
+        "W5-T2",
+        "W6-T1"
+      ],
+      "status": "PLANNED",
+      "body": "Define ownership, deprecation and compatibility testing for the catalog.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    }
+  ],
+  "taskContractsFile": "task-contracts.json"
+}

@@ -1,67 +1,128 @@
 # Renewal Engine
 
-**Help entire software ecosystems modernize without losing the behavior people rely on.**
+Inspect a focused Python API migration, keep the original source, and review a
+candidate patch with its evidence.
 
-The hardest software to replace is the software that already does thousands of invisible things correctly.
+**Development candidate: source inspection is implemented and tested. Public
+0.1 is not released.** The original reference fixture decision and its actual
+old/new differential execution remain pending. The bundled demo implementation
+is not yet runtime-verified; synthetic tests do not establish equivalence.
 
-![Renewal Engine: aspirational concept, not an implemented product](assets/vision-concept.png)
+## Try the working inspection
 
-> This is a public planning repository. There is no product implementation or playable build yet. The image is an AI-generated vision reference, not a screenshot. All waves and tasks are proposed; no completed work, community approval or funding is implied.
+Prerequisite: Python 3.11 or newer. The current CLI checks ran on Linux x86_64
+with CPython 3.12.14. No third-party Python packages, network account, hosted
+model or source upload are required.
 
-## The mission
+From a source checkout:
 
-Build an open modernization system that helps teams understand existing behavior, propose narrow changes and compare the results. Combine deterministic transformations, AI-assisted patches and reproducible evidence so useful old software can keep evolving.
+```sh
+python3 -m renewal_engine --help
+mkdir -p .runs
+python3 -m renewal_engine inspect renewal_engine/reference/program.py --out .runs/my-inspection
+python3 -m renewal_engine verify .runs/my-inspection
+```
 
-Choose a migration, map the affected behavior, capture representative fixtures, propose a transformation, run old and new versions against the same cases, inspect the differences and adopt changes through normal review.
+Open `.runs/my-inspection/report.html` in a browser. The report is fully offline.
+It links the focused patch, JSON results, immutable manifest and recovery state.
+The candidate and read-only original Python snapshots are saved beside it.
+An inspection report explicitly says **INSPECTION ONLY**: no code was executed.
 
-## Who this is for
+Select another `.py` file or bounded directory with the same `inspect` command.
+Choose a new output directory outside the selected source tree. Only Python
+source is copied; non-Python resources are not included. Symlinks, special
+files, oversized trees and unsupported encodings are refused. Standard cache,
+environment and Git directories are excluded and named in the manifest.
 
-Maintainers and engineering teams with aging libraries, frameworks and business-critical applications.
+## Exact first recipe boundary
 
-## The first thing we want to prove
+The supported form is an ordinary undecorated top-level function beginning with
+an explicit local ConfigParser import, direct no-argument construction, and an
+immediately following direct `readfp` call. Explicit local import aliases,
+positional `fp` / `filename`, and `fp=` / `filename=` are recognized. Arguments
+must be parameters or constants. The recipe maps `filename` to `source` and
+`fp` to `f`. Comments, strings, Unicode and line endings are preserved.
 
-One well-scoped library or framework upgrade in an approved open-source fixture, with a deliberately wrong transformation that the behavior comparison must catch.
+```python
+def load(stream, source):
+    import configparser
+    parser = configparser.ConfigParser()
+    parser.readfp(stream, filename=source)
+    return parser
+```
 
-A green test suite may miss the behavior that matters. Document coverage gaps and observed contracts; use deliberate wrong changes to test the checks. Never claim general semantic equivalence for arbitrary programs.
+Ambiguous receivers, module-global import bindings, decorators, nested/control
+flow calls, constructor options, star arguments and dynamic mutations remain
+unchanged with a review-needed finding. A second application produces no further
+edits. See [the precise boundary](docs/decisions/003-recipe-boundary.md).
 
-## What this could become
+## Local package
 
-A shared library of migration recipes, behavior fixtures and compatibility knowledge across languages and ecosystems, usable locally on private code as well as public projects.
+```sh
+python3 tools/build.py
+python3 dist/renewal-engine.pyz --version
+```
 
-Automated refactoring already has mature foundations. The proposed contribution joins source understanding, differential behavior checks, migration planning and reviewable AI patches into a maintainable end-to-end workflow.
+The build creates a deterministic self-contained CLI and source archive in
+`dist/`, plus SHA-256 checksums. These are local development candidates, not
+public release artifacts. The source archive includes `install.py`; after
+extracting it into a new directory, run:
 
-## Why build it together
+```sh
+python3 install.py --prefix ./local-install
+./local-install/bin/renewal-engine --help
+```
 
-Maintainers can contribute one migration recipe, one tricky fixture or one language adapter. Thousands of small, well-tested contributions can reduce repeated migration work across an ecosystem.
+The installer refuses to overwrite an existing command and does not change
+PATH or shell configuration. Keep the source archive and license with the CLI.
+No interpreter binaries or development browser dependencies are distributed.
 
-We are looking for founding maintainers and contributors who can make one small, reviewable part real. Bring a concrete use case, a difficult test case, an interface sketch or a focused patch. If you use a coding agent, give it one agreed task and review its result. Accepted work matters more than generated volume.
+## Comparison and recovery
 
-## Build the first useful piece with us
+`demo --help` describes the implemented trusted-reference workflow. It requires
+explicit Linux CPython 3.11.16 and 3.12.14 executable paths and runs only the
+bundled hash-pinned fixture. `--negative-control` deliberately corrupts a
+source-name diagnostic; a real comparison must return exit code 1. These demo
+paths are **not yet runtime-verified** and are not a public-use promise.
 
-Start with [Renewal Engine on Tanduna](https://tanduna.com/projects/renewal-engine) and the [first task: Select and document the reference migration](https://tanduna.com/p/renewal-engine/tasks/tsk_17cb9d58845743cb4d031739f78f3ab1). Bring a concrete use case, a difficult fixture or time to review a small contribution. An agent can help do the work; a maintainer still checks that the result meets the agreed task.
+The reference candidate is original AGPL-3.0 material, not upstream adoption.
+Its [provenance and case coverage](renewal_engine/reference/PROVENANCE.md) are
+prepared for the fixture decision. Only removal of the exact readfp deprecation
+warning is an allowed behavioral difference. Exception fields and declared
+stream/file effects are retained. No traceback equivalence is claimed.
 
-1. Pick one task from the [six-wave roadmap](ROADMAP.md) and [twelve task contracts](TASKS.md), then agree its scope and prerequisites.
-2. Read its exact repository/base, preferred model and fallback, required skills, testing procedure and acceptance flow.
-3. Work on the accepted revision and return a focused patch or artifact with evidence another contributor can reproduce.
+A completed run can be reopened with `verify RUN_DIRECTORY`, which executes no
+source. If interrupted, retain the whole incomplete run and restart with a new
+output directory. Original source stays unchanged. This is source recovery;
+no restoration of arbitrary external data or effects is promised.
 
-The first milestone is **Know what must survive**: Choose one migration and define its behavior boundary.
+Exit codes: 0 for completed inspection, verified saved evidence, or a passing
+comparison; 1 for a measured regression; 2 for refusal/error; 130 for interruption.
+A zero inspection exit code is not a behavioral pass. Process limits and a
+scrubbed environment are not an OS sandbox. Arbitrary repository execution,
+automatic merge, production migration and private-code upload are excluded.
 
-The complete [contribution guide](CONTRIBUTING.md) includes two public downloads: the [shared contribution skill](https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md) and [Renewal Engine validation skill](https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md). Both are pinned to exact Git commits. Every task selects GPT-6 Astra or Claude Fable 5.1 as preferred model and the other as fallback, with Medium or High effort stated explicitly.
+## Evidence and long-term plan
 
-This repository currently contains the proposal, concept art, roadmap, task contracts and contribution skills. It does not yet contain a working product. Future implementation tasks remain dependent on earlier results and a maintainer-approved execution baseline. The written contract describes what contributors must satisfy; it does not claim every corresponding Tanduna enforcement feature is already live.
+Run the meaningful automated checks:
 
-## What we are not promising
+```sh
+python3 -m unittest discover -s tests -v
+python3 tools/plan.py validate
+python3 tools/plan.py self-test
+python3 tools/plan.py check
+```
 
-No automatic merging or production migration, private-code upload by default, universal language support or a guarantee that an upgrade has no regressions.
+[project-plan.json](project-plan.json) is the canonical plan: 218 outcomes across
+26 waves, including 50 for 0.1. [ROADMAP.md](ROADMAP.md), [TASKS.md](TASKS.md),
+contracts and publication export are generated from it. The twelve frozen
+Tanduna identities and acceptance history remain in
+[the lineage records](docs/lineage/2026-09-07).
 
-There is no delivery date, token target, paid offer or crowdfunding campaign here. Community interest does not guarantee a finished product. The next milestone depends on contributors, maintainer capacity and evidence from the previous one.
+The [public Tanduna roadmap](https://tanduna.com/projects/renewal-engine/roadmap)
+currently contains the historical plan; the new export is not yet published or
+accepted. Public release, external reproduction and human maintainer validation
+are separate unfinished gates. See [HANDOFF.md](HANDOFF.md) for exact next work.
 
-## Existing work we should learn from
-
-- [OpenRewrite](https://docs.openrewrite.org/)
-
-These are related foundations and references, not partners or endorsements. We should reuse compatible components or contribute upstream when that is the better route. This proposal does not claim that its individual ingredients are unprecedented. Dependencies and their licenses will be evaluated before adoption.
-
-## License and contribution
-
-This repository is published under [GNU AGPL-3.0](LICENSE). See [CONTRIBUTING.md](CONTRIBUTING.md) for the proposed contribution workflow and [the image note](assets/README.md) for concept provenance.
+Licensed under [GNU AGPL-3.0](LICENSE). [Contributions](CONTRIBUTING.md) require
+scoped evidence and normal maintainer review; generated patches are not adoption.

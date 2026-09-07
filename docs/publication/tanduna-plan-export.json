@@ -1,101 +1,40 @@
 {
-  "schemaVersion": 2,
-  "name": "Renewal Engine",
-  "slug": "renewal-engine",
-  "canonicalSource": "project-plan.json",
-  "stage": "Local development candidate implemented; original fixture decision, actual differential proof, external/human evidence and public release/publication incomplete",
-  "planningAsOf": "2026-09-07",
-  "modelPolicy": {
-    "model": "gpt-6-astra",
-    "delegation": "bounded leaf agents only",
-    "source": "OWNER-LAUNCH"
+  "schemaVersion": 1,
+  "artifactKind": "publication-review-export",
+  "notAnApiPayload": true,
+  "generatedFrom": "project-plan.json",
+  "canonicalSha256": "f84fee30c952861515d2f36d70d7a5e995a32dbbdb70e194ea852c85a580fb29",
+  "project": {
+    "slug": "renewal-engine",
+    "name": "Renewal Engine",
+    "id": "prj_9ef51e9826817323b774d5d3b900520f"
   },
-  "evidenceLevels": [
-    "PLANNED",
-    "IN PROGRESS",
-    "IMPLEMENTED",
-    "AUTOMATED PASS",
-    "RUNTIME VERIFIED",
-    "USER VALIDATED",
-    "RELEASE VERIFIED",
-    "BLOCKED",
-    "FAILED",
-    "NOT TESTED"
-  ],
-  "sources": {
-    "OWNER-LAUNCH": {
-      "kind": "owner instruction",
-      "reference": "Owner launch instruction, September 7 2026, sections 3\u201310 and execution-loop addition",
-      "snapshotReference": "../_launch/2026-09-07/13-renewal-engine-CODEX-PROMPT.txt"
-    },
-    "PYTHON-REMOVAL": {
-      "kind": "technical reference, not execution evidence",
-      "url": "https://docs.python.org/3.12/whatsnew/3.12.html"
-    },
-    "PYTHON-BASELINE": {
-      "kind": "technical reference, not execution evidence",
-      "url": "https://docs.python.org/3.11/library/configparser.html"
-    },
-    "renewal-engine:W1-T1": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W1-T1-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_17cb9d58845743cb4d031739f78f3ab1/brief"
-    },
-    "renewal-engine:W1-T2": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W1-T2-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_a35bd15aa7b3e4318c5552b4cc3e82b3/brief"
-    },
-    "renewal-engine:W2-T1": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W2-T1-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_17179248999bbb2086133ef8ed4cb216/brief"
-    },
-    "renewal-engine:W2-T2": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W2-T2-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_a9e192b7ec0fa463c48c7b7b3aea4386/brief"
-    },
-    "renewal-engine:W3-T1": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W3-T1-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_89e135a4cdda5620e7737ed426e59e3c/brief"
-    },
-    "renewal-engine:W3-T2": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W3-T2-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_7e9f19f4a3e6ff05eb357075dac35818/brief"
-    },
-    "renewal-engine:W4-T1": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W4-T1-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_79615ef58d4b13fae68ef7d5e7314eeb/brief"
-    },
-    "renewal-engine:W4-T2": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W4-T2-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_57ea7445d8928fcd6b0c9890b459a98a/brief"
-    },
-    "renewal-engine:W5-T1": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W5-T1-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_e68f1340d670a17234cd0e91c5691fc1/brief"
-    },
-    "renewal-engine:W5-T2": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W5-T2-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_5d9c9f4b35e62de3e818ee428565ce91/brief"
-    },
-    "renewal-engine:W6-T1": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W6-T1-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_c5c45d54c7d504d440dc18fdd697b84a/brief"
-    },
-    "renewal-engine:W6-T2": {
-      "kind": "frozen source requirement",
-      "reference": "docs/lineage/2026-09-07/W6-T2-brief.md",
-      "platformUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_4094a1ff51d72e4a7b4a14420a3f3c48/brief"
-    }
+  "publication": {
+    "status": "PLANNED",
+    "projectId": "prj_9ef51e9826817323b774d5d3b900520f",
+    "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12",
+    "existingProposalId": "prp_7b37b259ab06edc6c724198400d4fc62",
+    "existingContentHash": "d09143e713849a2c76cd094a97971d8d325efe091f87a180ee5be89a8d0c26e8",
+    "roadmapUrl": "https://tanduna.com/projects/renewal-engine/roadmap",
+    "tasksUrl": "https://tanduna.com/p/renewal-engine/tasks",
+    "newPlatformMappings": {},
+    "gate": "A local export is not an accepted or published native plan. Refresh all public pages before an authorized platform write and reconcile returned IDs before retries."
+  },
+  "release": {
+    "target": "0.1",
+    "status": "IN PROGRESS",
+    "publicVersion": null,
+    "publicUrl": null,
+    "accessInstructions": "No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs and completes source inspection and saved-evidence verification. README contains tested local commands; actual demo runtime verification and public access instructions remain pending.",
+    "scope": "One approved ConfigParser readfp-to-read_file recipe, trusted original fixture execution, identical-case differential evidence, offline report and safe restart.",
+    "exclusions": [
+      "arbitrary repository execution",
+      "general behavioral equivalence",
+      "automatic adoption or merge",
+      "production or data migration",
+      "cloud service",
+      "unapproved source upload"
+    ]
   },
   "decisions": {
     "D01": {
@@ -115,73 +54,48 @@
       "proposal": "Authorize concrete native Tanduna revision/proposal publication after supported workflow discovery and export review."
     }
   },
-  "observations": [
+  "counts": {
+    "tasks": 218,
+    "waves": 26,
+    "releaseHorizons": {
+      "0.1": 50,
+      "later 0.x": 72,
+      "long-term": 80,
+      "exploratory": 16
+    }
+  },
+  "criticalPath": [
     {
-      "kind": "observed fact",
-      "value": "Saved live tasks page shows 12 tasks, 12 READY, none claimed; briefs are revision 3. READY records textual planning, not implementation.",
-      "reference": "docs/lineage/2026-09-07/tasks.html"
+      "wave": "RE-W01",
+      "entry": "renewal-engine:N01-01",
+      "exit": "renewal-engine:N01-10",
+      "purpose": "A migration has a precise behavioral promise."
     },
     {
-      "kind": "observed fact",
-      "value": "Saved proposals page shows one approved founding proposal and nothing open. No pagination links appear in saved tasks/proposals HTML; tasks page exposes all 12 IDs.",
-      "reference": "docs/lineage/2026-09-07/proposals.html"
+      "wave": "RE-W02",
+      "entry": "renewal-engine:N02-01",
+      "exit": "renewal-engine:N02-10",
+      "purpose": "Original behavior is observable."
     },
     {
-      "kind": "source requirement",
-      "value": "General fixture selection, independent recipe authorship, connected systems, data recovery and actual maintainer pilots remain preserved requirements.",
-      "reference": "docs/lineage/2026-09-07/task-contracts.json"
+      "wave": "RE-W03",
+      "entry": "renewal-engine:N03-01",
+      "exit": "renewal-engine:N03-10",
+      "purpose": "Supported code is transformed conservatively."
     },
     {
-      "kind": "proposal",
-      "value": "New outcome waves expand the owner candidate families; later scope requires evidence and maintainer acceptance.",
-      "reference": "OWNER-LAUNCH"
+      "wave": "RE-W04",
+      "entry": "renewal-engine:N04-01",
+      "exit": "renewal-engine:N04-10",
+      "purpose": "Wrong transformations fail independently."
     },
     {
-      "kind": "assumption",
-      "value": "A stdlib-only CLI with an offline report is sufficient for the first reviewed cut; no browser execution service is required.",
-      "reference": "OWNER-LAUNCH"
-    },
-    {
-      "date": "2026-09-07",
-      "testsPassed": 25,
-      "scope": "source inspection and synthetic/infrastructure verification; no original reference execution",
-      "evidence": "docs/evidence/verification.md"
-    },
-    {
-      "date": "2026-09-07",
-      "scope": "Browser verification and exact-byte process capture",
-      "evidence": "docs/evidence/report-browser-review.md",
-      "testsPassed": 27,
-      "humanValidation": false
+      "wave": "RE-W05",
+      "entry": "renewal-engine:N05-01",
+      "exit": "renewal-engine:N05-10",
+      "purpose": "A maintainer can obtain and review the result."
     }
   ],
-  "release": {
-    "target": "0.1",
-    "status": "IN PROGRESS",
-    "publicVersion": null,
-    "publicUrl": null,
-    "accessInstructions": "No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs and completes source inspection and saved-evidence verification. README contains tested local commands; actual demo runtime verification and public access instructions remain pending.",
-    "scope": "One approved ConfigParser readfp-to-read_file recipe, trusted original fixture execution, identical-case differential evidence, offline report and safe restart.",
-    "exclusions": [
-      "arbitrary repository execution",
-      "general behavioral equivalence",
-      "automatic adoption or merge",
-      "production or data migration",
-      "cloud service",
-      "unapproved source upload"
-    ]
-  },
-  "publication": {
-    "status": "PLANNED",
-    "projectId": "prj_9ef51e9826817323b774d5d3b900520f",
-    "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12",
-    "existingProposalId": "prp_7b37b259ab06edc6c724198400d4fc62",
-    "existingContentHash": "d09143e713849a2c76cd094a97971d8d325efe091f87a180ee5be89a8d0c26e8",
-    "roadmapUrl": "https://tanduna.com/projects/renewal-engine/roadmap",
-    "tasksUrl": "https://tanduna.com/p/renewal-engine/tasks",
-    "newPlatformMappings": {},
-    "gate": "A local export is not an accepted or published native plan. Refresh all public pages before an authorized platform write and reconcile returned IDs before retries."
-  },
   "waves": [
     {
       "id": "RE-W01",
@@ -10920,44 +10834,5 @@
       "sha256": "e0c138e6ceed52f5848f8a8d991c27514b976fa7be92b4d1160112d5701621ea"
     }
   ],
-  "criticalPath": [
-    {
-      "wave": "RE-W01",
-      "entry": "renewal-engine:N01-01",
-      "exit": "renewal-engine:N01-10",
-      "purpose": "A migration has a precise behavioral promise."
-    },
-    {
-      "wave": "RE-W02",
-      "entry": "renewal-engine:N02-01",
-      "exit": "renewal-engine:N02-10",
-      "purpose": "Original behavior is observable."
-    },
-    {
-      "wave": "RE-W03",
-      "entry": "renewal-engine:N03-01",
-      "exit": "renewal-engine:N03-10",
-      "purpose": "Supported code is transformed conservatively."
-    },
-    {
-      "wave": "RE-W04",
-      "entry": "renewal-engine:N04-01",
-      "exit": "renewal-engine:N04-10",
-      "purpose": "Wrong transformations fail independently."
-    },
-    {
-      "wave": "RE-W05",
-      "entry": "renewal-engine:N05-01",
-      "exit": "renewal-engine:N05-10",
-      "purpose": "A maintainer can obtain and review the result."
-    }
-  ],
-  "criticalPathNote": "This is a new narrow 0.1 dependency path. Historical W1\u2013W6 edges remain frozen in sourceMappings and lineage; later recipe kits, data migrations and pilot programmes are not silently treated as complete.",
-  "coverageReview": {
-    "taskCount": 218,
-    "waveCount": 26,
-    "justification": "218 distinct outcomes cover the 26 owner-proposed families. The first 50 rows decompose the immediate risk-bearing 0.1; later rows are high-level capability, evidence and maintenance outcomes. No recipe-by-platform multiplication or implementation-complete claims.",
-    "limits": "Additional language and model-assistance waves are exploratory options requiring explicit admission decisions. No concrete language, framework, isolation backend or additional recipe is promised before selection.",
-    "duplicateReview": "Titles and outcome strings are unique; semantic scope boundaries distinguish initial minimal evidence from later general reusable capabilities. Human semantic review remains required before native publication."
-  }
+  "limitations": "Additional language and model-assistance waves are exploratory options requiring explicit admission decisions. No concrete language, framework, isolation backend or additional recipe is promised before selection."
 }

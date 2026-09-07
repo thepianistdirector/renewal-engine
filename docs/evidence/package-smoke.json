@@ -1,0 +1,47 @@
+{
+  "scope": "agent verification from locally built/extracted archive on same VPS; not public download or external/human validation",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "install.py",
+        "--prefix",
+        "./local-install"
+      ],
+      "exit_code": 0,
+      "stdout": "Installed bin/renewal-engine under the selected prefix.\nSHA-256: 3de2f65eda6fd9fbcc8d67bfb582d1b769b818d1eb1e77778bec4a0ad9843978\nNo PATH or shell configuration was changed.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "./local-install/bin/renewal-engine",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Renewal Engine 0.1.0.dev1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "./local-install/bin/renewal-engine",
+        "inspect",
+        "renewal_engine/reference/program.py",
+        "--out",
+        "./fresh-run"
+      ],
+      "exit_code": 0,
+      "stdout": "INSPECTION ONLY: saved report.html, changes.patch, manifest.json and candidate/.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "./local-install/bin/renewal-engine",
+        "verify",
+        "./fresh-run"
+      ],
+      "exit_code": 0,
+      "stdout": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY\n",
+      "stderr": ""
+    }
+  ]
+}

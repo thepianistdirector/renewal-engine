@@ -1,0 +1,727 @@
+{
+  "project": "renewal-engine",
+  "schema": "maintainer-authored-contract-v1",
+  "platformEnforcement": "Not claimed by this document; verify the current Tanduna task revision and production capabilities.",
+  "tasks": [
+    {
+      "taskKey": "W1-T1",
+      "taskId": "tsk_17cb9d58845743cb4d031739f78f3ab1",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_17cb9d58845743cb4d031739f78f3ab1",
+      "title": "Select and document the reference migration",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Maintainer accepts the scoped design protocol; this is not product implementation.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "medium"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Record licensing, source revisions, supported runtime and the specific migration objective.",
+        "List behavior that must remain stable and areas that are intentionally out of scope."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Inspect the chosen open-source fixture at a pinned revision and record its license, old/new runtime and bounded migration. Run or document the actual baseline behavior and identify intentionally unchanged contracts.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W1-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W1-T2",
+      "taskId": "tsk_a35bd15aa7b3e4318c5552b4cc3e82b3",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_a35bd15aa7b3e4318c5552b4cc3e82b3",
+      "title": "Capture characterization fixtures",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Fixtures run against the original application and fail for a deliberate behavioral regression.",
+        "Sensitive or nondeterministic values are handled explicitly rather than silently ignored."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Run representative inputs against the original fixture and retain outputs, errors and side effects. Introduce a deliberate behavioral regression and confirm the characterization check fails; document narrow nondeterminism handling.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W1-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W2-T1",
+      "taskId": "tsk_17179248999bbb2086133ef8ed4cb216",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_17179248999bbb2086133ef8ed4cb216",
+      "title": "Map affected code and migration dependencies",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "The map links each proposed edit to a concrete migration requirement.",
+        "Uncertain or unsupported patterns are surfaced for human review."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Trace each proposed migration requirement to actual call sites, config and interfaces. Review an unsupported pattern and verify it remains flagged rather than silently transformed.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W2-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W2-T2",
+      "taskId": "tsk_a9e192b7ec0fa463c48c7b7b3aea4386",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_a9e192b7ec0fa463c48c7b7b3aea4386",
+      "title": "Implement the first migration recipe",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "The recipe produces a reviewable patch without unrelated rewrites.",
+        "Repeated application is stable or explicitly refuses an already migrated source."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Apply the recipe to the pinned fixture, review the patch, and apply it a second time. Verify stability or an explicit already-migrated refusal and run characterization cases to detect unrelated behavior changes.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W2-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1",
+        "W1-T2",
+        "W2-T1"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W3-T1",
+      "taskId": "tsk_89e135a4cdda5620e7737ed426e59e3c",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_89e135a4cdda5620e7737ed426e59e3c",
+      "title": "Build differential execution",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Reports distinguish expected changes, regressions and unmeasured behavior.",
+        "The deliberately wrong transformation is detected."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Execute old and candidate versions on the same characterization fixtures in isolated environments. Run a deliberately wrong transformation and verify the differential report distinguishes regression from expected change.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W3-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W3-T2",
+      "taskId": "tsk_7e9f19f4a3e6ff05eb357075dac35818",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_7e9f19f4a3e6ff05eb357075dac35818",
+      "title": "Build review and rollback guidance",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A maintainer can reject individual changes and reproduce the comparison.",
+        "Document how to return to the prior source and data state within the bounded migration."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Have a maintainer inspect the proposed patch and reject one change. Reproduce the comparison and exercise the documented return to prior source/disposable data; expose irreversible data limitations.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W3-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W2-T1",
+        "W2-T2",
+        "W3-T1"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W4-T1",
+      "taskId": "tsk_79615ef58d4b13fae68ef7d5e7314eeb",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_79615ef58d4b13fae68ef7d5e7314eeb",
+      "title": "Publish a migration recipe kit",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A second maintainer can author and run a recipe using only the documented interfaces.",
+        "Unsupported versions stop with an explicit reason."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Have a second maintainer author a recipe from the public kit. Test supported and unsupported version ranges, then run the fixture and review its exact proposed changes.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W4-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W4-T2",
+      "taskId": "tsk_57ea7445d8928fcd6b0c9890b459a98a",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_57ea7445d8928fcd6b0c9890b459a98a",
+      "title": "Add local and private-code operation",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A run can complete without uploading source to a hosted service.",
+        "Any optional model request shows its data boundary and requires explicit configuration."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Complete a local fixture migration without uploading source. Enable an optional model route only with explicit test configuration and inspect its declared data boundary; reject absent permission or credentials clearly.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W4-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W5-T1",
+      "taskId": "tsk_e68f1340d670a17234cd0e91c5691fc1",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_e68f1340d670a17234cd0e91c5691fc1",
+      "title": "Model migration ordering and compatibility windows",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A staged fixture demonstrates old/new compatibility during the transition.",
+        "An unsafe ordering is rejected or clearly marked as requiring coordinated downtime."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Run a staged old/new component fixture through the documented ordering. Try an unsafe order and verify refusal or an explicit coordinated-downtime requirement; inspect compatibility during each intermediate step.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W5-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W5-T2",
+      "taskId": "tsk_5d9c9f4b35e62de3e818ee428565ce91",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_5d9c9f4b35e62de3e818ee428565ce91",
+      "title": "Rehearse data migration and recovery",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "The chosen migration demonstrates recovery from an interrupted data step.",
+        "The report distinguishes reversible source changes from irreversible data loss risks."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Back up disposable data, interrupt the schema/data migration at a documented boundary and restore. Compare recovered data and source versions; report any state that cannot be reversed safely.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W5-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W4-T1",
+        "W4-T2",
+        "W5-T1"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W6-T1",
+      "taskId": "tsk_c5c45d54c7d504d440dc18fdd697b84a",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_c5c45d54c7d504d440dc18fdd697b84a",
+      "title": "Pilot migrations with volunteer maintainers",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Report accepted, rejected and revised patches without treating patch generation as adoption.",
+        "Capture missed behavior and incorporate it into fixtures."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Submit bounded patches through the volunteer maintainer's normal review with permission. Count accepted, revised and rejected outcomes separately; turn missed behavior into a reproduced characterization fixture.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W6-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W6-T2",
+      "taskId": "tsk_4094a1ff51d72e4a7b4a14420a3f3c48",
+      "taskUrl": "https://tanduna.com/p/renewal-engine/tasks/tsk_4094a1ff51d72e4a7b4a14420a3f3c48",
+      "title": "Publish recipe maintenance and regression checks",
+      "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine",
+      "baseBranch": "main",
+      "planningBaseCommit": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "renewal-engine-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+          "version": "8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A changed dependency that invalidates a recipe is caught by a reproducible check.",
+        "Maintainers can see the last verified versions and remaining gaps."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Change a dependency so a supported recipe becomes invalid and run its compatibility checks. Verify the failure is surfaced with last verified versions, maintainer ownership and a reproducible regression case.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W6-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W5-T1",
+        "W5-T2",
+        "W6-T1"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    }
+  ]
+}

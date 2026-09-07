@@ -1,0 +1,10 @@
+{
+  "implementation": "CPython",
+  "version": "3.11.16",
+  "build": "3.11.16 (main, Sep  7 2026, 23:20:38) [GCC 8.5.0 20210514 (Red Hat 8.5.0-28)]",
+  "platform": "Linux",
+  "machine": "x86_64",
+  "configparser_sha256": "05594b61a7c9a803c17775b8fcba6da6f8388e1f20669e13430fa59da0bc660d",
+  "readfp": true,
+  "executable_sha256": "5e59eefc8c64148604b424dee6a43702f641799ad47eac6ccab82a764bf739da"
+}

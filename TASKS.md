@@ -1,6 +1,6 @@
 # Renewal Engine task outcomes
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `57341652ea128efc2580e21f516810f8aba0fa559ba3316fdf736157cd511456`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `2c4cc391a1742fe02cab6cf29b9e964732242ab46eea070ef4269983d57f8d66`.
 
 Statuses are evidence levels, not a claim that planning proves implementation. Change `project-plan.json`, retain evidence, then regenerate all views. Frozen historical contracts are preserved separately.
 
@@ -1521,7 +1521,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N07-02 — Clear the second fixture rights
 
@@ -1543,7 +1543,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N07-03 — Characterize a second API contract
 
@@ -1565,7 +1565,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N07-04 — Prove the second recipe transformation
 
@@ -1587,7 +1587,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N07-05 — Measure combined recipe interactions
 
@@ -1609,7 +1609,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N07-06 — Control recipe selection
 
@@ -1631,7 +1631,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N07-07 — Bound Python support claims
 
@@ -1653,7 +1653,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N07-08 — Review second-recipe external usefulness
 
@@ -2753,7 +2753,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N14-02 — Select an approved isolation backend
 
@@ -2775,7 +2775,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N14-03 — Deny host filesystem escape
 
@@ -2797,7 +2797,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N14-04 — Deny unauthorized network access
 
@@ -2819,7 +2819,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N14-05 — Constrain descendants and resource use
 
@@ -2841,7 +2841,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N14-06 — Exclude inherited credentials
 
@@ -2863,7 +2863,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N14-07 — Expose isolation profile limitations
 
@@ -2885,7 +2885,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N14-08 — Admit approved arbitrary-repository execution
 
@@ -2907,7 +2907,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}, {"path": "docs/evidence/0.5/external-verification.json", "level": "RUNTIME VERIFIED", "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."}]
 
 ## renewal-engine:N15-01 — Choose a language from demonstrated demand
 

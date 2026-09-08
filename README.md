@@ -17,7 +17,7 @@ impact, repeated-observation policies, hunk selection and exact approval,
 private summary export, and explicitly authorized execution in a verified narrow
 Linux isolation profile. See [the 0.5 guide](docs/0.5-guide.md) and [current objective](GOAL.md).
 **[Download 0.5.0](https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0).** All public asset hashes and fresh-prefix installation were verified.
-The [external attempt](https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729) stopped because its runner lacked an executable `/usr/bin/bwrap`; no product test ran there. Local 72-test and 27-packaged-check results passed. Human review and native-plan publication remain pending.
+[Fresh external verification passed on Ubuntu 22.04](https://github.com/thepianistdirector/renewal-engine/actions/runs/34251350280): 27 CLI checks, nine live isolation checks and real SIGINT/restart recovery. The retrieved evidence passed 16 independent reopening checks. Local 72-test results also passed. The tested Ubuntu 24.04 runner image rejected isolation loopback setup; that failure remains recorded. Human review and native-plan publication remain pending.
 
 ## Try the working inspection
 

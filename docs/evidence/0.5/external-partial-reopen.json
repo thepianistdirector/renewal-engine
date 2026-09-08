@@ -1,0 +1,101 @@
+{
+  "migration_and_comparison": {
+    "public_cli_sha256": "dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428",
+    "checks": [
+      {
+        "run": "inspection",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY"
+      },
+      {
+        "run": "updated",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY"
+      },
+      {
+        "run": "configparser-normal",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: PASS"
+      },
+      {
+        "run": "configparser-negative",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: REGRESSION"
+      },
+      {
+        "run": "hardlink-normal",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: PASS"
+      },
+      {
+        "run": "hardlink-negative",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: REGRESSION"
+      },
+      {
+        "run": "regression",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: REGRESSION"
+      },
+      {
+        "run": "unstable",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: UNSTABLE"
+      },
+      {
+        "run": "comparison",
+        "returncode": 0,
+        "result": "VERIFIED SAVED EVIDENCE: PASS"
+      }
+    ],
+    "scope": "Independent nonexecuting readback of actual external attempt 2; no isolation or recovery success inferred"
+  },
+  "recovery": {
+    "status": "PASS",
+    "checks": [
+      {
+        "run": "normal",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS",
+        "stderr": ""
+      },
+      {
+        "run": "negative",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: REGRESSION",
+        "stderr": ""
+      },
+      {
+        "run": "repeat",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY",
+        "stderr": ""
+      },
+      {
+        "run": "restart",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS",
+        "stderr": ""
+      },
+      {
+        "run": "interrupted-candidate",
+        "returncode": 2,
+        "expected": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: run is incomplete; retain it and restart"
+      },
+      {
+        "run": "interrupted-comparison",
+        "returncode": 2,
+        "expected": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: run is incomplete; retain it and restart"
+      }
+    ],
+    "scope": "Independent reopening of actual external recovery; interrupted runs correctly refused"
+  }
+}

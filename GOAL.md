@@ -47,6 +47,8 @@ planning record hold the owner-requested revised objective until a supported
 native edit becomes available; the native display may still contain 0.1.
 
 Current evidence checkpoint: the approved public v0.5.0 tag/assets and anonymous
-installation are verified. The first fresh external runner failed its executable
-bubblewrap prerequisite before product execution. External reproduction, human
-review and native-plan publication remain unfinished; the overall goal is not complete.
+installation are verified. Fresh external Ubuntu 22.04 reproduction passed all
+27 CLI checks, live isolation denials and real interruption/recovery; 16 retained
+results were independently reopened or correctly refused. The tested Ubuntu 24.04
+image's isolation rejection is retained separately. Human review and native-plan
+publication remain unfinished; the overall goal is not complete.

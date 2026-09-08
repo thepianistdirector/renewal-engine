@@ -46,3 +46,45 @@ archive. The source tag and assets retain the approved immutable identities.
 runner lacked an executable `/usr/bin/bwrap`, so interpreter builds and product
 checks were skipped. The returned evidence archive had zero members. No external
 execution, successful isolation or human validation is inferred from that run.
+
+## Completed external reproduction
+
+The owner authorized the needed dependencies. The successful final workflow is
+[run 34251350280](https://github.com/thepianistdirector/renewal-engine/actions/runs/34251350280)
+on GitHub-hosted Ubuntu 22.04 x86_64, using the exact publicly downloaded assets,
+reviewed Jammy bubblewrap and official-source dedicated Python runtimes.
+`external-verification.json` records 27 passing CLI checks, nine live isolation
+checks, actual isolated file output, real SIGINT/recovery and sixteen independent
+reopening/refusal checks. The original failure attempts remain separate evidence.
+
+`external-observations.json` retains the exact gzip/tar payload, its digest and
+external origin. It has 1,190 members and twelve hard links. Those links preserve
+the observed filesystem identity relationships. The data contains only original
+public test fixtures, synthetic canaries and disposable runner paths; no human
+validation or third-party selected source is included. To inspect it with Python
+3.12 or newer, in a new directory:
+
+```python
+import base64, hashlib, io, json, tarfile
+from pathlib import Path
+record = json.loads(Path("external-observations.json").read_text())
+raw = base64.b64decode(record["evidence_tar_gzip_base64"], validate=True)
+assert hashlib.sha256(raw).hexdigest() == record["evidence_tar_gzip_sha256"]
+out = Path("external-evidence")
+out.mkdir(mode=0o700)
+with tarfile.open(fileobj=io.BytesIO(raw), mode="r:gz") as archive:
+    archive.extractall(out, filter="data")
+```
+
+Use the public CLI's `verify` command on retained `verified/hardlink-normal`,
+`verified/hardlink-negative`, `verified/executed`, and recovery runs. The final
+`verified/comparison` is deliberately tampered, and both `recovery/interrupted-*`
+attempts must be refused. Their refusal is part of the passing verification.
+The checker scripts' own static local/not-human labels are retained verbatim;
+external provenance comes from the actual hosted job, public downloads and the
+independent readback, not relabeling their output.
+
+The tested Ubuntu 24.04 image refused isolation loopback setup. Its migration and
+trusted recovery results are partial external evidence; successful isolation is
+claimed only for the final declared Ubuntu 22.04 profile. Human review and native
+Tanduna publication remain unfinished.

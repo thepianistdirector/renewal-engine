@@ -1,0 +1,460 @@
+{
+  "status": "RUNTIME VERIFIED",
+  "scope": "Fresh external reproduction of the exact public 0.5 CLI, migrations, isolated execution and real interruption/recovery. No human or native-plan acceptance is claimed.",
+  "workflow": {
+    "conclusion": "success",
+    "jobs": [
+      {
+        "completedAt": "2026-09-08T16:33:24Z",
+        "conclusion": "success",
+        "databaseId": 102146287844,
+        "name": "public-download",
+        "startedAt": "2026-09-08T16:29:23Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-09-08T16:29:24Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-09-08T16:29:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:29:24Z",
+            "conclusion": "success",
+            "name": "Provision only the reviewed backend executable in this disposable runner",
+            "number": 2,
+            "startedAt": "2026-09-08T16:29:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:29:25Z",
+            "conclusion": "success",
+            "name": "Require existing isolation tool and download exact public release",
+            "number": 3,
+            "startedAt": "2026-09-08T16:29:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:33:04Z",
+            "conclusion": "success",
+            "name": "Build dedicated trusted interpreters from pinned official sources",
+            "number": 4,
+            "startedAt": "2026-09-08T16:29:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:33:04Z",
+            "conclusion": "success",
+            "name": "Install public CLI with the verified target interpreter",
+            "number": 5,
+            "startedAt": "2026-09-08T16:33:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:33:14Z",
+            "conclusion": "success",
+            "name": "Exercise published package, isolation, negative controls and recovery",
+            "number": 6,
+            "startedAt": "2026-09-08T16:33:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:33:14Z",
+            "conclusion": "skipped",
+            "name": "Diagnose the unchanged isolation backend",
+            "number": 7,
+            "startedAt": "2026-09-08T16:33:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:33:22Z",
+            "conclusion": "success",
+            "name": "Verify trusted-reference recovery independently",
+            "number": 8,
+            "startedAt": "2026-09-08T16:33:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:33:22Z",
+            "conclusion": "success",
+            "name": "Retain public fixture evidence and hard-link topology",
+            "number": 9,
+            "startedAt": "2026-09-08T16:33:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T16:33:22Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 10,
+            "startedAt": "2026-09-08T16:33:22Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34251350280/job/102146287844"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34251350280"
+  },
+  "runner": "GitHub-hosted Ubuntu 22.04 x86_64",
+  "reported_platform": "Linux-6.8.0-1064-azure-x86_64-with-glibc2.35",
+  "workflow_commit": "f83b31c6abc669a258307f0469a921003f58dcb6",
+  "source_archive_sha256": "8bdb4906ffd6bafac725991082b6c07cc98c7303443c5e2eafc5449f4027b233",
+  "cli_sha256": "dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428",
+  "approved_dependency": {
+    "version": "0.6.1-1ubuntu0.1",
+    "url": "https://security.ubuntu.com/ubuntu/pool/main/b/bubblewrap/bubblewrap_0.6.1-1ubuntu0.1_amd64.deb",
+    "package_sha256": "f75c835d6871d1b36370e12ee82940334b2a9f94efc7b959b5b236447e89743d",
+    "size": 46300,
+    "binary_sha256": "d78807229d616606e339c5988392b9e0ab4a6a6998fa51e4590837f426a12fca",
+    "dependencies": "libc6 (>= 2.34), libcap2 (>= 1:2.10), libselinux1 (>= 3.1~)",
+    "metadata_source": "https://security.ubuntu.com/ubuntu/dists/jammy-security/main/binary-amd64/Packages.xz",
+    "license": "LGPL-2.0-or-later; exact package copyright inspected",
+    "executed_or_installed_locally": false
+  },
+  "checks": [
+    {
+      "id": "version",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "conformance",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "inspection",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "inspection-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hunks",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "approval",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "approval-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "stale-refused",
+      "exitcode": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "id": "inspection-updated",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "configparser-normal",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "configparser-normal-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "configparser-negative",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "configparser-negative-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hardlink-normal",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hardlink-normal-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hardlink-negative",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "hardlink-negative-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "comparison",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "comparison-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "summary",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "comparison-regression",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "comparison-unstable",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "execution-authorization-refused",
+      "exitcode": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "id": "isolation-probe",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "execution",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "execution-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "strict-tamper-refused",
+      "exitcode": 2,
+      "expected": 2,
+      "passed": true
+    }
+  ],
+  "check_count": 27,
+  "isolation_probe": {
+    "verified": true,
+    "checks": {
+      "environment": true,
+      "exec": true,
+      "fork": true,
+      "host_read": true,
+      "host_write": true,
+      "network": true,
+      "no_proc": true,
+      "root_create": true,
+      "work_create": true
+    },
+    "runtime_hashes": {
+      "executable_sha256": "2f146491f31168e93fac41e78388b94de8e62daf179abb722bb083fecf444dba",
+      "bwrap_sha256": "d78807229d616606e339c5988392b9e0ab4a6a6998fa51e4590837f426a12fca",
+      "runtime_tree_sha256": "cb8b9cd90081aeff9fb54cf7282c35530d5ac11e03311d8f54a9658e4159c255"
+    }
+  },
+  "executed_program": {
+    "status": "EXECUTED",
+    "boundary_activated": true,
+    "returncode": 0,
+    "failure": null,
+    "stdout": "isolated output\n",
+    "work_output_hex": "65786163742066696c6520656666656374",
+    "work_output_sha256": "c406d0662cccbe2c6608f8b2fd0b08df0e580a12e97a2c4c3d179760f764650b",
+    "source_snapshot_sha256": "b89cff1e10d9bec27c0fd28b11f87eafa3aeecf07277637e71152550554f5a63"
+  },
+  "recovery_status": "RUNTIME VERIFIED",
+  "root_reopen": {
+    "status": "PASS",
+    "cli_sha256": "dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428",
+    "checks": [
+      {
+        "run": "verified/inspection",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY",
+        "stderr": ""
+      },
+      {
+        "run": "verified/updated",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY",
+        "stderr": ""
+      },
+      {
+        "run": "verified/configparser-normal",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS",
+        "stderr": ""
+      },
+      {
+        "run": "verified/configparser-negative",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: REGRESSION",
+        "stderr": ""
+      },
+      {
+        "run": "verified/hardlink-normal",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS",
+        "stderr": ""
+      },
+      {
+        "run": "verified/hardlink-negative",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: REGRESSION",
+        "stderr": ""
+      },
+      {
+        "run": "verified/regression",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: REGRESSION",
+        "stderr": ""
+      },
+      {
+        "run": "verified/unstable",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: UNSTABLE",
+        "stderr": ""
+      },
+      {
+        "run": "verified/executed",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: EXECUTED",
+        "stderr": ""
+      },
+      {
+        "run": "verified/comparison",
+        "returncode": 2,
+        "expected": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: saved repeated comparison differs from inputs"
+      },
+      {
+        "run": "recovery/normal",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS",
+        "stderr": ""
+      },
+      {
+        "run": "recovery/negative",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: REGRESSION",
+        "stderr": ""
+      },
+      {
+        "run": "recovery/repeat",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY",
+        "stderr": ""
+      },
+      {
+        "run": "recovery/restart",
+        "returncode": 0,
+        "expected": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS",
+        "stderr": ""
+      },
+      {
+        "run": "recovery/interrupted-candidate",
+        "returncode": 2,
+        "expected": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: run is incomplete; retain it and restart"
+      },
+      {
+        "run": "recovery/interrupted-comparison",
+        "returncode": 2,
+        "expected": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: run is incomplete; retain it and restart"
+      }
+    ],
+    "external_check_count": 27,
+    "external_probe_checks": {
+      "environment": true,
+      "exec": true,
+      "fork": true,
+      "host_read": true,
+      "host_write": true,
+      "network": true,
+      "no_proc": true,
+      "root_create": true,
+      "work_create": true
+    },
+    "scope": "Independent nonexecuting readback of actual public-artifact external run; deliberate tamper and interrupted states correctly refused"
+  },
+  "retained_archive": {
+    "path": "docs/evidence/0.5/external-observations.json",
+    "members": 1190,
+    "hardlink_count": 12,
+    "tar_sha256": "5b81b18e0d6985122ba581df2d18dbf99a40a30b3fe0f25f532717d6ae0eaba4",
+    "gzip_sha256": "f5fa5f5bc3886efddcdf9e07b3d26a9aad06e023cc46c479be53cc184a3c41c7",
+    "raw_log_sha256": "e9751a3e576da7130e753c70be8b88584ff2b5a8ac0edbb26917474dcc293e1e"
+  },
+  "limitations": [
+    "Ubuntu 24.04 runner image 20260831.293.1 refused loopback setup before isolation activation; no claim of that profile working there.",
+    "The check scripts retain static local/not-human scope labels; fresh external provenance is established by the actual GitHub workflow, public downloads and this readback, not by changing their retained output.",
+    "Raw archive contains original test fixtures, synthetic canaries and disposable GitHub workspace paths; no credentials or third-party selected source is included.",
+    "Human review and native Tanduna publication remain unfinished."
+  ],
+  "human_verified": false,
+  "native_plan_published": false
+}

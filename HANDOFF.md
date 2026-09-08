@@ -1,13 +1,13 @@
 # Renewal Engine execution handoff
 
-**Public 0.5.0 and anonymous artifact/install readback are verified. External 0.5 execution, human review and native plan publication remain unfinished.**
+**Public 0.5.0 and fresh external Ubuntu 22.04 migration/isolation/recovery are verified. Human review and native plan publication remain unfinished.**
 Human maintainer review and native Tanduna publication remain unfinished.
 
 Public release:
 https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0
 
-External 0.5 attempt (FAILED PREREQUISITE):
-https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729
+Successful external 0.5 verification:
+https://github.com/thepianistdirector/renewal-engine/actions/runs/34251350280
 
 
 ## 0.5 publication checkpoint
@@ -21,14 +21,24 @@ The candidate is in dist/0.5.0; 0.1 dist assets and tag are not replaced.
 
 The owner approved and published v0.5.0 from ca5035460433c1edfe2c433f2dcd05db40a24a7e.
 Public assets match the approved hashes; see docs/evidence/0.5/public-release.json.
-The prepared external job 34247933729 ran and FAILED its first prerequisite: no
-executable /usr/bin/bwrap. No product tests ran there. A compatible external
-environment, second-recipe human review and native publication remain unfinished. The prepared external workflow is
-`docs/publication/0.5-external-workflow.yml`; it requires approved exact asset
-hashes and uses the existing Linux profile without weakening runner security.
-Do not rerun the unchanged failed workflow or bypass isolation. No new runner
-provisioning or host-security modification was authorized by the publication packet.
-Do not call a public asset a completed external/human/native goal.
+The owner approved all needed dependencies. The final external workflow commit
+`f83b31c6abc669a258307f0469a921003f58dcb6` on
+`codex/renewal-engine-0.5-public-verification` completed successfully in run
+34251350280: public downloads, official dedicated Python 3.11.16/3.12.14 builds,
+27 CLI checks, nine live isolation checks, and real SIGINT/restart verification.
+Its 1,190 retained members and twelve hard links were imported; the public CLI
+independently reopened sixteen results or correctly refused deliberate tamper
+and incomplete attempts. See docs/evidence/0.5/external-verification.json and
+external-observations.json. The job is complete; do not rerun it unnecessarily.
+
+Prior attempts remain recorded. Ubuntu 24.04 image 20260831.293.1 denied isolation
+loopback RTM_NEWADDR before project execution. No sysctl, AppArmor, setuid or
+shared-host change was made. The verified profile uses ordinary Ubuntu 22.04
+and the reviewed pinned Jammy bubblewrap executable; decision 006 records the
+dependency graph and resolution. The published tag and all assets remain unchanged.
+
+Second-recipe human review and native plan publication remain unfinished.
+Do not call a public artifact or automated run a completed human/native goal.
 
 RE-MAC-005 supersedes the old PENDING/disabled checkpoint: all 218 current task
 reviews are FAILED; deployed failure cause, attempt and recovery action are not
@@ -141,9 +151,9 @@ python3 tools/plan.py check
 
 Run implementation tests again when code changes justify it. Do not repeat
 successful runtime jobs to substitute for missing human/native evidence.
-The 0.5 scoped product is implemented locally. Remaining release work is concrete
-publication authorization, public artifact readback, fresh external reproduction,
-human second-recipe evidence and supported native-plan recovery/publication.
+The 0.5 scoped product, public release and fresh external reproduction are verified.
+Remaining work is actual human second-recipe evidence and supported native-plan
+recovery/publication; preserve existing native IDs and the held draft.
 
 ## Mac request/results bridge
 

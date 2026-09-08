@@ -1,0 +1,288 @@
+{
+  "status": "PARTIAL EXTERNAL EVIDENCE; FULL PROFILE NOT YET VERIFIED",
+  "attempts": [
+    {
+      "attempt": 2,
+      "run_id": 34249603564,
+      "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34249603564",
+      "workflow_commit": "249b33bc31dd747a46e194c62ca5757ff9426987",
+      "conclusion": "failure",
+      "reason": "Backend provisioning, official runtimes and migration checks passed; isolation preflight returned a generic rejection; recovery was not reached.",
+      "job": {
+        "conclusion": "failure",
+        "jobs": [
+          {
+            "completedAt": "2026-09-08T16:16:00Z",
+            "conclusion": "failure",
+            "databaseId": 102140340964,
+            "name": "public-download",
+            "startedAt": "2026-09-08T16:12:15Z",
+            "status": "completed",
+            "steps": [
+              {
+                "completedAt": "2026-09-08T16:12:16Z",
+                "conclusion": "success",
+                "name": "Set up job",
+                "number": 1,
+                "startedAt": "2026-09-08T16:12:16Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:12:17Z",
+                "conclusion": "success",
+                "name": "Provision only the reviewed backend executable in this disposable runner",
+                "number": 2,
+                "startedAt": "2026-09-08T16:12:16Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:12:17Z",
+                "conclusion": "success",
+                "name": "Require existing isolation tool and download exact public release",
+                "number": 3,
+                "startedAt": "2026-09-08T16:12:17Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:15:51Z",
+                "conclusion": "success",
+                "name": "Build dedicated trusted interpreters from pinned official sources",
+                "number": 4,
+                "startedAt": "2026-09-08T16:12:17Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:15:59Z",
+                "conclusion": "failure",
+                "name": "Exercise published package, isolation, negative controls and recovery",
+                "number": 5,
+                "startedAt": "2026-09-08T16:15:51Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:15:59Z",
+                "conclusion": "success",
+                "name": "Retain public fixture evidence and hard-link topology",
+                "number": 6,
+                "startedAt": "2026-09-08T16:15:59Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:15:59Z",
+                "conclusion": "success",
+                "name": "Complete job",
+                "number": 7,
+                "startedAt": "2026-09-08T16:15:59Z",
+                "status": "completed"
+              }
+            ],
+            "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34249603564/job/102140340964"
+          }
+        ],
+        "status": "completed",
+        "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34249603564"
+      },
+      "raw_log_sha256": "b9eaeace2a6b16b20299dc1eb7dec4fd04b51c7b5a8e88712961856f3b8b7b8f"
+    },
+    {
+      "attempt": 3,
+      "run_id": 34250264978,
+      "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34250264978",
+      "workflow_commit": "e8a28d5b1ccaf73285ab57bc9637af3443664dd1",
+      "conclusion": "failure",
+      "reason": "Diagnostic retained loopback RTM_NEWADDR EPERM before isolation activation. Migration and independent real SIGINT recovery passed; arbitrary execution remained refused.",
+      "job": {
+        "conclusion": "failure",
+        "jobs": [
+          {
+            "completedAt": "2026-09-08T16:22:37Z",
+            "conclusion": "failure",
+            "databaseId": 102142599829,
+            "name": "public-download",
+            "startedAt": "2026-09-08T16:18:43Z",
+            "status": "completed",
+            "steps": [
+              {
+                "completedAt": "2026-09-08T16:18:44Z",
+                "conclusion": "success",
+                "name": "Set up job",
+                "number": 1,
+                "startedAt": "2026-09-08T16:18:44Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:18:45Z",
+                "conclusion": "success",
+                "name": "Provision only the reviewed backend executable in this disposable runner",
+                "number": 2,
+                "startedAt": "2026-09-08T16:18:44Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:18:45Z",
+                "conclusion": "success",
+                "name": "Require existing isolation tool and download exact public release",
+                "number": 3,
+                "startedAt": "2026-09-08T16:18:45Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:22:20Z",
+                "conclusion": "success",
+                "name": "Build dedicated trusted interpreters from pinned official sources",
+                "number": 4,
+                "startedAt": "2026-09-08T16:18:45Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:22:27Z",
+                "conclusion": "failure",
+                "name": "Exercise published package, isolation, negative controls and recovery",
+                "number": 5,
+                "startedAt": "2026-09-08T16:22:20Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:22:28Z",
+                "conclusion": "success",
+                "name": "Diagnose the unchanged isolation backend",
+                "number": 6,
+                "startedAt": "2026-09-08T16:22:27Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:22:35Z",
+                "conclusion": "success",
+                "name": "Verify trusted-reference recovery independently",
+                "number": 7,
+                "startedAt": "2026-09-08T16:22:28Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:22:36Z",
+                "conclusion": "success",
+                "name": "Retain public fixture evidence and hard-link topology",
+                "number": 8,
+                "startedAt": "2026-09-08T16:22:35Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:22:36Z",
+                "conclusion": "success",
+                "name": "Complete job",
+                "number": 9,
+                "startedAt": "2026-09-08T16:22:36Z",
+                "status": "completed"
+              }
+            ],
+            "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34250264978/job/102142599829"
+          }
+        ],
+        "status": "completed",
+        "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34250264978"
+      },
+      "raw_log_sha256": "0e5090fbd50397ebc92e2c486e6cc3baf6e55cd8d782990a9797675736ce24f0"
+    },
+    {
+      "attempt": 4,
+      "run_id": 34251068656,
+      "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34251068656",
+      "workflow_commit": "82710b42b84c5b837d03655f20a9d971415304db",
+      "conclusion": "failure",
+      "reason": "Jammy backend provisioned and public archive hash passed. The workflow initially used system Python 3.10 for installation; the >=3.11 guard refused it. Installation was moved after the pinned 3.12.14 build in the next revision.",
+      "job": {
+        "conclusion": "failure",
+        "jobs": [
+          {
+            "completedAt": "2026-09-08T16:26:43Z",
+            "conclusion": "failure",
+            "databaseId": 102145333566,
+            "name": "public-download",
+            "startedAt": "2026-09-08T16:26:38Z",
+            "status": "completed",
+            "steps": [
+              {
+                "completedAt": "2026-09-08T16:26:39Z",
+                "conclusion": "success",
+                "name": "Set up job",
+                "number": 1,
+                "startedAt": "2026-09-08T16:26:39Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "success",
+                "name": "Provision only the reviewed backend executable in this disposable runner",
+                "number": 2,
+                "startedAt": "2026-09-08T16:26:39Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "failure",
+                "name": "Require existing isolation tool and download exact public release",
+                "number": 3,
+                "startedAt": "2026-09-08T16:26:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "skipped",
+                "name": "Build dedicated trusted interpreters from pinned official sources",
+                "number": 4,
+                "startedAt": "2026-09-08T16:26:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "skipped",
+                "name": "Exercise published package, isolation, negative controls and recovery",
+                "number": 5,
+                "startedAt": "2026-09-08T16:26:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "failure",
+                "name": "Diagnose the unchanged isolation backend",
+                "number": 6,
+                "startedAt": "2026-09-08T16:26:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "failure",
+                "name": "Verify trusted-reference recovery independently",
+                "number": 7,
+                "startedAt": "2026-09-08T16:26:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "success",
+                "name": "Retain public fixture evidence and hard-link topology",
+                "number": 8,
+                "startedAt": "2026-09-08T16:26:40Z",
+                "status": "completed"
+              },
+              {
+                "completedAt": "2026-09-08T16:26:40Z",
+                "conclusion": "success",
+                "name": "Complete job",
+                "number": 9,
+                "startedAt": "2026-09-08T16:26:40Z",
+                "status": "completed"
+              }
+            ],
+            "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34251068656/job/102145333566"
+          }
+        ],
+        "status": "completed",
+        "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34251068656"
+      },
+      "raw_log_sha256": "be1dab87a62f0218beae8d95a5da3e7baf1a9036673d4648156427ad88e37603"
+    }
+  ],
+  "human_validated": false,
+  "native_plan_published": false
+}

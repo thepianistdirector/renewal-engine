@@ -1,0 +1,45 @@
+{
+  "probe": {
+    "available": false,
+    "verified": false,
+    "checks": {},
+    "runtime": {
+      "executable_sha256": "d2a234d4bee61bfae35e976c57fc2752b09781b125fb92669b80cead0a373594",
+      "bwrap_sha256": "52231e1caf55bcbc667b269f49c63599a6f7db4767ae6a039580d0ff853db712",
+      "runtime_tree_sha256": "bfbcde6cf4a6819035882c18055155948590f3366e02110397ba8d0d2a963f05"
+    },
+    "failure": "isolation denial probe failed"
+  },
+  "captures": [
+    {
+      "returncode": 1,
+      "failure": "isolation startup failed",
+      "boundary_activated": false,
+      "stdout_hex": "",
+      "stdout": "",
+      "stderr_hex": "62777261703a206c6f6f706261636b3a204661696c65642052544d5f4e4557414444523a204f7065726174696f6e206e6f74207065726d69747465640a",
+      "stderr": "bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted\n",
+      "work_output_hex": "",
+      "work_output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "work_output_size": 0,
+      "isolation": "bubblewrap-seccomp-python-v1",
+      "runtime": {
+        "executable_sha256": "d2a234d4bee61bfae35e976c57fc2752b09781b125fb92669b80cead0a373594",
+        "bwrap_sha256": "52231e1caf55bcbc667b269f49c63599a6f7db4767ae6a039580d0ff853db712",
+        "runtime_tree_sha256": "bfbcde6cf4a6819035882c18055155948590f3366e02110397ba8d0d2a963f05"
+      },
+      "snapshot_manifest": [
+        {
+          "path": "probe.py",
+          "type": "file",
+          "size": 691,
+          "sha256": "3ba544373175f6204121d1d06b6120201ba2db029c0a6e5c728f9ba93e0682ff"
+        }
+      ],
+      "snapshot_sha256": "1f61e74f4f3234102078a13d6512a5dbe9620183a430f7c8b7fff40d67653dbe"
+    }
+  ],
+  "omitted": [
+    "absolute runtime executable and prefix paths"
+  ]
+}

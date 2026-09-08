@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "project-plan.json",
-  "canonicalSha256": "57341652ea128efc2580e21f516810f8aba0fa559ba3316fdf736157cd511456",
+  "canonicalSha256": "2c4cc391a1742fe02cab6cf29b9e964732242ab46eea070ef4269983d57f8d66",
   "meaning": "Generated new outcome contracts and mappings; frozen original contracts remain in lineage.",
   "sourceMappings": [
     {
@@ -3862,6 +3862,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_caaf11408d287087e9eb4970cedd3281"
@@ -3904,6 +3909,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_5ab772944c8b54baa7424c5901fbc9b2"
@@ -3945,6 +3955,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_0e44dc180696285c12bf7b93e14e5d52"
@@ -3986,6 +4001,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_9d01fd79de95f0bc6b096d168efc12fe"
@@ -4027,6 +4047,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_e01294c6c532258b279319b8683862c7"
@@ -4068,6 +4093,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_c6a731bbd72e5dfbfdd0b1edae16e6f0"
@@ -4109,6 +4139,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_e3542426b35c1c112d1046dc2d445938"
@@ -6315,6 +6350,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_a07bc2ea5131d906e8af29034ec976e7"
@@ -6356,6 +6396,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_1114bae9215d00057f82c8ff8dfa5f8d"
@@ -6397,6 +6442,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_2a09911342ac95ac420e0cc3ae5dff0b"
@@ -6438,6 +6488,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_796f4a79f05f389b833978d82dccf251"
@@ -6479,6 +6534,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_e00aa58e7694d3a9835bd79d5b1153ab"
@@ -6520,6 +6580,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_d72461417d2394de5ef59afb3d2723f9"
@@ -6561,6 +6626,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_4df4d70efbfd84562d6c29cfd5991b91"
@@ -6632,6 +6702,11 @@
           "path": "docs/evidence/0.5/README.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        },
+        {
+          "path": "docs/evidence/0.5/external-verification.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual public-artifact external Ubuntu 22.04 migration/negative-control/isolation/recovery run. This supports the declared bounded profile; it does not replace task-specific human or broader acceptance criteria."
         }
       ],
       "platformId": "tsk_038c7dd10b23a68bd7e1889c685ba063"

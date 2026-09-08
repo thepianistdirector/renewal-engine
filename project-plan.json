@@ -3,7 +3,7 @@
   "name": "Renewal Engine",
   "slug": "renewal-engine",
   "canonicalSource": "project-plan.json",
-  "stage": "Local 0.1.0 release candidate runtime verified; public release and native plan publication pending",
+  "stage": "Public 0.1.0 and fresh external runtime reproduction verified; human review and native Tanduna publication pending",
   "planningAsOf": "2026-09-08",
   "modelPolicy": {
     "model": "gpt-6-astra",
@@ -109,8 +109,9 @@
       "evidence": "docs/decisions/002-runtime-acquisition.md"
     },
     "D03": {
-      "status": "UNRESOLVED",
-      "proposal": "Authorize concrete GitHub versioned release only after local candidate evidence and exact artifact review."
+      "status": "APPROVED",
+      "proposal": "Owner explicitly approved publication September 8. Exact commit 737dc0867d5b4e6c8f3ba29f04fade8573ff683d tagged v0.1.0 and published with the approved CLI/source/checksum assets.",
+      "evidence": "docs/evidence/public-release.json"
     },
     "D04": {
       "status": "UNRESOLVED",
@@ -163,14 +164,28 @@
       "testsPassed": 27,
       "humanValidation": false,
       "publicRelease": false
+    },
+    {
+      "date": "2026-09-08",
+      "scope": "Owner-approved v0.1.0 public release and anonymous artifact download/installation.",
+      "evidence": "docs/evidence/public-release.json",
+      "humanValidation": false,
+      "publicRelease": true
+    },
+    {
+      "date": "2026-09-08",
+      "scope": "Fresh external GitHub-hosted Ubuntu 24.04 public-release reproduction and independent reopening of retained evidence.",
+      "evidence": "docs/evidence/external-runtime.json",
+      "humanValidation": false,
+      "publicRelease": true
     }
   ],
   "release": {
     "target": "0.1",
-    "status": "IN PROGRESS",
-    "publicVersion": null,
-    "publicUrl": null,
-    "accessInstructions": "Local 0.1.0 CLI/source release candidate installs and passes actual CPython 3.11.16 / 3.12.14 normal, negative-control, reopen and real SIGINT recovery checks on Linux x86_64. README contains tested commands and full examples. Public release, external reproduction and human validation remain pending.",
+    "status": "RELEASE VERIFIED",
+    "publicVersion": "0.1.0",
+    "publicUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
+    "accessInstructions": "Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub release, verify the digest, extract and follow README. Linux x86_64 CPython 3.11.16 and 3.12.14 are supplied separately. Public asset hashes and installed example verification passed anonymously. Fresh external reproduction passed on a GitHub-hosted Ubuntu 24.04 x86_64 runner using the anonymously downloaded artifact and both official-source pinned runtimes; human validation and native Tanduna publication remain unfinished.",
     "scope": "One approved ConfigParser readfp-to-read_file recipe, trusted original fixture execution, identical-case differential evidence, offline report and safe restart.",
     "exclusions": [
       "arbitrary repository execution",
@@ -179,7 +194,8 @@
       "production or data migration",
       "cloud service",
       "unapproved source upload"
-    ]
+    ],
+    "externalVerificationUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566"
   },
   "publication": {
     "status": "PLANNED",
@@ -2868,6 +2884,11 @@
           "path": "docs/evidence/runtime-verification.md",
           "level": "RUNTIME VERIFIED",
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        },
+        {
+          "path": "docs/evidence/external-runtime.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Fresh external GitHub-hosted Ubuntu 24.04 runtime reproduction from the anonymous public download; normal/negative, interruption/restart and independent reopening all passed."
         }
       ],
       "platformId": null
@@ -3247,8 +3268,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: After concrete authorization, anonymously download the exact released asset and verify its recorded digest and tag.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RELEASE VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/public-release.json",
+          "level": "RELEASE VERIFIED",
+          "scope": "Actual public v0.1.0 tag and all three assets read back; anonymous downloads match approved hashes; installed public package reopens both bundled examples. This does not establish external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -3286,8 +3313,18 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A consented participant obtains the public artifact, diagnoses the negative control and reopens evidence; agent runs remain labeled runtime evidence.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/publication/maintainer-walkthrough.md",
+          "scope": "Human protocol prepared; no consenting participant observations have been received. External agent runtime check is separate."
+        },
+        {
+          "path": "docs/evidence/external-runtime.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "External agent/CI reproduction passed; required consenting human maintainer observation remains NOT TESTED."
+        }
+      ],
       "platformId": null
     },
     {
@@ -3365,8 +3402,13 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: After approval, read back native waves, all task counts, mappings, dependency links and verified release instructions; a draft export does not pass.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "BLOCKED",
+      "evidence": [
+        {
+          "path": "docs/publication/release-candidate.md",
+          "scope": "No Tanduna MCP tools available in this task. Connection requested; exact proposal approval and public readback remain required."
+        }
+      ],
       "platformId": null
     },
     {
@@ -11025,8 +11067,8 @@
   },
   "nativeGoal": {
     "threadId": "01a07e1c-3ed5-7f90-9b4d-f5c4977ad123",
-    "status": "blocked",
-    "reason": "User resumed execution September 8 by approving the fixture. Native goal still reports blocked; the exposed tools have no resume operation, so no duplicate goal is created.",
+    "status": "active",
+    "reason": "Native goal read back active September 8; same objective and owner retained.",
     "objectiveUnchanged": true,
     "executionResumedByOwner": "2026-09-08"
   }

@@ -58,5 +58,7 @@ instance-dictionary attributes and excludes chaining, traceback frames and
 arbitrary effects. This independent agent review is not human validation.
 
 The 27-test suite passes with these fixes. Native browser zoom, assistive
-technology, external public-download reproduction, required human review,
-GitHub release and native Tanduna publication remain unfinished gates.
+technology and required human review remain unfinished. Subsequent evidence
+in public-release.json and external-runtime.json establishes actual GitHub
+release and fresh external public-download reproduction. Native Tanduna
+publication remains unfinished.

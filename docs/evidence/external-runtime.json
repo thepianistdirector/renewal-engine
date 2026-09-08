@@ -1,0 +1,244 @@
+{
+  "status": "RUNTIME VERIFIED",
+  "source": "Fresh GitHub-hosted ubuntu-24.04 runner; public release downloaded without credentials; no development checkout used.",
+  "runUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566",
+  "workflowCommit": "400f269d780fd7dd720eb0947939454dba0845d5",
+  "sourceArchiveSha256": "2bf2d535ab2c27b87305f960f793151f630d8e70186a52e34ec704cf1eb0c48e",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "humanValidation": false,
+  "reopenedResults": {
+    "normal": "VERIFIED SAVED EVIDENCE: PASS",
+    "negative": "VERIFIED SAVED EVIDENCE: REGRESSION",
+    "repeat": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY",
+    "restart": "VERIFIED SAVED EVIDENCE: PASS",
+    "interrupted-candidate": {
+      "returncode": 2,
+      "stderr": "Renewal Engine: run is incomplete; retain it and restart",
+      "state": {
+        "stage": "INCOMPLETE",
+        "complete": false,
+        "recovery": "Keep all evidence and restart into a new directory."
+      }
+    },
+    "interrupted-comparison": {
+      "returncode": 2,
+      "stderr": "Renewal Engine: run is incomplete; retain it and restart",
+      "state": {
+        "stage": "INCOMPLETE",
+        "complete": false,
+        "recovery": "Keep all evidence and restart into a new directory."
+      }
+    }
+  },
+  "runtimes": {
+    "original": {
+      "implementation": "CPython",
+      "version": "3.11.16",
+      "build": "3.11.16 (main, Sep  8 2026, 12:36:51) [GCC 13.3.0]",
+      "platform": "Linux",
+      "machine": "x86_64",
+      "configparser_sha256": "05594b61a7c9a803c17775b8fcba6da6f8388e1f20669e13430fa59da0bc660d",
+      "readfp": true,
+      "executable_sha256": "51d2c77dc864ba1b60d62bb753a141f490c6bda38011f38e342abbac52025573"
+    },
+    "candidate": {
+      "implementation": "CPython",
+      "version": "3.12.14",
+      "build": "3.12.14 (main, Sep  8 2026, 12:38:44) [GCC 13.3.0]",
+      "platform": "Linux",
+      "machine": "x86_64",
+      "configparser_sha256": "cf5318e0c45a2e206b4ec74d4d66493185ed26c3736a86b0ebdf8f3a3e365a1a",
+      "readfp": false,
+      "executable_sha256": "b82657dc18230b4163bb3aad5bd218f361f09385d676766fe1419340a99105d1"
+    }
+  },
+  "verification": {
+    "status": "RUNTIME VERIFIED",
+    "cli_sha256": "ee6b2b9e6ba3ffc3e34102dc70ac596b1e3f8479bacd8a6e99072a7c78c80047",
+    "scope": "Real pinned runtimes on the same Linux host, packaged CLI, deterministic stage fault injection and real SIGINT; not external or human validation.",
+    "checks": [
+      {
+        "command": [
+          "demo",
+          "--baseline",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.11.16/python",
+          "--target",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.12.14/python",
+          "--out",
+          "normal"
+        ],
+        "returncode": 0,
+        "stdout": "PASS: saved report.html, changes.patch, manifest.json and candidate/.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "verify",
+          "normal"
+        ],
+        "returncode": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "demo",
+          "--baseline",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.11.16/python",
+          "--target",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.12.14/python",
+          "--out",
+          "negative",
+          "--negative-control"
+        ],
+        "returncode": 1,
+        "stdout": "REGRESSION: saved report.html, changes.patch, manifest.json and candidate/.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "verify",
+          "negative"
+        ],
+        "returncode": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: REGRESSION\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "demo",
+          "--baseline",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.11.16/python",
+          "--target",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.12.14/python",
+          "--out",
+          "normal"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: [Errno 17] File exists: 'EXTERNAL_WORKSPACE/verified/normal'\n"
+      },
+      {
+        "command": [
+          "inspect",
+          "normal/candidate/program.py",
+          "--out",
+          "repeat"
+        ],
+        "returncode": 0,
+        "stdout": "INSPECTION ONLY: saved report.html, changes.patch, manifest.json and candidate/.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "verify",
+          "repeat"
+        ],
+        "returncode": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "verify",
+          "interrupted-candidate"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: run is incomplete; retain it and restart\n"
+      },
+      {
+        "check": "real SIGINT during candidate",
+        "result": "PASS",
+        "original_preserved": true,
+        "state": {
+          "stage": "INCOMPLETE",
+          "complete": false,
+          "recovery": "Keep all evidence and restart into a new directory."
+        },
+        "exit_code": 130
+      },
+      {
+        "command": [
+          "verify",
+          "interrupted-comparison"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: run is incomplete; retain it and restart\n"
+      },
+      {
+        "check": "real SIGINT during comparison",
+        "result": "PASS",
+        "original_preserved": true,
+        "state": {
+          "stage": "INCOMPLETE",
+          "complete": false,
+          "recovery": "Keep all evidence and restart into a new directory."
+        },
+        "exit_code": 130
+      },
+      {
+        "command": [
+          "demo",
+          "--baseline",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.11.16/python",
+          "--target",
+          "EXTERNAL_WORKSPACE/runtimes/Python-3.12.14/python",
+          "--out",
+          "restart"
+        ],
+        "returncode": 0,
+        "stdout": "PASS: saved report.html, changes.patch, manifest.json and candidate/.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "verify",
+          "restart"
+        ],
+        "returncode": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "verify",
+          "normal"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: saved case inputs changed\n"
+      },
+      {
+        "command": [
+          "verify",
+          "normal"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: saved policy changed\n"
+      },
+      {
+        "command": [
+          "verify",
+          "normal"
+        ],
+        "returncode": 2,
+        "stdout": "",
+        "stderr": "Renewal Engine: candidate source changed since the run\n"
+      },
+      {
+        "command": [
+          "verify",
+          "normal"
+        ],
+        "returncode": 0,
+        "stdout": "VERIFIED SAVED EVIDENCE: PASS\n",
+        "stderr": ""
+      }
+    ]
+  },
+  "retainedFileCount": 424
+}

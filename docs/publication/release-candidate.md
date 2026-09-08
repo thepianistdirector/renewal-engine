@@ -1,8 +1,9 @@
 # Concrete publication packet — 0.1.0
 
-Status: prepared for owner authorization. No push, tag, release or native
-Tanduna write has occurred. Local tests and same-host packaged runtime checks
-pass; external and human evidence remain pending.
+Status: owner approved GitHub publication September 8. The exact candidate
+was published as v0.1.0; see docs/evidence/public-release.json. The GitHub
+action below records the approved packet. Native Tanduna publication remains
+unperformed; external and human evidence are separately tracked.
 
 ## GitHub action requested
 

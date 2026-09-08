@@ -1,8 +1,8 @@
 # Renewal Engine roadmap
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `7f8a3a6879964ea924aa7e33f693a8507fa14bc026ba78047769526ffd045827`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `a54c8244c34f33ccf42129ff8437c65fffe010ea5b9f99d792ea64ab14390eb1`.
 
-Local 0.1.0 release candidate runtime verified; public release and native plan publication pending
+Public 0.1.0 and fresh external runtime reproduction verified; human review and native Tanduna publication pending
 
 218 outcome tasks in 26 waves. 0.1: 50; later 0.x: 72; long-term: 80; exploratory: 16.
 
@@ -16,11 +16,11 @@ RE-W01 → RE-W02 → RE-W03 → RE-W04 → RE-W05
 
 ## Release access and unresolved decisions
 
-Local 0.1.0 CLI/source release candidate installs and passes actual CPython 3.11.16 / 3.12.14 normal, negative-control, reopen and real SIGINT recovery checks on Linux x86_64. README contains tested commands and full examples. Public release, external reproduction and human validation remain pending.
+Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub release, verify the digest, extract and follow README. Linux x86_64 CPython 3.11.16 and 3.12.14 are supplied separately. Public asset hashes and installed example verification passed anonymously. Fresh external reproduction passed on a GitHub-hosted Ubuntu 24.04 x86_64 runner using the anonymously downloaded artifact and both official-source pinned runtimes; human validation and native Tanduna publication remain unfinished.
 
 - **D01 · APPROVED:** Owner approved the prepared original AGPL-3.0 ConfigParser fixture September 8, 2026, as narrow 0.1 scope. Original W1-T1 maintained-upstream acceptance remains unchanged and incomplete.
 - **D02 · APPROVED:** Owner approved actual CPython 3.11.16 / 3.12.14 comparison September 8. Both identities and actual packaged normal/negative and restart observations are retained.
-- **D03 · UNRESOLVED:** Authorize concrete GitHub versioned release only after local candidate evidence and exact artifact review.
+- **D03 · APPROVED:** Owner explicitly approved publication September 8. Exact commit 737dc0867d5b4e6c8f3ba29f04fade8573ff683d tagged v0.1.0 and published with the approved CLI/source/checksum assets.
 - **D04 · UNRESOLVED:** Authorize concrete native Tanduna revision/proposal publication after supported workflow discovery and export review.
 
 ## Outcome waves
@@ -134,9 +134,9 @@ Local 0.1.0 CLI/source release candidate installs and passes actual CPython 3.11
 - `renewal-engine:N05-05` — Build an installable local distribution (RUNTIME VERIFIED)
 - `renewal-engine:N05-06` — Verify first-run and limitation instructions (IMPLEMENTED)
 - `renewal-engine:N05-07` — Prepare a lawful release candidate (IMPLEMENTED)
-- `renewal-engine:N05-08` — Publish and read back versioned 0.1 (PLANNED)
-- `renewal-engine:N05-09` — Obtain external maintainer evidence (PLANNED)
-- `renewal-engine:N05-10` — Publish and verify the native Tanduna plan (PLANNED)
+- `renewal-engine:N05-08` — Publish and read back versioned 0.1 (RELEASE VERIFIED)
+- `renewal-engine:N05-09` — Obtain external maintainer evidence (IN PROGRESS)
+- `renewal-engine:N05-10` — Publish and verify the native Tanduna plan (BLOCKED)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N05-01 through renewal-engine:N05-10. Local implementation does not prove external use, accessibility or public release. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 

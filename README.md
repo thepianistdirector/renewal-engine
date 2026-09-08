@@ -3,10 +3,11 @@
 Inspect a focused Python API migration, keep the original source, and review a
 candidate patch with its evidence.
 
-**Local 0.1.0 release candidate; public release pending.** The approved reference
+**[0.1.0 is released](https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0).** The approved reference
 passes all 12 cases on real CPython 3.11.16 and 3.12.14. A deliberately wrong
 transformation produces two regressions. Packaged runtime and interruption
-checks pass on Linux x86_64; external and human validation remain pending.
+checks pass on Linux x86_64, including a [fresh external Ubuntu 24.04 run](https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566)
+using the publicly downloaded release. Human validation remains pending.
 
 ## Try the working inspection
 
@@ -56,7 +57,15 @@ flow calls, constructor options, star arguments and dynamic mutations remain
 unchanged with a review-needed finding. A second application produces no further
 edits. See [the precise boundary](docs/decisions/003-recipe-boundary.md).
 
-## Local package
+## Download or build
+
+Download the source archive and SHA256SUMS from the versioned release above.
+The published source archive SHA-256 is
+`2bf2d535ab2c27b87305f960f793151f630d8e70186a52e34ec704cf1eb0c48e`.
+The tagged release assets are immutable checkpoints; later checkout builds
+contain subsequent evidence and may have different source archive hashes.
+
+To build the current checkout locally:
 
 ```sh
 python3 tools/build.py
@@ -64,8 +73,7 @@ python3 dist/renewal-engine.pyz --version
 ```
 
 The build creates a deterministic self-contained CLI and source archive in
-`dist/`, plus SHA-256 checksums. These are local release candidates, not
-public release artifacts. The source archive includes `install.py`; after
+`dist/`, plus SHA-256 checksums. A local build is separate from the verified published assets. The source archive includes `install.py`; after
 extracting it into a new directory, run:
 
 ```sh
@@ -155,8 +163,9 @@ Tanduna identities and acceptance history remain in
 
 The [public Tanduna roadmap](https://tanduna.com/projects/renewal-engine/roadmap)
 currently contains the historical plan; the new export is not yet published or
-accepted. Public release, external reproduction and human maintainer validation
-are separate unfinished gates. See [HANDOFF.md](HANDOFF.md) for exact next work.
+accepted. External runtime reproduction has passed. Required human maintainer
+validation and native plan publication remain unfinished; see the
+[maintainer walkthrough](docs/publication/maintainer-walkthrough.md). See [HANDOFF.md](HANDOFF.md) for exact next work.
 
 Licensed under [GNU AGPL-3.0](LICENSE). [Contributions](CONTRIBUTING.md) require
 scoped evidence and normal maintainer review; generated patches are not adoption.

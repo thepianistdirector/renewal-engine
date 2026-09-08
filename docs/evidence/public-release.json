@@ -1,0 +1,27 @@
+{
+  "status": "RELEASE VERIFIED",
+  "version": "0.1.0",
+  "releaseUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
+  "commit": "737dc0867d5b4e6c8f3ba29f04fade8573ff683d",
+  "scope": "Unauthenticated downloads and installed saved-evidence verification on the same development VPS; external reproduction and human validation remain separate.",
+  "assets": [
+    {
+      "url": "https://github.com/thepianistdirector/renewal-engine/releases/download/v0.1.0/renewal-engine.pyz",
+      "sha256": "ee6b2b9e6ba3ffc3e34102dc70ac596b1e3f8479bacd8a6e99072a7c78c80047",
+      "bytes": 34141,
+      "authentication": false
+    },
+    {
+      "url": "https://github.com/thepianistdirector/renewal-engine/releases/download/v0.1.0/renewal-engine-0.1.0.tar.gz",
+      "sha256": "2bf2d535ab2c27b87305f960f793151f630d8e70186a52e34ec704cf1eb0c48e",
+      "bytes": 1153184,
+      "authentication": false
+    },
+    {
+      "url": "https://github.com/thepianistdirector/renewal-engine/releases/download/v0.1.0/SHA256SUMS",
+      "sha256": "a731488978edcc8e26224a461b4655f101abebe9b87bc08d443844bb3aacbb6e",
+      "bytes": 179,
+      "authentication": false
+    }
+  ]
+}

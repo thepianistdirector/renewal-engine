@@ -1,6 +1,6 @@
 # Preserved source-to-successor mapping
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `7f8a3a6879964ea924aa7e33f693a8507fa14bc026ba78047769526ffd045827`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `a54c8244c34f33ccf42129ff8437c65fffe010ea5b9f99d792ea64ab14390eb1`.
 
 The frozen repository files and downloaded native briefs are retained byte-for-byte. Revision 3 is a reviewed textual plan; it establishes no executed product. Fable fields remain historical bytes and are overridden for current execution by the owner’s Astra-only policy.
 

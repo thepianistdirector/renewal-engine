@@ -1,6 +1,6 @@
 # Renewal Engine task outcomes
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `7f8a3a6879964ea924aa7e33f693a8507fa14bc026ba78047769526ffd045827`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `a54c8244c34f33ccf42129ff8437c65fffe010ea5b9f99d792ea64ab14390eb1`.
 
 Statuses are evidence levels, not a claim that planning proves implementation. Change `project-plan.json`, retain evidence, then regenerate all views. Frozen historical contracts are preserved separately.
 
@@ -53,9 +53,9 @@ renewal-engine:N05-04 | Provide a safe restart workflow | 0.1 | RUNTIME VERIFIED
 renewal-engine:N05-05 | Build an installable local distribution | 0.1 | RUNTIME VERIFIED
 renewal-engine:N05-06 | Verify first-run and limitation instructions | 0.1 | IMPLEMENTED
 renewal-engine:N05-07 | Prepare a lawful release candidate | 0.1 | IMPLEMENTED
-renewal-engine:N05-08 | Publish and read back versioned 0.1 | 0.1 | PLANNED
-renewal-engine:N05-09 | Obtain external maintainer evidence | 0.1 | PLANNED
-renewal-engine:N05-10 | Publish and verify the native Tanduna plan | 0.1 | PLANNED
+renewal-engine:N05-08 | Publish and read back versioned 0.1 | 0.1 | RELEASE VERIFIED
+renewal-engine:N05-09 | Obtain external maintainer evidence | 0.1 | IN PROGRESS
+renewal-engine:N05-10 | Publish and verify the native Tanduna plan | 0.1 | BLOCKED
 renewal-engine:N06-01 | Version recipe contracts | later 0.x | PLANNED
 renewal-engine:N06-02 | Express runtime ranges | later 0.x | PLANNED
 renewal-engine:N06-03 | Declare syntax preconditions | later 0.x | PLANNED
@@ -1103,7 +1103,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}, {"path": "docs/evidence/external-runtime.json", "level": "RUNTIME VERIFIED", "scope": "Fresh external GitHub-hosted Ubuntu 24.04 runtime reproduction from the anonymous public download; normal/negative, interruption/restart and independent reopening all passed."}]
 
 ## renewal-engine:N05-01 — Generate one evidence-backed review report
 
@@ -1263,7 +1263,7 @@ Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMEN
 
 Users can obtain the authorized immutable release.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **RELEASE VERIFIED**.
 
 Prerequisites: renewal-engine:N05-07
 
@@ -1279,13 +1279,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/public-release.json", "level": "RELEASE VERIFIED", "scope": "Actual public v0.1.0 tag and all three assets read back; anonymous downloads match approved hashes; installed public package reopens both bundled examples. This does not establish external or human validation."}]
 
 ## renewal-engine:N05-09 — Obtain external maintainer evidence
 
 A real maintainer reviews the public workflow independently.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N05-08
 
@@ -1301,13 +1301,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/publication/maintainer-walkthrough.md", "scope": "Human protocol prepared; no consenting participant observations have been received. External agent runtime check is separate."}, {"path": "docs/evidence/external-runtime.json", "level": "RUNTIME VERIFIED", "scope": "External agent/CI reproduction passed; required consenting human maintainer observation remains NOT TESTED."}]
 
 ## renewal-engine:N05-10 — Publish and verify the native Tanduna plan
 
 The public roadmap accurately exposes scope and access.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **BLOCKED**.
 
 Prerequisites: renewal-engine:N05-01, renewal-engine:N05-02, renewal-engine:N05-03, renewal-engine:N05-04, renewal-engine:N05-05, renewal-engine:N05-06, renewal-engine:N05-07, renewal-engine:N05-08, renewal-engine:N05-09
 
@@ -1323,7 +1323,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/publication/release-candidate.md", "scope": "No Tanduna MCP tools available in this task. Connection requested; exact proposal approval and public readback remain required."}]
 
 ## renewal-engine:N06-01 — Version recipe contracts
 

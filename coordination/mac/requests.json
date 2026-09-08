@@ -62,7 +62,7 @@
     {
       "id": "RE-MAC-003",
       "revision": 1,
-      "status": "READY",
+      "status": "HOLD",
       "project": "renewal-engine",
       "title": "Prepare and review the native 218-task Tanduna plan",
       "kind": "tanduna_plan",
@@ -94,7 +94,8 @@
         "tasksUrl": "https://tanduna.com/p/renewal-engine/tasks",
         "releaseUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0"
       },
-      "resultPath": "coordination/mac/results/RE-MAC-003/r1.json"
+      "resultPath": "coordination/mac/results/RE-MAC-003/r1.json",
+      "holdReason": "Revision 1 was saved/submitted and is frozen pending review. Preserve its IDs and immutable d947cea input; do not re-execute it using the now-reconciled current export. RE-MAC-005 requests read-only schema/recovery facts before any revision."
     },
     {
       "id": "RE-MAC-004",
@@ -125,6 +126,47 @@
         "externalRunUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566"
       },
       "resultPath": "coordination/mac/results/RE-MAC-004/r1.json"
+    },
+    {
+      "id": "RE-MAC-005",
+      "revision": 1,
+      "status": "READY",
+      "project": "renewal-engine",
+      "title": "Inspect native planning-requirements schema and supported review recovery",
+      "kind": "tanduna_plan",
+      "dependsOn": [
+        "RE-MAC-002"
+      ],
+      "desiredOutcome": "Return exact native schemas, requirement policy and supported recovery options for the existing submission, so the remote owner can prepare only the missing justified content.",
+      "authorizedScope": [
+        "Read-only use of the existing official authenticated local session; if expired, preserve the blocker and request normal local re-login once. Do not transfer credentials.",
+        "Discover the actual schemas/descriptions of tasks.get_requirements, tasks.set_requirements and task_plans draft/submission tools. Return public-safe schema details and documented limits.",
+        "Read existing submission, review metadata and a representative new task requirement record; compare with one preserved historical task requirement record.",
+        "Determine whether structured planningRequirements are mandatory for publishing every long-horizon task or only for activation/execution. Cite actual returned policy or tool errors; do not infer a requirement from null alone.",
+        "Identify an existing supported maintainer review retry/manual-review action if exposed; report exact required role and capability. Do not enable/configure services, modify the Tanduna app, vote, create replacement tasks, resubmit or unfreeze the current draft.",
+        "Publish this result to the dedicated result branch and notify the associated remote owner through the same supported task-message path used for the completed initial handoff, if available."
+      ],
+      "acceptance": [
+        "Exact required/optional fields and constraints supplied for native planningRequirements; unknowns explicitly retained.",
+        "Current review status/reason/attempt IDs and source of the disabled condition recorded without repeated no-change polling.",
+        "Existing 218 task IDs, 26 wave IDs and submitted hash preserved; no mutation occurred.",
+        "If a platform maintainer must enable review, name the specific supported action or capability gap, not an invented endpoint or app/config edit."
+      ],
+      "inputs": {
+        "existingProposalId": "prp_dc23eeda9235cb75b05469c22c83342f",
+        "publicationId": "tpub_7edf546ba722af40bbcaad11daf2958e",
+        "reviewRequestId": "tpr_cf62e2dc60f551288671c335fdc90d73",
+        "draftRevision": 1,
+        "submittedContentHash": "cb2e36efa4678c13c74db9c35b2a2b690eca80dccba56f9f4653887e076fa4f4",
+        "optionKey": "approve_complete_plan",
+        "newTaskSample": "tsk_b69744d31e0c03bb0c620ab2ca657c0d",
+        "historicalTaskSample": "tsk_17cb9d58845743cb4d031739f78f3ab1",
+        "mappingSourceCommit": "b9304597937b4d7307f2ea195537e4b48418ebe2",
+        "mappingResultPath": "coordination/mac/results/RE-MAC-003/r1.json",
+        "remoteOwnerTaskId": "01a07e1c-3ed5-7f90-9b4d-f5c4977ad123",
+        "remoteOwnerHostId": "remote-ssh-discovered:mevspace-codex"
+      },
+      "resultPath": "coordination/mac/results/RE-MAC-005/r1.json"
     }
   ]
 }

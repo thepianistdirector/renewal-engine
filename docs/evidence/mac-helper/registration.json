@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "project": "renewal-engine",
+  "helperId": "renewal-engine-mac-helper",
+  "taskId": "01a0811a-9fe7-7b23-9107-8222da04124f",
+  "hostKind": "macOS",
+  "hostId": "local",
+  "model": "gpt-6-astra",
+  "modelVerificationBasis": "Current task turn_context runtime metadata; authenticated official Codex login child also reports gpt-6-astra/high.",
+  "schedule": {
+    "id": "lucas-mac-helper",
+    "name": "Lucas Mac helper",
+    "tool": "mcp__codex_app__automation_update",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "intervalMinutes": 15,
+    "nextRunAt": "2026-09-08T13:22:17.647000+00:00",
+    "targetTaskId": "01a0811a-9fe7-7b23-9107-8222da04124f",
+    "modelSelection": "inherits target task; current model verified gpt-6-astra",
+    "workspaceBinding": "Existing local task attachment retained; recurring prompt explicitly selects a separate private Mac helper workspace.",
+    "readback": "Native create/view and read-only native persisted schedule record.",
+    "timerFiring": "NOT TESTED: initial manual cycle completed; no native last-run timestamp while the target task remains active.",
+    "lastRunAt": null,
+    "readbackAt": "2026-09-08T13:22:01.596022+00:00"
+  },
+  "supportedKinds": [
+    "helper_setup",
+    "local_tanduna_connection",
+    "tanduna_plan",
+    "human_walkthrough"
+  ],
+  "requestBranch": "codex/renewal-engine-0.1",
+  "requestFile": "coordination/mac/requests.json",
+  "resultBranch": "codex/mac-helper-results",
+  "updatedAt": "2026-09-08T13:22:01.596027+00:00",
+  "limitations": [
+    "Mac must remain powered on with Codex desktop running.",
+    "Heartbeat model follows the target task; every cycle verifies it before acting.",
+    "No claim of completed Tanduna publication or human validation."
+  ]
+}

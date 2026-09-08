@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "project": "renewal-engine",
+  "requestRevision": 1,
+  "requestDocumentSha256": "26606280221f997a67034f77e9bd843b7d9eedab9836db1b7dba47c3ceaec8fb",
+  "sourceCommit": "ae7b546c75f66521224444951e396d2222097c72",
+  "startedAt": "2026-09-08T13:00:04Z",
+  "updatedAt": "2026-09-08T13:22:01.595113+00:00",
+  "helper": {
+    "hostKind": "macOS",
+    "model": "gpt-6-astra"
+  },
+  "humanObservation": null,
+  "requestId": "RE-MAC-004",
+  "status": "NEEDS_LUCAS",
+  "evidenceLevel": "RUNTIME VERIFIED",
+  "summary": "Prepared a partial Mac walkthrough from the public 0.1.0 release. Verified download digests, installed to an isolated local prefix, ran source inspection, verified saved inspection/normal/negative evidence in fresh CLI processes, and opened all three reports in Chrome. Human observations remain absent.",
+  "checks": [
+    {
+      "action": "Public source archive and CLI identity",
+      "outcome": "PASS: downloaded assets match the exact two digests in the request."
+    },
+    {
+      "action": "Mac environment",
+      "outcome": "Darwin arm64, CPython 3.14.6. This is Mac inspection and saved-evidence reopening, not a native macOS demo acceptance claim."
+    },
+    {
+      "action": "Isolated installation",
+      "outcome": "PASS: installed published CLI under a task-local prefix, no PATH/shell changes."
+    },
+    {
+      "action": "Source inspection",
+      "outcome": "PASS: INSPECTION ONLY; original reference source bytes remain identical to the archive."
+    },
+    {
+      "action": "Fresh CLI saved-evidence verification",
+      "outcome": "PASS: inspection verified as INSPECTION ONLY; released normal saved evidence verified as PASS; released negative saved evidence verified as REGRESSION. Verification executes no source."
+    },
+    {
+      "action": "Browser preparation",
+      "outcome": "PASS: Chrome visibly opened new Mac inspection, released normal and released negative reports. Agent observation only."
+    },
+    {
+      "action": "Linux demo and fault-injection recovery",
+      "outcome": "NOT TESTED in this helper session. No approved fresh Linux runtime environment established."
+    },
+    {
+      "action": "Human maintainer walkthrough",
+      "outcome": "NOT TESTED: participant has not provided observations or consented to a retained summary."
+    }
+  ],
+  "publicEvidence": [
+    "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
+    "https://github.com/thepianistdirector/renewal-engine/blob/d947cea36e55e4f728a6040cce8edf2ec07a0d32/docs/publication/maintainer-walkthrough.md"
+  ],
+  "nativeIds": {},
+  "userAction": "Provide the detailed participant observations, reviewer qualification, actual performed/skipped steps and consent to the concrete retained summary. Full Linux-only execution and recovery remain separate unperformed steps.",
+  "limitations": [
+    "Partial Mac preparation is not a completed human walkthrough.",
+    "No participant identity or human observation is published.",
+    "No demo shim, release rebuild, external CI rerun or new Linux environment was used."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "project": "renewal-engine",
+  "requestRevision": 1,
+  "requestDocumentSha256": "26606280221f997a67034f77e9bd843b7d9eedab9836db1b7dba47c3ceaec8fb",
+  "sourceCommit": "ae7b546c75f66521224444951e396d2222097c72",
+  "startedAt": "2026-09-08T13:00:04Z",
+  "updatedAt": "2026-09-08T13:13:31.644552+00:00",
+  "helper": {
+    "hostKind": "macOS",
+    "model": "gpt-6-astra"
+  },
+  "humanObservation": null,
+  "requestId": "RE-MAC-002",
+  "status": "SUCCEEDED",
+  "evidenceLevel": "RUNTIME VERIFIED",
+  "summary": "Lucas completed GitHub browser sign-in through the official same-Mac Tanduna helper. Its authenticated Codex session connected and returned the exact Renewal Engine project and repository through read-only MCP calls.",
+  "checks": [
+    {
+      "action": "Inspect available connection",
+      "outcome": "No Tanduna MCP server initially configured; official public guide and login helper inspected."
+    },
+    {
+      "action": "Official local browser login",
+      "outcome": "Lucas reported sign-in completed; official helper confirmed configuration and launched Codex with short-lived token retained only in child environment."
+    },
+    {
+      "action": "Verify model and exact project",
+      "outcome": "Authenticated session runtime gpt-6-astra/high; tanduna.projects.search and tanduna.projects.get succeeded for Renewal Engine."
+    },
+    {
+      "action": "Read tasks and proposals",
+      "outcome": "tanduna.tasks.list, tanduna.proposals.list, tanduna.task_plans.list_published and tanduna.task_plans.get_draft returned live project data."
+    }
+  ],
+  "publicEvidence": [
+    "https://tanduna.com/p/renewal-engine/tasks",
+    "https://tanduna.com/guide/connect-through-mcp"
+  ],
+  "nativeIds": {
+    "projectId": "prj_9ef51e9826817323b774d5d3b900520f",
+    "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12"
+  },
+  "userAction": null,
+  "limitations": [
+    "Authorization is held by the official authenticated local Codex child session; the parent task has no copied token.",
+    "The short-lived session will need a fresh local login when it expires; direct MCP OAuth remains unavailable."
+  ]
+}

@@ -3,22 +3,1152 @@
   "artifactKind": "publication-review-export",
   "notAnApiPayload": true,
   "generatedFrom": "project-plan.json",
-  "canonicalSha256": "a54c8244c34f33ccf42129ff8437c65fffe010ea5b9f99d792ea64ab14390eb1",
+  "canonicalSha256": "36c70785e48fe61afd43c6ad641df5a3898f5b55d90706d2bb3724380c00d1b0",
   "project": {
     "slug": "renewal-engine",
     "name": "Renewal Engine",
     "id": "prj_9ef51e9826817323b774d5d3b900520f"
   },
   "publication": {
-    "status": "PLANNED",
+    "status": "IN PROGRESS",
     "projectId": "prj_9ef51e9826817323b774d5d3b900520f",
     "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12",
     "existingProposalId": "prp_7b37b259ab06edc6c724198400d4fc62",
     "existingContentHash": "d09143e713849a2c76cd094a97971d8d325efe091f87a180ee5be89a8d0c26e8",
     "roadmapUrl": "https://tanduna.com/projects/renewal-engine/roadmap",
     "tasksUrl": "https://tanduna.com/p/renewal-engine/tasks",
-    "newPlatformMappings": {},
-    "gate": "A local export is not an accepted or published native plan. Refresh all public pages before an authorized platform write and reconcile returned IDs before retries."
+    "newPlatformMappings": {
+      "renewal-engine:N01-01": {
+        "taskId": "tsk_b69744d31e0c03bb0c620ab2ca657c0d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-02": {
+        "taskId": "tsk_a9cee9fef60fc139ea4cca48e6e37231",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-03": {
+        "taskId": "tsk_44a28ab134bfbab65d5819f65868332a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-04": {
+        "taskId": "tsk_e78043dc206b412a005010a0c72bcc1a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-05": {
+        "taskId": "tsk_2da44413ee8d1c3259ba2bbe1e23fe92",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-06": {
+        "taskId": "tsk_b46f3d66ee1ca8978783199220a33aa2",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-07": {
+        "taskId": "tsk_44625c8d68444cafe3d47b80301c48a7",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-08": {
+        "taskId": "tsk_a9060049dc3c65287a2948510511babb",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-09": {
+        "taskId": "tsk_d58f16e373c939a0c53d7c57683e8dad",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N01-10": {
+        "taskId": "tsk_4722bbcfdbd3ac70d4de9a5e17c60add",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-01": {
+        "taskId": "tsk_86c29114d7266079f5ef0a9184b6a75a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-02": {
+        "taskId": "tsk_d3908b262fd5abe2cd770f55b7b1eb87",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-03": {
+        "taskId": "tsk_7de70431dab424be46975dad00812629",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-04": {
+        "taskId": "tsk_c354faf4894e915cbbf6d6f01b5774ee",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-05": {
+        "taskId": "tsk_0ce20ac0a7de6aaa5acac7ba3a704583",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-06": {
+        "taskId": "tsk_cd7e030950f133f29dc4fdc560e21c32",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-07": {
+        "taskId": "tsk_ffed8b7ed56ced498d55dfca3efffb92",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-08": {
+        "taskId": "tsk_e983e0644728f32a6032a9674e391296",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-09": {
+        "taskId": "tsk_941c89a4590cf6c0ef7d1e78175e6bc6",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N02-10": {
+        "taskId": "tsk_476ba1454ffa00153b62c350b75e081f",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-01": {
+        "taskId": "tsk_4ed53ed7fbd588a0868cfd20abe57849",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-02": {
+        "taskId": "tsk_ebb590c8bf9be163e473e27718224457",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-03": {
+        "taskId": "tsk_6cb35139b3274b78a92a5f6827b74b57",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-04": {
+        "taskId": "tsk_b9db2f5ac272654b64a72e558f453a1c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-05": {
+        "taskId": "tsk_820bc5d85df8c53cd8329d01697aaf76",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-06": {
+        "taskId": "tsk_00f328d873a8fd29cdfa3a3b4d27299c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-07": {
+        "taskId": "tsk_6f8420849c346af5fddf1fc34d72472d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-08": {
+        "taskId": "tsk_005ffc7704f8a1732f097e36f3d970aa",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-09": {
+        "taskId": "tsk_3775ad7ec20ed56e66352830141357e2",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N03-10": {
+        "taskId": "tsk_ed35d6c6382094ce22b10cf3a2e328eb",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-01": {
+        "taskId": "tsk_f1dcdc6f1c2805de493e800d33960b71",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-02": {
+        "taskId": "tsk_2cf36263d162b5567a3357283a9e64e1",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-03": {
+        "taskId": "tsk_6b51467c3afb956bb9be6695479cdbf0",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-04": {
+        "taskId": "tsk_67107f2bcc1830dab7e93e8735e192e5",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-05": {
+        "taskId": "tsk_4744f42a335cc03b8aaf0098a9b9734f",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-06": {
+        "taskId": "tsk_310534859275242f6f03b40d490a7eb5",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-07": {
+        "taskId": "tsk_f1dc8011a58e5a068eb410f2525c0796",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-08": {
+        "taskId": "tsk_a2f65a8f0343d6c5e6879b89476ab4c2",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-09": {
+        "taskId": "tsk_6a4e87d434ab7edf4b941e0a8cb0c98c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N04-10": {
+        "taskId": "tsk_b032b4c366c1c3a30b3f49ec2cf75bfd",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-01": {
+        "taskId": "tsk_1f9e10383650f2df9022da9914d439ac",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-02": {
+        "taskId": "tsk_a3f17e9809145aca951cd1c89e9d6db2",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-03": {
+        "taskId": "tsk_eb118015a2d9ad8db2dcc1c967254781",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-04": {
+        "taskId": "tsk_dbde84667a2c9f39d39d25190be15269",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-05": {
+        "taskId": "tsk_f6b32c57b996b6a11c923dbfdd51f61b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-06": {
+        "taskId": "tsk_b3f9add0d766bc00a32ecd172f4c6142",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-07": {
+        "taskId": "tsk_2603bfbed70e5ca5594268d2f7467f7b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-08": {
+        "taskId": "tsk_b867a07e449fa0f74f4df4dceb310b75",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-09": {
+        "taskId": "tsk_c08f8031c9467f84a6a538a5217b2eec",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N05-10": {
+        "taskId": "tsk_a99ac07f4cc7ac5d88e4f6657c3f5a36",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-01": {
+        "taskId": "tsk_42161a03aad6049ae370a51c4d9ad0bd",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-02": {
+        "taskId": "tsk_ecd3422461c4d3052fae11ce21981098",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-03": {
+        "taskId": "tsk_c25cef3dc1deda3d8d0efb9b79bca749",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-04": {
+        "taskId": "tsk_c9f648d36b8c526f9878964dc07a44a6",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-05": {
+        "taskId": "tsk_b7824959292fb647d763085e712aca27",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-06": {
+        "taskId": "tsk_7c8520d6ecef537a277a31aaa06b2a8b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-07": {
+        "taskId": "tsk_91e6eb84fdc9790ac8d11b0b7d480137",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N06-08": {
+        "taskId": "tsk_3419dd4853a6e9f67cc983bd5451b0b5",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-01": {
+        "taskId": "tsk_caaf11408d287087e9eb4970cedd3281",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-02": {
+        "taskId": "tsk_5ab772944c8b54baa7424c5901fbc9b2",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-03": {
+        "taskId": "tsk_0e44dc180696285c12bf7b93e14e5d52",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-04": {
+        "taskId": "tsk_9d01fd79de95f0bc6b096d168efc12fe",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-05": {
+        "taskId": "tsk_e01294c6c532258b279319b8683862c7",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-06": {
+        "taskId": "tsk_c6a731bbd72e5dfbfdd0b1edae16e6f0",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-07": {
+        "taskId": "tsk_e3542426b35c1c112d1046dc2d445938",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N07-08": {
+        "taskId": "tsk_76000de167ea969b9c3fdb25483af30b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-01": {
+        "taskId": "tsk_44e41231518e3346c1842e35027cc538",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-02": {
+        "taskId": "tsk_a42edff9e38a13290aa64772e5ea6d03",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-03": {
+        "taskId": "tsk_6dceffb99c17a41b317c5ae0a30464cf",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-04": {
+        "taskId": "tsk_3d9cd801d4539955461b4d5d5fdf0679",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-05": {
+        "taskId": "tsk_bf31da0e7a9750117199b072b67fead1",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-06": {
+        "taskId": "tsk_17d36ec17b169edc4ec3e6bd6b793fee",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-07": {
+        "taskId": "tsk_1ed7c0a45976be4adc24bd6617806c2d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N08-08": {
+        "taskId": "tsk_3ba6e4bbf879f49a032c514a464ed6b8",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-01": {
+        "taskId": "tsk_1bd40f40a24c44d6f0b64d56097623a0",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-02": {
+        "taskId": "tsk_7acff7ef9b6a45580c98bee8796a2c04",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-03": {
+        "taskId": "tsk_54f014c279bd9af821723a7a13ccd8bd",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-04": {
+        "taskId": "tsk_bcb891b2eaf2af576ccfc3dec5ed3f85",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-05": {
+        "taskId": "tsk_245f9edaaa3010675b3ce1d013038fea",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-06": {
+        "taskId": "tsk_00403ef959357ab61cfb837c200ea30f",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-07": {
+        "taskId": "tsk_f5b061e9585b7c3e76e60f41377a2007",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N09-08": {
+        "taskId": "tsk_16b1f780cbcd15e6737b21965a9f6099",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-01": {
+        "taskId": "tsk_441232080ab433e51928442a157a2fed",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-02": {
+        "taskId": "tsk_5a49672d87de806d450c0164d840478b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-03": {
+        "taskId": "tsk_e8f2875198b58824fd4a84b0f2fe16f1",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-04": {
+        "taskId": "tsk_42893c4895706b83c92b5a74140238ba",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-05": {
+        "taskId": "tsk_ae59d6c69110fb878676128d5a133d40",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-06": {
+        "taskId": "tsk_a1c64f570dd0af7cfa17e956927c84e6",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-07": {
+        "taskId": "tsk_77c46fd5926b49835641c7c7f53f0d2a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N10-08": {
+        "taskId": "tsk_2a38ba6b431cf108709882552ce6ddbc",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-01": {
+        "taskId": "tsk_cecea42f8d1cbaf9d491c37bf656642a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-02": {
+        "taskId": "tsk_3145df919a782627d40035b537e02082",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-03": {
+        "taskId": "tsk_360aa7c00e743ebbb243be19c4af90d2",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-04": {
+        "taskId": "tsk_04d6395f48f3647e11aa55c0a31d6f72",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-05": {
+        "taskId": "tsk_f1846d15d4f1b9babe103f8e31a59e9c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-06": {
+        "taskId": "tsk_84b6260da9503d9aede3538c5b0f0248",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-07": {
+        "taskId": "tsk_39ac1917fe96017c4c926540fca44531",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N11-08": {
+        "taskId": "tsk_040bfbbf7b7da1c7c62eb968caad6232",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-01": {
+        "taskId": "tsk_3051b0cb01eb377b4782a0a8c1f381f7",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-02": {
+        "taskId": "tsk_1cbb673eb71a7fefe45dcb5841393452",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-03": {
+        "taskId": "tsk_77f5a802714acaa026471b29481d1d56",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-04": {
+        "taskId": "tsk_cd6ba25471a47f04610000e79de91c2a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-05": {
+        "taskId": "tsk_08f0bba830c13b7875c2858e62ef9254",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-06": {
+        "taskId": "tsk_0137ff8f6df20705881eda983d55c7ca",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-07": {
+        "taskId": "tsk_d268582fe7cf8491ef525ac125cbcdaf",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N12-08": {
+        "taskId": "tsk_e677a4ab329225b9560670135f81d15c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-01": {
+        "taskId": "tsk_50ea2c21283e0aa023a73c2a213f0c8c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-02": {
+        "taskId": "tsk_02da1471edeb6ec7f304011a0d89d960",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-03": {
+        "taskId": "tsk_5670fe09a459a18a2d4c1fdf2e221db4",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-04": {
+        "taskId": "tsk_5da8c4e919ca04cd34814013ba23d514",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-05": {
+        "taskId": "tsk_af45dece4811898dbc387754ef47c927",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-06": {
+        "taskId": "tsk_94795c07e48ac18b8c71c0b797cd3e25",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-07": {
+        "taskId": "tsk_97f7929ced537b78287b073c999fd8f9",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N13-08": {
+        "taskId": "tsk_be96c9fba931ce06c5c599bcef025343",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-01": {
+        "taskId": "tsk_a07bc2ea5131d906e8af29034ec976e7",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-02": {
+        "taskId": "tsk_1114bae9215d00057f82c8ff8dfa5f8d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-03": {
+        "taskId": "tsk_2a09911342ac95ac420e0cc3ae5dff0b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-04": {
+        "taskId": "tsk_796f4a79f05f389b833978d82dccf251",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-05": {
+        "taskId": "tsk_e00aa58e7694d3a9835bd79d5b1153ab",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-06": {
+        "taskId": "tsk_d72461417d2394de5ef59afb3d2723f9",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-07": {
+        "taskId": "tsk_4df4d70efbfd84562d6c29cfd5991b91",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N14-08": {
+        "taskId": "tsk_038c7dd10b23a68bd7e1889c685ba063",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-01": {
+        "taskId": "tsk_e9f9ebcf3895a2302b03ea2a2e2b0333",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-02": {
+        "taskId": "tsk_d36472f317908b1ec2777d30a368fc51",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-03": {
+        "taskId": "tsk_4be28d7264113d0f102b8bc464d1ad76",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-04": {
+        "taskId": "tsk_cba3c683471a8cefae98c48d631f30c8",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-05": {
+        "taskId": "tsk_2ffef743cb9d8d4201fac59037e9214d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-06": {
+        "taskId": "tsk_4f2ecf46201d284ed4c458b876b31d9a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-07": {
+        "taskId": "tsk_6422ace0a4fbf1fcc769a2d2b29acff5",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N15-08": {
+        "taskId": "tsk_1cc7e4db0a2b37cdc5a475e5127aa688",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-01": {
+        "taskId": "tsk_ce8d034ed904c8b49527810b158565d9",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-02": {
+        "taskId": "tsk_df6753b8bcd950df969b99ff1adaf4ba",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-03": {
+        "taskId": "tsk_9f794c2e1065cf3bb60a21111958a481",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-04": {
+        "taskId": "tsk_83111f7c85d9cd721f007a7bbf3cf49a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-05": {
+        "taskId": "tsk_0846dd2a39e61b61181d3f466fbce0cb",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-06": {
+        "taskId": "tsk_4b66315a971fc6738fedf027405c853e",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-07": {
+        "taskId": "tsk_c54a3ca511ae6ae34ad011967adb4cd8",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N16-08": {
+        "taskId": "tsk_d37813eeaf7c5d5252af6882ff27e16c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-01": {
+        "taskId": "tsk_ea198229a01b97194b4dac647920f994",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-02": {
+        "taskId": "tsk_fcb7bb0f2bbaa05cb2d97c9eaa1e34c7",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-03": {
+        "taskId": "tsk_02e540433cec5aa5736e706929c88711",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-04": {
+        "taskId": "tsk_619238f639847218fe018682c88d1179",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-05": {
+        "taskId": "tsk_6b7e4c9e0581baf26d54e64e022f3e9c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-06": {
+        "taskId": "tsk_1b00e4b770f855c2d7c55ddcad13c930",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-07": {
+        "taskId": "tsk_0f02f660d1083ce2cd44a76f3c1f8f9a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N17-08": {
+        "taskId": "tsk_5bf37e0629f998738d6e87e55bc94388",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-01": {
+        "taskId": "tsk_f943246c489510d2d3af6c72ed83b251",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-02": {
+        "taskId": "tsk_078fcd73bd2ab1d0746b9a87ea59a348",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-03": {
+        "taskId": "tsk_969093c8ed63acd0a5720b15e69b8fd1",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-04": {
+        "taskId": "tsk_bc94e35a73af308e12e28c33d64e6763",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-05": {
+        "taskId": "tsk_4283a1ef4d1e5dbafa563353b6af055d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-06": {
+        "taskId": "tsk_81accce13998606d54e52d6a626fd012",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-07": {
+        "taskId": "tsk_2e9212252c1990cedc69a1c6bbf11452",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N18-08": {
+        "taskId": "tsk_476a8ce6865ff91c015b226751f73e32",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-01": {
+        "taskId": "tsk_24eb7d860efc83d8998dc5d63842182a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-02": {
+        "taskId": "tsk_6a6ba5caeb80c05494e0b71ca27c6ca4",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-03": {
+        "taskId": "tsk_190ce08fc2468998b722a7c71998e36c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-04": {
+        "taskId": "tsk_5cc541cc887ec6d0de371e4f8395407a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-05": {
+        "taskId": "tsk_eb669e8407bbcb484f930d7301aa1b49",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-06": {
+        "taskId": "tsk_d88053e7fd48a87c232fa095436d6d6e",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-07": {
+        "taskId": "tsk_e18fb40ba9d419faa4400e1d191b4caf",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N19-08": {
+        "taskId": "tsk_a5ce31f6bfa2cf526ca864166091f0f7",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-01": {
+        "taskId": "tsk_46dd0c8efc9b44a9df6f1f9b2cc9e5de",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-02": {
+        "taskId": "tsk_f59c06f1886c2fc79605406dec55749a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-03": {
+        "taskId": "tsk_7ab675d1aa04826fde02e0df52dda9ee",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-04": {
+        "taskId": "tsk_7106e63debd79eee973fc23037e457a4",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-05": {
+        "taskId": "tsk_855ceb63d5d04859aa49b7b57c53801f",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-06": {
+        "taskId": "tsk_56b1a6bc45ed6321d4112a14f340d229",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-07": {
+        "taskId": "tsk_0bfe96bb58bc281e1454c60604b8260d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N20-08": {
+        "taskId": "tsk_31ce443513a1f136ba35083564f1bee1",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-01": {
+        "taskId": "tsk_2efc0aaf144f3ef40b9805b6b0063497",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-02": {
+        "taskId": "tsk_66ea9cda51cec5e99eaae0228f4affa4",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-03": {
+        "taskId": "tsk_9c4a511208635b874b61bbc6a9920679",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-04": {
+        "taskId": "tsk_36a504d8c12619f312c6aae3be57da48",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-05": {
+        "taskId": "tsk_99eb952389fe0c1224f338b9e4a51aca",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-06": {
+        "taskId": "tsk_5681804f36f566b8633f1d78cbf35514",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-07": {
+        "taskId": "tsk_a4adb932c0c36df3b370a3bb421acacf",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N21-08": {
+        "taskId": "tsk_4add8c7e755543b31196e7758c0b344c",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-01": {
+        "taskId": "tsk_98cce23fe37db8207cc0f45864275638",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-02": {
+        "taskId": "tsk_b07058436d1ecf1cc731bed1656789f9",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-03": {
+        "taskId": "tsk_3405cf8242872369d83891f74179c9a9",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-04": {
+        "taskId": "tsk_a0364b1642165f4e4f3fc82b4fbbbb39",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-05": {
+        "taskId": "tsk_68d867ca221c3e2e25fd3a8ae7f3deb0",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-06": {
+        "taskId": "tsk_f2397fb27a17df0bf9bfe20f9030907b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-07": {
+        "taskId": "tsk_b6a980fe2c314398fc8ccb816077594e",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N22-08": {
+        "taskId": "tsk_811578f7810d8b5017575e7bd29998d2",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-01": {
+        "taskId": "tsk_0f548c5ddc0b92c3fdf2a71fa9db2d43",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-02": {
+        "taskId": "tsk_9bd3042cb0eda0dcce8683debb57862e",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-03": {
+        "taskId": "tsk_0764fbb6cc0de38e00c3f8459144bfe1",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-04": {
+        "taskId": "tsk_dade8dd98abe7134b0d88970411b79ac",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-05": {
+        "taskId": "tsk_7453cbc6889ed789fcd60bc75259e802",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-06": {
+        "taskId": "tsk_8780151c9f94e8d7c6c1fc1e68328969",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-07": {
+        "taskId": "tsk_3a64a824fac17a207f7f23e61e08534f",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N23-08": {
+        "taskId": "tsk_4491629dede254da8d4d449f0597d282",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-01": {
+        "taskId": "tsk_3039ea08815bb6bf6c24ae5cf291cd35",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-02": {
+        "taskId": "tsk_b178d9b5ba85bf3f8c1dce70125565ce",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-03": {
+        "taskId": "tsk_3297679f7fe68a7ee5d32223b214ddfc",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-04": {
+        "taskId": "tsk_de1df62c24093205a38d452a2b893c57",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-05": {
+        "taskId": "tsk_56f001d7dc1faa5ccdefba1b2ed3836f",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-06": {
+        "taskId": "tsk_ecc08ec7122e8e8062b18804b62dca89",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-07": {
+        "taskId": "tsk_0030afea4adb28dec8e2993be39705b5",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N24-08": {
+        "taskId": "tsk_0f47136512ba914029e297969b17591a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-01": {
+        "taskId": "tsk_684910888769e8ae19593a27c6b2eb18",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-02": {
+        "taskId": "tsk_f9992184fd96d28d753ab9fb3b3a468a",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-03": {
+        "taskId": "tsk_e6768b9e859fa80184c13a1481d76046",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-04": {
+        "taskId": "tsk_65ff3fb363e6e9355f68e1e957de5ceb",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-05": {
+        "taskId": "tsk_9e133b9f853de3702eaccdc891a0bb62",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-06": {
+        "taskId": "tsk_ee737b75a0326a2963822cf64ce9ccaa",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-07": {
+        "taskId": "tsk_4bd72557ff1afefcfd1f347885de37e5",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N25-08": {
+        "taskId": "tsk_1554904c63b3e09c92fd5de2723e6b02",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-01": {
+        "taskId": "tsk_c9b34f7d6d74ee7361adf98b2804d5f1",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-02": {
+        "taskId": "tsk_4f11aacfe54512a64a4adff8a7c5a582",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-03": {
+        "taskId": "tsk_7b70e1df51b08bf8d0422246e6e6f82b",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-04": {
+        "taskId": "tsk_d9e060450b94dd55ed6822d54fdc5643",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-05": {
+        "taskId": "tsk_0c7b56aed0c3c4648c7643ff0afa409d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-06": {
+        "taskId": "tsk_596af3e77b0d0f1673963d613de4aec5",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-07": {
+        "taskId": "tsk_d3c62d00aece6cdaa9cc910e02e4068d",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      },
+      "renewal-engine:N26-08": {
+        "taskId": "tsk_8e334f4af15a360459980f520778d8f7",
+        "revision": 1,
+        "state": "SUBMITTED_UNPUBLISHED"
+      }
+    },
+    "gate": "Authenticated Mac helper saved/submitted all native rows. Textual reviewer is disabled and no passing review or poll approval exists. All 218 structured planningRequirements are absent; inspect actual schema/policy before editing the frozen submission. Public pages still show only the historical twelve tasks.",
+    "draftState": "SUBMITTED",
+    "proposalId": "prp_dc23eeda9235cb75b05469c22c83342f",
+    "publicationId": "tpub_7edf546ba722af40bbcaad11daf2958e",
+    "reviewRequestId": "tpr_cf62e2dc60f551288671c335fdc90d73",
+    "draftRevision": 1,
+    "submittedContentHash": "cb2e36efa4678c13c74db9c35b2a2b690eca80dccba56f9f4653887e076fa4f4",
+    "reviewStatus": "PENDING",
+    "reviewReason": "disabled",
+    "reviewAttemptId": null,
+    "optionKey": "approve_complete_plan",
+    "optionId": "opt_a9f6fb26c21a74ff896397674aaf9c41",
+    "wavePlatformMappings": {
+      "RE-W01": "wave_a3df87dc79df5001ae112cae27a5589b",
+      "RE-W02": "wave_521169947afc6c5928b17b72535e7353",
+      "RE-W03": "wave_a99ea5e7ecad7e0f4569cdce2d853498",
+      "RE-W04": "wave_3361348fe3ab6166420a3f2314360344",
+      "RE-W05": "wave_33b92c6da9e74e62976c1572abecee41",
+      "RE-W06": "wave_c36e4ea0d1607d3d9b6ce4deb329c6f3",
+      "RE-W07": "wave_ed2c381c1d032f34ba5a6697fc6626db",
+      "RE-W08": "wave_6e4afd53697f756bab295a966aab7f89",
+      "RE-W09": "wave_9f268ce9c859d47580a9fbef88fffa35",
+      "RE-W10": "wave_bca1d54b46561296cf99449ce7f98c24",
+      "RE-W11": "wave_5097bee9d0a76b4398fede86c05fd9d6",
+      "RE-W12": "wave_9586a7747036a18131b46ed113c94e0b",
+      "RE-W13": "wave_f157bbdfc6ac4c8eaaf8e3ddc1c9686a",
+      "RE-W14": "wave_f9ea7b1b919407d0abe6a35112859ecb",
+      "RE-W15": "wave_a4ec6218ffce4d010f22f4c9be865315",
+      "RE-W16": "wave_6e8a47f67655637a05be26286964adbe",
+      "RE-W17": "wave_0abac3745598efab7a9655216296f325",
+      "RE-W18": "wave_e98e1252d5cc87c33fa81cc5afb059ff",
+      "RE-W19": "wave_b0b3bc3ef68ca39554b059649d8fbbdc",
+      "RE-W20": "wave_f417881af4fc05c033561b5711fc1d46",
+      "RE-W21": "wave_faed7fa79b76a4c539725dc42af6ea26",
+      "RE-W22": "wave_7494dcb86660d24a976d82fe949121fc",
+      "RE-W23": "wave_6a5ef860a9ef04fc6fd1c6727bb22b7c",
+      "RE-W24": "wave_63839991f11c9f1e0df5b7be03943762",
+      "RE-W25": "wave_118f8c69bf3f1d30217712ee88268ee5",
+      "RE-W26": "wave_97022ff61ff3abb52333e022ed24421e"
+    }
   },
   "release": {
     "target": "0.1",
@@ -125,7 +1255,8 @@
         "An unapproved cut or unavailable interpreter invalidates runtime claims. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "0.1",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_a3df87dc79df5001ae112cae27a5589b"
     },
     {
       "id": "RE-W02",
@@ -155,7 +1286,8 @@
         "Incomplete characterization can make a broken migration appear correct. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "0.1",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_521169947afc6c5928b17b72535e7353"
     },
     {
       "id": "RE-W03",
@@ -185,7 +1317,8 @@
         "Binding mistakes or imprecise spans can rewrite unrelated behavior. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "0.1",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_a99ea5e7ecad7e0f4569cdce2d853498"
     },
     {
       "id": "RE-W04",
@@ -215,7 +1348,8 @@
         "A self-fulfilling comparator or unsafe execution can invalidate all evidence. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "0.1",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_3361348fe3ab6166420a3f2314360344"
     },
     {
       "id": "RE-W05",
@@ -245,7 +1379,8 @@
         "Local implementation does not prove external use, accessibility or public release. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "0.1",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_33b92c6da9e74e62976c1572abecee41"
     },
     {
       "id": "RE-W06",
@@ -273,7 +1408,8 @@
         "Recipe contracts can drift from their actual supported domain. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_c36e4ea0d1607d3d9b6ce4deb329c6f3"
     },
     {
       "id": "RE-W07",
@@ -301,7 +1437,8 @@
         "Recipe expansion can imply unsafe general Python modernization. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_ed2c381c1d032f34ba5a6697fc6626db"
     },
     {
       "id": "RE-W08",
@@ -329,7 +1466,8 @@
         "Static impact maps can omit configuration and dynamically selected interfaces. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_6e4afd53697f756bab295a966aab7f89"
     },
     {
       "id": "RE-W09",
@@ -357,7 +1495,8 @@
         "Rich observations risk leaking private data or missing destructive effects. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_9f268ce9c859d47580a9fbef88fffa35"
     },
     {
       "id": "RE-W10",
@@ -385,7 +1524,8 @@
         "Overbroad normalization can erase genuine regressions. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_bca1d54b46561296cf99449ce7f98c24"
     },
     {
       "id": "RE-W11",
@@ -413,7 +1553,8 @@
         "A valid patch can become unsafe when its source base changes. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_5097bee9d0a76b4398fede86c05fd9d6"
     },
     {
       "id": "RE-W12",
@@ -441,7 +1582,8 @@
         "Local processing alone does not establish every data boundary. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_9586a7747036a18131b46ed113c94e0b"
     },
     {
       "id": "RE-W13",
@@ -471,7 +1613,8 @@
         "A kit that only its author can use is not an independent contribution interface. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_f157bbdfc6ac4c8eaaf8e3ddc1c9686a"
     },
     {
       "id": "RE-W14",
@@ -499,7 +1642,8 @@
         "A subprocess is not a sandbox; untrusted execution requires denial evidence. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "later 0.x",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_f9ea7b1b919407d0abe6a35112859ecb"
     },
     {
       "id": "RE-W15",
@@ -529,7 +1673,8 @@
         "Language breadth is exploratory and cannot inherit Python safety claims. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "exploratory",
-      "classification": "exploratory"
+      "classification": "exploratory",
+      "platformId": "wave_a4ec6218ffce4d010f22f4c9be865315"
     },
     {
       "id": "RE-W16",
@@ -561,7 +1706,8 @@
         "Framework upgrades can change lifecycle and configuration beyond API spelling. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_6e8a47f67655637a05be26286964adbe"
     },
     {
       "id": "RE-W17",
@@ -593,7 +1739,8 @@
         "Individually valid migrations may fail during mixed-version deployment. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_0abac3745598efab7a9655216296f325"
     },
     {
       "id": "RE-W18",
@@ -621,7 +1768,8 @@
         "Source rollback cannot restore irreversible data effects. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_e98e1252d5cc87c33fa81cc5afb059ff"
     },
     {
       "id": "RE-W19",
@@ -649,7 +1797,8 @@
         "A rollback instruction can itself cause damage when its assumptions are stale. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_b0b3bc3ef68ca39554b059649d8fbbdc"
     },
     {
       "id": "RE-W20",
@@ -679,7 +1828,8 @@
         "Historical evidence can silently drift or become unreadable. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_f417881af4fc05c033561b5711fc1d46"
     },
     {
       "id": "RE-W21",
@@ -709,7 +1859,8 @@
         "CI convenience can introduce unauthorized execution or different comparison semantics. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_faed7fa79b76a4c539725dc42af6ea26"
     },
     {
       "id": "RE-W22",
@@ -739,7 +1890,8 @@
         "Model suggestions can leak private code or be mistaken for verified migrations. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "exploratory",
-      "classification": "exploratory"
+      "classification": "exploratory",
+      "platformId": "wave_7494dcb86660d24a976d82fe949121fc"
     },
     {
       "id": "RE-W23",
@@ -769,7 +1921,8 @@
         "Unowned recipes and stale compatibility claims erode catalog trust. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_6a5ef860a9ef04fc6fd1c6727bb22b7c"
     },
     {
       "id": "RE-W24",
@@ -799,7 +1952,8 @@
         "Generated patches and simulated reviews do not establish adoption. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_63839991f11c9f1e0df5b7be03943762"
     },
     {
       "id": "RE-W25",
@@ -829,7 +1983,8 @@
         "Automated checks alone miss human comprehension and accessibility barriers. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_118f8c69bf3f1d30217712ee88268ee5"
     },
     {
       "id": "RE-W26",
@@ -861,7 +2016,8 @@
         "Release operations can overpromise compatibility and outgrow maintainer capacity. Retain failing and unrun evidence; require the named human or runtime observation where specified."
       ],
       "releaseHorizon": "long-term",
-      "classification": "proposal"
+      "classification": "proposal",
+      "platformId": "wave_97022ff61ff3abb52333e022ed24421e"
     }
   ],
   "tasks": [
@@ -899,7 +2055,7 @@
           "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_b69744d31e0c03bb0c620ab2ca657c0d"
     },
     {
       "id": "renewal-engine:N01-02",
@@ -942,7 +2098,7 @@
           "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_a9cee9fef60fc139ea4cca48e6e37231"
     },
     {
       "id": "renewal-engine:N01-03",
@@ -985,7 +2141,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_44a28ab134bfbab65d5819f65868332a"
     },
     {
       "id": "renewal-engine:N01-04",
@@ -1028,7 +2184,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_e78043dc206b412a005010a0c72bcc1a"
     },
     {
       "id": "renewal-engine:N01-05",
@@ -1076,7 +2232,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_2da44413ee8d1c3259ba2bbe1e23fe92"
     },
     {
       "id": "renewal-engine:N01-06",
@@ -1119,7 +2275,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_b46f3d66ee1ca8978783199220a33aa2"
     },
     {
       "id": "renewal-engine:N01-07",
@@ -1162,7 +2318,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_44625c8d68444cafe3d47b80301c48a7"
     },
     {
       "id": "renewal-engine:N01-08",
@@ -1210,7 +2366,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_a9060049dc3c65287a2948510511babb"
     },
     {
       "id": "renewal-engine:N01-09",
@@ -1263,7 +2419,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_d58f16e373c939a0c53d7c57683e8dad"
     },
     {
       "id": "renewal-engine:N01-10",
@@ -1346,7 +2502,7 @@
           "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_4722bbcfdbd3ac70d4de9a5e17c60add"
     },
     {
       "id": "renewal-engine:N02-01",
@@ -1386,7 +2542,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_86c29114d7266079f5ef0a9184b6a75a"
     },
     {
       "id": "renewal-engine:N02-02",
@@ -1426,7 +2582,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_d3908b262fd5abe2cd770f55b7b1eb87"
     },
     {
       "id": "renewal-engine:N02-03",
@@ -1466,7 +2622,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_7de70431dab424be46975dad00812629"
     },
     {
       "id": "renewal-engine:N02-04",
@@ -1506,7 +2662,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_c354faf4894e915cbbf6d6f01b5774ee"
     },
     {
       "id": "renewal-engine:N02-05",
@@ -1546,7 +2702,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_0ce20ac0a7de6aaa5acac7ba3a704583"
     },
     {
       "id": "renewal-engine:N02-06",
@@ -1586,7 +2742,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_cd7e030950f133f29dc4fdc560e21c32"
     },
     {
       "id": "renewal-engine:N02-07",
@@ -1626,7 +2782,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_ffed8b7ed56ced498d55dfca3efffb92"
     },
     {
       "id": "renewal-engine:N02-08",
@@ -1696,7 +2852,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_e983e0644728f32a6032a9674e391296"
     },
     {
       "id": "renewal-engine:N02-09",
@@ -1762,7 +2918,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_941c89a4590cf6c0ef7d1e78175e6bc6"
     },
     {
       "id": "renewal-engine:N02-10",
@@ -1842,7 +2998,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_476ba1454ffa00153b62c350b75e081f"
     },
     {
       "id": "renewal-engine:N03-01",
@@ -1883,7 +3039,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_4ed53ed7fbd588a0868cfd20abe57849"
     },
     {
       "id": "renewal-engine:N03-02",
@@ -1924,7 +3080,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_ebb590c8bf9be163e473e27718224457"
     },
     {
       "id": "renewal-engine:N03-03",
@@ -1970,7 +3126,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_6cb35139b3274b78a92a5f6827b74b57"
     },
     {
       "id": "renewal-engine:N03-04",
@@ -2011,7 +3167,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_b9db2f5ac272654b64a72e558f453a1c"
     },
     {
       "id": "renewal-engine:N03-05",
@@ -2062,7 +3218,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_820bc5d85df8c53cd8329d01697aaf76"
     },
     {
       "id": "renewal-engine:N03-06",
@@ -2103,7 +3259,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_00f328d873a8fd29cdfa3a3b4d27299c"
     },
     {
       "id": "renewal-engine:N03-07",
@@ -2144,7 +3300,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_6f8420849c346af5fddf1fc34d72472d"
     },
     {
       "id": "renewal-engine:N03-08",
@@ -2190,7 +3346,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_005ffc7704f8a1732f097e36f3d970aa"
     },
     {
       "id": "renewal-engine:N03-09",
@@ -2231,7 +3387,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_3775ad7ec20ed56e66352830141357e2"
     },
     {
       "id": "renewal-engine:N03-10",
@@ -2312,7 +3468,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_ed35d6c6382094ce22b10cf3a2e328eb"
     },
     {
       "id": "renewal-engine:N04-01",
@@ -2352,7 +3508,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_f1dcdc6f1c2805de493e800d33960b71"
     },
     {
       "id": "renewal-engine:N04-02",
@@ -2392,7 +3548,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_2cf36263d162b5567a3357283a9e64e1"
     },
     {
       "id": "renewal-engine:N04-03",
@@ -2432,7 +3588,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_6b51467c3afb956bb9be6695479cdbf0"
     },
     {
       "id": "renewal-engine:N04-04",
@@ -2477,7 +3633,7 @@
           "scope": "Actual infrastructure probes prove timeout, output limit and descendant termination after leader exit. This September 7 infrastructure checkpoint precedes the September 8 reference execution."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_67107f2bcc1830dab7e93e8735e192e5"
     },
     {
       "id": "renewal-engine:N04-05",
@@ -2527,7 +3683,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_4744f42a335cc03b8aaf0098a9b9734f"
     },
     {
       "id": "renewal-engine:N04-06",
@@ -2567,7 +3723,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_310534859275242f6f03b40d490a7eb5"
     },
     {
       "id": "renewal-engine:N04-07",
@@ -2607,7 +3763,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_f1dc8011a58e5a068eb410f2525c0796"
     },
     {
       "id": "renewal-engine:N04-08",
@@ -2653,7 +3809,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_a2f65a8f0343d6c5e6879b89476ab4c2"
     },
     {
       "id": "renewal-engine:N04-09",
@@ -2698,7 +3854,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_6a4e87d434ab7edf4b941e0a8cb0c98c"
     },
     {
       "id": "renewal-engine:N04-10",
@@ -2783,7 +3939,7 @@
           "scope": "Fresh external GitHub-hosted Ubuntu 24.04 runtime reproduction from the anonymous public download; normal/negative, interruption/restart and independent reopening all passed."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_b032b4c366c1c3a30b3f49ec2cf75bfd"
     },
     {
       "id": "renewal-engine:N05-01",
@@ -2828,7 +3984,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_1f9e10383650f2df9022da9914d439ac"
     },
     {
       "id": "renewal-engine:N05-02",
@@ -2878,7 +4034,7 @@
           "scope": "Agent-driven Chromium keyboard, narrow/desktop, expanded content, CSS 200% zoom and no-resource observations. Native zoom, assistive technology and human validation remain unrun."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_a3f17e9809145aca951cd1c89e9d6db2"
     },
     {
       "id": "renewal-engine:N05-03",
@@ -2923,7 +4079,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_eb118015a2d9ad8db2dcc1c967254781"
     },
     {
       "id": "renewal-engine:N05-04",
@@ -2968,7 +4124,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_dbde84667a2c9f39d39d25190be15269"
     },
     {
       "id": "renewal-engine:N05-05",
@@ -3023,7 +4179,7 @@
           "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_f6b32c57b996b6a11c923dbfdd51f61b"
     },
     {
       "id": "renewal-engine:N05-06",
@@ -3068,7 +4224,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_b3f9add0d766bc00a32ecd172f4c6142"
     },
     {
       "id": "renewal-engine:N05-07",
@@ -3123,7 +4279,7 @@
           "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_2603bfbed70e5ca5594268d2f7467f7b"
     },
     {
       "id": "renewal-engine:N05-08",
@@ -3168,7 +4324,7 @@
           "scope": "Actual public v0.1.0 tag and all three assets read back; anonymous downloads match approved hashes; installed public package reopens both bundled examples. This does not establish external or human validation."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_b867a07e449fa0f74f4df4dceb310b75"
     },
     {
       "id": "renewal-engine:N05-09",
@@ -3215,9 +4371,14 @@
           "path": "docs/evidence/external-runtime.json",
           "level": "RUNTIME VERIFIED",
           "scope": "External agent/CI reproduction passed; required consenting human maintainer observation remains NOT TESTED."
+        },
+        {
+          "path": "docs/evidence/mac-helper/results/RE-MAC-004/r1.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Mac arm64 CPython 3.14.6 public-package inspection, saved-evidence reopening and browser preparation passed. Owner signaled report-review approval; detailed human negative-control diagnosis/performed-step evidence is still incomplete. No Mac Linux-demo claim."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_c08f8031c9467f84a6a538a5217b2eec"
     },
     {
       "id": "renewal-engine:N05-10",
@@ -3294,14 +4455,15 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: After approval, read back native waves, all task counts, mappings, dependency links and verified release instructions; a draft export does not pass.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "BLOCKED",
+      "status": "IN PROGRESS",
       "evidence": [
         {
-          "path": "docs/publication/release-candidate.md",
-          "scope": "No Tanduna MCP tools available in this task. Connection requested; exact proposal approval and public readback remain required."
+          "path": "docs/evidence/mac-helper/results/RE-MAC-003/r1.json",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Authenticated native draft/submission: 218 task IDs, 26 waves and 424 dependency edges; root reconciled all mappings. Reviewer disabled, structured requirements incomplete and no native publication/poll approval."
         }
       ],
-      "platformId": null
+      "platformId": "tsk_a99ac07f4cc7ac5d88e4f6657c3f5a36"
     },
     {
       "id": "renewal-engine:N06-01",
@@ -3335,7 +4497,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_42161a03aad6049ae370a51c4d9ad0bd"
     },
     {
       "id": "renewal-engine:N06-02",
@@ -3369,7 +4531,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_ecd3422461c4d3052fae11ce21981098"
     },
     {
       "id": "renewal-engine:N06-03",
@@ -3403,7 +4565,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_c25cef3dc1deda3d8d0efb9b79bca749"
     },
     {
       "id": "renewal-engine:N06-04",
@@ -3437,7 +4599,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_c9f648d36b8c526f9878964dc07a44a6"
     },
     {
       "id": "renewal-engine:N06-05",
@@ -3471,7 +4633,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_b7824959292fb647d763085e712aca27"
     },
     {
       "id": "renewal-engine:N06-06",
@@ -3505,7 +4667,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_7c8520d6ecef537a277a31aaa06b2a8b"
     },
     {
       "id": "renewal-engine:N06-07",
@@ -3539,7 +4701,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_91e6eb84fdc9790ac8d11b0b7d480137"
     },
     {
       "id": "renewal-engine:N06-08",
@@ -3603,7 +4765,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3419dd4853a6e9f67cc983bd5451b0b5"
     },
     {
       "id": "renewal-engine:N07-01",
@@ -3638,7 +4800,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_caaf11408d287087e9eb4970cedd3281"
     },
     {
       "id": "renewal-engine:N07-02",
@@ -3674,7 +4836,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_5ab772944c8b54baa7424c5901fbc9b2"
     },
     {
       "id": "renewal-engine:N07-03",
@@ -3709,7 +4871,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0e44dc180696285c12bf7b93e14e5d52"
     },
     {
       "id": "renewal-engine:N07-04",
@@ -3744,7 +4906,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_9d01fd79de95f0bc6b096d168efc12fe"
     },
     {
       "id": "renewal-engine:N07-05",
@@ -3779,7 +4941,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e01294c6c532258b279319b8683862c7"
     },
     {
       "id": "renewal-engine:N07-06",
@@ -3814,7 +4976,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_c6a731bbd72e5dfbfdd0b1edae16e6f0"
     },
     {
       "id": "renewal-engine:N07-07",
@@ -3849,7 +5011,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e3542426b35c1c112d1046dc2d445938"
     },
     {
       "id": "renewal-engine:N07-08",
@@ -3914,7 +5076,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_76000de167ea969b9c3fdb25483af30b"
     },
     {
       "id": "renewal-engine:N08-01",
@@ -3948,7 +5110,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_44e41231518e3346c1842e35027cc538"
     },
     {
       "id": "renewal-engine:N08-02",
@@ -3982,7 +5144,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_a42edff9e38a13290aa64772e5ea6d03"
     },
     {
       "id": "renewal-engine:N08-03",
@@ -4016,7 +5178,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_6dceffb99c17a41b317c5ae0a30464cf"
     },
     {
       "id": "renewal-engine:N08-04",
@@ -4050,7 +5212,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3d9cd801d4539955461b4d5d5fdf0679"
     },
     {
       "id": "renewal-engine:N08-05",
@@ -4084,7 +5246,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_bf31da0e7a9750117199b072b67fead1"
     },
     {
       "id": "renewal-engine:N08-06",
@@ -4118,7 +5280,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_17d36ec17b169edc4ec3e6bd6b793fee"
     },
     {
       "id": "renewal-engine:N08-07",
@@ -4152,7 +5314,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_1ed7c0a45976be4adc24bd6617806c2d"
     },
     {
       "id": "renewal-engine:N08-08",
@@ -4216,7 +5378,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3ba6e4bbf879f49a032c514a464ed6b8"
     },
     {
       "id": "renewal-engine:N09-01",
@@ -4251,7 +5413,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_1bd40f40a24c44d6f0b64d56097623a0"
     },
     {
       "id": "renewal-engine:N09-02",
@@ -4286,7 +5448,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_7acff7ef9b6a45580c98bee8796a2c04"
     },
     {
       "id": "renewal-engine:N09-03",
@@ -4321,7 +5483,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_54f014c279bd9af821723a7a13ccd8bd"
     },
     {
       "id": "renewal-engine:N09-04",
@@ -4356,7 +5518,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_bcb891b2eaf2af576ccfc3dec5ed3f85"
     },
     {
       "id": "renewal-engine:N09-05",
@@ -4391,7 +5553,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_245f9edaaa3010675b3ce1d013038fea"
     },
     {
       "id": "renewal-engine:N09-06",
@@ -4426,7 +5588,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_00403ef959357ab61cfb837c200ea30f"
     },
     {
       "id": "renewal-engine:N09-07",
@@ -4461,7 +5623,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_f5b061e9585b7c3e76e60f41377a2007"
     },
     {
       "id": "renewal-engine:N09-08",
@@ -4526,7 +5688,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_16b1f780cbcd15e6737b21965a9f6099"
     },
     {
       "id": "renewal-engine:N10-01",
@@ -4561,7 +5723,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_441232080ab433e51928442a157a2fed"
     },
     {
       "id": "renewal-engine:N10-02",
@@ -4596,7 +5758,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_5a49672d87de806d450c0164d840478b"
     },
     {
       "id": "renewal-engine:N10-03",
@@ -4631,7 +5793,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e8f2875198b58824fd4a84b0f2fe16f1"
     },
     {
       "id": "renewal-engine:N10-04",
@@ -4666,7 +5828,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_42893c4895706b83c92b5a74140238ba"
     },
     {
       "id": "renewal-engine:N10-05",
@@ -4701,7 +5863,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_ae59d6c69110fb878676128d5a133d40"
     },
     {
       "id": "renewal-engine:N10-06",
@@ -4736,7 +5898,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_a1c64f570dd0af7cfa17e956927c84e6"
     },
     {
       "id": "renewal-engine:N10-07",
@@ -4771,7 +5933,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_77c46fd5926b49835641c7c7f53f0d2a"
     },
     {
       "id": "renewal-engine:N10-08",
@@ -4836,7 +5998,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_2a38ba6b431cf108709882552ce6ddbc"
     },
     {
       "id": "renewal-engine:N11-01",
@@ -4871,7 +6033,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_cecea42f8d1cbaf9d491c37bf656642a"
     },
     {
       "id": "renewal-engine:N11-02",
@@ -4906,7 +6068,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3145df919a782627d40035b537e02082"
     },
     {
       "id": "renewal-engine:N11-03",
@@ -4941,7 +6103,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_360aa7c00e743ebbb243be19c4af90d2"
     },
     {
       "id": "renewal-engine:N11-04",
@@ -4976,7 +6138,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_04d6395f48f3647e11aa55c0a31d6f72"
     },
     {
       "id": "renewal-engine:N11-05",
@@ -5011,7 +6173,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_f1846d15d4f1b9babe103f8e31a59e9c"
     },
     {
       "id": "renewal-engine:N11-06",
@@ -5046,7 +6208,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_84b6260da9503d9aede3538c5b0f0248"
     },
     {
       "id": "renewal-engine:N11-07",
@@ -5081,7 +6243,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_39ac1917fe96017c4c926540fca44531"
     },
     {
       "id": "renewal-engine:N11-08",
@@ -5146,7 +6308,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_040bfbbf7b7da1c7c62eb968caad6232"
     },
     {
       "id": "renewal-engine:N12-01",
@@ -5180,7 +6342,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3051b0cb01eb377b4782a0a8c1f381f7"
     },
     {
       "id": "renewal-engine:N12-02",
@@ -5214,7 +6376,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_1cbb673eb71a7fefe45dcb5841393452"
     },
     {
       "id": "renewal-engine:N12-03",
@@ -5248,7 +6410,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_77f5a802714acaa026471b29481d1d56"
     },
     {
       "id": "renewal-engine:N12-04",
@@ -5283,7 +6445,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_cd6ba25471a47f04610000e79de91c2a"
     },
     {
       "id": "renewal-engine:N12-05",
@@ -5317,7 +6479,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_08f0bba830c13b7875c2858e62ef9254"
     },
     {
       "id": "renewal-engine:N12-06",
@@ -5351,7 +6513,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0137ff8f6df20705881eda983d55c7ca"
     },
     {
       "id": "renewal-engine:N12-07",
@@ -5385,7 +6547,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_d268582fe7cf8491ef525ac125cbcdaf"
     },
     {
       "id": "renewal-engine:N12-08",
@@ -5449,7 +6611,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e677a4ab329225b9560670135f81d15c"
     },
     {
       "id": "renewal-engine:N13-01",
@@ -5488,7 +6650,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_50ea2c21283e0aa023a73c2a213f0c8c"
     },
     {
       "id": "renewal-engine:N13-02",
@@ -5522,7 +6684,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_02da1471edeb6ec7f304011a0d89d960"
     },
     {
       "id": "renewal-engine:N13-03",
@@ -5556,7 +6718,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_5670fe09a459a18a2d4c1fdf2e221db4"
     },
     {
       "id": "renewal-engine:N13-04",
@@ -5590,7 +6752,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_5da8c4e919ca04cd34814013ba23d514"
     },
     {
       "id": "renewal-engine:N13-05",
@@ -5624,7 +6786,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_af45dece4811898dbc387754ef47c927"
     },
     {
       "id": "renewal-engine:N13-06",
@@ -5658,7 +6820,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_94795c07e48ac18b8c71c0b797cd3e25"
     },
     {
       "id": "renewal-engine:N13-07",
@@ -5692,7 +6854,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_97f7929ced537b78287b073c999fd8f9"
     },
     {
       "id": "renewal-engine:N13-08",
@@ -5756,7 +6918,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_be96c9fba931ce06c5c599bcef025343"
     },
     {
       "id": "renewal-engine:N14-01",
@@ -5791,7 +6953,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_a07bc2ea5131d906e8af29034ec976e7"
     },
     {
       "id": "renewal-engine:N14-02",
@@ -5826,7 +6988,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_1114bae9215d00057f82c8ff8dfa5f8d"
     },
     {
       "id": "renewal-engine:N14-03",
@@ -5861,7 +7023,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_2a09911342ac95ac420e0cc3ae5dff0b"
     },
     {
       "id": "renewal-engine:N14-04",
@@ -5896,7 +7058,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_796f4a79f05f389b833978d82dccf251"
     },
     {
       "id": "renewal-engine:N14-05",
@@ -5931,7 +7093,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e00aa58e7694d3a9835bd79d5b1153ab"
     },
     {
       "id": "renewal-engine:N14-06",
@@ -5966,7 +7128,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_d72461417d2394de5ef59afb3d2723f9"
     },
     {
       "id": "renewal-engine:N14-07",
@@ -6001,7 +7163,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4df4d70efbfd84562d6c29cfd5991b91"
     },
     {
       "id": "renewal-engine:N14-08",
@@ -6066,7 +7228,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_038c7dd10b23a68bd7e1889c685ba063"
     },
     {
       "id": "renewal-engine:N15-01",
@@ -6105,7 +7267,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e9f9ebcf3895a2302b03ea2a2e2b0333"
     },
     {
       "id": "renewal-engine:N15-02",
@@ -6139,7 +7301,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_d36472f317908b1ec2777d30a368fc51"
     },
     {
       "id": "renewal-engine:N15-03",
@@ -6173,7 +7335,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4be28d7264113d0f102b8bc464d1ad76"
     },
     {
       "id": "renewal-engine:N15-04",
@@ -6207,7 +7369,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_cba3c683471a8cefae98c48d631f30c8"
     },
     {
       "id": "renewal-engine:N15-05",
@@ -6241,7 +7403,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_2ffef743cb9d8d4201fac59037e9214d"
     },
     {
       "id": "renewal-engine:N15-06",
@@ -6275,7 +7437,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4f2ecf46201d284ed4c458b876b31d9a"
     },
     {
       "id": "renewal-engine:N15-07",
@@ -6309,7 +7471,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_6422ace0a4fbf1fcc769a2d2b29acff5"
     },
     {
       "id": "renewal-engine:N15-08",
@@ -6373,7 +7535,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_1cc7e4db0a2b37cdc5a475e5127aa688"
     },
     {
       "id": "renewal-engine:N16-01",
@@ -6419,7 +7581,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_ce8d034ed904c8b49527810b158565d9"
     },
     {
       "id": "renewal-engine:N16-02",
@@ -6455,7 +7617,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_df6753b8bcd950df969b99ff1adaf4ba"
     },
     {
       "id": "renewal-engine:N16-03",
@@ -6491,7 +7653,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_9f794c2e1065cf3bb60a21111958a481"
     },
     {
       "id": "renewal-engine:N16-04",
@@ -6527,7 +7689,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_83111f7c85d9cd721f007a7bbf3cf49a"
     },
     {
       "id": "renewal-engine:N16-05",
@@ -6563,7 +7725,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0846dd2a39e61b61181d3f466fbce0cb"
     },
     {
       "id": "renewal-engine:N16-06",
@@ -6599,7 +7761,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4b66315a971fc6738fedf027405c853e"
     },
     {
       "id": "renewal-engine:N16-07",
@@ -6635,7 +7797,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_c54a3ca511ae6ae34ad011967adb4cd8"
     },
     {
       "id": "renewal-engine:N16-08",
@@ -6701,7 +7863,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_d37813eeaf7c5d5252af6882ff27e16c"
     },
     {
       "id": "renewal-engine:N17-01",
@@ -6745,7 +7907,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_ea198229a01b97194b4dac647920f994"
     },
     {
       "id": "renewal-engine:N17-02",
@@ -6779,7 +7941,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_fcb7bb0f2bbaa05cb2d97c9eaa1e34c7"
     },
     {
       "id": "renewal-engine:N17-03",
@@ -6813,7 +7975,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_02e540433cec5aa5736e706929c88711"
     },
     {
       "id": "renewal-engine:N17-04",
@@ -6847,7 +8009,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_619238f639847218fe018682c88d1179"
     },
     {
       "id": "renewal-engine:N17-05",
@@ -6881,7 +8043,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_6b7e4c9e0581baf26d54e64e022f3e9c"
     },
     {
       "id": "renewal-engine:N17-06",
@@ -6915,7 +8077,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_1b00e4b770f855c2d7c55ddcad13c930"
     },
     {
       "id": "renewal-engine:N17-07",
@@ -6949,7 +8111,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0f02f660d1083ce2cd44a76f3c1f8f9a"
     },
     {
       "id": "renewal-engine:N17-08",
@@ -7013,7 +8175,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_5bf37e0629f998738d6e87e55bc94388"
     },
     {
       "id": "renewal-engine:N18-01",
@@ -7047,7 +8209,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_f943246c489510d2d3af6c72ed83b251"
     },
     {
       "id": "renewal-engine:N18-02",
@@ -7081,7 +8243,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_078fcd73bd2ab1d0746b9a87ea59a348"
     },
     {
       "id": "renewal-engine:N18-03",
@@ -7115,7 +8277,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_969093c8ed63acd0a5720b15e69b8fd1"
     },
     {
       "id": "renewal-engine:N18-04",
@@ -7149,7 +8311,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_bc94e35a73af308e12e28c33d64e6763"
     },
     {
       "id": "renewal-engine:N18-05",
@@ -7183,7 +8345,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4283a1ef4d1e5dbafa563353b6af055d"
     },
     {
       "id": "renewal-engine:N18-06",
@@ -7218,7 +8380,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_81accce13998606d54e52d6a626fd012"
     },
     {
       "id": "renewal-engine:N18-07",
@@ -7252,7 +8414,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_2e9212252c1990cedc69a1c6bbf11452"
     },
     {
       "id": "renewal-engine:N18-08",
@@ -7316,7 +8478,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_476a8ce6865ff91c015b226751f73e32"
     },
     {
       "id": "renewal-engine:N19-01",
@@ -7351,7 +8513,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_24eb7d860efc83d8998dc5d63842182a"
     },
     {
       "id": "renewal-engine:N19-02",
@@ -7386,7 +8548,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_6a6ba5caeb80c05494e0b71ca27c6ca4"
     },
     {
       "id": "renewal-engine:N19-03",
@@ -7421,7 +8583,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_190ce08fc2468998b722a7c71998e36c"
     },
     {
       "id": "renewal-engine:N19-04",
@@ -7456,7 +8618,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_5cc541cc887ec6d0de371e4f8395407a"
     },
     {
       "id": "renewal-engine:N19-05",
@@ -7491,7 +8653,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_eb669e8407bbcb484f930d7301aa1b49"
     },
     {
       "id": "renewal-engine:N19-06",
@@ -7526,7 +8688,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_d88053e7fd48a87c232fa095436d6d6e"
     },
     {
       "id": "renewal-engine:N19-07",
@@ -7561,7 +8723,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e18fb40ba9d419faa4400e1d191b4caf"
     },
     {
       "id": "renewal-engine:N19-08",
@@ -7626,7 +8788,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_a5ce31f6bfa2cf526ca864166091f0f7"
     },
     {
       "id": "renewal-engine:N20-01",
@@ -7665,7 +8827,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_46dd0c8efc9b44a9df6f1f9b2cc9e5de"
     },
     {
       "id": "renewal-engine:N20-02",
@@ -7699,7 +8861,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_f59c06f1886c2fc79605406dec55749a"
     },
     {
       "id": "renewal-engine:N20-03",
@@ -7733,7 +8895,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_7ab675d1aa04826fde02e0df52dda9ee"
     },
     {
       "id": "renewal-engine:N20-04",
@@ -7767,7 +8929,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_7106e63debd79eee973fc23037e457a4"
     },
     {
       "id": "renewal-engine:N20-05",
@@ -7801,7 +8963,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_855ceb63d5d04859aa49b7b57c53801f"
     },
     {
       "id": "renewal-engine:N20-06",
@@ -7835,7 +8997,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_56b1a6bc45ed6321d4112a14f340d229"
     },
     {
       "id": "renewal-engine:N20-07",
@@ -7869,7 +9031,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0bfe96bb58bc281e1454c60604b8260d"
     },
     {
       "id": "renewal-engine:N20-08",
@@ -7933,7 +9095,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_31ce443513a1f136ba35083564f1bee1"
     },
     {
       "id": "renewal-engine:N21-01",
@@ -7972,7 +9134,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_2efc0aaf144f3ef40b9805b6b0063497"
     },
     {
       "id": "renewal-engine:N21-02",
@@ -8006,7 +9168,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_66ea9cda51cec5e99eaae0228f4affa4"
     },
     {
       "id": "renewal-engine:N21-03",
@@ -8040,7 +9202,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_9c4a511208635b874b61bbc6a9920679"
     },
     {
       "id": "renewal-engine:N21-04",
@@ -8074,7 +9236,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_36a504d8c12619f312c6aae3be57da48"
     },
     {
       "id": "renewal-engine:N21-05",
@@ -8108,7 +9270,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_99eb952389fe0c1224f338b9e4a51aca"
     },
     {
       "id": "renewal-engine:N21-06",
@@ -8142,7 +9304,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_5681804f36f566b8633f1d78cbf35514"
     },
     {
       "id": "renewal-engine:N21-07",
@@ -8176,7 +9338,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_a4adb932c0c36df3b370a3bb421acacf"
     },
     {
       "id": "renewal-engine:N21-08",
@@ -8240,7 +9402,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4add8c7e755543b31196e7758c0b344c"
     },
     {
       "id": "renewal-engine:N22-01",
@@ -8280,7 +9442,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_98cce23fe37db8207cc0f45864275638"
     },
     {
       "id": "renewal-engine:N22-02",
@@ -8315,7 +9477,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_b07058436d1ecf1cc731bed1656789f9"
     },
     {
       "id": "renewal-engine:N22-03",
@@ -8350,7 +9512,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3405cf8242872369d83891f74179c9a9"
     },
     {
       "id": "renewal-engine:N22-04",
@@ -8385,7 +9547,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_a0364b1642165f4e4f3fc82b4fbbbb39"
     },
     {
       "id": "renewal-engine:N22-05",
@@ -8420,7 +9582,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_68d867ca221c3e2e25fd3a8ae7f3deb0"
     },
     {
       "id": "renewal-engine:N22-06",
@@ -8455,7 +9617,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_f2397fb27a17df0bf9bfe20f9030907b"
     },
     {
       "id": "renewal-engine:N22-07",
@@ -8490,7 +9652,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_b6a980fe2c314398fc8ccb816077594e"
     },
     {
       "id": "renewal-engine:N22-08",
@@ -8555,7 +9717,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_811578f7810d8b5017575e7bd29998d2"
     },
     {
       "id": "renewal-engine:N23-01",
@@ -8594,7 +9756,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0f548c5ddc0b92c3fdf2a71fa9db2d43"
     },
     {
       "id": "renewal-engine:N23-02",
@@ -8628,7 +9790,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_9bd3042cb0eda0dcce8683debb57862e"
     },
     {
       "id": "renewal-engine:N23-03",
@@ -8662,7 +9824,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0764fbb6cc0de38e00c3f8459144bfe1"
     },
     {
       "id": "renewal-engine:N23-04",
@@ -8696,7 +9858,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_dade8dd98abe7134b0d88970411b79ac"
     },
     {
       "id": "renewal-engine:N23-05",
@@ -8730,7 +9892,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_7453cbc6889ed789fcd60bc75259e802"
     },
     {
       "id": "renewal-engine:N23-06",
@@ -8764,7 +9926,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_8780151c9f94e8d7c6c1fc1e68328969"
     },
     {
       "id": "renewal-engine:N23-07",
@@ -8798,7 +9960,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3a64a824fac17a207f7f23e61e08534f"
     },
     {
       "id": "renewal-engine:N23-08",
@@ -8862,7 +10024,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4491629dede254da8d4d449f0597d282"
     },
     {
       "id": "renewal-engine:N24-01",
@@ -8901,7 +10063,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3039ea08815bb6bf6c24ae5cf291cd35"
     },
     {
       "id": "renewal-engine:N24-02",
@@ -8935,7 +10097,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_b178d9b5ba85bf3f8c1dce70125565ce"
     },
     {
       "id": "renewal-engine:N24-03",
@@ -8969,7 +10131,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_3297679f7fe68a7ee5d32223b214ddfc"
     },
     {
       "id": "renewal-engine:N24-04",
@@ -9004,7 +10166,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_de1df62c24093205a38d452a2b893c57"
     },
     {
       "id": "renewal-engine:N24-05",
@@ -9038,7 +10200,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_56f001d7dc1faa5ccdefba1b2ed3836f"
     },
     {
       "id": "renewal-engine:N24-06",
@@ -9072,7 +10234,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_ecc08ec7122e8e8062b18804b62dca89"
     },
     {
       "id": "renewal-engine:N24-07",
@@ -9106,7 +10268,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0030afea4adb28dec8e2993be39705b5"
     },
     {
       "id": "renewal-engine:N24-08",
@@ -9170,7 +10332,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0f47136512ba914029e297969b17591a"
     },
     {
       "id": "renewal-engine:N25-01",
@@ -9209,7 +10371,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_684910888769e8ae19593a27c6b2eb18"
     },
     {
       "id": "renewal-engine:N25-02",
@@ -9243,7 +10405,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_f9992184fd96d28d753ab9fb3b3a468a"
     },
     {
       "id": "renewal-engine:N25-03",
@@ -9277,7 +10439,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_e6768b9e859fa80184c13a1481d76046"
     },
     {
       "id": "renewal-engine:N25-04",
@@ -9311,7 +10473,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_65ff3fb363e6e9355f68e1e957de5ceb"
     },
     {
       "id": "renewal-engine:N25-05",
@@ -9345,7 +10507,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_9e133b9f853de3702eaccdc891a0bb62"
     },
     {
       "id": "renewal-engine:N25-06",
@@ -9379,7 +10541,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_ee737b75a0326a2963822cf64ce9ccaa"
     },
     {
       "id": "renewal-engine:N25-07",
@@ -9413,7 +10575,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4bd72557ff1afefcfd1f347885de37e5"
     },
     {
       "id": "renewal-engine:N25-08",
@@ -9477,7 +10639,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_1554904c63b3e09c92fd5de2723e6b02"
     },
     {
       "id": "renewal-engine:N26-01",
@@ -9521,7 +10683,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_c9b34f7d6d74ee7361adf98b2804d5f1"
     },
     {
       "id": "renewal-engine:N26-02",
@@ -9555,7 +10717,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_4f11aacfe54512a64a4adff8a7c5a582"
     },
     {
       "id": "renewal-engine:N26-03",
@@ -9589,7 +10751,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_7b70e1df51b08bf8d0422246e6e6f82b"
     },
     {
       "id": "renewal-engine:N26-04",
@@ -9623,7 +10785,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_d9e060450b94dd55ed6822d54fdc5643"
     },
     {
       "id": "renewal-engine:N26-05",
@@ -9657,7 +10819,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_0c7b56aed0c3c4648c7643ff0afa409d"
     },
     {
       "id": "renewal-engine:N26-06",
@@ -9691,7 +10853,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_596af3e77b0d0f1673963d613de4aec5"
     },
     {
       "id": "renewal-engine:N26-07",
@@ -9725,7 +10887,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_d3c62d00aece6cdaa9cc910e02e4068d"
     },
     {
       "id": "renewal-engine:N26-08",
@@ -9789,7 +10951,7 @@
       },
       "status": "PLANNED",
       "evidence": [],
-      "platformId": null
+      "platformId": "tsk_8e334f4af15a360459980f520778d8f7"
     }
   ],
   "sourceMappings": [

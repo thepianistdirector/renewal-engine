@@ -1,0 +1,18 @@
+{
+  "sourceRepository": "https://github.com/thepianistdirector/renewal-engine",
+  "sourceBranch": "codex/mac-helper-results",
+  "sourceCommit": "b9304597937b4d7307f2ea195537e4b48418ebe2",
+  "requestSha256": "26606280221f997a67034f77e9bd843b7d9eedab9836db1b7dba47c3ceaec8fb",
+  "checks": {
+    "requestHashesMatch": true,
+    "allTaskMappingsPresent": true,
+    "allWaveMappingsPresent": true,
+    "newIdsDoNotReplaceHistoricalIds": true,
+    "canonicalDependencyEdgeCount": 424
+  },
+  "limitations": [
+    "Native draft preservation and disabled-review state are reported by the authenticated Mac helper; no native passing review or publication is claimed.",
+    "The owner indicated report review approval in the Mac task, but no independent negative-control diagnosis or performed-step record has been supplied.",
+    "Mac partial runtime evidence is inspection/reopening on arm64 CPython 3.14.6; Linux demo support is unchanged."
+  ]
+}

@@ -1,6 +1,6 @@
 # Renewal Engine task outcomes
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `a54c8244c34f33ccf42129ff8437c65fffe010ea5b9f99d792ea64ab14390eb1`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `36c70785e48fe61afd43c6ad641df5a3898f5b55d90706d2bb3724380c00d1b0`.
 
 Statuses are evidence levels, not a claim that planning proves implementation. Change `project-plan.json`, retain evidence, then regenerate all views. Frozen historical contracts are preserved separately.
 
@@ -55,7 +55,7 @@ renewal-engine:N05-06 | Verify first-run and limitation instructions | 0.1 | IMP
 renewal-engine:N05-07 | Prepare a lawful release candidate | 0.1 | IMPLEMENTED
 renewal-engine:N05-08 | Publish and read back versioned 0.1 | 0.1 | RELEASE VERIFIED
 renewal-engine:N05-09 | Obtain external maintainer evidence | 0.1 | IN PROGRESS
-renewal-engine:N05-10 | Publish and verify the native Tanduna plan | 0.1 | BLOCKED
+renewal-engine:N05-10 | Publish and verify the native Tanduna plan | 0.1 | IN PROGRESS
 renewal-engine:N06-01 | Version recipe contracts | later 0.x | PLANNED
 renewal-engine:N06-02 | Express runtime ranges | later 0.x | PLANNED
 renewal-engine:N06-03 | Declare syntax preconditions | later 0.x | PLANNED
@@ -1301,13 +1301,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/publication/maintainer-walkthrough.md", "scope": "Human protocol prepared; no consenting participant observations have been received. External agent runtime check is separate."}, {"path": "docs/evidence/external-runtime.json", "level": "RUNTIME VERIFIED", "scope": "External agent/CI reproduction passed; required consenting human maintainer observation remains NOT TESTED."}]
+Retained evidence: [{"path": "docs/publication/maintainer-walkthrough.md", "scope": "Human protocol prepared; no consenting participant observations have been received. External agent runtime check is separate."}, {"path": "docs/evidence/external-runtime.json", "level": "RUNTIME VERIFIED", "scope": "External agent/CI reproduction passed; required consenting human maintainer observation remains NOT TESTED."}, {"path": "docs/evidence/mac-helper/results/RE-MAC-004/r1.json", "level": "RUNTIME VERIFIED", "scope": "Mac arm64 CPython 3.14.6 public-package inspection, saved-evidence reopening and browser preparation passed. Owner signaled report-review approval; detailed human negative-control diagnosis/performed-step evidence is still incomplete. No Mac Linux-demo claim."}]
 
 ## renewal-engine:N05-10 — Publish and verify the native Tanduna plan
 
 The public roadmap accurately exposes scope and access.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **BLOCKED**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N05-01, renewal-engine:N05-02, renewal-engine:N05-03, renewal-engine:N05-04, renewal-engine:N05-05, renewal-engine:N05-06, renewal-engine:N05-07, renewal-engine:N05-08, renewal-engine:N05-09
 
@@ -1323,7 +1323,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/publication/release-candidate.md", "scope": "No Tanduna MCP tools available in this task. Connection requested; exact proposal approval and public readback remain required."}]
+Retained evidence: [{"path": "docs/evidence/mac-helper/results/RE-MAC-003/r1.json", "level": "RUNTIME VERIFIED", "scope": "Authenticated native draft/submission: 218 task IDs, 26 waves and 424 dependency edges; root reconciled all mappings. Reviewer disabled, structured requirements incomplete and no native publication/poll approval."}]
 
 ## renewal-engine:N06-01 — Version recipe contracts
 

@@ -12,13 +12,12 @@ https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566
 ## Ownership and approvals
 
 Continue the same native Goal in Codex task
-`01a07e1c-3ed5-7f90-9b4d-f5c4977ad123`. The latest native readback is blocked
-pending Mac-side Tanduna access and actual human observations. The same gates
-remained through publication, helper preparation and the subsequent availability
-check. The complete public-product/native-plan objective is unchanged. The
-canonical plan retains its earlier activation snapshot; always read the live
-native Goal before resuming. Its already reviewed export remains pinned for
-the Mac helper because the product plan itself has not changed. Execution
+`01a07e1c-3ed5-7f90-9b4d-f5c4977ad123`. Work resumed on the Mac helper's
+handoff. The native tool still reports blocked and offers no resume action;
+do not duplicate the Goal or treat that status as cancellation. The remaining
+conditions have changed: Mac setup and login succeeded; the native draft now
+exists, but its reviewer is disabled and full human evidence remains missing.
+The complete public-product/native-plan objective is unchanged. Execution
 metadata verified OpenAI gpt-6-astra, high effort, including leaf critics.
 
 The owner approved the original fixture and actual runtime comparison, necessary
@@ -70,34 +69,38 @@ sudo or shared machine installation was used. Decision 004 records its scope.
 
 ## Remaining gates
 
-1. A consenting Python maintainer or qualified human reviewer must complete
-   `docs/publication/maintainer-walkthrough.md` using the public artifact outside
-   the development VPS. Record actual installation, patch review, independent
-   negative-control diagnosis, saved reopening/recovery and manual interface
-   observations. No participant observations have been received. Native zoom
-   and assistive-technology observations remain unrun; agent browser/CI evidence
-   does not replace the required human review.
-2. Connect authorized Tanduna MCP. No Tanduna tools are available in this task;
-   the user has been asked to connect it. The public guide requires its helper
-   on the user's own computer, with local/browser sign-in, not on this VPS.
-   Never copy credentials, use another task's login, change shared config or
-   edit Tanduna's application.
-3. Once connected, make a read-only identity/project check, refresh live tasks,
-   draft plans and proposals. Prepare the native draft using actual tool schemas,
-   preserve original IDs/history, submit for textual review, and obtain approval
-   of its exact poll option before publication. GitHub publication approval does
-   not authorize a native Tanduna vote.
-4. Read back native 26 waves, 218 tasks, release horizons, mappings, dependency
-   links, accurate statuses and real public-release access instructions at:
-   https://tanduna.com/projects/renewal-engine/roadmap and
-   https://tanduna.com/p/renewal-engine/tasks.
+The Mac helper is established on task `01a0811a-9fe7-7b23-9107-8222da04124f`,
+host `local`, native heartbeat `lucas-mac-helper`, every 15 minutes. Its setup,
+initial cycle and scoped transport passed. Native scheduled firing remains
+unobserved in its registration snapshot. Local Tanduna login succeeded;
+credentials stay in the official Mac login child and must never be transferred.
 
-September 8 public readback still exposes the original twelve task IDs. The
-updated export is local/GitHub material, not an accepted native plan. Counts:
-50 outcomes for 0.1, 72 later 0.x, 80 long-term, 16 exploratory. All twelve
-historical identities and acceptance/dependency records remain immutable and
-mapped. Task-level BLOCKED for native publication does not mark the full Goal
-complete or satisfy the native Goal's three-turn blocked audit.
+The complete native 218-task/26-wave/424-edge draft was saved and submitted.
+Read `docs/publication/native-plan-status.md` for the exact proposal, snapshot,
+review and option IDs. All returned task/wave mappings have been reconciled into
+the canonical plan. Preserve the twelve historical IDs and the existing new IDs.
+Do not recreate tasks, infer a passing review, cast votes or publish without the
+specific reviewed-option approval.
+
+Textual review is PENDING with reason `disabled` and no attempt. The 218
+structured planningRequirements fields are null. RE-MAC-005 is a new read-only
+request for actual tool schemas, applicable long-term-planning policy and
+supported recovery controls. No Tanduna app/configuration change is authorized.
+RE-MAC-003 revision 1 is held to preserve the frozen submission. Prepare a new
+versioned request only after the missing facts establish the appropriate change.
+
+Partial Mac public-package inspection/reopening passed on arm64 CPython 3.14.6.
+The participant reported report-review approval; detailed negative-control
+diagnosis, qualification and performed/skipped steps remain unconfirmed. The
+Mac task already asked for those missing observations. Do not repeat an approval
+question or relabel an agent run as human validation.
+
+Root public readback still shows twelve historical task IDs. The new proposal
+returns 404 anonymously. After passing native review and specific poll approval,
+verify publication/readback of 26 waves, 218 tasks, mappings, 424 edges, release
+horizons, honest evidence levels and real access instructions at:
+https://tanduna.com/projects/renewal-engine/roadmap and
+https://tanduna.com/p/renewal-engine/tasks.
 
 ## Continue locally
 
@@ -115,24 +118,23 @@ successful runtime jobs to substitute for missing human/native evidence.
 The next later-0.x outcome is an explicit versioned recipe contract; it is
 outside this bounded 0.1 gate.
 
-## Mac helper handoff requested by Lucas
+## Mac request/results bridge
 
-Lucas requested a prompt for a local Mac Codex task that creates a native
-15-minute schedule and reads a shared request file. The complete English prompt
-is `coordination/mac/MAC-HELPER-PROMPT.md`; protocol and initial four requests
-are beside it. Request branch: `codex/renewal-engine-0.1`. Mac result branch:
-`codex/mac-helper-results`. The Mac owns registration/results on that branch;
-this remote owner owns the request file and canonical plan.
+Source requests: `coordination/mac/requests.json` on
+`codex/renewal-engine-0.1`. Mac registration/results:
+`coordination/mac/registration.json` and `coordination/mac/results/` on
+`codex/mac-helper-results`. Preserve that result branch; this root writes only
+requests and its canonical/evidence files. Latest reconciled Mac result commit:
+`b9304597937b4d7307f2ea195537e4b48418ebe2`.
 
-Read `coordination/mac/registration.json` and the per-request result files from
-the result branch once the Mac task is actually set up. No native Mac schedule
-or live helper has yet been observed. Queued requests are not a live process or
-verified wait. The prompt must be pasted into a task running locally on the Mac.
-It instructs the helper to discover native scheduling tools, verify creation,
-keep unchanged checks quiet, facilitate actual Lucas observations, and obtain
-specific native poll approval before publication. It cannot substitute agent
-judgment for the human gate or transfer login credentials to this VPS.
+The Mac task can notify this existing remote owner through the supported task
+message path. Root can read/wait on the known Mac task using host `local`;
+root's currently exposed tool set has no send-message-to-task or Tanduna tools,
+so use the versioned file requests for further work. Never obtain credentials
+or invoke undocumented task APIs to bypass that capability boundary.
 
-The queued canonical export is pinned to the published d947cea evidence commit
-and SHA-256. If later plan changes alter that export, increment the relevant
-request revision and pin the new reviewed input before asking the Mac to use it.
+RE-MAC-001 and 002 succeeded, 003 is held at its existing submitted snapshot,
+004 needs the participant's missing observations, and 005 requests read-only
+review/schema facts. A submitted review with no attempt is not a live job.
+After a genuine user/Mac resume, start a fresh blocked audit if needed and keep
+the full Goal uncompleted until both human and native-publication gates pass.

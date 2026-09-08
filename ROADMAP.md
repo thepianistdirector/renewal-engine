@@ -1,8 +1,8 @@
 # Renewal Engine roadmap
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `a54c8244c34f33ccf42129ff8437c65fffe010ea5b9f99d792ea64ab14390eb1`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `36c70785e48fe61afd43c6ad641df5a3898f5b55d90706d2bb3724380c00d1b0`.
 
-Public 0.1.0 and fresh external runtime reproduction verified; human review and native Tanduna publication pending
+Public 0.1.0 and external runtime reproduction verified; native 218-task draft submitted with reviewer disabled; human walkthrough evidence incomplete
 
 218 outcome tasks in 26 waves. 0.1: 50; later 0.x: 72; long-term: 80; exploratory: 16.
 
@@ -136,7 +136,7 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 - `renewal-engine:N05-07` — Prepare a lawful release candidate (IMPLEMENTED)
 - `renewal-engine:N05-08` — Publish and read back versioned 0.1 (RELEASE VERIFIED)
 - `renewal-engine:N05-09` — Obtain external maintainer evidence (IN PROGRESS)
-- `renewal-engine:N05-10` — Publish and verify the native Tanduna plan (BLOCKED)
+- `renewal-engine:N05-10` — Publish and verify the native Tanduna plan (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N05-01 through renewal-engine:N05-10. Local implementation does not prove external use, accessibility or public release. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -583,6 +583,6 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 ## Publication boundary
 
-A local export is not an accepted or published native plan. Refresh all public pages before an authorized platform write and reconcile returned IDs before retries.
+Authenticated Mac helper saved/submitted all native rows. Textual reviewer is disabled and no passing review or poll approval exists. All 218 structured planningRequirements are absent; inspect actual schema/policy before editing the frozen submission. Public pages still show only the historical twelve tasks.
 
 The generated [publication export](docs/publication/tanduna-plan-export.json) is a local review artifact, not a supported API payload or proof of native publication. See the [source mapping](docs/planning/source-mapping.md).

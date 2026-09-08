@@ -12,8 +12,13 @@ https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566
 ## Ownership and approvals
 
 Continue the same native Goal in Codex task
-`01a07e1c-3ed5-7f90-9b4d-f5c4977ad123`. The latest native readback reports active;
-the complete public-product/native-plan objective is unchanged. Execution
+`01a07e1c-3ed5-7f90-9b4d-f5c4977ad123`. The latest native readback is blocked
+pending Mac-side Tanduna access and actual human observations. The same gates
+remained through publication, helper preparation and the subsequent availability
+check. The complete public-product/native-plan objective is unchanged. The
+canonical plan retains its earlier activation snapshot; always read the live
+native Goal before resuming. Its already reviewed export remains pinned for
+the Mac helper because the product plan itself has not changed. Execution
 metadata verified OpenAI gpt-6-astra, high effort, including leaf critics.
 
 The owner approved the original fixture and actual runtime comparison, necessary

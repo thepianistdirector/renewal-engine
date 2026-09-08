@@ -52,8 +52,6 @@ jobs:
           curl --fail --location --retry 2 "$base/renewal-engine-0.5.0.tar.gz" --output renewal-engine-0.5.0.tar.gz
           echo "$RENEWAL_SOURCE_SHA256  renewal-engine-0.5.0.tar.gz" | sha256sum --check
           tar -xzf renewal-engine-0.5.0.tar.gz
-          python3 renewal-engine-0.5.0/install.py --prefix ../installed
-          echo "$RENEWAL_CLI_SHA256  ../installed/bin/renewal-engine" | sha256sum --check
       - name: Build dedicated trusted interpreters from pinned official sources
         shell: bash
         run: |
@@ -73,6 +71,12 @@ jobs:
             make -j2 altinstall > install.log 2>&1
             cd ..
           done
+      - name: Install public CLI with the verified target interpreter
+        shell: bash
+        run: |
+          set -euo pipefail
+          runtimes/installed-3.12.14/bin/python3.12 downloads/renewal-engine-0.5.0/install.py --prefix installed
+          echo "$RENEWAL_CLI_SHA256  installed/bin/renewal-engine" | sha256sum --check
       - name: Exercise published package, isolation, negative controls and recovery
         shell: bash
         run: |

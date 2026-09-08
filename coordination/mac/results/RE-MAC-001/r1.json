@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "project": "renewal-engine",
+  "requestId": "RE-MAC-001",
+  "requestRevision": 1,
+  "requestDocumentSha256": "26606280221f997a67034f77e9bd843b7d9eedab9836db1b7dba47c3ceaec8fb",
+  "sourceCommit": "ae7b546c75f66521224444951e396d2222097c72",
+  "status": "SUCCEEDED",
+  "evidenceLevel": "RUNTIME VERIFIED",
+  "startedAt": "2026-09-08T13:00:04Z",
+  "updatedAt": "2026-09-08T13:08:04.512627+00:00",
+  "helper": {
+    "hostKind": "macOS",
+    "model": "gpt-6-astra"
+  },
+  "summary": "Created a separate local helper workspace, approved-feed registry, durable queue state and scoped GitHub result transport. Created and read back one native 15-minute heartbeat returning to this existing local task. Initial queue fetch validated all four requests.",
+  "checks": [
+    {
+      "action": "Verify execution host and model",
+      "outcome": "PASS: local Darwin, native host local, gpt-6-astra in actual turn runtime metadata."
+    },
+    {
+      "action": "Reconcile existing helpers",
+      "outcome": "PASS: existing helpers belong to other project feeds and were preserved."
+    },
+    {
+      "action": "Native schedule create and readback",
+      "outcome": "PASS: active same-task heartbeat, interval 15 minutes, next run 2026-09-08T13:16:00+00:00"
+    },
+    {
+      "action": "Initial current queue fetch",
+      "outcome": "PASS: four valid requests at recorded source commit and document digest."
+    },
+    {
+      "action": "Single-worker exclusion and failed-fetch preservation",
+      "outcome": "PASS: competing lock refused; simulated fetch failure preserved previous state."
+    }
+  ],
+  "publicEvidence": [
+    "https://github.com/thepianistdirector/renewal-engine/blob/codex/mac-helper-results/coordination/mac/registration.json"
+  ],
+  "nativeIds": {
+    "scheduleId": "lucas-mac-helper",
+    "taskId": "01a0811a-9fe7-7b23-9107-8222da04124f"
+  },
+  "userAction": null,
+  "limitations": [
+    "Mac must remain powered on with Codex desktop running.",
+    "Heartbeat model follows the target task; every cycle verifies it before acting.",
+    "No claim of completed Tanduna publication or human validation.",
+    "Scheduled timer firing has not yet been observed; initial cycle was run immediately."
+  ],
+  "humanObservation": null
+}

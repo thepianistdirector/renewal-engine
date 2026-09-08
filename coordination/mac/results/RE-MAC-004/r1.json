@@ -5,7 +5,7 @@
   "requestDocumentSha256": "26606280221f997a67034f77e9bd843b7d9eedab9836db1b7dba47c3ceaec8fb",
   "sourceCommit": "ae7b546c75f66521224444951e396d2222097c72",
   "startedAt": "2026-09-08T13:00:04Z",
-  "updatedAt": "2026-09-08T13:20:18.219506+00:00",
+  "updatedAt": "2026-09-08T13:22:01.595113+00:00",
   "helper": {
     "hostKind": "macOS",
     "model": "gpt-6-astra"
@@ -54,7 +54,7 @@
     "https://github.com/thepianistdirector/renewal-engine/blob/d947cea36e55e4f728a6040cce8edf2ec07a0d32/docs/publication/maintainer-walkthrough.md"
   ],
   "nativeIds": {},
-  "userAction": "Perform the prepared report/patch review, provide actual observations and reviewer qualification, and consent to the proposed retained summary. Full Linux-only execution and recovery remain separate unperformed steps.",
+  "userAction": "Provide the detailed participant observations, reviewer qualification, actual performed/skipped steps and consent to the concrete retained summary. Full Linux-only execution and recovery remain separate unperformed steps.",
   "limitations": [
     "Partial Mac preparation is not a completed human walkthrough.",
     "No participant identity or human observation is published.",

@@ -80,6 +80,38 @@ jobs:
           target=runtimes/installed-3.12.14/bin/python3.12
           "$target" downloads/renewal-engine-0.5.0/tools/check_05.py \
             --cli installed/bin/renewal-engine --baseline "$baseline" --target "$target" --out verified
+      - name: Diagnose the unchanged isolation backend
+        if: failure()
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -x runtimes/installed-3.12.14/bin/python3.12
+          mkdir -p verified
+          runtimes/installed-3.12.14/bin/python3.12 - <<'PYDIAG'
+          import json,sys
+          from pathlib import Path
+          sys.path.insert(0,str(Path('installed/bin/renewal-engine').resolve()))
+          from renewal_engine import isolation
+          original=isolation._capture
+          captures=[]
+          def record(*args,**kwargs):
+              result=original(*args,**kwargs)
+              captures.append(result)
+              return result
+          isolation._capture=record
+          result=isolation.probe_isolation()
+          Path('verified/isolation-diagnostic.json').write_text(json.dumps({'probe':result,'captures':captures},indent=2))
+          print(json.dumps({'probe':result,'captures':captures},indent=2))
+          PYDIAG
+      - name: Verify trusted-reference recovery independently
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          baseline=runtimes/installed-3.11.16/bin/python3.11
+          target=runtimes/installed-3.12.14/bin/python3.12
+          test -x "$baseline"
+          test -x "$target"
           "$target" downloads/renewal-engine-0.5.0/tools/verify_runtime.py \
             --cli installed/bin/renewal-engine --baseline "$baseline" --target "$target" --out recovery
       - name: Retain public fixture evidence and hard-link topology

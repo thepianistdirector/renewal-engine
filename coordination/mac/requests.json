@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "project": "renewal-engine",
+  "requestOwner": "Renewal Engine remote owner",
+  "ownerTaskId": "01a07e1c-3ed5-7f90-9b4d-f5c4977ad123",
+  "updatedAt": "2026-09-08",
+  "purpose": "Mac-local assistance; not a replacement roadmap or authority to change acceptance.",
+  "repository": "https://github.com/thepianistdirector/renewal-engine",
+  "requestBranch": "codex/renewal-engine-0.1",
+  "resultBranch": "codex/mac-helper-results",
+  "requests": [
+    {
+      "id": "RE-MAC-001",
+      "revision": 1,
+      "status": "READY",
+      "project": "renewal-engine",
+      "title": "Establish the local Mac helper and actual 15-minute schedule",
+      "kind": "helper_setup",
+      "dependsOn": [],
+      "desiredOutcome": "One reusable Mac-local Codex task polls this file every 15 minutes and returns evidence on the result branch.",
+      "authorizedScope": [
+        "Inspect local context and existing helpers.",
+        "Create a project-local workspace and feed registry.",
+        "Create or reuse the native 15-minute same-task schedule with GPT-6 Astra.",
+        "Write only coordination registration/results on the dedicated result branch."
+      ],
+      "acceptance": [
+        "Actual local macOS host and model verified.",
+        "Native schedule ID, interval, enabled state and next run read back.",
+        "One initial queue check completed without duplicating work.",
+        "Registration and this result are publicly readable without secrets or private paths."
+      ],
+      "inputs": {},
+      "resultPath": "coordination/mac/results/RE-MAC-001/r1.json"
+    },
+    {
+      "id": "RE-MAC-002",
+      "revision": 1,
+      "status": "READY",
+      "project": "renewal-engine",
+      "title": "Connect Tanduna on Lucas's Mac and verify scoped access",
+      "kind": "local_tanduna_connection",
+      "dependsOn": [],
+      "desiredOutcome": "The Mac helper has working authorized Tanduna tools and can read the Renewal Engine project.",
+      "authorizedScope": [
+        "Reuse existing authorized Tanduna connection.",
+        "If needed, inspect current official Tanduna setup and guide Lucas through local/browser login on this Mac.",
+        "Make read-only identity/project/task-plan capability checks. No account replacement or credential transfer."
+      ],
+      "acceptance": [
+        "Working tool names and read-only project identity recorded.",
+        "Exact project ID matches prj_9ef51e9826817323b774d5d3b900520f.",
+        "Missing login/capability is reported as NEEDS_LUCAS or FAILED, never a successful connection."
+      ],
+      "inputs": {
+        "guideUrl": "https://tanduna.com/guide/connect-through-mcp",
+        "serverUrl": "https://tanduna.com/api/mcp",
+        "projectId": "prj_9ef51e9826817323b774d5d3b900520f"
+      },
+      "resultPath": "coordination/mac/results/RE-MAC-002/r1.json"
+    },
+    {
+      "id": "RE-MAC-003",
+      "revision": 1,
+      "status": "READY",
+      "project": "renewal-engine",
+      "title": "Prepare and review the native 218-task Tanduna plan",
+      "kind": "tanduna_plan",
+      "dependsOn": [
+        "RE-MAC-002"
+      ],
+      "desiredOutcome": "A supported native draft/review accurately represents the canonical long-term plan; publication follows only exact owner poll approval.",
+      "authorizedScope": [
+        "Refresh live project, existing tasks, drafts and proposals.",
+        "Adapt the reviewed export to the actual native tool schema without editing Tanduna's app.",
+        "Prepare/save the scoped draft and submit for textual review.",
+        "Present the exact reviewed proposal/hash/poll option to Lucas.",
+        "After Lucas explicitly approves that option, perform the supported publication and public readback."
+      ],
+      "acceptance": [
+        "26 waves and 218 tasks preserved: 50 for 0.1, 72 later 0.x, 80 long-term, 16 exploratory.",
+        "All twelve historical native IDs, contracts and dependencies remain traceable.",
+        "Real 0.1 release access, current evidence and remaining human gate are accurately represented.",
+        "Actual draft/proposal/review IDs and exact approval requirement returned.",
+        "Only after specific approval: public waves/counts/dependency/status/access readback and returned native IDs; otherwise WAITING_REVIEW/NEEDS_LUCAS."
+      ],
+      "inputs": {
+        "canonicalExportPath": "docs/publication/tanduna-plan-export.json",
+        "canonicalExportSha256": "b3fe182d1d8e0452f1ae5ada6aeb36eb8214b36b7faa7cd5c329104060ad1770",
+        "canonicalSourceCommit": "d947cea36e55e4f728a6040cce8edf2ec07a0d32",
+        "projectId": "prj_9ef51e9826817323b774d5d3b900520f",
+        "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12",
+        "roadmapUrl": "https://tanduna.com/projects/renewal-engine/roadmap",
+        "tasksUrl": "https://tanduna.com/p/renewal-engine/tasks",
+        "releaseUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0"
+      },
+      "resultPath": "coordination/mac/results/RE-MAC-003/r1.json"
+    },
+    {
+      "id": "RE-MAC-004",
+      "revision": 1,
+      "status": "READY",
+      "project": "renewal-engine",
+      "title": "Facilitate the human maintainer walkthrough on the Mac",
+      "kind": "human_walkthrough",
+      "dependsOn": [],
+      "desiredOutcome": "Lucas or another consenting qualified human supplies actual public-release review observations; agent checks remain separately labeled.",
+      "authorizedScope": [
+        "Download the released artifact and verify its digest.",
+        "Prepare Mac inspection, saved-evidence reopening and report viewing.",
+        "Guide the participant through the published protocol and record only actual consented observations.",
+        "Use an existing explicitly approved Linux environment for Linux-only demo steps; otherwise record those steps as unperformed."
+      ],
+      "acceptance": [
+        "Public artifact identity and actual environment recorded.",
+        "Participant's own patch review and negative-control diagnosis retained with consent.",
+        "Actual reopening/recovery and manual browser observations recorded with assistance and gaps.",
+        "No macOS demo support or human validation inferred from an agent run; partial work labeled PARTIAL."
+      ],
+      "inputs": {
+        "guideUrl": "https://github.com/thepianistdirector/renewal-engine/blob/d947cea36e55e4f728a6040cce8edf2ec07a0d32/docs/publication/maintainer-walkthrough.md",
+        "releaseUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
+        "sourceArchiveSha256": "2bf2d535ab2c27b87305f960f793151f630d8e70186a52e34ec704cf1eb0c48e",
+        "cliSha256": "ee6b2b9e6ba3ffc3e34102dc70ac596b1e3f8479bacd8a6e99072a7c78c80047",
+        "externalRunUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566"
+      },
+      "resultPath": "coordination/mac/results/RE-MAC-004/r1.json"
+    }
+  ]
+}

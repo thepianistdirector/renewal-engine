@@ -109,3 +109,25 @@ Run implementation tests again when code changes justify it. Do not repeat
 successful runtime jobs to substitute for missing human/native evidence.
 The next later-0.x outcome is an explicit versioned recipe contract; it is
 outside this bounded 0.1 gate.
+
+## Mac helper handoff requested by Lucas
+
+Lucas requested a prompt for a local Mac Codex task that creates a native
+15-minute schedule and reads a shared request file. The complete English prompt
+is `coordination/mac/MAC-HELPER-PROMPT.md`; protocol and initial four requests
+are beside it. Request branch: `codex/renewal-engine-0.1`. Mac result branch:
+`codex/mac-helper-results`. The Mac owns registration/results on that branch;
+this remote owner owns the request file and canonical plan.
+
+Read `coordination/mac/registration.json` and the per-request result files from
+the result branch once the Mac task is actually set up. No native Mac schedule
+or live helper has yet been observed. Queued requests are not a live process or
+verified wait. The prompt must be pasted into a task running locally on the Mac.
+It instructs the helper to discover native scheduling tools, verify creation,
+keep unchanged checks quiet, facilitate actual Lucas observations, and obtain
+specific native poll approval before publication. It cannot substitute agent
+judgment for the human gate or transfer login credentials to this VPS.
+
+The queued canonical export is pinned to the published d947cea evidence commit
+and SHA-256. If later plan changes alter that export, increment the relevant
+request revision and pin the new reviewed input before asking the Mac to use it.

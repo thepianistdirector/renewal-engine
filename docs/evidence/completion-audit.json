@@ -1,0 +1,137 @@
+{
+  "date": "2026-09-08",
+  "goalComplete": false,
+  "scope": "Completion audit against the unchanged owner goal; no successful jobs were rerun and no participant or platform acceptance was inferred.",
+  "sourceCommit": "d947cea36e55e4f728a6040cce8edf2ec07a0d32",
+  "publicRelease": {
+    "url": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
+    "assets": {
+      "renewal-engine-0.1.0.tar.gz": "sha256:2bf2d535ab2c27b87305f960f793151f630d8e70186a52e34ec704cf1eb0c48e",
+      "renewal-engine.pyz": "sha256:ee6b2b9e6ba3ffc3e34102dc70ac596b1e3f8479bacd8a6e99072a7c78c80047",
+      "SHA256SUMS": "sha256:a731488978edcc8e26224a461b4655f101abebe9b87bc08d443844bb3aacbb6e"
+    }
+  },
+  "externalRun": {
+    "conclusion": "success",
+    "headSha": "400f269d780fd7dd720eb0947939454dba0845d5",
+    "status": "completed",
+    "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566"
+  },
+  "requirements": [
+    {
+      "requirement": "Bounded ConfigParser implementation",
+      "finding": "PROVEN",
+      "evidenceScope": "Conservative inspect/transform plus trusted-only execution; code tests and reviewed recipe boundary.",
+      "sources": [
+        "renewal_engine/discovery.py",
+        "tests/test_recipe.py",
+        "docs/decisions/003-recipe-boundary.md"
+      ]
+    },
+    {
+      "requirement": "Lawful fixture and approved actual runtimes",
+      "finding": "PROVEN",
+      "evidenceScope": "Original fixture approved by owner; real CPython 3.11.16/3.12.14 identities and observations retained; no shim.",
+      "sources": [
+        "renewal_engine/reference/PROVENANCE.md",
+        "docs/evidence/external-runtime.json"
+      ]
+    },
+    {
+      "requirement": "Characterization and independent negative control",
+      "finding": "PROVEN",
+      "evidenceScope": "Actual normal 12-case PASS and negative two-case REGRESSION under the public installed CLI.",
+      "sources": [
+        "docs/evidence/external-observations.json"
+      ]
+    },
+    {
+      "requirement": "Source preservation, retained evidence and recovery",
+      "finding": "PROVEN",
+      "evidenceScope": "Real SIGINT at two explicit stages leaves incomplete attempts; fresh restart passes; independent reopen retains the distinctions.",
+      "sources": [
+        "tools/verify_runtime.py",
+        "docs/evidence/external-runtime.json"
+      ]
+    },
+    {
+      "requirement": "Automated falsifiers and package checks",
+      "finding": "PROVEN",
+      "evidenceScope": "27 tests, 20 planning mutations, installed final artifact checks and byte-identical source rebuild were retained.",
+      "sources": [
+        "docs/evidence/runtime-verification.md",
+        "docs/evidence/packaged-runtime.json"
+      ]
+    },
+    {
+      "requirement": "First-run, licensing, limits and contribution instructions",
+      "finding": "PROVEN FOR AUTOMATED SCOPE",
+      "evidenceScope": "Public package installs; README commands were executed and license/provenance supplied. Human usability evidence is not yet available.",
+      "sources": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "THIRD_PARTY.md",
+        "docs/evidence/public-release.json"
+      ]
+    },
+    {
+      "requirement": "Public versioned 0.1 distribution",
+      "finding": "PROVEN",
+      "evidenceScope": "Public tag/assets and anonymous download digests match the approved release; current provider readback remains consistent.",
+      "sources": [
+        "docs/evidence/public-release.json"
+      ]
+    },
+    {
+      "requirement": "Fresh external workflow reproduction",
+      "finding": "PROVEN",
+      "evidenceScope": "Completed hosted-runner job builds official runtimes, downloads the release anonymously and passes normal/negative/recovery; observations independently reopened.",
+      "sources": [
+        "docs/evidence/external-runtime.json",
+        "docs/evidence/external-observations.json"
+      ]
+    },
+    {
+      "requirement": "Required human or qualified human review",
+      "finding": "MISSING",
+      "evidenceScope": "No consenting participant observations, independent human diagnosis or completed manual interface walkthrough have been received. The protocol and CI results are insufficient.",
+      "sources": [
+        "docs/publication/maintainer-walkthrough.md"
+      ]
+    },
+    {
+      "requirement": "200\u2013400 meaningful tasks and twelve historical mappings",
+      "finding": "PROVEN FOR PREPARED PLAN",
+      "evidenceScope": "218 tasks in 26 outcome waves; 12 frozen original identities and acceptance histories retained. Counts do not prove native publication.",
+      "sources": [
+        "project-plan.json",
+        "docs/planning/source-mapping.md",
+        "docs/lineage/2026-09-07"
+      ]
+    },
+    {
+      "requirement": "Native Tanduna plan publication and public readback",
+      "finding": "MISSING",
+      "evidenceScope": "No connected Tanduna tools, accepted new plan or returned native mappings. Public readback retains the twelve historical tasks.",
+      "sources": [
+        "docs/evidence/tanduna-public-readback.json",
+        "docs/publication/tanduna-plan-export.json"
+      ]
+    },
+    {
+      "requirement": "No unsupported completion or adoption claim",
+      "finding": "PRESERVED",
+      "evidenceScope": "Release notes, README and canonical state distinguish external agent evidence from human validation and native publication.",
+      "sources": [
+        "README.md",
+        "HANDOFF.md",
+        "project-plan.json"
+      ]
+    }
+  ],
+  "missingInputs": [
+    "Authorized Tanduna MCP connection, followed by exact native proposal approval and public readback",
+    "Completed observations from a consenting Python maintainer or qualified human reviewer"
+  ]
+}

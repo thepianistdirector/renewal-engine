@@ -1,0 +1,14 @@
+[
+  {"id":"valid-default","mode":"default","content":"[app]\nname = Renewal\ncount = 2\n"},
+  {"id":"unicode-keyword","mode":"keyword","source":"café.ini","content":"[app]\nname = café 東京\n"},
+  {"id":"duplicate-source-positional","mode":"positional","source":"named-input.ini","content":"[app]\nname = one\n[app]\nname = two\n"},
+  {"id":"duplicate-option-keyword","mode":"keyword","source":"options.ini","content":"[app]\nname = one\nname = two\n"},
+  {"id":"malformed-source-keyword","mode":"keyword","source":"broken.ini","content":"[broken\nname = one\n"},
+  {"id":"missing-header-default","mode":"default","content":"name = one\n"},
+  {"id":"interpolation-valid","mode":"positional","source":"interpolate.ini","content":"[app]\nbase = home\npath = %(base)s/data\n"},
+  {"id":"interpolation-error","mode":"keyword","source":"interpolate-error.ini","content":"[app]\npath = %(missing)s/data\n"},
+  {"id":"missing-option","mode":"default","query":"missing","content":"[app]\nname = one\n"},
+  {"id":"crlf-multiline","mode":"keyword","source":null,"content":"[app]\r\nname = one\r\n    two\r\n"},
+  {"id":"empty-source-name","mode":"positional","source":"","content":"missing header\n"},
+  {"id":"missing-section","mode":"default","content":"[other]\nname = one\n"}
+]

@@ -1,0 +1,30 @@
+{
+  "effects": {
+    "input_bytes_hex": "5b6170705d0a62617365203d20686f6d650a70617468203d2025286261736529732f646174610a",
+    "normalized": "[app]\nbase = home\npath = %(base)s/data\n\n",
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": 39,
+    "stream_position_error": null,
+    "files": {
+      "input.ini": {
+        "sha256": "c1836951db9f1598ae030ad77e61387504dfc91418ad20a48015e6a885f19cf9",
+        "size": 39
+      },
+      "normalized.ini": {
+        "sha256": "7eaa96e0cec126459cb3ded8157b0717a5201e6f181a71e93fab4000d7230a0e",
+        "size": 40
+      }
+    }
+  },
+  "exception": null,
+  "stdout": "{\"base\": \"home\", \"path\": \"home/data\"}\n",
+  "warnings": [
+    {
+      "category": "DeprecationWarning",
+      "filename": "program.py",
+      "lineno": 13,
+      "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+    }
+  ]
+}

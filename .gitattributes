@@ -1,2 +1,4 @@
 # Frozen provider exports preserve their original mixed line endings byte-for-byte.
 docs/lineage/** -text -whitespace
+# Retained runtime evidence includes exact CRLF inputs and focused patches.
+examples/** -text -whitespace

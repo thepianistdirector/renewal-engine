@@ -1,0 +1,51 @@
+{
+  "effects": {
+    "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a6e616d65203d2074776f0a",
+    "normalized": null,
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": null,
+    "stream_position_error": {
+      "args": [
+        "telling position disabled by next() call"
+      ],
+      "attributes": {},
+      "message": "telling position disabled by next() call",
+      "module": "builtins",
+      "type": "OSError"
+    },
+    "files": {
+      "input.ini": {
+        "sha256": "262b9a72ffb9bb17588c1075119c51f5bef87caaf268a486032bb73dbf865ee9",
+        "size": 28
+      }
+    }
+  },
+  "exception": {
+    "args": [
+      "app",
+      "name",
+      "options.ini",
+      3
+    ],
+    "attributes": {
+      "lineno": 3,
+      "message": "While reading from 'options.ini' [line  3]: option 'name' in section 'app' already exists",
+      "option": "name",
+      "section": "app",
+      "source": "options.ini"
+    },
+    "message": "While reading from 'options.ini' [line  3]: option 'name' in section 'app' already exists",
+    "module": "configparser",
+    "type": "DuplicateOptionError"
+  },
+  "stdout": "",
+  "warnings": [
+    {
+      "category": "DeprecationWarning",
+      "filename": "program.py",
+      "lineno": 20,
+      "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+    }
+  ]
+}

@@ -3,8 +3,8 @@
   "name": "Renewal Engine",
   "slug": "renewal-engine",
   "canonicalSource": "project-plan.json",
-  "stage": "Blocked on the pending original-fixture decision; local candidate implemented and tested, actual reference execution and public completion still incomplete",
-  "planningAsOf": "2026-09-07",
+  "stage": "Local 0.1.0 release candidate runtime verified; public release and native plan publication pending",
+  "planningAsOf": "2026-09-08",
   "modelPolicy": {
     "model": "gpt-6-astra",
     "delegation": "bounded leaf agents only",
@@ -25,7 +25,7 @@
   "sources": {
     "OWNER-LAUNCH": {
       "kind": "owner instruction",
-      "reference": "Owner launch instruction, September 7 2026, sections 3\u201310 and execution-loop addition",
+      "reference": "Owner launch instruction, September 7 2026, sections 3–10 and execution-loop addition",
       "snapshotReference": "../_launch/2026-09-07/13-renewal-engine-CODEX-PROMPT.txt"
     },
     "PYTHON-REMOVAL": {
@@ -99,12 +99,14 @@
   },
   "decisions": {
     "D01": {
-      "status": "UNRESOLVED",
-      "proposal": "Approve a small original lawful ConfigParser fixture as new mapped 0.1 scope; this does not satisfy the upstream-maintained-fixture original W1-T1 requirement."
+      "status": "APPROVED",
+      "proposal": "Owner approved the prepared original AGPL-3.0 ConfigParser fixture September 8, 2026, as narrow 0.1 scope. Original W1-T1 maintained-upstream acceptance remains unchanged and incomplete.",
+      "evidence": "renewal_engine/reference/PROVENANCE.md"
     },
     "D02": {
-      "status": "UNRESOLVED",
-      "proposal": "Dependency acquisition is owner-authorized. Official CPython 3.11.16 built project-locally and both runtime identities are probed. Target 3.12.14 remains proposed; actual reference execution and fixture decision are pending."
+      "status": "APPROVED",
+      "proposal": "Owner approved actual CPython 3.11.16 / 3.12.14 comparison September 8. Both identities and actual packaged normal/negative and restart observations are retained.",
+      "evidence": "docs/decisions/002-runtime-acquisition.md"
     },
     "D03": {
       "status": "UNRESOLVED",
@@ -153,6 +155,14 @@
       "evidence": "docs/evidence/report-browser-review.md",
       "testsPassed": 27,
       "humanValidation": false
+    },
+    {
+      "date": "2026-09-08",
+      "scope": "Approved fixture, actual extracted/installed 0.1.0 CLI, normal/negative, two SIGINT stages and restart; same Linux VPS only.",
+      "evidence": "docs/evidence/runtime-verification.md",
+      "testsPassed": 27,
+      "humanValidation": false,
+      "publicRelease": false
     }
   ],
   "release": {
@@ -160,7 +170,7 @@
     "status": "IN PROGRESS",
     "publicVersion": null,
     "publicUrl": null,
-    "accessInstructions": "No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs and completes source inspection and saved-evidence verification. README contains tested local commands; actual demo runtime verification and public access instructions remain pending.",
+    "accessInstructions": "Local 0.1.0 CLI/source release candidate installs and passes actual CPython 3.11.16 / 3.12.14 normal, negative-control, reopen and real SIGINT recovery checks on Linux x86_64. README contains tested commands and full examples. Public release, external reproduction and human validation remain pending.",
     "scope": "One approved ConfigParser readfp-to-read_file recipe, trusted original fixture execution, identical-case differential evidence, offline report and safe restart.",
     "exclusions": [
       "arbitrary repository execution",
@@ -973,11 +983,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A signed decision identifies supported forms and rejects arbitrary readfp replacement.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "BLOCKED",
+      "status": "IMPLEMENTED",
       "evidence": [
         {
           "path": "renewal_engine/reference/PROVENANCE.md",
-          "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."
+          "level": "IMPLEMENTED",
+          "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."
         }
       ],
       "platformId": null
@@ -1015,11 +1026,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An original-fixture decision or pinned upstream license record covers every shipped fixture byte.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "BLOCKED",
+      "status": "IMPLEMENTED",
       "evidence": [
         {
           "path": "renewal_engine/reference/PROVENANCE.md",
-          "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."
+          "level": "IMPLEMENTED",
+          "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."
         }
       ],
       "platformId": null
@@ -1057,11 +1069,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A retained version and executable hash accompany a readfp invocation without a compatibility shim.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IN PROGRESS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/baseline-runtime.json",
-          "scope": "Actual binary/stdlib identities probed; required readfp fixture invocation not yet run."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -1099,11 +1112,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Record the owner decision and actual Python 3.12.14 identity or a newly approved alternative; a different version is refused.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "BLOCKED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "renewal_engine/reference/PROVENANCE.md",
-          "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -1151,7 +1165,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -1189,12 +1203,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Only the documented deprecation warning difference is allowed; an unrelated warning fails comparison.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -1237,7 +1251,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -1280,8 +1294,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Architecture, OS, both interpreters and acquisition rights are recorded; unsupported environments are labeled unverified.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1332,7 +1352,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -1410,11 +1430,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: The owner decision resolves fixture, runtimes and behavioral promise while explicitly leaving original W1-T1 acceptance unchanged.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "BLOCKED",
+      "status": "IMPLEMENTED",
       "evidence": [
         {
           "path": "renewal_engine/reference/PROVENANCE.md",
-          "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."
+          "level": "IMPLEMENTED",
+          "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."
         }
       ],
       "platformId": null
@@ -1449,12 +1470,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Each case has stable identity and input hashes; a changed case cannot reuse old observations.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -1489,8 +1510,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: ASCII and Unicode fixtures retain section names and values; a changed decoded value fails assertions.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1523,8 +1550,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: The observation records exception class, message, section, source and line; dropping any required field fails validation.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1557,8 +1590,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Missing section headers and malformed entries produce retained structured errors with line context.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1591,8 +1630,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Named streams and explicit source arguments preserve diagnostics; a wrong source label is detected.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1625,8 +1670,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A missing interpolation key and one successful expansion retain distinct structured observations.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1659,8 +1710,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A stream position or close-state mutation and changed fixture file bytes are independently detected.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1723,8 +1780,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Run the trusted original under the pinned baseline; missing or timed-out cases are incomplete, never equal.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "RUNTIME VERIFIED",
+      "evidence": [
+        {
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
+        }
+      ],
       "platformId": null
     },
     {
@@ -1788,7 +1851,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -1863,12 +1926,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Source, cases and policy hashes are stored before editing; tampering makes comparison refuse the run.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -1909,7 +1972,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -1950,7 +2013,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -1996,7 +2059,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2037,7 +2100,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2083,12 +2146,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Positional and filename keyword fixtures produce the exact intended target signature and retain diagnostics.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2129,7 +2192,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2165,12 +2228,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Pre/post tree hashes match for the original; candidate paths never alias original files or traverse outside the run.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2211,12 +2274,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Two runs over identical bytes produce the same patch, with stable paths and no unrelated hunks.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2252,12 +2315,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A second transformation produces an explained no-op or refusal and no new edits.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2338,7 +2401,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2378,7 +2441,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2418,7 +2481,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2458,7 +2521,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2498,12 +2561,12 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         },
         {
           "path": "tests/test_execution.py",
           "level": "AUTOMATED PASS",
-          "scope": "Actual infrastructure probes prove timeout, output limit and descendant termination after leader exit. Reference execution remains pending."
+          "scope": "Actual infrastructure probes prove timeout, output limit and descendant termination after leader exit. This September 7 infrastructure checkpoint precedes the September 8 reference execution."
         }
       ],
       "platformId": null
@@ -2548,12 +2611,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Stdout, stderr, exceptions, effects and termination metadata survive as versioned files; truncation is explicit.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2588,12 +2651,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Independent output, error-field and side-effect mutants each produce a concrete regression.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2628,12 +2691,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Warning removal is expected; altered errors and extra warnings still cause failure.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2674,12 +2737,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An independently selected wrong source label or value mutation makes the CLI return regression and identify its case.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2724,7 +2787,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -2799,12 +2862,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A packaged run retains both interpreter identities, normal comparison and negative-control rejection without shims.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2844,12 +2907,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: HTML and JSON are generated from the same observations and agree on every case result.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2894,7 +2957,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         },
         {
           "path": "docs/evidence/report-browser-review.md",
@@ -2939,12 +3002,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Interrupt candidate creation and comparison; neither partial stage becomes complete or overwrites an accepted report.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -2984,12 +3047,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A fresh process reopens evidence and safely restarts an incomplete run while original bytes remain intact.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "IMPLEMENTED",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -3039,12 +3102,12 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A source archive or wheel installs in a clean project-scoped environment and exposes the documented command.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "AUTOMATED PASS",
+      "status": "RUNTIME VERIFIED",
       "evidence": [
         {
-          "path": "docs/evidence/verification.md",
-          "level": "AUTOMATED PASS",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "path": "docs/evidence/runtime-verification.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."
         }
       ],
       "platformId": null
@@ -3089,7 +3152,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -3144,7 +3207,7 @@
         {
           "path": "docs/evidence/verification.md",
           "level": "IMPLEMENTED",
-          "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."
+          "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."
         }
       ],
       "platformId": null
@@ -10952,7 +11015,7 @@
       "purpose": "A maintainer can obtain and review the result."
     }
   ],
-  "criticalPathNote": "This is a new narrow 0.1 dependency path. Historical W1\u2013W6 edges remain frozen in sourceMappings and lineage; later recipe kits, data migrations and pilot programmes are not silently treated as complete.",
+  "criticalPathNote": "This is a new narrow 0.1 dependency path. Historical W1–W6 edges remain frozen in sourceMappings and lineage; later recipe kits, data migrations and pilot programmes are not silently treated as complete.",
   "coverageReview": {
     "taskCount": 218,
     "waveCount": 26,
@@ -10963,7 +11026,8 @@
   "nativeGoal": {
     "threadId": "01a07e1c-3ed5-7f90-9b4d-f5c4977ad123",
     "status": "blocked",
-    "reason": "Original-fixture selection approval remains pending across three consecutive goal turns; independent local work completed.",
-    "objectiveUnchanged": true
+    "reason": "User resumed execution September 8 by approving the fixture. Native goal still reports blocked; the exposed tools have no resume operation, so no duplicate goal is created.",
+    "objectiveUnchanged": true,
+    "executionResumedByOwner": "2026-09-08"
   }
 }

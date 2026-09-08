@@ -1,0 +1,30 @@
+{
+  "effects": {
+    "input_bytes_hex": "5b6170705d0d0a6e616d65203d206f6e650d0a2020202074776f0d0a",
+    "normalized": "[app]\nname = one\n\ttwo\n\n",
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": 28,
+    "stream_position_error": null,
+    "files": {
+      "input.ini": {
+        "sha256": "c459a735904cd26dfcfdcc35f6ae1ce373a08e3e1f0c94f110afdfad617bcc66",
+        "size": 28
+      },
+      "normalized.ini": {
+        "sha256": "1802f9816b2f5908a286712ac541f72faf75981b6aebfb9d00bc45758e718817",
+        "size": 23
+      }
+    }
+  },
+  "exception": null,
+  "stdout": "{\"name\": \"one\\ntwo\"}\n",
+  "warnings": [
+    {
+      "category": "DeprecationWarning",
+      "filename": "program.py",
+      "lineno": 20,
+      "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+    }
+  ]
+}

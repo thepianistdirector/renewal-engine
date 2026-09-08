@@ -51,7 +51,7 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(verify_saved(out)['result'],'PASS')
 
     def test_false_summary_and_changed_files_rejected(self):
-        for mutation in ['status','input','process','harness','observation','runtime']:
+        for mutation in ['status','input','process','harness','observation','runtime','patch','negative_label']:
             with self.subTest(mutation=mutation):
                 out=self.root/mutation;self.synthetic_run(out)
                 case=out/'observations/candidate/valid-default'
@@ -59,6 +59,9 @@ class WorkflowTests(unittest.TestCase):
                     r=json.loads((out/'results.json').read_text());r['status']='REGRESSION';(out/'results.json').write_text(json.dumps(r))
                 elif mutation=='input':(case/'input.ini').write_text('changed')
                 elif mutation=='process':(case/'process.json').unlink()
+                elif mutation=='patch':(out/'changes.patch').write_text('corrupt patch')
+                elif mutation=='negative_label':
+                    f=out/'results.json';r=json.loads(f.read_text());r['negative_control']=True;f.write_text(json.dumps(r))
                 elif mutation=='observation':
                     r=json.loads((case/'observation.json').read_text());r['stdout']='changed';(case/'observation.json').write_text(json.dumps(r))
                 elif mutation=='runtime':

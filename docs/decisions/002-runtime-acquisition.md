@@ -3,7 +3,8 @@
 State: owner authorized September 7, 2026. The official source checksum was
 verified and the project-local build completed. An actual probe reports
 CPython 3.11.16 and readfp present; see docs/evidence/baseline-runtime.json.
-Reference fixture execution remains pending the distinct fixture decision.
+The owner approved reference execution September 8. Both actual runtimes passed
+the packaged normal/negative checks; see docs/evidence/runtime-verification.md.
 
 Owner response: "Install all the needed dependencies that you need, you can use
 all the resources you need from this VPS too." This reuses the requested

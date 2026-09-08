@@ -1,56 +1,56 @@
 # Renewal Engine task outcomes
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `23097237e6b11d4ffb68a1d120e80a1d0de1d4ff9b771fb83c28c983106fc295`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `7f8a3a6879964ea924aa7e33f693a8507fa14bc026ba78047769526ffd045827`.
 
 Statuses are evidence levels, not a claim that planning proves implementation. Change `project-plan.json`, retain evidence, then regenerate all views. Frozen historical contracts are preserved separately.
 
 ID | Title | Release | Status
 --- | --- | --- | ---
-renewal-engine:N01-01 | Ratify the ConfigParser cut | 0.1 | BLOCKED
-renewal-engine:N01-02 | Resolve lawful fixture provenance | 0.1 | BLOCKED
-renewal-engine:N01-03 | Pin the actual baseline interpreter | 0.1 | IN PROGRESS
-renewal-engine:N01-04 | Approve the modern runtime | 0.1 | BLOCKED
+renewal-engine:N01-01 | Ratify the ConfigParser cut | 0.1 | IMPLEMENTED
+renewal-engine:N01-02 | Resolve lawful fixture provenance | 0.1 | IMPLEMENTED
+renewal-engine:N01-03 | Pin the actual baseline interpreter | 0.1 | RUNTIME VERIFIED
+renewal-engine:N01-04 | Approve the modern runtime | 0.1 | RUNTIME VERIFIED
 renewal-engine:N01-05 | Declare unchanged behavior | 0.1 | IMPLEMENTED
-renewal-engine:N01-06 | Freeze intentional changes | 0.1 | AUTOMATED PASS
+renewal-engine:N01-06 | Freeze intentional changes | 0.1 | RUNTIME VERIFIED
 renewal-engine:N01-07 | Define inspection authority | 0.1 | AUTOMATED PASS
-renewal-engine:N01-08 | Choose the supported Linux environment | 0.1 | PLANNED
+renewal-engine:N01-08 | Choose the supported Linux environment | 0.1 | RUNTIME VERIFIED
 renewal-engine:N01-09 | Approve the narrow architecture | 0.1 | IMPLEMENTED
-renewal-engine:N01-10 | Accept the 0.1 execution contract | 0.1 | BLOCKED
-renewal-engine:N02-01 | Define trusted case envelopes | 0.1 | IMPLEMENTED
-renewal-engine:N02-02 | Capture valid and Unicode INI behavior | 0.1 | PLANNED
-renewal-engine:N02-03 | Capture duplicate-section failures | 0.1 | PLANNED
-renewal-engine:N02-04 | Capture malformed-input failures | 0.1 | PLANNED
-renewal-engine:N02-05 | Capture source-name semantics | 0.1 | PLANNED
-renewal-engine:N02-06 | Capture interpolation behavior | 0.1 | PLANNED
-renewal-engine:N02-07 | Capture stream and file effects | 0.1 | PLANNED
-renewal-engine:N02-08 | Record baseline observations | 0.1 | PLANNED
+renewal-engine:N01-10 | Accept the 0.1 execution contract | 0.1 | IMPLEMENTED
+renewal-engine:N02-01 | Define trusted case envelopes | 0.1 | RUNTIME VERIFIED
+renewal-engine:N02-02 | Capture valid and Unicode INI behavior | 0.1 | RUNTIME VERIFIED
+renewal-engine:N02-03 | Capture duplicate-section failures | 0.1 | RUNTIME VERIFIED
+renewal-engine:N02-04 | Capture malformed-input failures | 0.1 | RUNTIME VERIFIED
+renewal-engine:N02-05 | Capture source-name semantics | 0.1 | RUNTIME VERIFIED
+renewal-engine:N02-06 | Capture interpolation behavior | 0.1 | RUNTIME VERIFIED
+renewal-engine:N02-07 | Capture stream and file effects | 0.1 | RUNTIME VERIFIED
+renewal-engine:N02-08 | Record baseline observations | 0.1 | RUNTIME VERIFIED
 renewal-engine:N02-09 | Expose measurement limits | 0.1 | IMPLEMENTED
-renewal-engine:N02-10 | Seal characterization evidence | 0.1 | IMPLEMENTED
+renewal-engine:N02-10 | Seal characterization evidence | 0.1 | RUNTIME VERIFIED
 renewal-engine:N03-01 | Inventory syntax and bindings | 0.1 | IMPLEMENTED
 renewal-engine:N03-02 | Recognize direct ConfigParser construction | 0.1 | AUTOMATED PASS
 renewal-engine:N03-03 | Refuse shadowed or rebound receivers | 0.1 | AUTOMATED PASS
 renewal-engine:N03-04 | Refuse unsupported call signatures | 0.1 | AUTOMATED PASS
-renewal-engine:N03-05 | Preserve source-name arguments | 0.1 | IMPLEMENTED
+renewal-engine:N03-05 | Preserve source-name arguments | 0.1 | RUNTIME VERIFIED
 renewal-engine:N03-06 | Apply bounded source-span edits | 0.1 | AUTOMATED PASS
-renewal-engine:N03-07 | Create a separate candidate copy | 0.1 | AUTOMATED PASS
-renewal-engine:N03-08 | Emit a deterministic focused patch | 0.1 | AUTOMATED PASS
-renewal-engine:N03-09 | Explain repeat application | 0.1 | AUTOMATED PASS
+renewal-engine:N03-07 | Create a separate candidate copy | 0.1 | RUNTIME VERIFIED
+renewal-engine:N03-08 | Emit a deterministic focused patch | 0.1 | RUNTIME VERIFIED
+renewal-engine:N03-09 | Explain repeat application | 0.1 | RUNTIME VERIFIED
 renewal-engine:N03-10 | Verify the conservative recipe boundary | 0.1 | IMPLEMENTED
 renewal-engine:N04-01 | Bind runs to immutable identities | 0.1 | IMPLEMENTED
 renewal-engine:N04-02 | Execute only the trusted reference | 0.1 | IMPLEMENTED
 renewal-engine:N04-03 | Scrub the execution environment | 0.1 | AUTOMATED PASS
 renewal-engine:N04-04 | Bound process lifetime and output | 0.1 | IMPLEMENTED
-renewal-engine:N04-05 | Retain raw structured observations | 0.1 | IMPLEMENTED
-renewal-engine:N04-06 | Compare unchanged behavior strictly | 0.1 | AUTOMATED PASS
-renewal-engine:N04-07 | Apply the frozen expected-change policy | 0.1 | AUTOMATED PASS
-renewal-engine:N04-08 | Reject a deliberately wrong candidate | 0.1 | IMPLEMENTED
+renewal-engine:N04-05 | Retain raw structured observations | 0.1 | RUNTIME VERIFIED
+renewal-engine:N04-06 | Compare unchanged behavior strictly | 0.1 | RUNTIME VERIFIED
+renewal-engine:N04-07 | Apply the frozen expected-change policy | 0.1 | RUNTIME VERIFIED
+renewal-engine:N04-08 | Reject a deliberately wrong candidate | 0.1 | RUNTIME VERIFIED
 renewal-engine:N04-09 | Report incomplete evidence honestly | 0.1 | IMPLEMENTED
-renewal-engine:N04-10 | Verify real old/new differential execution | 0.1 | IMPLEMENTED
-renewal-engine:N05-01 | Generate one evidence-backed review report | 0.1 | IMPLEMENTED
+renewal-engine:N04-10 | Verify real old/new differential execution | 0.1 | RUNTIME VERIFIED
+renewal-engine:N05-01 | Generate one evidence-backed review report | 0.1 | RUNTIME VERIFIED
 renewal-engine:N05-02 | Make the report accessible offline | 0.1 | IMPLEMENTED
-renewal-engine:N05-03 | Persist attempts atomically | 0.1 | AUTOMATED PASS
-renewal-engine:N05-04 | Provide a safe restart workflow | 0.1 | IMPLEMENTED
-renewal-engine:N05-05 | Build an installable local distribution | 0.1 | AUTOMATED PASS
+renewal-engine:N05-03 | Persist attempts atomically | 0.1 | RUNTIME VERIFIED
+renewal-engine:N05-04 | Provide a safe restart workflow | 0.1 | RUNTIME VERIFIED
+renewal-engine:N05-05 | Build an installable local distribution | 0.1 | RUNTIME VERIFIED
 renewal-engine:N05-06 | Verify first-run and limitation instructions | 0.1 | IMPLEMENTED
 renewal-engine:N05-07 | Prepare a lawful release candidate | 0.1 | IMPLEMENTED
 renewal-engine:N05-08 | Publish and read back versioned 0.1 | 0.1 | PLANNED
@@ -229,7 +229,7 @@ renewal-engine:N26-08 | Review sustainable project stewardship | long-term | PLA
 
 Maintainers know which readfp calls and behavior are in scope.
 
-Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **BLOCKED**.
+Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
 
 Prerequisites: None.
 
@@ -245,13 +245,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "renewal_engine/reference/PROVENANCE.md", "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."}]
+Retained evidence: [{"path": "renewal_engine/reference/PROVENANCE.md", "level": "IMPLEMENTED", "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."}]
 
 ## renewal-engine:N01-02 — Resolve lawful fixture provenance
 
 The reference can be redistributed with the package.
 
-Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **BLOCKED**.
+Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
 
 Prerequisites: renewal-engine:N01-01
 
@@ -267,13 +267,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "renewal_engine/reference/PROVENANCE.md", "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."}]
+Retained evidence: [{"path": "renewal_engine/reference/PROVENANCE.md", "level": "IMPLEMENTED", "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."}]
 
 ## renewal-engine:N01-03 — Pin the actual baseline interpreter
 
 Original behavior comes from real Python 3.11.
 
-Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **IN PROGRESS**.
+Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N01-01
 
@@ -289,13 +289,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/baseline-runtime.json", "scope": "Actual binary/stdlib identities probed; required readfp fixture invocation not yet run."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N01-04 — Approve the modern runtime
 
 The target is a maintained pinned interpreter.
 
-Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **BLOCKED**.
+Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N01-01
 
@@ -311,7 +311,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "renewal_engine/reference/PROVENANCE.md", "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N01-05 — Declare unchanged behavior
 
@@ -333,13 +333,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N01-06 — Freeze intentional changes
 
 Expected warning removal cannot conceal errors.
 
-Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N01-05
 
@@ -355,7 +355,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N01-07 — Define inspection authority
 
@@ -377,13 +377,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N01-08 — Choose the supported Linux environment
 
 The first-run prerequisites name one reproducible environment.
 
-Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N01-03, renewal-engine:N01-04
 
@@ -399,7 +399,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N01-09 — Approve the narrow architecture
 
@@ -421,13 +421,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N01-10 — Accept the 0.1 execution contract
 
 The small original fixture is not mistaken for third-party adoption.
 
-Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **BLOCKED**.
+Wave: RE-W01. Area: A migration has a precise behavioral promise. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
 
 Prerequisites: renewal-engine:N01-01, renewal-engine:N01-02, renewal-engine:N01-03, renewal-engine:N01-04, renewal-engine:N01-05, renewal-engine:N01-06, renewal-engine:N01-07, renewal-engine:N01-08, renewal-engine:N01-09
 
@@ -443,13 +443,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "renewal_engine/reference/PROVENANCE.md", "reason": "Original fixture and exact target decision are pending, separate from granted dependency acquisition."}]
+Retained evidence: [{"path": "renewal_engine/reference/PROVENANCE.md", "level": "IMPLEMENTED", "scope": "Owner approved the concrete original fixture and runtime cut September 8; no human usability or historical upstream-adoption acceptance is claimed."}]
 
 ## renewal-engine:N02-01 — Define trusted case envelopes
 
 Both executions receive identical bounded inputs.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N01-10
 
@@ -465,13 +465,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-02 — Capture valid and Unicode INI behavior
 
 Normal configuration values survive migration.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01
 
@@ -487,13 +487,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-03 — Capture duplicate-section failures
 
 Duplicate sections retain their diagnostic contract.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01
 
@@ -509,13 +509,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-04 — Capture malformed-input failures
 
 Malformed INI produces inspectable errors.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01
 
@@ -531,13 +531,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-05 — Capture source-name semantics
 
 Positional and keyword filename handling is measured.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01
 
@@ -553,13 +553,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-06 — Capture interpolation behavior
 
 Configuration interpolation success and failure stay visible.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01
 
@@ -575,13 +575,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-07 — Capture stream and file effects
 
 The report measures declared effects beyond output.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01
 
@@ -597,13 +597,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-08 — Record baseline observations
 
 Every case has original-runtime evidence.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01, renewal-engine:N02-02, renewal-engine:N02-03, renewal-engine:N02-04, renewal-engine:N02-05, renewal-engine:N02-06, renewal-engine:N02-07
 
@@ -619,7 +619,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N02-09 — Expose measurement limits
 
@@ -641,13 +641,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N02-10 — Seal characterization evidence
 
 Transformation cannot silently redefine baseline observations.
 
-Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W02. Area: Original behavior is observable. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N02-01, renewal-engine:N02-02, renewal-engine:N02-03, renewal-engine:N02-04, renewal-engine:N02-05, renewal-engine:N02-06, renewal-engine:N02-07, renewal-engine:N02-08, renewal-engine:N02-09
 
@@ -663,7 +663,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N03-01 — Inventory syntax and bindings
 
@@ -685,7 +685,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N03-02 — Recognize direct ConfigParser construction
 
@@ -707,7 +707,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N03-03 — Refuse shadowed or rebound receivers
 
@@ -729,7 +729,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N03-04 — Refuse unsupported call signatures
 
@@ -751,13 +751,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N03-05 — Preserve source-name arguments
 
 The candidate passes a supported filename as read_file source.
 
-Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N03-02, renewal-engine:N03-03, renewal-engine:N03-04
 
@@ -773,7 +773,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N03-06 — Apply bounded source-span edits
 
@@ -795,13 +795,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N03-07 — Create a separate candidate copy
 
 Original user files remain untouched.
 
-Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N03-01
 
@@ -817,13 +817,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N03-08 — Emit a deterministic focused patch
 
 A maintainer can inspect every proposed edit.
 
-Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N03-06, renewal-engine:N03-07
 
@@ -839,13 +839,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N03-09 — Explain repeat application
 
 An already migrated candidate is safe to inspect again.
 
-Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W03. Area: Supported code is transformed conservatively. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N03-08
 
@@ -861,7 +861,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N03-10 — Verify the conservative recipe boundary
 
@@ -883,7 +883,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N04-01 — Bind runs to immutable identities
 
@@ -905,7 +905,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N04-02 — Execute only the trusted reference
 
@@ -927,7 +927,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N04-03 — Scrub the execution environment
 
@@ -949,7 +949,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N04-04 — Bound process lifetime and output
 
@@ -971,13 +971,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}, {"path": "tests/test_execution.py", "level": "AUTOMATED PASS", "scope": "Actual infrastructure probes prove timeout, output limit and descendant termination after leader exit. Reference execution remains pending."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}, {"path": "tests/test_execution.py", "level": "AUTOMATED PASS", "scope": "Actual infrastructure probes prove timeout, output limit and descendant termination after leader exit. This September 7 infrastructure checkpoint precedes the September 8 reference execution."}]
 
 ## renewal-engine:N04-05 — Retain raw structured observations
 
 Comparison can be reproduced after the process exits.
 
-Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N04-02, renewal-engine:N04-03, renewal-engine:N04-04
 
@@ -993,13 +993,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N04-06 — Compare unchanged behavior strictly
 
 Equal means all declared fields were actually measured.
 
-Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N04-05
 
@@ -1015,13 +1015,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N04-07 — Apply the frozen expected-change policy
 
 Only predeclared differences are classified as expected.
 
-Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N04-06
 
@@ -1037,13 +1037,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N04-08 — Reject a deliberately wrong candidate
 
 The evidence is sensitive to a real transformation defect.
 
-Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N04-06, renewal-engine:N04-07
 
@@ -1059,7 +1059,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N04-09 — Report incomplete evidence honestly
 
@@ -1081,13 +1081,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N04-10 — Verify real old/new differential execution
 
 The supported migration works across actual approved runtimes.
 
-Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W04. Area: Wrong transformations fail independently. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N04-01, renewal-engine:N04-02, renewal-engine:N04-03, renewal-engine:N04-04, renewal-engine:N04-05, renewal-engine:N04-06, renewal-engine:N04-07, renewal-engine:N04-08, renewal-engine:N04-09
 
@@ -1103,13 +1103,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N05-01 — Generate one evidence-backed review report
 
 A saved report explains patch, expected changes and regressions.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N04-10
 
@@ -1125,7 +1125,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N05-02 — Make the report accessible offline
 
@@ -1147,13 +1147,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}, {"path": "docs/evidence/report-browser-review.md", "level": "AUTOMATED PASS", "scope": "Agent-driven Chromium keyboard, narrow/desktop, expanded content, CSS 200% zoom and no-resource observations. Native zoom, assistive technology and human validation remain unrun."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}, {"path": "docs/evidence/report-browser-review.md", "level": "AUTOMATED PASS", "scope": "Agent-driven Chromium keyboard, narrow/desktop, expanded content, CSS 200% zoom and no-resource observations. Native zoom, assistive technology and human validation remain unrun."}]
 
 ## renewal-engine:N05-03 — Persist attempts atomically
 
 Interrupted stages retain honest recoverable state.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N05-01
 
@@ -1169,13 +1169,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N05-04 — Provide a safe restart workflow
 
 The user can resume work without the original session.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **IMPLEMENTED**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N05-03
 
@@ -1191,13 +1191,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N05-05 — Build an installable local distribution
 
 The CLI can be installed outside the development checkout.
 
-Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **AUTOMATED PASS**.
+Wave: RE-W05. Area: A maintainer can obtain and review the result. Target: 0.1. Basis: source-derived proposal. Status: **RUNTIME VERIFIED**.
 
 Prerequisites: renewal-engine:N05-01, renewal-engine:N05-03, renewal-engine:N05-04
 
@@ -1213,7 +1213,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "AUTOMATED PASS", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/runtime-verification.md", "level": "RUNTIME VERIFIED", "scope": "Actual pinned runtimes with retained packaged normal/negative observations and recovery evidence; automated mutation checks cover sensitivity. No external or human validation."}]
 
 ## renewal-engine:N05-06 — Verify first-run and limitation instructions
 
@@ -1235,7 +1235,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N05-07 — Prepare a lawful release candidate
 
@@ -1257,7 +1257,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. Pending upstream decisions and real reference/runtime/manual acceptance are not waived."}]
+Retained evidence: [{"path": "docs/evidence/verification.md", "level": "IMPLEMENTED", "scope": "Local implementation and mapped unit/infrastructure checks only. This historical implementation checkpoint does not waive any remaining external or human acceptance."}]
 
 ## renewal-engine:N05-08 — Publish and read back versioned 0.1
 

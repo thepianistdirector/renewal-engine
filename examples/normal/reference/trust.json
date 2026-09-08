@@ -1,0 +1,9 @@
+{
+  "program_hashes": {
+    "original": "a3fcf8eb90f8dad1bfb66c9ef7b5ad9cc3190cfb1ec14a36f47b86bda252e7c3",
+    "candidate": "6a1fe3444d5999d57b433823b2975910ccb3bdeff8bb1761ae89cadd5f97a527",
+    "negative_control": "6b7fdb0055467dfc69372af2acd52095521c9cca3d7772dd4ed37b95b251b157"
+  },
+  "cases_sha256": "7fb1cde02e4bdfc8882963ee2ac79903ad7b8f5ae8cf9c66b9a7f32b471a6d15",
+  "harness_sha256": "1a95aa61680dbe7a8986110110771523189b9bc4ea2e8676ca8a12d1824179fb"
+}

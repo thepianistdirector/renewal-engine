@@ -32,17 +32,19 @@ def main():
         for path in (ROOT/directory).rglob('*'):
             if path.is_file() and '__pycache__' not in path.parts and (path.suffix in {'.py','.json','.md','.txt','.html','.png'} or path.name.endswith('LICENSE')):
                 source_files[path.relative_to(ROOT).as_posix()]=path.read_bytes()
+    for path in (ROOT/'examples').rglob('*'):
+        if path.is_file():source_files[path.relative_to(ROOT).as_posix()]=path.read_bytes()
     source_files['renewal-engine.pyz']=archive.read_bytes()
-    target=destination/'renewal-engine-0.1.0-dev1.tar.gz'
+    target=destination/'renewal-engine-0.1.0.tar.gz'
     with target.open('wb') as output, gzip.GzipFile(fileobj=output,mode='wb',mtime=0,filename='') as compressed:
         with tarfile.open(fileobj=compressed,mode='w') as tar:
             for name,data in sorted(source_files.items()):
-                info=tarfile.TarInfo('renewal-engine-0.1.0-dev1/'+name)
+                info=tarfile.TarInfo('renewal-engine-0.1.0/'+name)
                 info.size=len(data);info.mode=0o755 if name.endswith('.pyz') else 0o644
                 info.mtime=0;tar.addfile(info,io.BytesIO(data))
     checksums={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [archive,target]}
     (destination/'SHA256SUMS').write_text(''.join(f'{value}  {name}\n' for name,value in checksums.items()))
-    print(json.dumps({'status':'LOCAL DEVELOPMENT CANDIDATE','sha256':checksums},indent=2))
+    print(json.dumps({'status':'LOCAL RELEASE CANDIDATE','sha256':checksums},indent=2))
 
 
 if __name__=='__main__':main()

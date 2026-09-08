@@ -1,0 +1,23 @@
+{
+  "effects": {
+    "input_bytes_hex": "5b6170705d0a6e616d65203d2052656e6577616c0a636f756e74203d20320a",
+    "normalized": "[app]\nname = Renewal\ncount = 2\n\n",
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": 31,
+    "stream_position_error": null,
+    "files": {
+      "input.ini": {
+        "sha256": "8667dfd6185752a659137930d9b0e30c3321e11e91fdd6d05d60aa40dd5ebec9",
+        "size": 31
+      },
+      "normalized.ini": {
+        "sha256": "34726b608a3d6733e528c08e039fecccd32b164edb73f9f5d21cc08add4d2061",
+        "size": 32
+      }
+    }
+  },
+  "exception": null,
+  "stdout": "{\"count\": \"2\", \"name\": \"Renewal\"}\n",
+  "warnings": []
+}

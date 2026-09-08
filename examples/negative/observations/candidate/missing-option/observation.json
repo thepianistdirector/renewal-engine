@@ -1,0 +1,32 @@
+{
+  "effects": {
+    "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a",
+    "normalized": null,
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": 17,
+    "stream_position_error": null,
+    "files": {
+      "input.ini": {
+        "sha256": "c71f554791f10b43e78e8adc9079c46c82a474c02a1698780420abf72d1911df",
+        "size": 17
+      }
+    }
+  },
+  "exception": {
+    "args": [
+      "missing",
+      "app"
+    ],
+    "attributes": {
+      "message": "No option 'missing' in section: 'app'",
+      "option": "missing",
+      "section": "app"
+    },
+    "message": "No option 'missing' in section: 'app'",
+    "module": "configparser",
+    "type": "NoOptionError"
+  },
+  "stdout": "{\"name\": \"one\"}\n",
+  "warnings": []
+}

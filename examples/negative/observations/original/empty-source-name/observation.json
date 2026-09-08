@@ -1,0 +1,49 @@
+{
+  "effects": {
+    "input_bytes_hex": "6d697373696e67206865616465720a",
+    "normalized": null,
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": null,
+    "stream_position_error": {
+      "args": [
+        "telling position disabled by next() call"
+      ],
+      "attributes": {},
+      "message": "telling position disabled by next() call",
+      "module": "builtins",
+      "type": "OSError"
+    },
+    "files": {
+      "input.ini": {
+        "sha256": "62aa7d5c3bb48f62463aab39b2137b888ec96004e6bd9be739385d02c058bf29",
+        "size": 15
+      }
+    }
+  },
+  "exception": {
+    "args": [
+      "",
+      1,
+      "missing header\n"
+    ],
+    "attributes": {
+      "line": "missing header\n",
+      "lineno": 1,
+      "message": "File contains no section headers.\nfile: '', line: 1\n'missing header\\n'",
+      "source": ""
+    },
+    "message": "File contains no section headers.\nfile: '', line: 1\n'missing header\\n'",
+    "module": "configparser",
+    "type": "MissingSectionHeaderError"
+  },
+  "stdout": "",
+  "warnings": [
+    {
+      "category": "DeprecationWarning",
+      "filename": "program.py",
+      "lineno": 13,
+      "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+    }
+  ]
+}

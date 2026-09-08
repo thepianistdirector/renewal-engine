@@ -122,7 +122,7 @@ def demo(destination: Path, baseline: Path, target: Path, negative_control=False
                   "negative_control": negative_control,
                   "limitations": ["Only the original, reviewed reference fixture was executed.",
                                   "Evidence applies only to the declared cases and exact Linux CPython runtime identities.",
-                                  "Traceback stacks, import hooks, concurrent code and arbitrary external effects are unmeasured.",
+                                  "Traceback stacks, exception chaining, import hooks, concurrent code and arbitrary external effects are unmeasured.",
                                   "Process limits and a scrubbed environment are not an OS sandbox.",
                                   "Passing cases do not establish general equivalence, human validation or maintainer adoption."]}
         atomic_json(destination / "results.json", result)
@@ -145,6 +145,7 @@ def verify_saved(directory: Path):
     result = json.loads((directory / "results.json").read_text())
     if result.get("files") != manifest.get("files"):
         raise ValueError("result file identities differ from the manifest")
+    expected_patch = ""
     for row in manifest["files"]:
         for side, key in [("original", "source_sha256"), ("candidate", "candidate_sha256")]:
             path = Path(row["path"])
@@ -152,12 +153,23 @@ def verify_saved(directory: Path):
                 raise ValueError("invalid manifest member path")
             if digest((directory / side / path).read_bytes()) != row[key]:
                 raise ValueError(side + " source changed since the run")
+        expected_patch += patch((directory / "original" / path).read_bytes(),
+                                (directory / "candidate" / path).read_bytes(), row["path"])
+    if (directory / "changes.patch").read_bytes() != expected_patch.encode("utf-8"):
+        raise ValueError("saved patch differs from retained source snapshots")
     if manifest["mode"] == "inspection":
         if (result.get("status") != "INSPECTION ONLY" or result.get("behavior_measured") is not False
                 or state.get("stage") != "INSPECTED" or state.get("behavior_measured") is not False
                 or manifest.get("runtimes") is not None):
             raise ValueError("inspection evidence cannot claim measured behavior or a passing comparison")
     elif manifest["mode"] == "trusted-reference":
+        negative = manifest.get("negative_control")
+        if type(negative) is not bool or type(result.get("negative_control")) is not bool or result["negative_control"] != negative:
+            raise ValueError("negative-control labels are inconsistent")
+        expected_key = "negative_control" if negative else "candidate"
+        if (len(manifest["files"]) != 1 or manifest["files"][0]["path"] != "program.py"
+                or manifest["files"][0]["candidate_sha256"] != manifest["fixture_sha256"]["program_hashes"][expected_key]):
+            raise ValueError("candidate identity contradicts the negative-control label")
         if digest(resource_bytes("comparison.py")) != manifest["comparator_sha256"]:
             raise ValueError("reopen this run with the matching comparator version")
         if state.get("stage") != "COMPARED" or state.get("behavior_measured") is not True:

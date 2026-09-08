@@ -1,126 +1,89 @@
 # Renewal Engine execution handoff
 
-The native Goal is **blocked and incomplete**, attached to Codex task
-`01a07e1c-3ed5-7f90-9b4d-f5c4977ad123`. Continue this owner; do not create a
-competing task or Goal. The actual destination metadata reports OpenAI
-`gpt-6-astra`, high effort. Planning and critic agents were Astra leaves.
+Local 0.1.0 release candidate is implemented and runtime verified. The owner
+approved the original fixture and proceeding with actual runtimes on September
+8, 2026. Do not ask again for fixture or dependency/resource permission.
 
-Blocked audit: the original-fixture decision remained unresolved through the
-owner-triggered implementation turn and two subsequent goal continuations.
-Independent implementation, package, browser and process-evidence work is
-complete for this increment. The next required reference execution depends on
-that owner decision; no live process is being awaited. Dependency/resource
-authorization remains recorded and must not be requested again. Resume this
-same Goal after the fixture decision, preserving the entire public-release and
-native-publication objective.
+The same native Goal belongs to Codex task
+`01a07e1c-3ed5-7f90-9b4d-f5c4977ad123`. It still reports blocked after the owner
+resumed; the exposed tools offer no resume operation. Do not create a competing
+Goal or owner. Its complete public-product/native-plan objective is unchanged.
+Execution metadata verified OpenAI gpt-6-astra, high effort, including leaf
+critics. Current work belongs to branch `codex/renewal-engine-0.1`, based on
+`f434e00913f5df6c78721300ca68625401d87a41` in this repository only.
 
-Repository: https://github.com/thepianistdirector/renewal-engine
-Starting branch/base: main at f434e00913f5df6c78721300ca68625401d87a41, clean.
-Current development branch: codex/renewal-engine-0.1. Implementation checkpoint:
-ab9af59 (local only; later evidence-only commits may follow).
-All current edits belong to this owner-directed increment. No push, release,
-Tanduna write, host package installation or shared configuration change has been
-performed. The first three existing commits supply a consistent owner author
-identity; a local development checkpoint may reuse that exact identity without
-changing global Git configuration. It is not authorization to publish.
+## Implemented and verified
 
-## What works
+Conservative ConfigParser source inspection, focused readfp-to-read_file edits,
+immutable source snapshots, deterministic patch, actual trusted-fixture
+characterization and comparison, offline reports, saved-evidence verification,
+exclusive output directories and safe restart. User-selected code never executes.
 
-- Conservative ConfigParser discovery and focused source-span edits, including
-  supported argument names, import aliases, review-needed refusals and no-op
-  repeat application. Selected user source is never imported or executed.
-- Exclusive source/candidate runs, immutable manifest permissions, atomic state,
-  offline HTML/JSON reports, original-byte preservation and safe restart.
-- An independently owned comparison policy and trusted-reference runner are
-  implemented. Their orchestration tests use explicit synthetic observations;
-  the original reference demonstration remains NOT TESTED.
-- A self-contained CLI and source archive build with the standard library.
-  Extraction, local installation, inspection and reopening passed on this VPS.
-  This is local packaged evidence, not a public download or external user study.
-- The canonical plan contains 218 tasks in 26 waves: 50 for 0.1, 72 later 0.x,
-  80 long-term and 16 exploratory. All twelve original task identities and
-  frozen acceptance/dependency histories are retained and mapped.
+The 27-test suite passes. Real CPython 3.11.16 / 3.12.14 on Linux x86_64 run
+12 passing normal cases and reject two source-diagnostic regressions in the
+negative control. The extracted, installed 0.1.0 CLI passes both workflows,
+idempotence, two real SIGINT stages, fresh restart and tamper refusal. See
+`docs/evidence/runtime-verification.md`, `packaged-runtime.json` and the complete
+`examples/normal` / `examples/negative` bundles. Synthetic orchestration tests
+remain labeled separately. No general behavioral equivalence is claimed.
 
-## Evidence
+The baseline was built from checksum-verified official source in
+`.local/runtime-build/Python-3.11.16/python`; supply the trusted target path for
+3.12.14. Actual binary and stdlib identities are retained. Optional unavailable
+build modules are disclosed in decision 002 and unused by the fixture. No
+interpreter or browser development binary is distributed.
 
-`docs/evidence/verification.md` records automated checks, critic fixes and the
-scope of unrun verification. `docs/evidence/package-smoke.json` records the
-locally extracted package path. Baseline and target runtime JSON files record
-actual versions and executable/ConfigParser hashes. No shim was used.
+Agent-driven Chromium checks cover inspection, PASS and REGRESSION displays,
+narrow/desktop layouts, disclosures, focus and keyboard behavior, CSS 200% zoom
+and zero resource loads. Native zoom and human/assistive-technology validation
+remain unrun. Screenshots and limits are in `docs/evidence/`.
 
-The baseline executable is `.local/runtime-build/Python-3.11.16/python`, built
-from the checksum-verified official source. The existing target is the Python
-3.12.14 executable selected by `python3`. Match its saved executable hash before
-using it. The build has unavailable optional modules listed in the runtime
-decision; none is used by this fixture. Do not describe it as a general-purpose
-fully populated Python distribution or redistribute its binary.
+The canonical plan has 218 tasks across 26 waves: 50 for 0.1, 72 later 0.x,
+80 long-term and 16 exploratory. All twelve historical source identities,
+acceptance text, revisions and dependencies remain immutable and mapped.
 
-The latest browser-reviewed report is `.runs/inspection-review-03/report.html`.
-It is accurately labeled INSPECTION ONLY. Shortening Chromium's project-local
-temporary directory resolved the launch failure. Actual 390 px and 1280 px
-layouts, expanded disclosures, keyboard focus/activation, local evidence links
-and zero-resource loading were observed. CSS 200% zoom was checked; native zoom
-and human/assistive-technology validation remain pending. Screenshots and exact
-limits are in docs/evidence/report-browser-review.md. Host security settings
-were not weakened. The latest automated suite has 27 passing tests, including
-exact raw output preservation and descendant termination after leader exit.
+## Remaining gates
 
-## Exact next work
+1. Approve the concrete GitHub publication packet. Authenticated account is
+   `thepianistdirector`; authentication is not publication approval. Proposed
+   destination is this repository, branch `codex/renewal-engine-0.1`, version
+   `v0.1.0`, with a source archive, CLI and checksums. No automatic merge.
+   The artifact and diff inventory is in `docs/publication/release-candidate.md`.
+2. After approval, push the reviewed branch, create the versioned release,
+   read back its tag/assets, download anonymously and verify all digests.
+   Run the publicly obtained artifact in a fresh external environment using
+   both real runtimes. Same-VPS extraction is not external reproduction.
+3. Obtain the required consenting maintainer walkthrough: install, review the
+   patch, diagnose the negative control and reopen evidence without the checkout.
+   No participant observation or adoption has yet occurred.
+4. Connect authorized Tanduna MCP and authorize the reviewed plan proposal.
+   No Tanduna MCP tool is connected in this task. Use the supported task-plan
+   draft/proposal workflow, refresh live contracts first, retain returned IDs,
+   and obtain exact proposal approval. Never copy credentials, use another
+   task's login, run a same-computer account helper on the VPS, edit Tanduna's
+   app, or bypass proposal review through database writes.
+5. Read back accepted native waves, 218 tasks, horizons, mappings, dependency
+   links and real release instructions at the public roadmap/tasks URLs. The
+   local export is not a server-schema claim or an accepted native plan.
 
-1. Resolve the still-pending owner decision on the concrete original AGPL-3.0
-   fixture in `renewal_engine/reference/` and proposed 3.12.14 target. The owner
-   authorized necessary dependencies/VPS resources; that resolved runtime
-   acquisition, not this separate product decision. Preserve original W1-T1's
-   maintained-upstream requirement as pending under its frozen contract.
-2. After approval, update canonical D01/D02 and reference provenance, then run
-   `demo` normal and `--negative-control` with actual 3.11.16/3.12.14 paths into
-   separate new run directories. Require normal PASS and negative-control exit
-   1 with concrete source-diagnostic differences. Do not normalize a regression
-   away. Run both from the packaged artifact too, then use `verify` in a fresh
-   process. Retain any failed attempts and fix demonstrated defects.
-3. Complete the real-runtime interruption/restart checks and browser/manual
-   keyboard, focus, narrow/zoom and non-color report checks. Synthetic tests are
-   insufficient for the corresponding runtime or human gates.
-4. Build a stable release candidate and request only the remaining concrete
-   GitHub publication decision, specifying account, branch/tag, exact artifacts,
-   hashes/diff, data exposure and remaining risks. No public 0.1 URL exists yet.
-5. Obtain a fresh external environment and required consenting maintainer
-   observation using the publicly obtained release. Agent evidence does not
-   satisfy human validation or adoption.
-6. Publish the new native Tanduna plan only through an authorized supported
-   task-plan/proposal workflow. No Tanduna MCP tools are connected in this task.
-   The public guide documents a same-computer sign-in helper; do not copy
-   credentials from another task or run an account-login helper on this VPS.
-   The export is ready in `docs/publication/tanduna-plan-export.json`, but it is
-   not the server schema, an accepted proposal or published native content.
-   Freshly read live pages/briefs/proposals before a write. Read back accepted
-   waves, all counts, dependencies, returned IDs and real release instructions.
+No GitHub push, tag, release, Tanduna write, host package installation or shared
+configuration change has occurred. Public version/URL remains absent. External
+and human evidence remains NOT TESTED. The complete Goal is unfinished.
 
-Current public plan URLs still show the historical twelve-task plan:
-https://tanduna.com/projects/renewal-engine/roadmap and
-https://tanduna.com/p/renewal-engine/tasks. Public 0.1, external reproduction,
-human review and native 218-task publication are all unfinished.
+## Continue verification
 
-The next later-0.x outcome after verified 0.1 is an explicit versioned recipe
-contract with preconditions, runtime ranges and independently owned evidence.
-
-## Resume commands
-
-From this repository, inspect `git status --short` and `git rev-parse HEAD`, read
-the active native Goal and canonical `project-plan.json`, then run the next
-bounded packet. Do not overwrite another owner's changes or reopen the shared
-parent as a Git repository.
+Inspect Git status and the existing Goal first. Update only `project-plan.json`
+for canonical task evidence, then generate views. Do not change frozen lineage.
 
 ```sh
 python3 -m unittest discover -s tests -v
 python3 tools/plan.py validate
 python3 tools/plan.py self-test
+python3 tools/plan.py generate
 python3 tools/plan.py check
 python3 tools/build.py
 ```
 
-Update task evidence only in `project-plan.json`, then run
-`python3 tools/plan.py generate` and `python3 tools/plan.py check`. Do not count
-implemented or synthetically tested code as RUNTIME VERIFIED, USER VALIDATED or
-RELEASE VERIFIED. Keep the native Goal unfinished until both public product and
-public native plan requirements are actually satisfied.
+The README supplies actual package, normal/negative, reopen and recovery check
+commands. A future 0.x starts with an explicit versioned recipe contract;
+it is not part of this narrow 0.1 release gate.

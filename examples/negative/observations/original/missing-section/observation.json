@@ -1,0 +1,37 @@
+{
+  "effects": {
+    "input_bytes_hex": "5b6f746865725d0a6e616d65203d206f6e650a",
+    "normalized": null,
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": 19,
+    "stream_position_error": null,
+    "files": {
+      "input.ini": {
+        "sha256": "ed21f2c764bac87a9320e05627730fceeba844b8344453a78532205afc490707",
+        "size": 19
+      }
+    }
+  },
+  "exception": {
+    "args": [
+      "app"
+    ],
+    "attributes": {
+      "message": "No section: 'app'",
+      "section": "app"
+    },
+    "message": "No section: 'app'",
+    "module": "configparser",
+    "type": "NoSectionError"
+  },
+  "stdout": "",
+  "warnings": [
+    {
+      "category": "DeprecationWarning",
+      "filename": "program.py",
+      "lineno": 6,
+      "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+    }
+  ]
+}

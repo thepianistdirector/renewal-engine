@@ -1,0 +1,1207 @@
+{
+  "status": "PASS",
+  "behavior_measured": true,
+  "files": [
+    {
+      "path": "program.py",
+      "source_sha256": "a3fcf8eb90f8dad1bfb66c9ef7b5ad9cc3190cfb1ec14a36f47b86bda252e7c3",
+      "candidate_sha256": "6a1fe3444d5999d57b433823b2975910ccb3bdeff8bb1761ae89cadd5f97a527",
+      "changed": true,
+      "edits": [
+        {
+          "start": 186,
+          "end": 192,
+          "before": "readfp",
+          "after": "read_file",
+          "reason": "Python 3.12 removed ConfigParser.readfp; preserve its read_file delegation"
+        },
+        {
+          "start": 339,
+          "end": 345,
+          "before": "readfp",
+          "after": "read_file",
+          "reason": "Python 3.12 removed ConfigParser.readfp; preserve its read_file delegation"
+        },
+        {
+          "start": 496,
+          "end": 502,
+          "before": "readfp",
+          "after": "read_file",
+          "reason": "Python 3.12 removed ConfigParser.readfp; preserve its read_file delegation"
+        },
+        {
+          "start": 503,
+          "end": 505,
+          "before": "fp",
+          "after": "f",
+          "reason": "Preserve the exact readfp argument binding in read_file"
+        },
+        {
+          "start": 514,
+          "end": 522,
+          "before": "filename",
+          "after": "source",
+          "reason": "Preserve the exact readfp argument binding in read_file"
+        }
+      ],
+      "findings": [
+        {
+          "line": 6,
+          "column": 5,
+          "status": "SUPPORTED",
+          "reason": "supported local ConfigParser binding; source and stream semantics require differential review"
+        },
+        {
+          "line": 13,
+          "column": 5,
+          "status": "SUPPORTED",
+          "reason": "supported local ConfigParser binding; source and stream semantics require differential review"
+        },
+        {
+          "line": 20,
+          "column": 5,
+          "status": "SUPPORTED",
+          "reason": "supported local ConfigParser binding; source and stream semantics require differential review"
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "valid-default",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d2052656e6577616c0a636f756e74203d20320a",
+          "normalized": "[app]\nname = Renewal\ncount = 2\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 31,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "8667dfd6185752a659137930d9b0e30c3321e11e91fdd6d05d60aa40dd5ebec9",
+              "size": 31
+            },
+            "normalized.ini": {
+              "sha256": "34726b608a3d6733e528c08e039fecccd32b164edb73f9f5d21cc08add4d2061",
+              "size": 32
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"count\": \"2\", \"name\": \"Renewal\"}\n",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 6,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d2052656e6577616c0a636f756e74203d20320a",
+          "normalized": "[app]\nname = Renewal\ncount = 2\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 31,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "8667dfd6185752a659137930d9b0e30c3321e11e91fdd6d05d60aa40dd5ebec9",
+              "size": 31
+            },
+            "normalized.ini": {
+              "sha256": "34726b608a3d6733e528c08e039fecccd32b164edb73f9f5d21cc08add4d2061",
+              "size": 32
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"count\": \"2\", \"name\": \"Renewal\"}\n",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 6
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "unicode-keyword",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d20636166c3a920e69db1e4baac0a",
+          "normalized": "[app]\nname = café 東京\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 26,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "b9b818b4043ac0be14bedd1d17e04e5dc5839ddf7e99f34f9ed98ecabd67e69e",
+              "size": 26
+            },
+            "normalized.ini": {
+              "sha256": "3603cdf5da149dc1fc9c11979d0e33a79d64f1beb705893c3943074e36331b33",
+              "size": 27
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"name\": \"café 東京\"}\n",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 20,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d20636166c3a920e69db1e4baac0a",
+          "normalized": "[app]\nname = café 東京\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 26,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "b9b818b4043ac0be14bedd1d17e04e5dc5839ddf7e99f34f9ed98ecabd67e69e",
+              "size": 26
+            },
+            "normalized.ini": {
+              "sha256": "3603cdf5da149dc1fc9c11979d0e33a79d64f1beb705893c3943074e36331b33",
+              "size": 27
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"name\": \"café 東京\"}\n",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 20
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "duplicate-source-positional",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a5b6170705d0a6e616d65203d2074776f0a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "871c41c53dfcd559aa93e946a6de4bda50fd67c30930d42ebf5c5badf08920b8",
+              "size": 34
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "app",
+            "named-input.ini",
+            3
+          ],
+          "attributes": {
+            "lineno": 3,
+            "message": "While reading from 'named-input.ini' [line  3]: section 'app' already exists",
+            "section": "app",
+            "source": "named-input.ini"
+          },
+          "message": "While reading from 'named-input.ini' [line  3]: section 'app' already exists",
+          "module": "configparser",
+          "type": "DuplicateSectionError"
+        },
+        "stdout": "",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 13,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a5b6170705d0a6e616d65203d2074776f0a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "871c41c53dfcd559aa93e946a6de4bda50fd67c30930d42ebf5c5badf08920b8",
+              "size": 34
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "app",
+            "named-input.ini",
+            3
+          ],
+          "attributes": {
+            "lineno": 3,
+            "message": "While reading from 'named-input.ini' [line  3]: section 'app' already exists",
+            "section": "app",
+            "source": "named-input.ini"
+          },
+          "message": "While reading from 'named-input.ini' [line  3]: section 'app' already exists",
+          "module": "configparser",
+          "type": "DuplicateSectionError"
+        },
+        "stdout": "",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 13
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "duplicate-option-keyword",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a6e616d65203d2074776f0a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "262b9a72ffb9bb17588c1075119c51f5bef87caaf268a486032bb73dbf865ee9",
+              "size": 28
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "app",
+            "name",
+            "options.ini",
+            3
+          ],
+          "attributes": {
+            "lineno": 3,
+            "message": "While reading from 'options.ini' [line  3]: option 'name' in section 'app' already exists",
+            "option": "name",
+            "section": "app",
+            "source": "options.ini"
+          },
+          "message": "While reading from 'options.ini' [line  3]: option 'name' in section 'app' already exists",
+          "module": "configparser",
+          "type": "DuplicateOptionError"
+        },
+        "stdout": "",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 20,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a6e616d65203d2074776f0a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "262b9a72ffb9bb17588c1075119c51f5bef87caaf268a486032bb73dbf865ee9",
+              "size": 28
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "app",
+            "name",
+            "options.ini",
+            3
+          ],
+          "attributes": {
+            "lineno": 3,
+            "message": "While reading from 'options.ini' [line  3]: option 'name' in section 'app' already exists",
+            "option": "name",
+            "section": "app",
+            "source": "options.ini"
+          },
+          "message": "While reading from 'options.ini' [line  3]: option 'name' in section 'app' already exists",
+          "module": "configparser",
+          "type": "DuplicateOptionError"
+        },
+        "stdout": "",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 20
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "malformed-source-keyword",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b62726f6b656e0a6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "eb6e7b63e93d65ddd6213d902c692d685bdb44c06943c384f7859ecb7daae72f",
+              "size": 19
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "broken.ini",
+            1,
+            "[broken\n"
+          ],
+          "attributes": {
+            "line": "[broken\n",
+            "lineno": 1,
+            "message": "File contains no section headers.\nfile: 'broken.ini', line: 1\n'[broken\\n'",
+            "source": "broken.ini"
+          },
+          "message": "File contains no section headers.\nfile: 'broken.ini', line: 1\n'[broken\\n'",
+          "module": "configparser",
+          "type": "MissingSectionHeaderError"
+        },
+        "stdout": "",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 20,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b62726f6b656e0a6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "eb6e7b63e93d65ddd6213d902c692d685bdb44c06943c384f7859ecb7daae72f",
+              "size": 19
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "broken.ini",
+            1,
+            "[broken\n"
+          ],
+          "attributes": {
+            "line": "[broken\n",
+            "lineno": 1,
+            "message": "File contains no section headers.\nfile: 'broken.ini', line: 1\n'[broken\\n'",
+            "source": "broken.ini"
+          },
+          "message": "File contains no section headers.\nfile: 'broken.ini', line: 1\n'[broken\\n'",
+          "module": "configparser",
+          "type": "MissingSectionHeaderError"
+        },
+        "stdout": "",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 20
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "missing-header-default",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "484baca2a88711d4a341f2b52ab56f157f6b245264028180214299e34bee6203",
+              "size": 11
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "input.ini",
+            1,
+            "name = one\n"
+          ],
+          "attributes": {
+            "line": "name = one\n",
+            "lineno": 1,
+            "message": "File contains no section headers.\nfile: 'input.ini', line: 1\n'name = one\\n'",
+            "source": "input.ini"
+          },
+          "message": "File contains no section headers.\nfile: 'input.ini', line: 1\n'name = one\\n'",
+          "module": "configparser",
+          "type": "MissingSectionHeaderError"
+        },
+        "stdout": "",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 6,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "484baca2a88711d4a341f2b52ab56f157f6b245264028180214299e34bee6203",
+              "size": 11
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "input.ini",
+            1,
+            "name = one\n"
+          ],
+          "attributes": {
+            "line": "name = one\n",
+            "lineno": 1,
+            "message": "File contains no section headers.\nfile: 'input.ini', line: 1\n'name = one\\n'",
+            "source": "input.ini"
+          },
+          "message": "File contains no section headers.\nfile: 'input.ini', line: 1\n'name = one\\n'",
+          "module": "configparser",
+          "type": "MissingSectionHeaderError"
+        },
+        "stdout": "",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 6
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "interpolation-valid",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a62617365203d20686f6d650a70617468203d2025286261736529732f646174610a",
+          "normalized": "[app]\nbase = home\npath = %(base)s/data\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 39,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "c1836951db9f1598ae030ad77e61387504dfc91418ad20a48015e6a885f19cf9",
+              "size": 39
+            },
+            "normalized.ini": {
+              "sha256": "7eaa96e0cec126459cb3ded8157b0717a5201e6f181a71e93fab4000d7230a0e",
+              "size": 40
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"base\": \"home\", \"path\": \"home/data\"}\n",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 13,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a62617365203d20686f6d650a70617468203d2025286261736529732f646174610a",
+          "normalized": "[app]\nbase = home\npath = %(base)s/data\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 39,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "c1836951db9f1598ae030ad77e61387504dfc91418ad20a48015e6a885f19cf9",
+              "size": 39
+            },
+            "normalized.ini": {
+              "sha256": "7eaa96e0cec126459cb3ded8157b0717a5201e6f181a71e93fab4000d7230a0e",
+              "size": 40
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"base\": \"home\", \"path\": \"home/data\"}\n",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 13
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "interpolation-error",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a70617468203d2025286d697373696e6729732f646174610a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 30,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "9c11f1618f9ed7694b1d688662c052ae2a0615df78b6d03dfecc90cd26a11f6d",
+              "size": 30
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "path",
+            "app",
+            "%(missing)s/data",
+            "missing"
+          ],
+          "attributes": {
+            "message": "Bad value substitution: option 'path' in section 'app' contains an interpolation key 'missing' which is not a valid option name. Raw value: '%(missing)s/data'",
+            "option": "path",
+            "reference": "missing",
+            "section": "app"
+          },
+          "message": "Bad value substitution: option 'path' in section 'app' contains an interpolation key 'missing' which is not a valid option name. Raw value: '%(missing)s/data'",
+          "module": "configparser",
+          "type": "InterpolationMissingOptionError"
+        },
+        "stdout": "",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 20,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a70617468203d2025286d697373696e6729732f646174610a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 30,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "9c11f1618f9ed7694b1d688662c052ae2a0615df78b6d03dfecc90cd26a11f6d",
+              "size": 30
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "path",
+            "app",
+            "%(missing)s/data",
+            "missing"
+          ],
+          "attributes": {
+            "message": "Bad value substitution: option 'path' in section 'app' contains an interpolation key 'missing' which is not a valid option name. Raw value: '%(missing)s/data'",
+            "option": "path",
+            "reference": "missing",
+            "section": "app"
+          },
+          "message": "Bad value substitution: option 'path' in section 'app' contains an interpolation key 'missing' which is not a valid option name. Raw value: '%(missing)s/data'",
+          "module": "configparser",
+          "type": "InterpolationMissingOptionError"
+        },
+        "stdout": "",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 20
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "missing-option",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 17,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "c71f554791f10b43e78e8adc9079c46c82a474c02a1698780420abf72d1911df",
+              "size": 17
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "missing",
+            "app"
+          ],
+          "attributes": {
+            "message": "No option 'missing' in section: 'app'",
+            "option": "missing",
+            "section": "app"
+          },
+          "message": "No option 'missing' in section: 'app'",
+          "module": "configparser",
+          "type": "NoOptionError"
+        },
+        "stdout": "{\"name\": \"one\"}\n",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 6,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0a6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 17,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "c71f554791f10b43e78e8adc9079c46c82a474c02a1698780420abf72d1911df",
+              "size": 17
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "missing",
+            "app"
+          ],
+          "attributes": {
+            "message": "No option 'missing' in section: 'app'",
+            "option": "missing",
+            "section": "app"
+          },
+          "message": "No option 'missing' in section: 'app'",
+          "module": "configparser",
+          "type": "NoOptionError"
+        },
+        "stdout": "{\"name\": \"one\"}\n",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 6
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "crlf-multiline",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0d0a6e616d65203d206f6e650d0a2020202074776f0d0a",
+          "normalized": "[app]\nname = one\n\ttwo\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 28,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "c459a735904cd26dfcfdcc35f6ae1ce373a08e3e1f0c94f110afdfad617bcc66",
+              "size": 28
+            },
+            "normalized.ini": {
+              "sha256": "1802f9816b2f5908a286712ac541f72faf75981b6aebfb9d00bc45758e718817",
+              "size": 23
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"name\": \"one\\ntwo\"}\n",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 20,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6170705d0d0a6e616d65203d206f6e650d0a2020202074776f0d0a",
+          "normalized": "[app]\nname = one\n\ttwo\n\n",
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 28,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "c459a735904cd26dfcfdcc35f6ae1ce373a08e3e1f0c94f110afdfad617bcc66",
+              "size": 28
+            },
+            "normalized.ini": {
+              "sha256": "1802f9816b2f5908a286712ac541f72faf75981b6aebfb9d00bc45758e718817",
+              "size": 23
+            }
+          }
+        },
+        "exception": null,
+        "stdout": "{\"name\": \"one\\ntwo\"}\n",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 20
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "empty-source-name",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "6d697373696e67206865616465720a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "62aa7d5c3bb48f62463aab39b2137b888ec96004e6bd9be739385d02c058bf29",
+              "size": 15
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "",
+            1,
+            "missing header\n"
+          ],
+          "attributes": {
+            "line": "missing header\n",
+            "lineno": 1,
+            "message": "File contains no section headers.\nfile: '', line: 1\n'missing header\\n'",
+            "source": ""
+          },
+          "message": "File contains no section headers.\nfile: '', line: 1\n'missing header\\n'",
+          "module": "configparser",
+          "type": "MissingSectionHeaderError"
+        },
+        "stdout": "",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 13,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "6d697373696e67206865616465720a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": null,
+          "stream_position_error": {
+            "args": [
+              "telling position disabled by next() call"
+            ],
+            "attributes": {},
+            "message": "telling position disabled by next() call",
+            "module": "builtins",
+            "type": "OSError"
+          },
+          "files": {
+            "input.ini": {
+              "sha256": "62aa7d5c3bb48f62463aab39b2137b888ec96004e6bd9be739385d02c058bf29",
+              "size": 15
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "",
+            1,
+            "missing header\n"
+          ],
+          "attributes": {
+            "line": "missing header\n",
+            "lineno": 1,
+            "message": "File contains no section headers.\nfile: '', line: 1\n'missing header\\n'",
+            "source": ""
+          },
+          "message": "File contains no section headers.\nfile: '', line: 1\n'missing header\\n'",
+          "module": "configparser",
+          "type": "MissingSectionHeaderError"
+        },
+        "stdout": "",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 13
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    },
+    {
+      "id": "missing-section",
+      "status": "PASS",
+      "original": {
+        "effects": {
+          "input_bytes_hex": "5b6f746865725d0a6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 19,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "ed21f2c764bac87a9320e05627730fceeba844b8344453a78532205afc490707",
+              "size": 19
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "app"
+          ],
+          "attributes": {
+            "message": "No section: 'app'",
+            "section": "app"
+          },
+          "message": "No section: 'app'",
+          "module": "configparser",
+          "type": "NoSectionError"
+        },
+        "stdout": "",
+        "warnings": [
+          {
+            "category": "DeprecationWarning",
+            "filename": "program.py",
+            "lineno": 6,
+            "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+          }
+        ]
+      },
+      "candidate": {
+        "effects": {
+          "input_bytes_hex": "5b6f746865725d0a6e616d65203d206f6e650a",
+          "normalized": null,
+          "stream_closed_after_call": false,
+          "stream_closed_after_cleanup": true,
+          "stream_position": 19,
+          "stream_position_error": null,
+          "files": {
+            "input.ini": {
+              "sha256": "ed21f2c764bac87a9320e05627730fceeba844b8344453a78532205afc490707",
+              "size": 19
+            }
+          }
+        },
+        "exception": {
+          "args": [
+            "app"
+          ],
+          "attributes": {
+            "message": "No section: 'app'",
+            "section": "app"
+          },
+          "message": "No section: 'app'",
+          "module": "configparser",
+          "type": "NoSectionError"
+        },
+        "stdout": "",
+        "warnings": []
+      },
+      "differences": [],
+      "expected_changes": [
+        {
+          "path": "$.warnings",
+          "reason": "Remove exactly one matching readfp warning; all other measured fields must be identical.",
+          "original": [
+            {
+              "category": "DeprecationWarning",
+              "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead.",
+              "filename": "program.py",
+              "lineno": 6
+            }
+          ],
+          "candidate": []
+        }
+      ]
+    }
+  ],
+  "regressions": 0,
+  "expected_changes": 12,
+  "negative_control": false,
+  "limitations": [
+    "Only the original, reviewed reference fixture was executed.",
+    "Evidence applies only to the declared cases and exact Linux CPython runtime identities.",
+    "Traceback stacks, exception chaining, import hooks, concurrent code and arbitrary external effects are unmeasured.",
+    "Process limits and a scrubbed environment are not an OS sandbox.",
+    "Passing cases do not establish general equivalence, human validation or maintainer adoption."
+  ]
+}

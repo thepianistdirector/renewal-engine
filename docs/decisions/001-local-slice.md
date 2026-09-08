@@ -1,7 +1,7 @@
 # Decision 001: bounded local ConfigParser migration
 
-State: implementation architecture proposed under the September 7 owner launch.
-The original reference fixture and exact runtime matrix await the requested owner decision.
+State: narrow fixture and runtime matrix approved by the owner September 8.
+Real execution and packaged recovery checks now have retained evidence.
 
 ## Observed facts
 
@@ -12,11 +12,13 @@ The public project identity freshly returned by the briefs is
 prj_9ef51e9826817323b774d5d3b900520f. Public task listing shows all 12 tasks;
 proposals shows one approved founding plan and nothing open.
 
-Native Goal belongs to task 01a07e1c-3ed5-7f90-9b4d-f5c4977ad123, active.
+Native Goal belongs to task 01a07e1c-3ed5-7f90-9b4d-f5c4977ad123. It still
+reports blocked after the owner resumed; the available tool has no resume action.
 The destination's turn metadata reports OpenAI gpt-6-astra, high effort.
 Owner inventory found this as the only Renewal Engine primary task.
 Installed target interpreter reports CPython 3.12.14 on Linux x86_64.
-No Python 3.11 executable was found in the inspected executable locations.
+The initial audit found no Python 3.11 executable. An approved project-local
+build now supplies actual CPython 3.11.16; no shim is used.
 
 ## Requirements and architecture
 
@@ -52,10 +54,11 @@ An independently constructed wrong patch must fail on a concrete discrepancy.
 
 Use a new original AGPL-3.0 reference as the narrow 0.1 cut. This cannot satisfy
 the older maintained-upstream fixture or volunteer-adoption requirements.
-Owner approval is pending; candidate fixture material can be prepared for review.
+Owner approved the original fixture and proceeding on September 8, 2026.
 Recommend old CPython 3.11.16 and installed target CPython 3.12.14.
 Exact patch versions are the initial validation matrix, not all Python versions.
-Public release, Git author identity, fresh external reproduction, human review,
+Git author identity was resolved from the repository history without global
+configuration changes. Public release, fresh external reproduction, human review,
 and native Tanduna publication remain separate unresolved gates.
 
 ## Alternatives, costs, and rollback

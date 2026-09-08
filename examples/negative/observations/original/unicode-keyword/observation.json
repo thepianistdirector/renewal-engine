@@ -1,0 +1,30 @@
+{
+  "effects": {
+    "input_bytes_hex": "5b6170705d0a6e616d65203d20636166c3a920e69db1e4baac0a",
+    "normalized": "[app]\nname = café 東京\n\n",
+    "stream_closed_after_call": false,
+    "stream_closed_after_cleanup": true,
+    "stream_position": 26,
+    "stream_position_error": null,
+    "files": {
+      "input.ini": {
+        "sha256": "b9b818b4043ac0be14bedd1d17e04e5dc5839ddf7e99f34f9ed98ecabd67e69e",
+        "size": 26
+      },
+      "normalized.ini": {
+        "sha256": "3603cdf5da149dc1fc9c11979d0e33a79d64f1beb705893c3943074e36331b33",
+        "size": 27
+      }
+    }
+  },
+  "exception": null,
+  "stdout": "{\"name\": \"café 東京\"}\n",
+  "warnings": [
+    {
+      "category": "DeprecationWarning",
+      "filename": "program.py",
+      "lineno": 20,
+      "message": "This method will be removed in Python 3.12. Use 'parser.read_file()' instead."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 # Renewal Engine roadmap
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `23097237e6b11d4ffb68a1d120e80a1d0de1d4ff9b771fb83c28c983106fc295`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `7f8a3a6879964ea924aa7e33f693a8507fa14bc026ba78047769526ffd045827`.
 
-Blocked on the pending original-fixture decision; local candidate implemented and tested, actual reference execution and public completion still incomplete
+Local 0.1.0 release candidate runtime verified; public release and native plan publication pending
 
 218 outcome tasks in 26 waves. 0.1: 50; later 0.x: 72; long-term: 80; exploratory: 16.
 
@@ -16,10 +16,10 @@ RE-W01 → RE-W02 → RE-W03 → RE-W04 → RE-W05
 
 ## Release access and unresolved decisions
 
-No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs and completes source inspection and saved-evidence verification. README contains tested local commands; actual demo runtime verification and public access instructions remain pending.
+Local 0.1.0 CLI/source release candidate installs and passes actual CPython 3.11.16 / 3.12.14 normal, negative-control, reopen and real SIGINT recovery checks on Linux x86_64. README contains tested commands and full examples. Public release, external reproduction and human validation remain pending.
 
-- **D01 · UNRESOLVED:** Approve a small original lawful ConfigParser fixture as new mapped 0.1 scope; this does not satisfy the upstream-maintained-fixture original W1-T1 requirement.
-- **D02 · UNRESOLVED:** Dependency acquisition is owner-authorized. Official CPython 3.11.16 built project-locally and both runtime identities are probed. Target 3.12.14 remains proposed; actual reference execution and fixture decision are pending.
+- **D01 · APPROVED:** Owner approved the prepared original AGPL-3.0 ConfigParser fixture September 8, 2026, as narrow 0.1 scope. Original W1-T1 maintained-upstream acceptance remains unchanged and incomplete.
+- **D02 · APPROVED:** Owner approved actual CPython 3.11.16 / 3.12.14 comparison September 8. Both identities and actual packaged normal/negative and restart observations are retained.
 - **D03 · UNRESOLVED:** Authorize concrete GitHub versioned release only after local candidate evidence and exact artifact review.
 - **D04 · UNRESOLVED:** Authorize concrete native Tanduna revision/proposal publication after supported workflow discovery and export review.
 
@@ -35,16 +35,16 @@ No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs a
 
 **Assigned outcomes:**
 
-- `renewal-engine:N01-01` — Ratify the ConfigParser cut (BLOCKED)
-- `renewal-engine:N01-02` — Resolve lawful fixture provenance (BLOCKED)
-- `renewal-engine:N01-03` — Pin the actual baseline interpreter (IN PROGRESS)
-- `renewal-engine:N01-04` — Approve the modern runtime (BLOCKED)
+- `renewal-engine:N01-01` — Ratify the ConfigParser cut (IMPLEMENTED)
+- `renewal-engine:N01-02` — Resolve lawful fixture provenance (IMPLEMENTED)
+- `renewal-engine:N01-03` — Pin the actual baseline interpreter (RUNTIME VERIFIED)
+- `renewal-engine:N01-04` — Approve the modern runtime (RUNTIME VERIFIED)
 - `renewal-engine:N01-05` — Declare unchanged behavior (IMPLEMENTED)
-- `renewal-engine:N01-06` — Freeze intentional changes (AUTOMATED PASS)
+- `renewal-engine:N01-06` — Freeze intentional changes (RUNTIME VERIFIED)
 - `renewal-engine:N01-07` — Define inspection authority (AUTOMATED PASS)
-- `renewal-engine:N01-08` — Choose the supported Linux environment (PLANNED)
+- `renewal-engine:N01-08` — Choose the supported Linux environment (RUNTIME VERIFIED)
 - `renewal-engine:N01-09` — Approve the narrow architecture (IMPLEMENTED)
-- `renewal-engine:N01-10` — Accept the 0.1 execution contract (BLOCKED)
+- `renewal-engine:N01-10` — Accept the 0.1 execution contract (IMPLEMENTED)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N01-01 through renewal-engine:N01-10. An unapproved cut or unavailable interpreter invalidates runtime claims. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -58,16 +58,16 @@ No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs a
 
 **Assigned outcomes:**
 
-- `renewal-engine:N02-01` — Define trusted case envelopes (IMPLEMENTED)
-- `renewal-engine:N02-02` — Capture valid and Unicode INI behavior (PLANNED)
-- `renewal-engine:N02-03` — Capture duplicate-section failures (PLANNED)
-- `renewal-engine:N02-04` — Capture malformed-input failures (PLANNED)
-- `renewal-engine:N02-05` — Capture source-name semantics (PLANNED)
-- `renewal-engine:N02-06` — Capture interpolation behavior (PLANNED)
-- `renewal-engine:N02-07` — Capture stream and file effects (PLANNED)
-- `renewal-engine:N02-08` — Record baseline observations (PLANNED)
+- `renewal-engine:N02-01` — Define trusted case envelopes (RUNTIME VERIFIED)
+- `renewal-engine:N02-02` — Capture valid and Unicode INI behavior (RUNTIME VERIFIED)
+- `renewal-engine:N02-03` — Capture duplicate-section failures (RUNTIME VERIFIED)
+- `renewal-engine:N02-04` — Capture malformed-input failures (RUNTIME VERIFIED)
+- `renewal-engine:N02-05` — Capture source-name semantics (RUNTIME VERIFIED)
+- `renewal-engine:N02-06` — Capture interpolation behavior (RUNTIME VERIFIED)
+- `renewal-engine:N02-07` — Capture stream and file effects (RUNTIME VERIFIED)
+- `renewal-engine:N02-08` — Record baseline observations (RUNTIME VERIFIED)
 - `renewal-engine:N02-09` — Expose measurement limits (IMPLEMENTED)
-- `renewal-engine:N02-10` — Seal characterization evidence (IMPLEMENTED)
+- `renewal-engine:N02-10` — Seal characterization evidence (RUNTIME VERIFIED)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N02-01 through renewal-engine:N02-10. Incomplete characterization can make a broken migration appear correct. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -85,11 +85,11 @@ No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs a
 - `renewal-engine:N03-02` — Recognize direct ConfigParser construction (AUTOMATED PASS)
 - `renewal-engine:N03-03` — Refuse shadowed or rebound receivers (AUTOMATED PASS)
 - `renewal-engine:N03-04` — Refuse unsupported call signatures (AUTOMATED PASS)
-- `renewal-engine:N03-05` — Preserve source-name arguments (IMPLEMENTED)
+- `renewal-engine:N03-05` — Preserve source-name arguments (RUNTIME VERIFIED)
 - `renewal-engine:N03-06` — Apply bounded source-span edits (AUTOMATED PASS)
-- `renewal-engine:N03-07` — Create a separate candidate copy (AUTOMATED PASS)
-- `renewal-engine:N03-08` — Emit a deterministic focused patch (AUTOMATED PASS)
-- `renewal-engine:N03-09` — Explain repeat application (AUTOMATED PASS)
+- `renewal-engine:N03-07` — Create a separate candidate copy (RUNTIME VERIFIED)
+- `renewal-engine:N03-08` — Emit a deterministic focused patch (RUNTIME VERIFIED)
+- `renewal-engine:N03-09` — Explain repeat application (RUNTIME VERIFIED)
 - `renewal-engine:N03-10` — Verify the conservative recipe boundary (IMPLEMENTED)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N03-01 through renewal-engine:N03-10. Binding mistakes or imprecise spans can rewrite unrelated behavior. Retain failing and unrun evidence; require the named human or runtime observation where specified.
@@ -108,12 +108,12 @@ No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs a
 - `renewal-engine:N04-02` — Execute only the trusted reference (IMPLEMENTED)
 - `renewal-engine:N04-03` — Scrub the execution environment (AUTOMATED PASS)
 - `renewal-engine:N04-04` — Bound process lifetime and output (IMPLEMENTED)
-- `renewal-engine:N04-05` — Retain raw structured observations (IMPLEMENTED)
-- `renewal-engine:N04-06` — Compare unchanged behavior strictly (AUTOMATED PASS)
-- `renewal-engine:N04-07` — Apply the frozen expected-change policy (AUTOMATED PASS)
-- `renewal-engine:N04-08` — Reject a deliberately wrong candidate (IMPLEMENTED)
+- `renewal-engine:N04-05` — Retain raw structured observations (RUNTIME VERIFIED)
+- `renewal-engine:N04-06` — Compare unchanged behavior strictly (RUNTIME VERIFIED)
+- `renewal-engine:N04-07` — Apply the frozen expected-change policy (RUNTIME VERIFIED)
+- `renewal-engine:N04-08` — Reject a deliberately wrong candidate (RUNTIME VERIFIED)
 - `renewal-engine:N04-09` — Report incomplete evidence honestly (IMPLEMENTED)
-- `renewal-engine:N04-10` — Verify real old/new differential execution (IMPLEMENTED)
+- `renewal-engine:N04-10` — Verify real old/new differential execution (RUNTIME VERIFIED)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N04-01 through renewal-engine:N04-10. A self-fulfilling comparator or unsafe execution can invalidate all evidence. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -127,11 +127,11 @@ No public 0.1 release exists. A local 0.1.0.dev1 CLI/source candidate installs a
 
 **Assigned outcomes:**
 
-- `renewal-engine:N05-01` — Generate one evidence-backed review report (IMPLEMENTED)
+- `renewal-engine:N05-01` — Generate one evidence-backed review report (RUNTIME VERIFIED)
 - `renewal-engine:N05-02` — Make the report accessible offline (IMPLEMENTED)
-- `renewal-engine:N05-03` — Persist attempts atomically (AUTOMATED PASS)
-- `renewal-engine:N05-04` — Provide a safe restart workflow (IMPLEMENTED)
-- `renewal-engine:N05-05` — Build an installable local distribution (AUTOMATED PASS)
+- `renewal-engine:N05-03` — Persist attempts atomically (RUNTIME VERIFIED)
+- `renewal-engine:N05-04` — Provide a safe restart workflow (RUNTIME VERIFIED)
+- `renewal-engine:N05-05` — Build an installable local distribution (RUNTIME VERIFIED)
 - `renewal-engine:N05-06` — Verify first-run and limitation instructions (IMPLEMENTED)
 - `renewal-engine:N05-07` — Prepare a lawful release candidate (IMPLEMENTED)
 - `renewal-engine:N05-08` — Publish and read back versioned 0.1 (PLANNED)

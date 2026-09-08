@@ -1,0 +1,21 @@
+"""Original AGPL-3.0 ConfigParser migration fixture. See PROVENANCE.md."""
+
+def load_default(stream, source):
+    import configparser
+    parser = configparser.ConfigParser()
+    parser.readfp(stream)
+    return parser
+
+
+def load_positional(stream, source):
+    from configparser import ConfigParser
+    parser = ConfigParser()
+    parser.readfp(stream, source)
+    return parser
+
+
+def load_keyword(stream, source):
+    import configparser as config
+    parser = config.ConfigParser()
+    parser.readfp(fp=stream, filename=source)
+    return parser

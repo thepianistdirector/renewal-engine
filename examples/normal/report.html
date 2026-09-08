@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Renewal Engine — migration review</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#172d31;background:#f5f4ee;line-height:1.6;font-size:16px}
+*{box-sizing:border-box}body{margin:0}a{color:#095e69;text-underline-offset:.2em}a:focus-visible,summary:focus-visible{outline:3px solid #ad4400;outline-offset:5px}
+.skip{position:absolute;top:-100px;left:16px;background:white;padding:12px}.skip:focus{top:12px}
+header,main,footer{max-width:1000px;margin:auto;padding:32px 24px}header{padding-top:54px;border-bottom:1px solid #a6b4ae}
+.eyebrow{font-weight:700;letter-spacing:.08em;font-size:.8rem;text-transform:uppercase}h1{font-size:clamp(2rem,6vw,3.8rem);line-height:1.1;margin:.5em 0}h2{margin-top:2em}h3{overflow-wrap:anywhere}
+.status{border-left:5px solid #966000;background:#fff8dc;padding:16px 20px;margin:24px 0}.status p{margin:.4em 0}
+nav{display:flex;flex-wrap:wrap;gap:12px 24px}.metrics{display:flex;flex-wrap:wrap;gap:24px;margin:24px 0}.metrics p{margin:0}.metrics strong{font-size:1.8rem;display:block}
+article{background:#fff;padding:20px 24px;margin:16px 0;border:1px solid #bdc8c2;border-radius:8px}article h3{margin-top:0}summary{cursor:pointer;padding:8px 0;font-weight:650}
+code,pre{font-family:ui-monospace,monospace;font-size:.88rem}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eef2ef;padding:16px}.hash{overflow-wrap:anywhere}li{margin:.6em 0}
+footer{font-size:.9rem;border-top:1px solid #a6b4ae}@media(max-width:480px){header,main,footer{padding:24px 16px}article{padding:16px}}
+@media print{details{display:block}nav,.skip{display:none}article{break-inside:avoid}}
+</style></head><body><a class="skip" href="#main">Skip to review</a>
+<header><p class="eyebrow">Renewal Engine · local migration review</p><h1>Understand every change.</h1>
+<p>A bounded ConfigParser migration, with its evidence kept beside the patch.</p>
+<div class="status" role="status"><strong>PASS</strong><p>Behavior was measured only for the declared cases and exact runtimes.</p></div>
+<nav aria-label="Saved evidence"><a href="changes.patch">Review patch</a><a href="results.json">Results JSON</a><a href="manifest.json">Run manifest</a><a href="state.json">Recovery state</a></nav></header>
+<main id="main"><div class="metrics"><p><strong>1</strong>Python files inspected</p><p><strong>1</strong>Files with edits</p><p><strong>0</strong>Unsupported findings</p></div>
+<h2>Review the source</h2><p>Read each proposed edit, then inspect <code>changes.patch</code>. Your original source stays unchanged. Candidate files are saved in <code>candidate/</code>.</p><article><h3>program.py</h3><p>Candidate edits available</p><ul><li><strong>SUPPORTED</strong> · Line 6: supported local ConfigParser binding; source and stream semantics require differential review</li><li><strong>SUPPORTED</strong> · Line 13: supported local ConfigParser binding; source and stream semantics require differential review</li><li><strong>SUPPORTED</strong> · Line 20: supported local ConfigParser binding; source and stream semantics require differential review</li></ul><details><summary>Edits and source identity</summary><ul><li><code>readfp</code> → <code>read_file</code> — Python 3.12 removed ConfigParser.readfp; preserve its read_file delegation</li><li><code>readfp</code> → <code>read_file</code> — Python 3.12 removed ConfigParser.readfp; preserve its read_file delegation</li><li><code>readfp</code> → <code>read_file</code> — Python 3.12 removed ConfigParser.readfp; preserve its read_file delegation</li><li><code>fp</code> → <code>f</code> — Preserve the exact readfp argument binding in read_file</li><li><code>filename</code> → <code>source</code> — Preserve the exact readfp argument binding in read_file</li></ul><p>Original SHA-256</p><code class="hash">a3fcf8eb90f8dad1bfb66c9ef7b5ad9cc3190cfb1ec14a36f47b86bda252e7c3</code><p>Candidate SHA-256</p><code class="hash">6a1fe3444d5999d57b433823b2975910ccb3bdeff8bb1761ae89cadd5f97a527</code></details></article>
+<h2>Behavior comparison</h2><article><h3>valid-default · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d2052656e6577616c0a636f756e74203d20320a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nname = Renewal\ncount = 2\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 31,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;8667dfd6185752a659137930d9b0e30c3321e11e91fdd6d05d60aa40dd5ebec9&quot;,
+        &quot;size&quot;: 31
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;34726b608a3d6733e528c08e039fecccd32b164edb73f9f5d21cc08add4d2061&quot;,
+        &quot;size&quot;: 32
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;count\&quot;: \&quot;2\&quot;, \&quot;name\&quot;: \&quot;Renewal\&quot;}\n&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 6,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d2052656e6577616c0a636f756e74203d20320a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nname = Renewal\ncount = 2\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 31,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;8667dfd6185752a659137930d9b0e30c3321e11e91fdd6d05d60aa40dd5ebec9&quot;,
+        &quot;size&quot;: 31
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;34726b608a3d6733e528c08e039fecccd32b164edb73f9f5d21cc08add4d2061&quot;,
+        &quot;size&quot;: 32
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;count\&quot;: \&quot;2\&quot;, \&quot;name\&quot;: \&quot;Renewal\&quot;}\n&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>unicode-keyword · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d20636166c3a920e69db1e4baac0a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nname = café 東京\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 26,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;b9b818b4043ac0be14bedd1d17e04e5dc5839ddf7e99f34f9ed98ecabd67e69e&quot;,
+        &quot;size&quot;: 26
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;3603cdf5da149dc1fc9c11979d0e33a79d64f1beb705893c3943074e36331b33&quot;,
+        &quot;size&quot;: 27
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;name\&quot;: \&quot;café 東京\&quot;}\n&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 20,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d20636166c3a920e69db1e4baac0a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nname = café 東京\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 26,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;b9b818b4043ac0be14bedd1d17e04e5dc5839ddf7e99f34f9ed98ecabd67e69e&quot;,
+        &quot;size&quot;: 26
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;3603cdf5da149dc1fc9c11979d0e33a79d64f1beb705893c3943074e36331b33&quot;,
+        &quot;size&quot;: 27
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;name\&quot;: \&quot;café 東京\&quot;}\n&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>duplicate-source-positional · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d206f6e650a5b6170705d0a6e616d65203d2074776f0a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;871c41c53dfcd559aa93e946a6de4bda50fd67c30930d42ebf5c5badf08920b8&quot;,
+        &quot;size&quot;: 34
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;app&quot;,
+      &quot;named-input.ini&quot;,
+      3
+    ],
+    &quot;attributes&quot;: {
+      &quot;lineno&quot;: 3,
+      &quot;message&quot;: &quot;While reading from &#x27;named-input.ini&#x27; [line  3]: section &#x27;app&#x27; already exists&quot;,
+      &quot;section&quot;: &quot;app&quot;,
+      &quot;source&quot;: &quot;named-input.ini&quot;
+    },
+    &quot;message&quot;: &quot;While reading from &#x27;named-input.ini&#x27; [line  3]: section &#x27;app&#x27; already exists&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;DuplicateSectionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 13,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d206f6e650a5b6170705d0a6e616d65203d2074776f0a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;871c41c53dfcd559aa93e946a6de4bda50fd67c30930d42ebf5c5badf08920b8&quot;,
+        &quot;size&quot;: 34
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;app&quot;,
+      &quot;named-input.ini&quot;,
+      3
+    ],
+    &quot;attributes&quot;: {
+      &quot;lineno&quot;: 3,
+      &quot;message&quot;: &quot;While reading from &#x27;named-input.ini&#x27; [line  3]: section &#x27;app&#x27; already exists&quot;,
+      &quot;section&quot;: &quot;app&quot;,
+      &quot;source&quot;: &quot;named-input.ini&quot;
+    },
+    &quot;message&quot;: &quot;While reading from &#x27;named-input.ini&#x27; [line  3]: section &#x27;app&#x27; already exists&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;DuplicateSectionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>duplicate-option-keyword · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d206f6e650a6e616d65203d2074776f0a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;262b9a72ffb9bb17588c1075119c51f5bef87caaf268a486032bb73dbf865ee9&quot;,
+        &quot;size&quot;: 28
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;app&quot;,
+      &quot;name&quot;,
+      &quot;options.ini&quot;,
+      3
+    ],
+    &quot;attributes&quot;: {
+      &quot;lineno&quot;: 3,
+      &quot;message&quot;: &quot;While reading from &#x27;options.ini&#x27; [line  3]: option &#x27;name&#x27; in section &#x27;app&#x27; already exists&quot;,
+      &quot;option&quot;: &quot;name&quot;,
+      &quot;section&quot;: &quot;app&quot;,
+      &quot;source&quot;: &quot;options.ini&quot;
+    },
+    &quot;message&quot;: &quot;While reading from &#x27;options.ini&#x27; [line  3]: option &#x27;name&#x27; in section &#x27;app&#x27; already exists&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;DuplicateOptionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 20,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d206f6e650a6e616d65203d2074776f0a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;262b9a72ffb9bb17588c1075119c51f5bef87caaf268a486032bb73dbf865ee9&quot;,
+        &quot;size&quot;: 28
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;app&quot;,
+      &quot;name&quot;,
+      &quot;options.ini&quot;,
+      3
+    ],
+    &quot;attributes&quot;: {
+      &quot;lineno&quot;: 3,
+      &quot;message&quot;: &quot;While reading from &#x27;options.ini&#x27; [line  3]: option &#x27;name&#x27; in section &#x27;app&#x27; already exists&quot;,
+      &quot;option&quot;: &quot;name&quot;,
+      &quot;section&quot;: &quot;app&quot;,
+      &quot;source&quot;: &quot;options.ini&quot;
+    },
+    &quot;message&quot;: &quot;While reading from &#x27;options.ini&#x27; [line  3]: option &#x27;name&#x27; in section &#x27;app&#x27; already exists&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;DuplicateOptionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>malformed-source-keyword · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b62726f6b656e0a6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;eb6e7b63e93d65ddd6213d902c692d685bdb44c06943c384f7859ecb7daae72f&quot;,
+        &quot;size&quot;: 19
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;broken.ini&quot;,
+      1,
+      &quot;[broken\n&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;line&quot;: &quot;[broken\n&quot;,
+      &quot;lineno&quot;: 1,
+      &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;broken.ini&#x27;, line: 1\n&#x27;[broken\\n&#x27;&quot;,
+      &quot;source&quot;: &quot;broken.ini&quot;
+    },
+    &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;broken.ini&#x27;, line: 1\n&#x27;[broken\\n&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;MissingSectionHeaderError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 20,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b62726f6b656e0a6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;eb6e7b63e93d65ddd6213d902c692d685bdb44c06943c384f7859ecb7daae72f&quot;,
+        &quot;size&quot;: 19
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;broken.ini&quot;,
+      1,
+      &quot;[broken\n&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;line&quot;: &quot;[broken\n&quot;,
+      &quot;lineno&quot;: 1,
+      &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;broken.ini&#x27;, line: 1\n&#x27;[broken\\n&#x27;&quot;,
+      &quot;source&quot;: &quot;broken.ini&quot;
+    },
+    &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;broken.ini&#x27;, line: 1\n&#x27;[broken\\n&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;MissingSectionHeaderError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>missing-header-default · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;484baca2a88711d4a341f2b52ab56f157f6b245264028180214299e34bee6203&quot;,
+        &quot;size&quot;: 11
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;input.ini&quot;,
+      1,
+      &quot;name = one\n&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;line&quot;: &quot;name = one\n&quot;,
+      &quot;lineno&quot;: 1,
+      &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;input.ini&#x27;, line: 1\n&#x27;name = one\\n&#x27;&quot;,
+      &quot;source&quot;: &quot;input.ini&quot;
+    },
+    &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;input.ini&#x27;, line: 1\n&#x27;name = one\\n&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;MissingSectionHeaderError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 6,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;484baca2a88711d4a341f2b52ab56f157f6b245264028180214299e34bee6203&quot;,
+        &quot;size&quot;: 11
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;input.ini&quot;,
+      1,
+      &quot;name = one\n&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;line&quot;: &quot;name = one\n&quot;,
+      &quot;lineno&quot;: 1,
+      &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;input.ini&#x27;, line: 1\n&#x27;name = one\\n&#x27;&quot;,
+      &quot;source&quot;: &quot;input.ini&quot;
+    },
+    &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;input.ini&#x27;, line: 1\n&#x27;name = one\\n&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;MissingSectionHeaderError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>interpolation-valid · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a62617365203d20686f6d650a70617468203d2025286261736529732f646174610a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nbase = home\npath = %(base)s/data\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 39,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;c1836951db9f1598ae030ad77e61387504dfc91418ad20a48015e6a885f19cf9&quot;,
+        &quot;size&quot;: 39
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;7eaa96e0cec126459cb3ded8157b0717a5201e6f181a71e93fab4000d7230a0e&quot;,
+        &quot;size&quot;: 40
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;base\&quot;: \&quot;home\&quot;, \&quot;path\&quot;: \&quot;home/data\&quot;}\n&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 13,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a62617365203d20686f6d650a70617468203d2025286261736529732f646174610a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nbase = home\npath = %(base)s/data\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 39,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;c1836951db9f1598ae030ad77e61387504dfc91418ad20a48015e6a885f19cf9&quot;,
+        &quot;size&quot;: 39
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;7eaa96e0cec126459cb3ded8157b0717a5201e6f181a71e93fab4000d7230a0e&quot;,
+        &quot;size&quot;: 40
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;base\&quot;: \&quot;home\&quot;, \&quot;path\&quot;: \&quot;home/data\&quot;}\n&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>interpolation-error · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a70617468203d2025286d697373696e6729732f646174610a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 30,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;9c11f1618f9ed7694b1d688662c052ae2a0615df78b6d03dfecc90cd26a11f6d&quot;,
+        &quot;size&quot;: 30
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;path&quot;,
+      &quot;app&quot;,
+      &quot;%(missing)s/data&quot;,
+      &quot;missing&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;message&quot;: &quot;Bad value substitution: option &#x27;path&#x27; in section &#x27;app&#x27; contains an interpolation key &#x27;missing&#x27; which is not a valid option name. Raw value: &#x27;%(missing)s/data&#x27;&quot;,
+      &quot;option&quot;: &quot;path&quot;,
+      &quot;reference&quot;: &quot;missing&quot;,
+      &quot;section&quot;: &quot;app&quot;
+    },
+    &quot;message&quot;: &quot;Bad value substitution: option &#x27;path&#x27; in section &#x27;app&#x27; contains an interpolation key &#x27;missing&#x27; which is not a valid option name. Raw value: &#x27;%(missing)s/data&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;InterpolationMissingOptionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 20,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a70617468203d2025286d697373696e6729732f646174610a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 30,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;9c11f1618f9ed7694b1d688662c052ae2a0615df78b6d03dfecc90cd26a11f6d&quot;,
+        &quot;size&quot;: 30
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;path&quot;,
+      &quot;app&quot;,
+      &quot;%(missing)s/data&quot;,
+      &quot;missing&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;message&quot;: &quot;Bad value substitution: option &#x27;path&#x27; in section &#x27;app&#x27; contains an interpolation key &#x27;missing&#x27; which is not a valid option name. Raw value: &#x27;%(missing)s/data&#x27;&quot;,
+      &quot;option&quot;: &quot;path&quot;,
+      &quot;reference&quot;: &quot;missing&quot;,
+      &quot;section&quot;: &quot;app&quot;
+    },
+    &quot;message&quot;: &quot;Bad value substitution: option &#x27;path&#x27; in section &#x27;app&#x27; contains an interpolation key &#x27;missing&#x27; which is not a valid option name. Raw value: &#x27;%(missing)s/data&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;InterpolationMissingOptionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>missing-option · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 17,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;c71f554791f10b43e78e8adc9079c46c82a474c02a1698780420abf72d1911df&quot;,
+        &quot;size&quot;: 17
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;missing&quot;,
+      &quot;app&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;message&quot;: &quot;No option &#x27;missing&#x27; in section: &#x27;app&#x27;&quot;,
+      &quot;option&quot;: &quot;missing&quot;,
+      &quot;section&quot;: &quot;app&quot;
+    },
+    &quot;message&quot;: &quot;No option &#x27;missing&#x27; in section: &#x27;app&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;NoOptionError&quot;
+  },
+  &quot;stdout&quot;: &quot;{\&quot;name\&quot;: \&quot;one\&quot;}\n&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 6,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0a6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 17,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;c71f554791f10b43e78e8adc9079c46c82a474c02a1698780420abf72d1911df&quot;,
+        &quot;size&quot;: 17
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;missing&quot;,
+      &quot;app&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;message&quot;: &quot;No option &#x27;missing&#x27; in section: &#x27;app&#x27;&quot;,
+      &quot;option&quot;: &quot;missing&quot;,
+      &quot;section&quot;: &quot;app&quot;
+    },
+    &quot;message&quot;: &quot;No option &#x27;missing&#x27; in section: &#x27;app&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;NoOptionError&quot;
+  },
+  &quot;stdout&quot;: &quot;{\&quot;name\&quot;: \&quot;one\&quot;}\n&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>crlf-multiline · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0d0a6e616d65203d206f6e650d0a2020202074776f0d0a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nname = one\n\ttwo\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 28,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;c459a735904cd26dfcfdcc35f6ae1ce373a08e3e1f0c94f110afdfad617bcc66&quot;,
+        &quot;size&quot;: 28
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;1802f9816b2f5908a286712ac541f72faf75981b6aebfb9d00bc45758e718817&quot;,
+        &quot;size&quot;: 23
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;name\&quot;: \&quot;one\\ntwo\&quot;}\n&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 20,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6170705d0d0a6e616d65203d206f6e650d0a2020202074776f0d0a&quot;,
+    &quot;normalized&quot;: &quot;[app]\nname = one\n\ttwo\n\n&quot;,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 28,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;c459a735904cd26dfcfdcc35f6ae1ce373a08e3e1f0c94f110afdfad617bcc66&quot;,
+        &quot;size&quot;: 28
+      },
+      &quot;normalized.ini&quot;: {
+        &quot;sha256&quot;: &quot;1802f9816b2f5908a286712ac541f72faf75981b6aebfb9d00bc45758e718817&quot;,
+        &quot;size&quot;: 23
+      }
+    }
+  },
+  &quot;exception&quot;: null,
+  &quot;stdout&quot;: &quot;{\&quot;name\&quot;: \&quot;one\\ntwo\&quot;}\n&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>empty-source-name · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;6d697373696e67206865616465720a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;62aa7d5c3bb48f62463aab39b2137b888ec96004e6bd9be739385d02c058bf29&quot;,
+        &quot;size&quot;: 15
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;&quot;,
+      1,
+      &quot;missing header\n&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;line&quot;: &quot;missing header\n&quot;,
+      &quot;lineno&quot;: 1,
+      &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;&#x27;, line: 1\n&#x27;missing header\\n&#x27;&quot;,
+      &quot;source&quot;: &quot;&quot;
+    },
+    &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;&#x27;, line: 1\n&#x27;missing header\\n&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;MissingSectionHeaderError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 13,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;6d697373696e67206865616465720a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: null,
+    &quot;stream_position_error&quot;: {
+      &quot;args&quot;: [
+        &quot;telling position disabled by next() call&quot;
+      ],
+      &quot;attributes&quot;: {},
+      &quot;message&quot;: &quot;telling position disabled by next() call&quot;,
+      &quot;module&quot;: &quot;builtins&quot;,
+      &quot;type&quot;: &quot;OSError&quot;
+    },
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;62aa7d5c3bb48f62463aab39b2137b888ec96004e6bd9be739385d02c058bf29&quot;,
+        &quot;size&quot;: 15
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;&quot;,
+      1,
+      &quot;missing header\n&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;line&quot;: &quot;missing header\n&quot;,
+      &quot;lineno&quot;: 1,
+      &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;&#x27;, line: 1\n&#x27;missing header\\n&#x27;&quot;,
+      &quot;source&quot;: &quot;&quot;
+    },
+    &quot;message&quot;: &quot;File contains no section headers.\nfile: &#x27;&#x27;, line: 1\n&#x27;missing header\\n&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;MissingSectionHeaderError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article><article><h3>missing-section · PASS</h3><details><summary>Original and candidate observations</summary><h4>Original</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6f746865725d0a6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 19,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;ed21f2c764bac87a9320e05627730fceeba844b8344453a78532205afc490707&quot;,
+        &quot;size&quot;: 19
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;app&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;message&quot;: &quot;No section: &#x27;app&#x27;&quot;,
+      &quot;section&quot;: &quot;app&quot;
+    },
+    &quot;message&quot;: &quot;No section: &#x27;app&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;NoSectionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: [
+    {
+      &quot;category&quot;: &quot;DeprecationWarning&quot;,
+      &quot;filename&quot;: &quot;program.py&quot;,
+      &quot;lineno&quot;: 6,
+      &quot;message&quot;: &quot;This method will be removed in Python 3.12. Use &#x27;parser.read_file()&#x27; instead.&quot;
+    }
+  ]
+}</pre><h4>Candidate</h4><pre>{
+  &quot;effects&quot;: {
+    &quot;input_bytes_hex&quot;: &quot;5b6f746865725d0a6e616d65203d206f6e650a&quot;,
+    &quot;normalized&quot;: null,
+    &quot;stream_closed_after_call&quot;: false,
+    &quot;stream_closed_after_cleanup&quot;: true,
+    &quot;stream_position&quot;: 19,
+    &quot;stream_position_error&quot;: null,
+    &quot;files&quot;: {
+      &quot;input.ini&quot;: {
+        &quot;sha256&quot;: &quot;ed21f2c764bac87a9320e05627730fceeba844b8344453a78532205afc490707&quot;,
+        &quot;size&quot;: 19
+      }
+    }
+  },
+  &quot;exception&quot;: {
+    &quot;args&quot;: [
+      &quot;app&quot;
+    ],
+    &quot;attributes&quot;: {
+      &quot;message&quot;: &quot;No section: &#x27;app&#x27;&quot;,
+      &quot;section&quot;: &quot;app&quot;
+    },
+    &quot;message&quot;: &quot;No section: &#x27;app&#x27;&quot;,
+    &quot;module&quot;: &quot;configparser&quot;,
+    &quot;type&quot;: &quot;NoSectionError&quot;
+  },
+  &quot;stdout&quot;: &quot;&quot;,
+  &quot;warnings&quot;: []
+}</pre><h4>Differences</h4><pre>[]</pre></details></article>
+<h2>Coverage and limits</h2><ul><li>Only the original, reviewed reference fixture was executed.</li><li>Evidence applies only to the declared cases and exact Linux CPython runtime identities.</li><li>Traceback stacks, exception chaining, import hooks, concurrent code and arbitrary external effects are unmeasured.</li><li>Process limits and a scrubbed environment are not an OS sandbox.</li><li>Passing cases do not establish general equivalence, human validation or maintainer adoption.</li></ul>
+<h2>Keep, reject, or restart</h2><p>Keep this entire run directory to reopen the report and evidence. Rejecting the candidate requires no rollback of your original source. If a run is incomplete, retain it and restart with a new output directory. Never use an incomplete run as passing evidence.</p>
+<details><summary>Tool and runtime identity</summary><pre>{
+  &quot;schema&quot;: 1,
+  &quot;tool_version&quot;: &quot;0.1.0&quot;,
+  &quot;mode&quot;: &quot;trusted-reference&quot;,
+  &quot;negative_control&quot;: false,
+  &quot;recipe&quot;: &quot;configparser-local-prefix-v1&quot;,
+  &quot;recipe_sha256&quot;: &quot;f2ea2feee1ad32e343479d7980638be83384ace7fb5077a352302aa6779d0bba&quot;,
+  &quot;comparator_sha256&quot;: &quot;77a60c76ec088b5efb973549d667aac7dea231ce78866466010342b4628e9436&quot;,
+  &quot;policy_sha256&quot;: &quot;bf851e484d4f4935186788d1010856f77d3f2964c4a4311d61db41e36882e54a&quot;,
+  &quot;fixture_sha256&quot;: {
+    &quot;program_hashes&quot;: {
+      &quot;original&quot;: &quot;a3fcf8eb90f8dad1bfb66c9ef7b5ad9cc3190cfb1ec14a36f47b86bda252e7c3&quot;,
+      &quot;candidate&quot;: &quot;6a1fe3444d5999d57b433823b2975910ccb3bdeff8bb1761ae89cadd5f97a527&quot;,
+      &quot;negative_control&quot;: &quot;6b7fdb0055467dfc69372af2acd52095521c9cca3d7772dd4ed37b95b251b157&quot;
+    },
+    &quot;cases_sha256&quot;: &quot;7fb1cde02e4bdfc8882963ee2ac79903ad7b8f5ae8cf9c66b9a7f32b471a6d15&quot;,
+    &quot;harness_sha256&quot;: &quot;1a95aa61680dbe7a8986110110771523189b9bc4ea2e8676ca8a12d1824179fb&quot;
+  },
+  &quot;runtimes&quot;: {
+    &quot;original&quot;: {
+      &quot;implementation&quot;: &quot;CPython&quot;,
+      &quot;version&quot;: &quot;3.11.16&quot;,
+      &quot;build&quot;: &quot;3.11.16 (main, Sep  7 2026, 23:20:38) [GCC 8.5.0 20210514 (Red Hat 8.5.0-28)]&quot;,
+      &quot;platform&quot;: &quot;Linux&quot;,
+      &quot;machine&quot;: &quot;x86_64&quot;,
+      &quot;configparser_sha256&quot;: &quot;05594b61a7c9a803c17775b8fcba6da6f8388e1f20669e13430fa59da0bc660d&quot;,
+      &quot;readfp&quot;: true,
+      &quot;executable_sha256&quot;: &quot;5e59eefc8c64148604b424dee6a43702f641799ad47eac6ccab82a764bf739da&quot;
+    },
+    &quot;candidate&quot;: {
+      &quot;implementation&quot;: &quot;CPython&quot;,
+      &quot;version&quot;: &quot;3.12.14&quot;,
+      &quot;build&quot;: &quot;3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]&quot;,
+      &quot;platform&quot;: &quot;Linux&quot;,
+      &quot;machine&quot;: &quot;x86_64&quot;,
+      &quot;configparser_sha256&quot;: &quot;cf5318e0c45a2e206b4ec74d4d66493185ed26c3736a86b0ebdf8f3a3e365a1a&quot;,
+      &quot;readfp&quot;: false,
+      &quot;executable_sha256&quot;: &quot;f7c6210eb40fadcd3c2889dddd24a15fc2c9f926aec5a03bf9da66e12d581526&quot;
+    }
+  },
+  &quot;execution&quot;: {
+    &quot;isolation&quot;: &quot;scrubbed subprocess with resource limits; not an OS sandbox&quot;,
+    &quot;timeout_seconds&quot;: 10,
+    &quot;output_limit_bytes&quot;: 131072,
+    &quot;environment_keys&quot;: [
+      &quot;LANG&quot;,
+      &quot;LC_ALL&quot;,
+      &quot;TZ&quot;,
+      &quot;TMPDIR&quot;
+    ]
+  }
+}</pre></details>
+</main><footer>Renewal Engine 0.1.0 · AGPL-3.0 · Offline report, with no scripts, hosted model, or external assets. This report is evidence for maintainer review, not automatic adoption.</footer></body></html>

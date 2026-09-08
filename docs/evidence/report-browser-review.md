@@ -41,7 +41,11 @@ now reads “Unsupported findings,” while the text still asks maintainers to r
 every proposed edit. Original screenshots are retained beside revision-2
 captures. No other concrete defect was identified in that evidence.
 
-Human/assistive-technology observations remain pending. Comparison-specific
-PASS/REGRESSION visual states also remain unobserved until the reference fixture
-is approved and actually executed. Keyboard/browser evidence does not establish
+Human/assistive-technology observations remain pending. On September 8, actual
+packaged normal PASS and negative REGRESSION reports were opened in Chromium
+at 390 × 844. Both loaded zero resources and had scrollWidth 390. All negative
+disclosures were expanded with no horizontal overflow; WRONG.ini remained
+visible in the observations. Screenshots report-pass-mobile.png and
+report-regression-mobile.png were saved and visually inspected. Status words
+and the negative-control explanation distinguish the results without color. Keyboard/browser evidence does not establish
 ConfigParser behavioral equivalence or maintainer adoption.

@@ -1,7 +1,9 @@
 # Verification record — September 7, 2026
 
-Scope: local development increment, before the original reference-fixture
-decision. Current task evidence levels live in project-plan.json.
+Historical scope: September 7 local increment, before fixture approval.
+September 8 update: see runtime-verification.md for actual packaged evidence
+and resolved follow-up critic findings. Earlier unrun statements below describe
+the September 7 checkpoint only. Current task evidence levels live in project-plan.json.
 
 ## Automated evidence
 

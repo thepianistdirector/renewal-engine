@@ -3,10 +3,10 @@
 Inspect a focused Python API migration, keep the original source, and review a
 candidate patch with its evidence.
 
-**Development candidate: source inspection is implemented and tested. Public
-0.1 is not released.** The original reference fixture decision and its actual
-old/new differential execution remain pending. The bundled demo implementation
-is not yet runtime-verified; synthetic tests do not establish equivalence.
+**Local 0.1.0 release candidate; public release pending.** The approved reference
+passes all 12 cases on real CPython 3.11.16 and 3.12.14. A deliberately wrong
+transformation produces two regressions. Packaged runtime and interruption
+checks pass on Linux x86_64; external and human validation remain pending.
 
 ## Try the working inspection
 
@@ -64,7 +64,7 @@ python3 dist/renewal-engine.pyz --version
 ```
 
 The build creates a deterministic self-contained CLI and source archive in
-`dist/`, plus SHA-256 checksums. These are local development candidates, not
+`dist/`, plus SHA-256 checksums. These are local release candidates, not
 public release artifacts. The source archive includes `install.py`; after
 extracting it into a new directory, run:
 
@@ -79,20 +79,43 @@ No interpreter binaries or development browser dependencies are distributed.
 
 ## Comparison and recovery
 
-`demo --help` describes the implemented trusted-reference workflow. It requires
-explicit Linux CPython 3.11.16 and 3.12.14 executable paths and runs only the
-bundled hash-pinned fixture. `--negative-control` deliberately corrupts a
-source-name diagnostic; a real comparison must return exit code 1. These demo
-paths are **not yet runtime-verified** and are not a public-use promise.
+The trusted-reference workflow requires existing **Linux x86_64 CPython
+3.11.16 and 3.12.14** interpreters. Different patch versions are refused. These
+are the only measured versions; no compatibility shim is used. Users supply
+both runtimes: interpreter binaries are not bundled. See the
+[runtime acquisition record](docs/decisions/002-runtime-acquisition.md) for the
+checksum-verified baseline source and limitations of the tested build.
 
-The reference candidate is original AGPL-3.0 material, not upstream adoption.
-Its [provenance and case coverage](renewal_engine/reference/PROVENANCE.md) are
-prepared for the fixture decision. Only removal of the exact readfp deprecation
-warning is an allowed behavioral difference. Exception fields and declared
-stream/file effects are retained. No traceback equivalence is claimed.
+Set `BASELINE_PYTHON` and `TARGET_PYTHON` to your two trusted executable paths.
+From the extracted archive, after installation:
+
+```sh
+mkdir -p runs
+./local-install/bin/renewal-engine demo --baseline "$BASELINE_PYTHON" --target "$TARGET_PYTHON" --out runs/normal
+./local-install/bin/renewal-engine verify runs/normal
+./local-install/bin/renewal-engine demo --baseline "$BASELINE_PYTHON" --target "$TARGET_PYTHON" --out runs/negative --negative-control
+# The negative-control command must return exit code 1 and report REGRESSION.
+./local-install/bin/renewal-engine verify runs/negative
+```
+
+Open `runs/normal/report.html` and `runs/negative/report.html`. Normal has
+12 passing cases and 12 expected warning removals. Negative has two regressions
+that expose `WRONG.ini` in the diagnostic source. Verification exit 0 means
+the saved evidence is consistent, including when its result is REGRESSION.
+The complete retained [normal example](examples/normal/report.html) and
+[negative example](examples/negative/report.html) can also be reopened offline.
+
+The reference is original AGPL-3.0 material, approved September 8, 2026, not
+upstream adoption. Its [provenance](renewal_engine/reference/PROVENANCE.md)
+describes coverage. Only removal of the exact readfp deprecation warning is
+allowed. Exception type, message, arguments and instance-dictionary attributes,
+plus declared stream/file effects, are retained. Tracebacks and exception
+chaining are unmeasured. Passing these cases is not general equivalence.
 
 A completed run can be reopened with `verify RUN_DIRECTORY`, which executes no
-source. If interrupted, retain the whole incomplete run and restart with a new
+source and checks retained sources, patch, observations, policy and summary.
+This detects inconsistent artifacts; it is not a cryptographic signature against
+an attacker replacing the complete evidence bundle. If interrupted, retain the whole incomplete run and restart with a new
 output directory. Original source stays unchanged. This is source recovery;
 no restoration of arbitrary external data or effects is promised.
 
@@ -112,6 +135,17 @@ python3 tools/plan.py validate
 python3 tools/plan.py self-test
 python3 tools/plan.py check
 ```
+
+To reproduce the packaged checks, including a real SIGINT during partial
+candidate creation and comparison, run from the extracted source archive:
+
+```sh
+python3 tools/verify_runtime.py --cli ./local-install/bin/renewal-engine --baseline "$BASELINE_PYTHON" --target "$TARGET_PYTHON" --out runs/verification
+```
+
+This uses deterministic stage fault injection with real runtime executions;
+it retains incomplete attempts and proves a fresh restart. See the
+[runtime evidence](docs/evidence/runtime-verification.md) for exact scope.
 
 [project-plan.json](project-plan.json) is the canonical plan: 218 outcomes across
 26 waves, including 50 for 0.1. [ROADMAP.md](ROADMAP.md), [TASKS.md](TASKS.md),

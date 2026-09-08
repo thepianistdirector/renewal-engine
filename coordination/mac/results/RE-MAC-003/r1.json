@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "project": "renewal-engine",
+  "requestRevision": 1,
+  "requestDocumentSha256": "26606280221f997a67034f77e9bd843b7d9eedab9836db1b7dba47c3ceaec8fb",
+  "sourceCommit": "ae7b546c75f66521224444951e396d2222097c72",
+  "startedAt": "2026-09-08T13:00:04Z",
+  "updatedAt": "2026-09-08T13:13:31.644552+00:00",
+  "helper": {
+    "hostKind": "macOS",
+    "model": "gpt-6-astra"
+  },
+  "humanObservation": null,
+  "requestId": "RE-MAC-003",
+  "status": "RUNNING",
+  "evidenceLevel": "IMPLEMENTED",
+  "summary": "Canonical export digest and all 218 tasks, 26 waves, release-horizon counts, dependency references and twelve historical mappings validated. Authenticated native draft preparation is in progress with retained object IDs; no plan publication or vote has occurred.",
+  "checks": [
+    {
+      "action": "Canonical export validation",
+      "outcome": "PASS: exact requested digest; 218 tasks, 26 waves; 50/72/80/16 horizon counts; twelve historical identities."
+    },
+    {
+      "action": "Native draft preparation",
+      "outcome": "In progress. Native objects and mappings are retained locally for reconciliation before any retry."
+    }
+  ],
+  "publicEvidence": [
+    "https://tanduna.com/projects/renewal-engine/roadmap"
+  ],
+  "nativeIds": {
+    "projectId": "prj_9ef51e9826817323b774d5d3b900520f",
+    "proposalId": "prp_dc23eeda9235cb75b05469c22c83342f"
+  },
+  "userAction": null,
+  "limitations": [
+    "Draft assembly and textual review not yet complete.",
+    "Publication requires Lucas approval of the concrete reviewed plan and exact poll option."
+  ]
+}

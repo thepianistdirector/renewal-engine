@@ -19,6 +19,7 @@ jobs:
           set -euo pipefail
           test "$(uname -m)" = x86_64
           test ! -e /usr/bin/bwrap
+          test ! -L /usr/bin/bwrap
           for item in 'libc6 2.38' 'libcap2 1:2.10' 'libselinux1 3.1~'; do
             read -r package minimum <<< "$item"
             actual=$(dpkg-query -W -f='${Version}' "$package")

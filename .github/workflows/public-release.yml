@@ -10,7 +10,7 @@ env:
   RENEWAL_CLI_SHA256: dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428
 jobs:
   public-download:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     timeout-minutes: 30
     steps:
       - name: Provision only the reviewed backend executable in this disposable runner
@@ -18,25 +18,26 @@ jobs:
         run: |
           set -euo pipefail
           test "$(uname -m)" = x86_64
-          test ! -e /usr/bin/bwrap
           test ! -L /usr/bin/bwrap
-          for item in 'libc6 2.38' 'libcap2 1:2.10' 'libselinux1 3.1~'; do
+          for item in 'libc6 2.34' 'libcap2 1:2.10' 'libselinux1 3.1~'; do
             read -r package minimum <<< "$item"
             actual=$(dpkg-query -W -f='${Version}' "$package")
             dpkg --compare-versions "$actual" ge "$minimum"
           done
           mkdir backend
           curl --fail --location --retry 2 \
-            https://security.ubuntu.com/ubuntu/pool/main/b/bubblewrap/bubblewrap_0.9.0-1ubuntu0.1_amd64.deb \
+            https://security.ubuntu.com/ubuntu/pool/main/b/bubblewrap/bubblewrap_0.6.1-1ubuntu0.1_amd64.deb \
             --output backend/bubblewrap.deb
-          echo '1b506492bd9c7fd0cdb4f02ac822f1d3e336b0aead5113c1239baf8db5db562a  backend/bubblewrap.deb' | sha256sum --check
-          test "$(dpkg-deb -f backend/bubblewrap.deb Version)" = 0.9.0-1ubuntu0.1
+          echo 'f75c835d6871d1b36370e12ee82940334b2a9f94efc7b959b5b236447e89743d  backend/bubblewrap.deb' | sha256sum --check
+          test "$(dpkg-deb -f backend/bubblewrap.deb Version)" = 0.6.1-1ubuntu0.1
           test "$(dpkg-deb -f backend/bubblewrap.deb Architecture)" = amd64
           dpkg-deb --extract backend/bubblewrap.deb backend/extracted
-          echo '52231e1caf55bcbc667b269f49c63599a6f7db4767ae6a039580d0ff853db712  backend/extracted/usr/bin/bwrap' | sha256sum --check
+          echo 'd78807229d616606e339c5988392b9e0ab4a6a6998fa51e4590837f426a12fca  backend/extracted/usr/bin/bwrap' | sha256sum --check
           # Copy one ordinary executable; do not run package hooks or sysctl files.
-          sudo install --mode=0755 backend/extracted/usr/bin/bwrap /usr/bin/bwrap
-          echo '52231e1caf55bcbc667b269f49c63599a6f7db4767ae6a039580d0ff853db712  /usr/bin/bwrap' | sha256sum --check
+          if test ! -e /usr/bin/bwrap; then
+            sudo install --mode=0755 backend/extracted/usr/bin/bwrap /usr/bin/bwrap
+          fi
+          echo 'd78807229d616606e339c5988392b9e0ab4a6a6998fa51e4590837f426a12fca  /usr/bin/bwrap' | sha256sum --check
           /usr/bin/bwrap --version
       - name: Require existing isolation tool and download exact public release
         shell: bash
@@ -125,7 +126,7 @@ jobs:
           with tarfile.open(fileobj=stream,mode='w',dereference=False) as archive:
               for name in ('verified','recovery'):
                   if Path(name).is_dir():archive.add(name,arcname=name)
-          payload={'provider':'GitHub-hosted ubuntu-24.04','runId':os.environ['GITHUB_RUN_ID'],
+          payload={'provider':'GitHub-hosted ubuntu-22.04','runId':os.environ['GITHUB_RUN_ID'],
                    'platform':platform.platform(),'machine':platform.machine(),'humanValidation':False,
                    'sourceArchiveSha256':os.environ['RENEWAL_SOURCE_SHA256'],
                    'evidenceTarGzipBase64':base64.b64encode(gzip.compress(stream.getvalue(),mtime=0)).decode()}

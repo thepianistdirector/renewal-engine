@@ -45,3 +45,8 @@ objective or resume it. The existing unfinished native Goal must not be marked
 complete or duplicated to bypass that limitation. This file and the canonical
 planning record hold the owner-requested revised objective until a supported
 native edit becomes available; the native display may still contain 0.1.
+
+Current evidence checkpoint: the approved public v0.5.0 tag/assets and anonymous
+installation are verified. The first fresh external runner failed its executable
+bubblewrap prerequisite before product execution. External reproduction, human
+review and native-plan publication remain unfinished; the overall goal is not complete.

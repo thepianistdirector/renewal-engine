@@ -36,3 +36,13 @@ These are **local automated/runtime results**. They are not a public 0.5 release
 fresh external reproduction, human second-recipe assessment, or completed Tanduna
 publication. The old public 0.1 assets remain unchanged. The exact 0.5 publication
 packet and fresh external workflow require their concrete release authorization.
+
+## Public readback and external attempt
+
+The owner approved the exact packet. `public-release.json` records actual public
+v0.5.0, all three anonymous asset/hash checks and installation from the public
+archive. The source tag and assets retain the approved immutable identities.
+`external-attempt-1.json` records a FAILED PREREQUISITE on fresh Ubuntu 24.04: the
+runner lacked an executable `/usr/bin/bwrap`, so interpreter builds and product
+checks were skipped. The returned evidence archive had zero members. No external
+execution, successful isolation or human validation is inferred from that run.

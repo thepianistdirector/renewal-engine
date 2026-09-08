@@ -1,0 +1,82 @@
+{
+  "release": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0",
+  "source_commit": "ca5035460433c1edfe2c433f2dcd05db40a24a7e",
+  "assets": [
+    {
+      "name": "renewal-engine-0.5.0.tar.gz",
+      "sha256": "8bdb4906ffd6bafac725991082b6c07cc98c7303443c5e2eafc5449f4027b233",
+      "size": 1480377,
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "sha256": "27adc1208e9e3ca961ebda1f0ba15ce95b8289df778bedf6740a41423a3364e0",
+      "size": 179,
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "renewal-engine.pyz",
+      "sha256": "dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428",
+      "size": 68333,
+      "anonymous_download_verified": true
+    }
+  ],
+  "public_install_verified": true,
+  "fresh_external_verified": false,
+  "human_verified": false,
+  "evidence_level": "RELEASE VERIFIED",
+  "owner_authorization": "Owner approved the exact 0.5 publication packet with “aprobado.” on September 8, 2026.",
+  "tag_object": "e26af43e4f59050c9c0d76ec59fde856dd4db84c",
+  "published_at": "2026-09-08T15:55:41Z",
+  "release_api": {
+    "assets": [
+      {
+        "apiUrl": "https://api.github.com/repos/thepianistdirector/renewal-engine/releases/assets/550813795",
+        "contentType": "application/x-gtar",
+        "createdAt": "2026-09-08T15:55:40Z",
+        "digest": "sha256:8bdb4906ffd6bafac725991082b6c07cc98c7303443c5e2eafc5449f4027b233",
+        "downloadCount": 0,
+        "id": "RA_kwDOUPypz84g1MBj",
+        "label": "",
+        "name": "renewal-engine-0.5.0.tar.gz",
+        "size": 1480377,
+        "state": "uploaded",
+        "updatedAt": "2026-09-08T15:55:40Z",
+        "url": "https://github.com/thepianistdirector/renewal-engine/releases/download/v0.5.0/renewal-engine-0.5.0.tar.gz"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/thepianistdirector/renewal-engine/releases/assets/550813794",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-09-08T15:55:40Z",
+        "digest": "sha256:dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428",
+        "downloadCount": 0,
+        "id": "RA_kwDOUPypz84g1MBi",
+        "label": "",
+        "name": "renewal-engine.pyz",
+        "size": 68333,
+        "state": "uploaded",
+        "updatedAt": "2026-09-08T15:55:40Z",
+        "url": "https://github.com/thepianistdirector/renewal-engine/releases/download/v0.5.0/renewal-engine.pyz"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/thepianistdirector/renewal-engine/releases/assets/550813796",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-09-08T15:55:40Z",
+        "digest": "sha256:27adc1208e9e3ca961ebda1f0ba15ce95b8289df778bedf6740a41423a3364e0",
+        "downloadCount": 0,
+        "id": "RA_kwDOUPypz84g1MBk",
+        "label": "",
+        "name": "SHA256SUMS",
+        "size": 179,
+        "state": "uploaded",
+        "updatedAt": "2026-09-08T15:55:40Z",
+        "url": "https://github.com/thepianistdirector/renewal-engine/releases/download/v0.5.0/SHA256SUMS"
+      }
+    ],
+    "isDraft": false,
+    "isPrerelease": false,
+    "publishedAt": "2026-09-08T15:55:41Z",
+    "tagName": "v0.5.0",
+    "url": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0"
+  }
+}

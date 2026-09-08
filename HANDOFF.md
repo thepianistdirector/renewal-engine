@@ -1,16 +1,16 @@
 # Renewal Engine execution handoff
 
-**Current owner target: 0.5.0 local release candidate (see GOAL.md). Public 0.1.0 remains verified and immutable.**
+**Public 0.5.0 and anonymous artifact/install readback are verified. External 0.5 execution, human review and native plan publication remain unfinished.**
 Human maintainer review and native Tanduna publication remain unfinished.
 
 Public release:
-https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0
+https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0
 
-External verification:
-https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566
+External 0.5 attempt (FAILED PREREQUISITE):
+https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729
 
 
-## 0.5 candidate checkpoint
+## 0.5 publication checkpoint
 
 Local implementation now includes versioned shipped recipes/composition, the Path
 hard-link migration, static impact, strict repeated observations and narrow
@@ -19,11 +19,16 @@ narrow Python isolation. **72 tests and 27 packaged CLI checks pass**, as do rea
 SIGINT/restart checks. Evidence is in docs/evidence/0.5; usage is docs/0.5-guide.md.
 The candidate is in dist/0.5.0; 0.1 dist assets and tag are not replaced.
 
-0.5 publication, a fresh public-download external run, second-recipe human review
-and native plan publication are unfinished. The prepared external workflow is
+The owner approved and published v0.5.0 from ca5035460433c1edfe2c433f2dcd05db40a24a7e.
+Public assets match the approved hashes; see docs/evidence/0.5/public-release.json.
+The prepared external job 34247933729 ran and FAILED its first prerequisite: no
+executable /usr/bin/bwrap. No product tests ran there. A compatible external
+environment, second-recipe human review and native publication remain unfinished. The prepared external workflow is
 `docs/publication/0.5-external-workflow.yml`; it requires approved exact asset
 hashes and uses the existing Linux profile without weakening runner security.
-Do not call a 0.5 number or local test a completed public goal.
+Do not rerun the unchanged failed workflow or bypass isolation. No new runner
+provisioning or host-security modification was authorized by the publication packet.
+Do not call a public asset a completed external/human/native goal.
 
 RE-MAC-005 supersedes the old PENDING/disabled checkpoint: all 218 current task
 reviews are FAILED; deployed failure cause, attempt and recovery action are not
@@ -48,7 +53,7 @@ September 8, 2026. Do not request those permissions again. GitHub publication
 used the existing `thepianistdirector` account. The source work remains in this
 repository; no parent/sibling/shared configuration was changed.
 
-## Published identity and evidence
+## Retained 0.1 identity and evidence
 
 Tag `v0.1.0` points to `737dc0867d5b4e6c8f3ba29f04fade8573ff683d`.
 The release and tag were publicly read back; all three assets downloaded

@@ -3,7 +3,7 @@
   "artifactKind": "publication-review-export",
   "notAnApiPayload": true,
   "generatedFrom": "project-plan.json",
-  "canonicalSha256": "3188005bd104589c51124d6d15920b1626e557cdf4d1116c5199e8f443ebbffb",
+  "canonicalSha256": "57341652ea128efc2580e21f516810f8aba0fa559ba3316fdf736157cd511456",
   "project": {
     "slug": "renewal-engine",
     "name": "Renewal Engine",
@@ -1152,21 +1152,23 @@
     "latestReadOnlyEvidence": "docs/evidence/mac-helper/results/RE-MAC-005/r1.json"
   },
   "release": {
-    "target": "0.1",
+    "target": "0.5",
     "status": "RELEASE VERIFIED",
-    "publicVersion": "0.1.0",
-    "publicUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
-    "accessInstructions": "Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub release, verify the digest, extract and follow README. Linux x86_64 CPython 3.11.16 and 3.12.14 are supplied separately. Public asset hashes and installed example verification passed anonymously. Fresh external reproduction passed on a GitHub-hosted Ubuntu 24.04 x86_64 runner using the anonymously downloaded artifact and both official-source pinned runtimes; human validation and native Tanduna publication remain unfinished.",
-    "scope": "One approved ConfigParser readfp-to-read_file recipe, trusted original fixture execution, identical-case differential evidence, offline report and safe restart.",
+    "publicVersion": "0.5.0",
+    "publicUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0",
+    "accessInstructions": "Download renewal-engine-0.5.0.tar.gz and SHA256SUMS from https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0, verify the digest, extract and run install.py with an empty explicit --prefix. Inspection and repeated-observation comparison require CPython 3.11+. Execution additionally requires the documented Linux x86_64 dedicated-runtime/bubblewrap/seccomp profile. All three public assets were anonymously downloaded and hash verified; the public package installed and reopened both examples. Local 72-test and 27-packaged-check evidence passed. The fresh external job failed its /usr/bin/bwrap executable prerequisite before product execution; external reproduction, human review and native plan publication remain unfinished.",
+    "scope": "Two bounded Python recipes and composition, static impact, exact selected patch approval, strict repeated observations, private summaries and explicitly authorized narrow isolated Python execution.",
     "exclusions": [
-      "arbitrary repository execution",
       "general behavioral equivalence",
       "automatic adoption or merge",
       "production or data migration",
       "cloud service",
-      "unapproved source upload"
+      "unapproved source upload",
+      "general build/test subprocesses or unrestricted filesystem execution"
     ],
-    "externalVerificationUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566"
+    "externalVerificationUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729",
+    "externalVerificationStatus": "FAILED PREREQUISITE",
+    "evidence": "docs/evidence/0.5/public-release.json"
   },
   "decisions": {
     "D01": {

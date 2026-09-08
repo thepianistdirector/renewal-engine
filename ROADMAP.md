@@ -1,8 +1,8 @@
 # Renewal Engine roadmap
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `3188005bd104589c51124d6d15920b1626e557cdf4d1116c5199e8f443ebbffb`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `57341652ea128efc2580e21f516810f8aba0fa559ba3316fdf736157cd511456`.
 
-0.5.0 local release candidate: 72 tests and 27 packaged checks pass; public release remains 0.1.0; native review FAILED with cause unavailable; human evidence incomplete
+Public 0.5.0 release and anonymous artifact readback verified; external runner lacks executable bwrap; human and native-plan gates remain unfinished
 
 218 outcome tasks in 26 waves. 0.1: 50; later 0.x: 72; long-term: 80; exploratory: 16.
 
@@ -16,7 +16,7 @@ RE-W01 → RE-W02 → RE-W03 → RE-W04 → RE-W05
 
 ## Release access and unresolved decisions
 
-Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub release, verify the digest, extract and follow README. Linux x86_64 CPython 3.11.16 and 3.12.14 are supplied separately. Public asset hashes and installed example verification passed anonymously. Fresh external reproduction passed on a GitHub-hosted Ubuntu 24.04 x86_64 runner using the anonymously downloaded artifact and both official-source pinned runtimes; human validation and native Tanduna publication remain unfinished.
+Download renewal-engine-0.5.0.tar.gz and SHA256SUMS from https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0, verify the digest, extract and run install.py with an empty explicit --prefix. Inspection and repeated-observation comparison require CPython 3.11+. Execution additionally requires the documented Linux x86_64 dedicated-runtime/bubblewrap/seccomp profile. All three public assets were anonymously downloaded and hash verified; the public package installed and reopened both examples. Local 72-test and 27-packaged-check evidence passed. The fresh external job failed its /usr/bin/bwrap executable prerequisite before product execution; external reproduction, human review and native plan publication remain unfinished.
 
 - **D01 · APPROVED:** Owner approved the prepared original AGPL-3.0 ConfigParser fixture September 8, 2026, as narrow 0.1 scope. Original W1-T1 maintained-upstream acceptance remains unchanged and incomplete.
 - **D02 · APPROVED:** Owner approved actual CPython 3.11.16 / 3.12.14 comparison September 8. Both identities and actual packaged normal/negative and restart observations are retained.

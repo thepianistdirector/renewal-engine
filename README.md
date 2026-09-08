@@ -3,21 +3,21 @@
 Inspect a focused Python API migration, keep the original source, and review a
 candidate patch with its evidence.
 
-**[0.1.0 is released](https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0).** The approved reference
+**Earlier release: [0.1.0](https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0).** The approved reference
 passes all 12 cases on real CPython 3.11.16 and 3.12.14. A deliberately wrong
 transformation produces two regressions. Packaged runtime and interruption
 checks pass on Linux x86_64, including a [fresh external Ubuntu 24.04 run](https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566)
 using the publicly downloaded release. Human validation remains pending.
 
-## Current development: 0.5.0 candidate
+## Current release: 0.5.0
 
 The owner expanded this task through 0.5 on September 8. The current checkout adds
 versioned recipes and composition, a Path hard-link migration, static project
 impact, repeated-observation policies, hunk selection and exact approval,
 private summary export, and explicitly authorized execution in a verified narrow
 Linux isolation profile. See [the 0.5 guide](docs/0.5-guide.md) and [current objective](GOAL.md).
-**0.5 is not yet publicly released or externally/human validated.** The public
-0.1 release and its evidence above remain unchanged.
+**[Download 0.5.0](https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0).** All public asset hashes and fresh-prefix installation were verified.
+The [external attempt](https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729) stopped because its runner lacked an executable `/usr/bin/bwrap`; no product test ran there. Local 72-test and 27-packaged-check results passed. Human review and native-plan publication remain pending.
 
 ## Try the working inspection
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "project-plan.json",
-  "canonicalSha256": "3188005bd104589c51124d6d15920b1626e557cdf4d1116c5199e8f443ebbffb",
+  "canonicalSha256": "57341652ea128efc2580e21f516810f8aba0fa559ba3316fdf736157cd511456",
   "meaning": "Generated new outcome contracts and mappings; frozen original contracts remain in lineage.",
   "sourceMappings": [
     {

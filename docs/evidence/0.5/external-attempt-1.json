@@ -1,0 +1,84 @@
+{
+  "status": "FAILED PREREQUISITE",
+  "evidence_level": "FAILED",
+  "run": {
+    "conclusion": "failure",
+    "headSha": "421a93c771b710ecf322fbe518208c8ee2d9c110",
+    "jobs": [
+      {
+        "completedAt": "2026-09-08T15:56:17Z",
+        "conclusion": "failure",
+        "databaseId": 102134630924,
+        "name": "public-download",
+        "startedAt": "2026-09-08T15:56:13Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-09-08T15:56:14Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-09-08T15:56:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T15:56:15Z",
+            "conclusion": "failure",
+            "name": "Require existing isolation tool and download exact public release",
+            "number": 2,
+            "startedAt": "2026-09-08T15:56:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T15:56:15Z",
+            "conclusion": "skipped",
+            "name": "Build dedicated trusted interpreters from pinned official sources",
+            "number": 3,
+            "startedAt": "2026-09-08T15:56:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T15:56:15Z",
+            "conclusion": "skipped",
+            "name": "Exercise published package, isolation, negative controls and recovery",
+            "number": 4,
+            "startedAt": "2026-09-08T15:56:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T15:56:15Z",
+            "conclusion": "success",
+            "name": "Retain public fixture evidence and hard-link topology",
+            "number": 5,
+            "startedAt": "2026-09-08T15:56:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-09-08T15:56:15Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 6,
+            "startedAt": "2026-09-08T15:56:15Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729/job/102134630924"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729"
+  },
+  "runner_image": "ubuntu-24.04 20260831.293.1",
+  "reported_platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "reason": "The initial executable check for /usr/bin/bwrap failed. Both subsequent hash guards had valid fixed 64-hex environment values. No download/build/product-test step completed.",
+  "missing_prerequisite": "Executable /usr/bin/bwrap in the external runner",
+  "product_test_cases_executed": 0,
+  "evidence_archive_member_count": 0,
+  "raw_log_sha256": "dfb91ce5a516b86421a5bc4cfa17819471f7411b3ac4b3527c98def1964e8c45",
+  "workflow_commit": "421a93c771b710ecf322fbe518208c8ee2d9c110",
+  "approved_source_sha256": "8bdb4906ffd6bafac725991082b6c07cc98c7303443c5e2eafc5449f4027b233",
+  "local_denial_evidence_remains_valid": true,
+  "fresh_external_reproduction_verified": false,
+  "human_verified": false,
+  "recovery": "Use a compatible external environment with the declared existing backend or separately review a bounded provisioning change. Do not rerun this unchanged job or bypass isolation."
+}

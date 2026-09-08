@@ -3,7 +3,7 @@
   "name": "Renewal Engine",
   "slug": "renewal-engine",
   "canonicalSource": "project-plan.json",
-  "stage": "0.5.0 local release candidate: 72 tests and 27 packaged checks pass; public release remains 0.1.0; native review FAILED with cause unavailable; human evidence incomplete",
+  "stage": "Public 0.5.0 release and anonymous artifact readback verified; external runner lacks executable bwrap; human and native-plan gates remain unfinished",
   "planningAsOf": "2026-09-08",
   "modelPolicy": {
     "model": "gpt-6-astra",
@@ -188,21 +188,23 @@
     }
   ],
   "release": {
-    "target": "0.1",
+    "target": "0.5",
     "status": "RELEASE VERIFIED",
-    "publicVersion": "0.1.0",
-    "publicUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
-    "accessInstructions": "Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub release, verify the digest, extract and follow README. Linux x86_64 CPython 3.11.16 and 3.12.14 are supplied separately. Public asset hashes and installed example verification passed anonymously. Fresh external reproduction passed on a GitHub-hosted Ubuntu 24.04 x86_64 runner using the anonymously downloaded artifact and both official-source pinned runtimes; human validation and native Tanduna publication remain unfinished.",
-    "scope": "One approved ConfigParser readfp-to-read_file recipe, trusted original fixture execution, identical-case differential evidence, offline report and safe restart.",
+    "publicVersion": "0.5.0",
+    "publicUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0",
+    "accessInstructions": "Download renewal-engine-0.5.0.tar.gz and SHA256SUMS from https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.5.0, verify the digest, extract and run install.py with an empty explicit --prefix. Inspection and repeated-observation comparison require CPython 3.11+. Execution additionally requires the documented Linux x86_64 dedicated-runtime/bubblewrap/seccomp profile. All three public assets were anonymously downloaded and hash verified; the public package installed and reopened both examples. Local 72-test and 27-packaged-check evidence passed. The fresh external job failed its /usr/bin/bwrap executable prerequisite before product execution; external reproduction, human review and native plan publication remain unfinished.",
+    "scope": "Two bounded Python recipes and composition, static impact, exact selected patch approval, strict repeated observations, private summaries and explicitly authorized narrow isolated Python execution.",
     "exclusions": [
-      "arbitrary repository execution",
       "general behavioral equivalence",
       "automatic adoption or merge",
       "production or data migration",
       "cloud service",
-      "unapproved source upload"
+      "unapproved source upload",
+      "general build/test subprocesses or unrestricted filesystem execution"
     ],
-    "externalVerificationUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566"
+    "externalVerificationUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34247933729",
+    "externalVerificationStatus": "FAILED PREREQUISITE",
+    "evidence": "docs/evidence/0.5/public-release.json"
   },
   "publication": {
     "status": "IN PROGRESS",
@@ -12646,7 +12648,7 @@
     "ownerDecisionDate": "2026-09-08",
     "source": "Current owner instruction to continue through 0.5 and update the goal.",
     "objectiveFile": "GOAL.md",
-    "status": "LOCAL RELEASE CANDIDATE",
+    "status": "PUBLIC RELEASE VERIFIED; EXTERNAL/HUMAN/NATIVE CONDITIONS INCOMPLETE",
     "nativeObjectiveUpdated": false,
     "nativeEditLimitation": "Exposed native Goal tools do not accept an objective change; original unfinished Goal retained.",
     "milestones": [
@@ -12690,10 +12692,31 @@
     ],
     "evidence": "docs/evidence/0.5/README.md",
     "limitations": [
-      "0.5 is not yet publicly released or externally reproduced",
+      "0.5 is public and anonymously verified; fresh external reproduction failed before execution because /usr/bin/bwrap was unavailable",
       "Second-recipe human review and independent contributor observation remain pending",
       "Native 218-task draft remains frozen with review FAILED and no exposed failure cause or recovery action",
       "Mapped later-0.x waves are partially implemented; none is declared wholly complete by this release scope"
-    ]
+    ],
+    "publicReleaseEvidence": "docs/evidence/0.5/public-release.json",
+    "externalAttemptEvidence": "docs/evidence/0.5/external-attempt-1.json"
+  },
+  "releaseHistory": {
+    "0.1.0": {
+      "target": "0.1",
+      "status": "RELEASE VERIFIED",
+      "publicVersion": "0.1.0",
+      "publicUrl": "https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0",
+      "accessInstructions": "Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub release, verify the digest, extract and follow README. Linux x86_64 CPython 3.11.16 and 3.12.14 are supplied separately. Public asset hashes and installed example verification passed anonymously. Fresh external reproduction passed on a GitHub-hosted Ubuntu 24.04 x86_64 runner using the anonymously downloaded artifact and both official-source pinned runtimes; human validation and native Tanduna publication remain unfinished.",
+      "scope": "One approved ConfigParser readfp-to-read_file recipe, trusted original fixture execution, identical-case differential evidence, offline report and safe restart.",
+      "exclusions": [
+        "arbitrary repository execution",
+        "general behavioral equivalence",
+        "automatic adoption or merge",
+        "production or data migration",
+        "cloud service",
+        "unapproved source upload"
+      ],
+      "externalVerificationUrl": "https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566"
+    }
   }
 }

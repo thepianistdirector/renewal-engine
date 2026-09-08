@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "project": "renewal-engine",
+  "requestId": "RE-MAC-005",
+  "requestRevision": 1,
+  "requestDocumentSha256": "7b8544cc56ae3cd64a97bb9a5665129e391e0c1227a1769eb599700cb2a39233",
+  "sourceCommit": "6d4707fcecd5b81ae67173a6a12e64e5218c6fe6",
+  "status": "SUCCEEDED",
+  "evidenceLevel": "RUNTIME VERIFIED",
+  "startedAt": "2026-09-08T13:49:09.545Z",
+  "updatedAt": "2026-09-08T13:55:11.834260+00:00",
+  "helper": {
+    "hostKind": "macOS",
+    "model": "gpt-6-astra"
+  },
+  "summary": "Completed the bounded read-only inspection. Current native review status is FAILED, superseding the earlier PENDING/disabled checkpoint. Failure reason and attempt are not exposed by available native read tools.",
+  "checks": [
+    {
+      "action": "Current runtime and exact native identity",
+      "outcome": "PASS: local Darwin, gpt-6-astra; exact project and proposal read through existing authorized session."
+    },
+    {
+      "action": "Schema discovery",
+      "outcome": "PASS: complete exposed declarations and descriptions captured. Unexposed deployed bounds remain unknown; candidate-source bounds are explicitly separated."
+    },
+    {
+      "action": "Immutable native object readback",
+      "outcome": {
+        "tasks": 218,
+        "waves": 26,
+        "dependencyEdges": 424,
+        "allTaskAndWaveMappingsMatch": true,
+        "all218TasksRemainSubmitted": true,
+        "all218SnapshotHashesMatch": true,
+        "submittedContentHash": "cb2e36efa4678c13c74db9c35b2a2b690eca80dccba56f9f4653887e076fa4f4",
+        "proposalStatus": "DISCUSSION",
+        "votes": 0
+      }
+    },
+    {
+      "action": "Representative requirement records",
+      "outcome": {
+        "newTask": {
+          "id": "tsk_b69744d31e0c03bb0c620ab2ca657c0d",
+          "revision": 1,
+          "requirements": null,
+          "completeness": "INCOMPLETE",
+          "issue": {
+            "path": "planningRequirements",
+            "code": "MISSING",
+            "message": "Add the task planning requirements."
+          }
+        },
+        "historicalTask": {
+          "id": "tsk_17cb9d58845743cb4d031739f78f3ab1",
+          "revision": 3,
+          "completeness": "COMPLETE",
+          "issues": []
+        }
+      }
+    },
+    {
+      "action": "Current review status and recovery",
+      "outcome": {
+        "status": "FAILED",
+        "source": "One current tasks.list readback, consistent across all 218 tasks",
+        "reason": "UNKNOWN_NOT_EXPOSED",
+        "attemptId": "UNKNOWN_NOT_EXPOSED",
+        "priorDisabled": "Returned by the original submission response. That historical value does not establish current configuration; local candidate code initializes submissions with this value."
+      }
+    },
+    {
+      "action": "Read-only boundary",
+      "outcome": {
+        "nativeWrites": 0,
+        "reviewRetries": 0,
+        "publicationActions": 0,
+        "votes": 0,
+        "secondLockAcquired": false,
+        "credentialsReadOrPersisted": false,
+        "unchangedStatePolling": false
+      }
+    }
+  ],
+  "publicEvidence": [
+    "https://tanduna.com/p/renewal-engine/proposals/prp_dc23eeda9235cb75b05469c22c83342f",
+    "https://github.com/thepianistdirector/renewal-engine/blob/b9304597937b4d7307f2ea195537e4b48418ebe2/coordination/mac/results/RE-MAC-003/r1.json"
+  ],
+  "nativeIds": {
+    "projectId": "prj_9ef51e9826817323b774d5d3b900520f",
+    "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12",
+    "proposalId": "prp_dc23eeda9235cb75b05469c22c83342f",
+    "publicationId": "tpub_7edf546ba722af40bbcaad11daf2958e",
+    "reviewRequestId": "tpr_cf62e2dc60f551288671c335fdc90d73",
+    "reviewRequestIdVerification": "Preserved original submission ID; current read tools do not return the request object.",
+    "draftRevision": 1,
+    "optionKey": "approve_complete_plan"
+  },
+  "userAction": null,
+  "limitations": [
+    "Raw wire JSON Schema bounds are not exposed. Unstated deployed limits remain UNKNOWN; local source is not proof of deployed enforcement.",
+    "UNKNOWN: returned completeness and submission acceptance do not establish whether every long-horizon task must satisfy requirements before publication.",
+    "Current FAILED review cannot be attributed to missing planningRequirements from the exposed evidence.",
+    "No native read tool exposes this failed review's reason/attempt or a supported recovery action. Tanduna resources/list and resources/templates/list both returned MCP -32601 Method not found.",
+    "Earlier PENDING/disabled was a returned historical submission value; it does not establish current reviewer configuration. No application/configuration change or retry is authorized by this read-only result."
+  ],
+  "humanObservation": null,
+  "publicationPolicy": {
+    "deployed": "UNKNOWN: returned completeness and submission acceptance do not establish whether every long-horizon task must satisfy requirements before publication.",
+    "candidate": "Local V3 review code checks every task without a release-horizon exemption and turns passing/changes-requested review into blocking CHANGES_REQUESTED for completeness gaps. It is a prepublication check in this candidate, not execution-only.",
+    "failureAttribution": "Current FAILED review cannot be attributed to missing planningRequirements from the exposed evidence."
+  },
+  "review": {
+    "status": "FAILED",
+    "source": "One current tasks.list readback, consistent across all 218 tasks",
+    "reason": "UNKNOWN_NOT_EXPOSED",
+    "attemptId": "UNKNOWN_NOT_EXPOSED",
+    "priorDisabled": "Returned by the original submission response. That historical value does not establish current configuration; local candidate code initializes submissions with this value."
+  },
+  "recovery": {
+    "exposedRetryTool": null,
+    "exposedManualReviewTool": null,
+    "canMaintain": true,
+    "liveRequiredRoleOrCapability": "UNKNOWN_NOT_EXPOSED",
+    "capabilityGap": "No native read tool exposes this failed review's reason/attempt or a supported recovery action. Tanduna resources/list and resources/templates/list both returned MCP -32601 Method not found.",
+    "candidateOnly": "An internal local reviewTaskPublication method requires task.create and supports FAILED-state retry guards; it is not an exposed live action."
+  },
+  "schemaDetails": {
+    "requestId": "RE-MAC-005",
+    "requestRevision": 1,
+    "observedAt": "2026-09-08T13:52:57.598Z",
+    "scope": "Read-only discovery and one bounded native readback. No mutation tools invoked.",
+    "nativeSchemaSource": {
+      "source": "Actual tools exposed in this authenticated session through tool metadata",
+      "format": "Complete exposed TypeScript input declarations plus native tool descriptions",
+      "rawJsonSchemaAvailable": false,
+      "limitation": "Original wire JSON Schema including numeric/string/array limits is not exposed by this tool surface. Unknown deployed constraints remain unknown; local-source bounds below are candidate evidence only."
+    },
+    "nativeToolDeclarations": [
+      {
+        "name": "mcp__tanduna__tanduna_tasks_get_requirements",
+        "description": "Use Tanduna tools as the logged-in user. Read current state before mutations and present client confirmation for changes.\n\nRead scoped maintainer planning requirements, current task revision, model instructions and field-specific completeness. Saved observations are host-supplied; completeness is not execution readiness or model attestation.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__tanduna__tanduna_tasks_get_requirements(args: {\n  // Project slug.\n  projectSlug: string;\n  // Task ID.\n  taskId: string;\n}): Promise<CallToolResult>; };\n```"
+      },
+      {
+        "name": "mcp__tanduna__tanduna_tasks_set_requirements",
+        "description": "Use Tanduna tools as the logged-in user. Read current state before mutations and present client confirmation for changes.\n\nReplace or clear planning requirements for an editable maintainer draft without claim, frozen publication or execution history. expectedRevision is mandatory; read again after a conflict. Incomplete drafts save with specific feedback. The host supplies source observations; callers cannot submit them. This does not attest a model, execute work or approve publication.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__tanduna__tanduna_tasks_set_requirements(args: {\n  expectedRevision: number;\n  // Project slug.\n  projectSlug: string;\n  requirements: { acceptanceWorkflow: Array<string>; deliverable: { description: string; kind: string; } | null; models: { allowed: Array<{ effort: \"low\" | \"medium\" | \"high\" | \"xhigh\" | \"max\"; model: string; provider: string; }>; fallback: { effort: \"low\" | \"medium\" | \"high\" | \"xhigh\" | \"max\"; model: string; provider: string; } | null; recommended: { effort: \"low\" | \"medium\" | \"high\" | \"xhigh\" | \"max\"; model: string; provider: string; } | null; } | null; repository: { baseBranch: string | null; baseSha: string | null; connectionId: string; } | null; requiredSkills: Array<{\n  // Empty draft text or a full 40- or 64-hex commit ID.\n  commitSha: string;\n  // Empty draft text or an absolute HTTPS URL without credentials, query or fragment.\n  downloadUrl: string;\n  name: string;\n  path: string;\n  // Empty draft text or an absolute HTTPS URL without credentials, query or fragment.\n  repositoryUrl: string;\n}>; schemaVersion: 1; verification: { automated: { commands: Array<string>; notApplicableReason: string | null; }; manual: { evidence: Array<string>; notApplicableReason: string | null; steps: Array<string>; }; } | null; } | null;\n  // Task ID.\n  taskId: string;\n}): Promise<CallToolResult>; };\n```"
+      },
+      {
+        "name": "mcp__tanduna__tanduna_task_plans_get_draft",
+        "description": "Use Tanduna tools as the logged-in user. Read current state before mutations and present client confirmation for changes.\n\nRead the saved maintainer preparation plan and its revision for one poll, or null if none exists. Wave IDs and ordering are local to this poll. Use the returned revision for a later save; this is not a reviewed or published plan.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__tanduna__tanduna_task_plans_get_draft(args: {\n  // Project slug.\n  projectSlug: string;\n  // Poll ID from tanduna.proposals.list or get.\n  proposalId: string;\n}): Promise<CallToolResult>; };\n```"
+      },
+      {
+        "name": "mcp__tanduna__tanduna_task_plans_save_draft",
+        "description": "Use Tanduna tools as the logged-in user. Read current state before mutations and present client confirmation for changes.\n\nSave an editable maintainer plan with ordered named waves, selected draft tasks and dependencies. expectedRevision is required: null creates only when no draft exists; otherwise use the last saved revision. Preserve returned wave IDs. A conflict requires reading the saved draft before retrying. This saves preparation text only; it does not submit, review, execute, vote or publish.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__tanduna__tanduna_task_plans_save_draft(args: {\n  // Last observed saved revision, or null for create-if-absent.\n  expectedRevision: number | null;\n  plan: {\n  dependencies: Array<{\n  dependsOnTaskIds: Array<string>;\n  // Selected task ID.\n  taskId: string;\n}>;\n  // Null while preparing; a saved option is required before submission.\n  optionKey: string | null;\n  // Selected tasks not assigned to a named wave; placed after named waves.\n  unassignedTaskIds: Array<string>;\n  waves: Array<{\n  // Existing server-issued wave ID from the saved draft; omit for a new wave.\n  id?: string;\n  // Human wave name, in the intended wave order.\n  name: string;\n  taskIds: Array<string>;\n}>;\n};\n  // Project slug.\n  projectSlug: string;\n  // Poll ID.\n  proposalId: string;\n}): Promise<CallToolResult>; };\n```"
+      },
+      {
+        "name": "mcp__tanduna__tanduna_task_plans_submit_draft",
+        "description": "Use Tanduna tools as the logged-in user. Read current state before mutations and present client confirmation for changes.\n\nFreeze only the saved poll-bound draft at expectedDraftRevision and queue textual review. Obtain explicit user agreement before calling. This does not execute tasks, cast votes or publish the plan. Publication still requires an actual passing review and approval of the exact linked poll option. A disabled reviewer leaves the submission pending; read the returned status without inventing a pass.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__tanduna__tanduna_task_plans_submit_draft(args: {\n  // Exact saved draft revision returned by get_draft or save_draft. Unsaved content is not accepted.\n  expectedDraftRevision: number;\n  // Project slug.\n  projectSlug: string;\n  // Poll ID.\n  proposalId: string;\n}): Promise<CallToolResult>; };\n```"
+      }
+    ],
+    "nativeInputRules": {
+      "requiredFields": "Every declared field is required, including nullable fields, except plan.waves[].id, which is optional. Nested nullable objects, when provided, contain all their declared fields.",
+      "optionalFields": [
+        "task_plans.save_draft.plan.waves[].id"
+      ],
+      "enums": {
+        "requirements.schemaVersion": [
+          1
+        ],
+        "requirements.models.*.effort": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ]
+      },
+      "nullablePaths": [
+        "tasks.set_requirements.requirements",
+        "requirements.repository",
+        "requirements.repository.baseBranch",
+        "requirements.repository.baseSha",
+        "requirements.models",
+        "requirements.models.recommended",
+        "requirements.models.fallback",
+        "requirements.deliverable",
+        "requirements.verification",
+        "requirements.verification.automated.notApplicableReason",
+        "requirements.verification.manual.notApplicableReason",
+        "task_plans.save_draft.expectedRevision",
+        "task_plans.save_draft.plan.optionKey"
+      ],
+      "declaredConstraints": [
+        "requiredSkills[].commitSha is empty draft text or a full 40- or 64-hex commit ID.",
+        "requiredSkills[].repositoryUrl and downloadUrl are empty draft text or absolute HTTPS URLs without credentials, query or fragment.",
+        "set_requirements replaces or clears only an editable maintainer draft without claim, frozen publication or execution history; expectedRevision is mandatory; reread after conflict.",
+        "Only the host supplies source observations; callers cannot submit them.",
+        "save_draft expectedRevision null creates only if absent; otherwise use the observed revision. Preserve server-issued wave IDs.",
+        "submit_draft accepts only the exact saved expectedDraftRevision, freezes content and queues textual review. It requires explicit user agreement; actual passing review and exact poll-option approval remain separate publication conditions."
+      ],
+      "unknownDeployedConstraints": [
+        "Array minimum/maximum cardinalities and uniqueness constraints beyond the supplied descriptions.",
+        "String length and aggregate-size bounds beyond the explicit commit/URL syntax descriptions.",
+        "Numeric bounds and integer validation for revisions.",
+        "Additional-property rejection and any validation not stated in the exposed declaration/description.",
+        "Whether every long-horizon task needs complete planningRequirements before publication. Null or submission acceptance does not resolve this."
+      ]
+    },
+    "candidateLocalSource": {
+      "authority": "LOCAL CANDIDATE ONLY; not proof of deployed schema/enforcement or current configuration",
+      "repository": "thepianistdirector/multiplayer-coding",
+      "commit": "024bb632f476d1931a60fc8c322c1fcb625e889b",
+      "inspectedFilesClean": true,
+      "bounds": {
+        "common": {
+          "projectSlugMaxLength": 200,
+          "taskIdMaxLength": 300,
+          "proposalIdMaxLength": 300,
+          "revision": {
+            "integer": true,
+            "min": 1,
+            "max": 9007199254740991
+          }
+        },
+        "planningRequirements": {
+          "connectionIdCodepoints": 160,
+          "branchCodepoints": 255,
+          "providerCodepoints": 40,
+          "modelCodepoints": 80,
+          "modelAlternativesMax": 8,
+          "deliverableKindCodepoints": 160,
+          "deliverableDescriptionCodepoints": 4000,
+          "commandsMax": 64,
+          "commandCodepoints": 2000,
+          "manualStepsMax": 32,
+          "manualStepCodepoints": 2000,
+          "manualEvidenceItemsMax": 16,
+          "manualEvidenceCodepoints": 1000,
+          "notApplicableReasonCodepoints": 2000,
+          "skillsMax": 8,
+          "skillNameCodepoints": 120,
+          "skillPathCodepoints": 1024,
+          "urlCodepoints": 2048,
+          "aggregateStringUtf8Bytes": 100000,
+          "commitShaLengths": [
+            0,
+            40,
+            64
+          ],
+          "arraysMayBeEmptyForDraft": true
+        },
+        "plan": {
+          "wavesMax": 32,
+          "waveNameMinLength": 1,
+          "waveNameMaxLength": 80,
+          "idMaxLength": 160,
+          "optionKeyMaxLength": 160,
+          "taskIdsPerArrayMax": 1000,
+          "distinctAssignedTasksMax": 1000,
+          "dependencyRowsMax": 1000,
+          "arraysMayBeEmptyWhilePreparing": true
+        }
+      },
+      "validation": [
+        "Exact objects reject extra/missing properties. Null clears requirements; no defaults are inserted.",
+        "Requirements string bounds count Unicode codepoints; aggregate bound sums parsed string UTF-8 bytes. NUL and unpaired surrogate codepoints are rejected. Whitespace/order are preserved.",
+        "Models require nonblank provider/model, supported explicit effort, unique allowed triples; recommended/fallback must exactly match an allowed triple.",
+        "Nonempty skill paths must be repository-relative, without backslash or empty/dot/dot-dot path segments. Duplicate repository/commit/path pins are rejected.",
+        "Plan assignment IDs must be distinct across waves/unassigned. Dependency rows must be distinct; dependencies refer to other selected tasks without duplicates or self-links.",
+        "Plan saves require a discussion poll with no opened vote or submitted publication, an observed revision, existing option, and unclaimed unpublished draft tasks. Submission requires a nonempty task set and option and no empty named wave."
+      ],
+      "publicationPolicy": "The local V3 planningPublicationFindings function checks every snapshot task without a release-horizon exception. applyPlanningPublicationFeedback adds blocking findings and changes PASSED/CHANGES_REQUESTED to CHANGES_REQUESTED when completeness issues exist. It leaves FAILED/PENDING results unchanged. This is candidate prepublication behavior, not an execution-only check or live enforcement proof.",
+      "disabledSource": "Local submitTaskPublication initializes each new submission with PENDING/reason disabled and reviewAttempt null. A separate review action also reports disabled when its adapter is disabled. Therefore the original submission response alone did not attest deployment reviewer configuration.",
+      "candidateRecovery": "Local reviewTaskPublication requires task.create, supports expectedReviewStatus FAILED and enforces retry availability. This internal method is not an exposed callable native recovery action in this session; no deployed role-to-capability mapping or live retry availability was returned.",
+      "sourceExcerpts": {
+        "planningParser": {
+          "file": "packages/server/src/task-planning-requirements.ts",
+          "startLine": 71,
+          "endLine": 330,
+          "text": "export const TASK_PLANNING_REQUIREMENTS_LIMITS = {\n  connectionIdCodepoints: 160,\n  branchCodepoints: 255,\n  providerCodepoints: 40,\n  modelCodepoints: 80,\n  modelAlternatives: 8,\n  deliverableKindCodepoints: 160,\n  deliverableDescriptionCodepoints: 4000,\n  commands: 64,\n  commandCodepoints: 2000,\n  manualSteps: 32,\n  manualStepCodepoints: 2000,\n  manualEvidenceItems: 16,\n  manualEvidenceCodepoints: 1000,\n  notApplicableReasonCodepoints: 2000,\n  skills: 8,\n  skillNameCodepoints: 120,\n  skillPathCodepoints: 1024,\n  urlCodepoints: 2048,\n  aggregateUtf8Bytes: 100_000,\n} as const;\nconst efforts: readonly TaskEffortLevel[] = ['low', 'medium', 'high', 'xhigh', 'max'];\nconst limits = TASK_PLANNING_REQUIREMENTS_LIMITS;\nconst fullSha = (value: string) => /^(?:[0-9a-f]{40}|[0-9a-f]{64})$/i.test(value);\nconst sameSha = (left: string | null | undefined, right: string | null | undefined) =>\n  typeof left === 'string' &&\n  typeof right === 'string' &&\n  left.toLowerCase() === right.toLowerCase();\nconst choiceKey = (choice: PlanningModelChoice) =>\n  JSON.stringify([choice.provider, choice.model, choice.effort]);\nfunction invalid(path: string, message: string): never {\n  throw new DomainError('INVALID_INPUT', `${path}: ${message}`);\n}\nfunction object(value: unknown, keys: readonly string[], path: string): Record<string, unknown> {\n  if (!value || typeof value !== 'object' || Array.isArray(value))\n    invalid(path, 'must be an object');\n  const row = value as Record<string, unknown>;\n  if (\n    Object.keys(row).length !== keys.length ||\n    keys.some((key) => !Object.prototype.hasOwnProperty.call(row, key)) ||\n    Object.keys(row).some((key) => !keys.includes(key))\n  )\n    invalid(path, 'has invalid fields');\n  return row;\n}\n\n/** Exact shape, bounded Unicode text, preserved order/whitespace, no defaults or source requests. */\nexport function parseTaskPlanningRequirements(value: unknown): TaskPlanningRequirements | null {\n  if (value === null) return null;\n  let bytes = 0;\n  const text = (input: unknown, path: string, max: number): string => {\n    if (typeof input !== 'string') invalid(path, 'must be text');\n    const points = Array.from(input);\n    if (points.length > max) invalid(path, `must contain at most ${max} characters`);\n    if (\n      points.some((point) => {\n        const code = point.codePointAt(0)!;\n        return code === 0 || (code >= 0xd800 && code <= 0xdfff);\n      })\n    )\n      invalid(path, 'contains unsupported text');\n    bytes += new TextEncoder().encode(input).length;\n    if (bytes > limits.aggregateUtf8Bytes)\n      invalid('planningRequirements', 'must contain at most 100000 UTF-8 bytes');\n    return input;\n  };\n  const nullableText = (input: unknown, path: string, max: number) =>\n    input === null ? null : text(input, path, max);\n  const list = (input: unknown, path: string, maxItems: number, maxText: number): string[] => {\n    if (!Array.isArray(input) || input.length > maxItems)\n      invalid(path, `must be an array of at most ${maxItems} items`);\n    return Array.from(input, (item, index) => text(item, `${path}[${index}]`, maxText));\n  };\n  const url = (input: unknown, path: string): string => {\n    const result = text(input, path, limits.urlCodepoints);\n    // Empty fields can be saved in an incomplete draft. Nonempty URLs must be usable public-link syntax.\n    if (result !== '') {\n      let parsed: URL;\n      try {\n        parsed = new URL(result);\n      } catch {\n        invalid(path, 'must be an absolute HTTPS URL');\n      }\n      if (\n        !result.startsWith('https://') ||\n        parsed.protocol !== 'https:' ||\n        !parsed.hostname ||\n        parsed.username ||\n        parsed.password ||\n        parsed.hash ||\n        parsed.search ||\n        result.trim() !== result\n      )\n        invalid(path, 'must be an absolute HTTPS URL without credentials, query or fragment');\n    }\n    return result;\n  };\n  const sha = (input: unknown, path: string): string => {\n    const result = text(input, path, 64);\n    if (result !== '' && !fullSha(result)) invalid(path, 'must be a full 40- or 64-hex commit ID');\n    return result;\n  };\n  const choice = (input: unknown, path: string): PlanningModelChoice => {\n    const row = object(input, ['provider', 'model', 'effort'], path);\n    const provider = text(row.provider, `${path}.provider`, limits.providerCodepoints);\n    const model = text(row.model, `${path}.model`, limits.modelCodepoints);\n    const effort = text(row.effort, `${path}.effort`, 6);\n    if (!provider.trim() || !model.trim() || !efforts.includes(effort as TaskEffortLevel))\n      invalid(path, 'requires provider, model and a supported explicit effort');\n    return { provider, model, effort: effort as TaskEffortLevel };\n  };\n  const row = object(\n    value,\n    [\n      'schemaVersion',\n      'repository',\n      'models',\n      'deliverable',\n      'verification',\n      'acceptanceWorkflow',\n      'requiredSkills',\n    ],\n    'planningRequirements',\n  );\n  if (row.schemaVersion !== 1) invalid('schemaVersion', 'must be 1');\n  let repository: TaskPlanningRequirements['repository'] = null;\n  if (row.repository !== null) {\n    const repo = object(row.repository, ['connectionId', 'baseBranch', 'baseSha'], 'repository');\n    repository = {\n      connectionId: text(\n        repo.connectionId,\n        'repository.connectionId',\n        limits.connectionIdCodepoints,\n      ),\n      baseBranch: nullableText(repo.baseBranch, 'repository.baseBranch', limits.branchCodepoints),\n      baseSha: repo.baseSha === null ? null : sha(repo.baseSha, 'repository.baseSha'),\n    };\n  }\n  let models: TaskPlanningRequirements['models'] = null;\n  if (row.models !== null) {\n    const model = object(row.models, ['recommended', 'fallback', 'allowed'], 'models');\n    if (!Array.isArray(model.allowed) || model.allowed.length > limits.modelAlternatives)\n      invalid('models.allowed', 'must contain at most 8 choices');\n    const allowed = Array.from(model.allowed, (item, index) =>\n      choice(item, `models.allowed[${index}]`),\n    );\n    const keys = new Set(allowed.map(choiceKey));\n    if (keys.size !== allowed.length) invalid('models.allowed', 'choices must be distinct');\n    const recommended =\n      model.recommended === null ? null : choice(model.recommended, 'models.recommended');\n    const fallback = model.fallback === null ? null : choice(model.fallback, 'models.fallback');\n    for (const [name, selected] of [\n      ['recommended', recommended],\n      ['fallback', fallback],\n    ] as const)\n      if (selected && !keys.has(choiceKey(selected)))\n        invalid(`models.${name}`, 'must be an exact allowed choice');\n    models = { recommended, fallback, allowed };\n  }\n  let deliverable: TaskPlanningRequirements['deliverable'] = null;\n  if (row.deliverable !== null) {\n    const item = object(row.deliverable, ['kind', 'description'], 'deliverable');\n    deliverable = {\n      kind: text(item.kind, 'deliverable.kind', limits.deliverableKindCodepoints),\n      description: text(\n        item.description,\n        'deliverable.description',\n        limits.deliverableDescriptionCodepoints,\n      ),\n    };\n  }\n  let verification: TaskPlanningRequirements['verification'] = null;\n  if (row.verification !== null) {\n    const item = object(row.verification, ['automated', 'manual'], 'verification');\n    const automated = object(\n      item.automated,\n      ['commands', 'notApplicableReason'],\n      'verification.automated',\n    );\n    const manual = object(\n      item.manual,\n      ['steps', 'evidence', 'notApplicableReason'],\n      'verification.manual',\n    );\n    verification = {\n      automated: {\n        commands: list(\n          automated.commands,\n          'verification.automated.commands',\n          limits.commands,\n          limits.commandCodepoints,\n        ),\n        notApplicableReason: nullableText(\n          automated.notApplicableReason,\n          'verification.automated.notApplicableReason',\n          limits.notApplicableReasonCodepoints,\n        ),\n      },\n      manual: {\n        steps: list(\n          manual.steps,\n          'verification.manual.steps',\n          limits.manualSteps,\n          limits.manualStepCodepoints,\n        ),\n        evidence: list(\n          manual.evidence,\n          'verification.manual.evidence',\n          limits.manualEvidenceItems,\n          limits.manualEvidenceCodepoints,\n        ),\n        notApplicableReason: nullableText(\n          manual.notApplicableReason,\n          'verification.manual.notApplicableReason',\n          limits.notApplicableReasonCodepoints,\n        ),\n      },\n    };\n  }\n  if (!Array.isArray(row.requiredSkills) || row.requiredSkills.length > limits.skills)\n    invalid('requiredSkills', 'must contain at most 8 skills');\n  const requiredSkills = Array.from(row.requiredSkills, (input, index): TaskPlanningSkill => {\n    const at = `requiredSkills[${index}]`;\n    const item = object(input, ['name', 'repositoryUrl', 'commitSha', 'path', 'downloadUrl'], at);\n    const path = text(item.path, `${at}.path`, limits.skillPathCodepoints);\n    if (\n      path &&\n      (path.startsWith('/') ||\n        path.includes('\\\\') ||\n        path.split('/').some((part) => part === '.' || part === '..' || part === ''))\n    )\n      invalid(`${at}.path`, 'must be a repository-relative file path');\n    return {\n      name: text(item.name, `${at}.name`, limits.skillNameCodepoints),\n      repositoryUrl: url(item.repositoryUrl, `${at}.repositoryUrl`),\n      commitSha: sha(item.commitSha, `${at}.commitSha`),\n      path,\n      downloadUrl: url(item.downloadUrl, `${at}.downloadUrl`),\n    };\n  });\n  const pins = requiredSkills\n    .filter((item) => item.repositoryUrl && item.commitSha && item.path)\n    .map((item) => JSON.stringify([item.repositoryUrl, item.commitSha.toLowerCase(), item.path]));\n  if (new Set(pins).size !== pins.length)\n    invalid('requiredSkills', 'the same pinned skill must not be repeated');\n  const acceptanceWorkflow = list(\n    row.acceptanceWorkflow,\n    'acceptanceWorkflow',\n    limits.manualSteps,\n    limits.manualStepCodepoints,\n  );\n  return {\n    schemaVersion: 1,\n    repository,\n    models,\n    deliverable,\n    verification,\n    acceptanceWorkflow,\n    requiredSkills,\n  };"
+        },
+        "nativePlanningSchema": {
+          "file": "apps/web/lib/mcp-task-planning-schema.ts",
+          "startLine": 1,
+          "endLine": 86,
+          "text": "import {\n  TASK_EFFORT_LEVELS,\n  TASK_PLANNING_REQUIREMENTS_LIMITS as limits,\n  type TaskModelRequirement,\n} from '@multiplayer/server';\n\ntype Schema = Record<string, unknown>;\nconst object = (properties: Record<string, Schema>): Schema => ({\n  type: 'object',\n  properties,\n  required: Object.keys(properties),\n  additionalProperties: false,\n});\nconst nullable = (value: Schema): Schema => ({ anyOf: [value, { type: 'null' }] });\nconst text = (maxLength: number): Schema => ({ type: 'string', maxLength });\nconst list = (items: Schema, maxItems: number): Schema => ({ type: 'array', items, maxItems });\nconst effort: Schema = { type: 'string', enum: [...TASK_EFFORT_LEVELS] };\nconst choice = object({\n  provider: { ...text(limits.providerCodepoints), minLength: 1 },\n  model: { ...text(limits.modelCodepoints), minLength: 1 },\n  effort,\n});\nconst sha = { ...text(64), description: 'Empty draft text or a full 40- or 64-hex commit ID.' };\nconst url = {\n  ...text(limits.urlCodepoints),\n  description: 'Empty draft text or an absolute HTTPS URL without credentials, query or fragment.',\n};\n\n/** Discovery shape mirrors the server parser; that exact parser remains authoritative. */\nexport const taskPlanningRequirementsSchema: Schema = nullable(\n  object({\n    schemaVersion: { type: 'integer', const: 1 },\n    repository: nullable(\n      object({\n        connectionId: text(limits.connectionIdCodepoints),\n        baseBranch: nullable(text(limits.branchCodepoints)),\n        baseSha: nullable(sha),\n      }),\n    ),\n    models: nullable(\n      object({\n        recommended: nullable(choice),\n        fallback: nullable(choice),\n        allowed: { ...list(choice, limits.modelAlternatives), uniqueItems: true },\n      }),\n    ),\n    deliverable: nullable(\n      object({\n        kind: text(limits.deliverableKindCodepoints),\n        description: text(limits.deliverableDescriptionCodepoints),\n      }),\n    ),\n    verification: nullable(\n      object({\n        automated: object({\n          commands: list(text(limits.commandCodepoints), limits.commands),\n          notApplicableReason: nullable(text(limits.notApplicableReasonCodepoints)),\n        }),\n        manual: object({\n          steps: list(text(limits.manualStepCodepoints), limits.manualSteps),\n          evidence: list(text(limits.manualEvidenceCodepoints), limits.manualEvidenceItems),\n          notApplicableReason: nullable(text(limits.notApplicableReasonCodepoints)),\n        }),\n      }),\n    ),\n    acceptanceWorkflow: list(text(limits.manualStepCodepoints), limits.manualSteps),\n    requiredSkills: list(\n      object({\n        name: text(limits.skillNameCodepoints),\n        repositoryUrl: url,\n        commitSha: sha,\n        path: text(limits.skillPathCodepoints),\n        downloadUrl: url,\n      }),\n      limits.skills,\n    ),\n  }),\n);\n\nexport const taskModelRequirementSchema: Schema = nullable(\n  object({\n    allowed: {\n      ...list(\n        object({\n          provider: { ...text(limits.providerCodepoints), minLength: 1 },\n          model: { ...text(limits.modelCodepoints), minLength: 1 },"
+        },
+        "nativeToolPlanSchema": {
+          "file": "apps/web/lib/mcp-tools.ts",
+          "startLine": 161,
+          "endLine": 213,
+          "text": "  }, ['descriptionMarkdown', 'storySections', 'links']);\n}\n\nfunction boundedArray<T>(value: unknown, label: string, maximum: number, parse: (item: unknown, index: number) => T): T[] {\n  if (!Array.isArray(value) || value.length > maximum) throw new ToolInputError(`${label} must be an array with at most ${maximum} entries`);\n  return Array.from(value, parse);\n}\n\nfunction planTaskIds(value: unknown, label: string): string[] {\n  return boundedArray(value, label, 1000, (item, index) => text(item, `${label}[${index}]`, 160));\n}\n\nfunction publicationDraftPlan(value: unknown): SaveTaskPublicationDraftInput['plan'] {\n  const plan = record(value, 'plan');\n  exactKeys(plan, ['optionKey', 'waves', 'unassignedTaskIds', 'dependencies']);\n  const waves = boundedArray(plan.waves, 'plan.waves', 32, (value, index) => {\n    const wave = record(value, `plan.waves[${index}]`);\n    exactKeys(wave, ['id', 'name', 'taskIds']);\n    return {\n      ...(wave.id === undefined ? {} : { id: text(wave.id, `plan.waves[${index}].id`, 160) }),\n      name: text(wave.name, `plan.waves[${index}].name`, 80),\n      taskIds: planTaskIds(wave.taskIds, `plan.waves[${index}].taskIds`),\n    };\n  });\n  const unassignedTaskIds = planTaskIds(plan.unassignedTaskIds, 'plan.unassignedTaskIds');\n  const assigned = [...waves.flatMap((wave) => wave.taskIds), ...unassignedTaskIds];\n  const selectedTaskIds = new Set(assigned);\n  if (assigned.length > 1000 || selectedTaskIds.size !== assigned.length) throw new ToolInputError('plan must contain at most 1000 distinct assigned tasks');\n  const dependencies = boundedArray(plan.dependencies, 'plan.dependencies', 1000, (value, index) => {\n    const dependency = record(value, `plan.dependencies[${index}]`);\n    exactKeys(dependency, ['taskId', 'dependsOnTaskIds']);\n    const taskId = text(dependency.taskId, `plan.dependencies[${index}].taskId`, 160);\n    const dependsOnTaskIds = planTaskIds(dependency.dependsOnTaskIds, `plan.dependencies[${index}].dependsOnTaskIds`);\n    if (!selectedTaskIds.has(taskId) || new Set(dependsOnTaskIds).size !== dependsOnTaskIds.length || dependsOnTaskIds.some((id) => id === taskId || !selectedTaskIds.has(id))) throw new ToolInputError('plan dependencies must refer to other selected tasks without duplicates');\n    return { taskId, dependsOnTaskIds };\n  });\n  if (new Set(dependencies.map((row) => row.taskId)).size !== dependencies.length) throw new ToolInputError('plan dependency rows must be distinct');\n  return { optionKey: nullableText(plan.optionKey, 'plan.optionKey', 160), waves, unassignedTaskIds, dependencies };\n}\n\nconst revisionSchema: JsonObject = { type: 'integer', minimum: 1, maximum: Number.MAX_SAFE_INTEGER };\nconst planTaskIdsSchema: JsonObject = { type: 'array', maxItems: 1000, uniqueItems: true, items: stringSchema('Selected draft task ID.', 160) };\nconst publicationDraftPlanSchema = objectSchema({\n  optionKey: { anyOf: [stringSchema('Proposed poll option key from tanduna.proposals.get.', 160), { type: 'null' }], description: 'Null while preparing; a saved option is required before submission.' },\n  waves: { type: 'array', maxItems: 32, items: objectSchema({\n    id: stringSchema('Existing server-issued wave ID from the saved draft; omit for a new wave.', 160),\n    name: stringSchema('Human wave name, in the intended wave order.', 80),\n    taskIds: planTaskIdsSchema,\n  }, ['name', 'taskIds']) },\n  unassignedTaskIds: { ...planTaskIdsSchema, description: 'Selected tasks not assigned to a named wave; placed after named waves.' },\n  dependencies: { type: 'array', maxItems: 1000, items: objectSchema({ taskId: stringSchema('Selected task ID.', 160), dependsOnTaskIds: planTaskIdsSchema }, ['taskId', 'dependsOnTaskIds']) },\n}, ['optionKey', 'waves', 'unassignedTaskIds', 'dependencies']);\n"
+        },
+        "nativeRequirementHandlers": {
+          "file": "apps/web/lib/mcp-tools.ts",
+          "startLine": 322,
+          "endLine": 386,
+          "text": "      name: 'tanduna.tasks.get_requirements',\n      title: 'Read saved task planning requirements',\n      description: 'Read scoped maintainer planning requirements, current task revision, model instructions and field-specific completeness. Saved observations are host-supplied; completeness is not execution readiness or model attestation.',\n      inputSchema: objectSchema({ projectSlug: stringSchema('Project slug.', 200), taskId: stringSchema('Task ID.', 300) }, ['projectSlug', 'taskId']),\n      annotations: readAnnotations,\n    },\n    mutates: false,\n    async run({ app, actorId }, value) {\n      const input = record(value); exactKeys(input, ['projectSlug', 'taskId']);\n      const scoped = await app.getScopedTask(text(input.projectSlug, 'projectSlug', 200), text(input.taskId, 'taskId', 300), actorId);\n      return app.getTaskPlanningRequirements(actorId, scoped.task.id);\n    },\n  },\n  {\n    definition: {\n      name: 'tanduna.tasks.set_requirements',\n      title: 'Save task planning requirements',\n      description: 'Replace or clear planning requirements for an editable maintainer draft without claim, frozen publication or execution history. expectedRevision is mandatory; read again after a conflict. Incomplete drafts save with specific feedback. The host supplies source observations; callers cannot submit them. This does not attest a model, execute work or approve publication.',\n      inputSchema: objectSchema({ projectSlug: stringSchema('Project slug.', 200), taskId: stringSchema('Task ID.', 300), expectedRevision: revisionSchema, requirements: taskPlanningRequirementsSchema }, ['projectSlug', 'taskId', 'expectedRevision', 'requirements']),\n      annotations: writeAnnotations({ destructive: true }),\n    },\n    mutates: true,\n    async run({ app, actorId }, value) {\n      const input = record(value); exactKeys(input, ['projectSlug', 'taskId', 'expectedRevision', 'requirements']);\n      const expectedRevision = positiveRevision(input.expectedRevision, 'expectedRevision');\n      const requirements = parseTaskPlanningRequirements(input.requirements);\n      const scoped = await app.getScopedTask(text(input.projectSlug, 'projectSlug', 200), text(input.taskId, 'taskId', 300), actorId);\n      await app.setTaskPlanningRequirements(actorId, scoped.task.id, requirements, expectedRevision);\n      return app.getTaskPlanningRequirements(actorId, scoped.task.id);\n    },\n  },\n  {\n    definition: {\n      name: 'tanduna.tasks.set_model_requirement',\n      title: 'Save permitted task model instructions',\n      description: 'Replace or clear permitted models and minimum effort on an editable maintainer task. Supply the exact last observed expectedRequirement, including null, to reject conflicting changes. The existing setter normalizes these instructions. Align them with saved planning preferences; this does not attest an executed model or change runner authorization.',\n      inputSchema: objectSchema({ projectSlug: stringSchema('Project slug.', 200), taskId: stringSchema('Task ID.', 300), requirement: taskModelRequirementSchema, expectedRequirement: taskModelRequirementSchema }, ['projectSlug', 'taskId', 'requirement', 'expectedRequirement']),\n      annotations: writeAnnotations({ destructive: true }),\n    },\n    mutates: true,\n    async run({ app, actorId }, value) {\n      const input = record(value); exactKeys(input, ['projectSlug', 'taskId', 'requirement', 'expectedRequirement']);\n      let requirement, expectedRequirement;\n      try {\n        requirement = parseMcpTaskModelRequirement(input.requirement);\n        expectedRequirement = parseMcpTaskModelRequirement(input.expectedRequirement);\n      } catch (error) {\n        throw new ToolInputError((error as Error).message);\n      }\n      const scoped = await app.getScopedTask(text(input.projectSlug, 'projectSlug', 200), text(input.taskId, 'taskId', 300), actorId);\n      await app.setTaskModelRequirement(actorId, scoped.task.id, requirement, expectedRequirement);\n      return app.getTaskPlanningRequirements(actorId, scoped.task.id);\n    },\n  },\n  {\n    definition: {\n      name: 'tanduna.tasks.brief',\n      title: 'Get a task work brief',\n      description: 'Return the exact downloadable Markdown work brief for the current saved task revision.',\n      inputSchema: objectSchema(\n        { projectSlug: stringSchema('Project slug.', 200), taskId: stringSchema('Task ID.', 300) },\n        ['projectSlug', 'taskId'],\n      ),\n      annotations: readAnnotations,\n    },"
+        },
+        "publicationFeedback": {
+          "file": "packages/server/src/task-publication-review.ts",
+          "startLine": 671,
+          "endLine": 693,
+          "text": "/** Deterministic missing-field/source feedback bound to the same immutable V3 review. */\nexport function planningPublicationFindings(request: TaskPublicationReviewRequest): TaskPublicationReviewFinding[] {\n  if (request.snapshot.schemaVersion !== 3) return [];\n  return request.snapshot.tasks.flatMap(task => {\n    const completeness = taskPlanningCompleteness(structuredClone(task.planningRequirements) as TaskPlanningRequirements | null, {\n      projectId: request.snapshot.projectId, fields: structuredClone(task.fields) as TaskRevisionFields,\n      modelRequirement: structuredClone(task.modelRequirement) as TaskModelRequirement | null,\n      ...(task.planningSourceEvidence ? { sourceEvidence: structuredClone(task.planningSourceEvidence) as TaskPlanningSourceEvidence } : {}),\n    });\n    return completeness.issues.length ? [{ taskId: task.taskId, category: 'scope' as const, severity: 'blocking' as const,\n      detail: completeness.issues.map(issue => `${issue.path} (${issue.code}): ${issue.message}`).join(' ').slice(0, 1800) }] : [];\n  });\n}\nexport function applyPlanningPublicationFeedback(request: TaskPublicationReviewRequest, result: TaskPublicationReviewResult): TaskPublicationReviewResult {\n  if (result.status !== 'PASSED' && result.status !== 'CHANGES_REQUESTED') return result;\n  const missing = planningPublicationFindings(request);\n  if (!missing.length) return result;\n  const findings = [...result.findings, ...missing].slice(0, 100);\n  if (result.findings.length + missing.length > 100) findings.push({ taskId: null, category: 'scope', severity: 'blocking', detail: 'Additional tasks have incomplete requirements. Read each task planning completeness result before creating a corrected plan.' });\n  return { ...result, status: 'CHANGES_REQUESTED', summary: 'This plan needs complete task requirements and confirmed source references. Correct the listed fields and submit a new plan revision.', findings,\n    limitations: [...result.limitations, 'Planning completeness and source observations do not attest the contributor model, passing QA or runner execution readiness.'] };\n}"
+        },
+        "submissionInitialReview": {
+          "file": "packages/server/src/pg/task-publications.ts",
+          "startLine": 243,
+          "endLine": 263,
+          "text": "    const request = await createTaskPublicationReviewRequest(createId('tpr'), snapshot);\n    const publication: TaskPublication = {\n      id: createId('tpub'),\n      projectId,\n      proposalId: proposal.id,\n      optionKey: input.optionKey,\n      status: 'SUBMITTED',\n      reviewAttempt: null,\n      request,\n      review: {\n        requestId: request.requestId,\n        snapshotHash: request.snapshotHash,\n        scope: 'TEXTUAL_PREPUBLICATION_REVIEW',\n        status: 'PENDING',\n        reason: 'disabled',\n      },\n      createdBy: userId,\n      createdAt: now(),\n      publishedAt: null,\n    };\n    await tx.query("
+        },
+        "candidateReviewAction": {
+          "file": "packages/server/src/pg/task-publications.ts",
+          "startLine": 308,
+          "endLine": 360,
+          "text": "export async function reviewTaskPublication(\n  ctx: PgContext,\n  userId: string,\n  publicationId: string,\n  expectedReviewStatus?: 'FAILED',\n): Promise<TaskPublication> {\n  const adapters = ctx.adapters as {\n    taskPublicationReview?: TaskPublicationReviewAdapter;\n    taskPublicationReviewRecovery?: TaskPublicationReviewRecovery;\n  };\n  const adapter = adapters.taskPublicationReview ?? createTaskPublicationReviewAdapter();\n  const recovery = taskReviewRecovery(adapters.taskPublicationReviewRecovery);\n  const initial = await withActor(ctx.pool, userId, async (tx) => {\n    const record = await loadPublication(tx, publicationId, true);\n    await requireCapPg(tx, userId, record.projectId, 'task.create');\n    if (expectedReviewStatus && record.review.status !== expectedReviewStatus) {\n      throw new DomainError('CONFLICT', 'The review changed. Reload its current status before retrying.');\n    }\n    if (record.status !== 'SUBMITTED') return record;\n    const startedAt = recovery.clock();\n    requireReviewRetryAvailable(record, startedAt, recovery.timeoutMs + recovery.graceMs);\n    record.reviewAttempt =\n      adapter.mode === 'disabled'\n        ? null\n        : {\n            id: createId('tpra'),\n            startedAt,\n            retryAfter: startedAt + recovery.timeoutMs + recovery.graceMs,\n          };\n    const binding = {\n      requestId: record.request.requestId,\n      snapshotHash: record.request.snapshotHash,\n      scope: 'TEXTUAL_PREPUBLICATION_REVIEW' as const,\n    };\n    record.review = record.reviewAttempt\n      ? { ...binding, status: 'RUNNING', startedAt }\n      : { ...binding, status: 'PENDING', reason: 'disabled' };\n    await tx.query(\n      'UPDATE task_publications SET review = $2::jsonb, review_attempt = $3::jsonb WHERE id = $1',\n      [\n        record.id,\n        JSON.stringify(record.review),\n        record.reviewAttempt === null ? null : JSON.stringify(record.reviewAttempt),\n      ],\n    );\n    return record;\n  });\n  if (initial.status !== 'SUBMITTED' || initial.reviewAttempt === null) return initial;\n  const attempt = initial.reviewAttempt;\n  let lifecycleError: unknown;\n  let result: import('../task-publication-review.js').TaskPublicationReviewResult;\n  try {\n    result = await adapter.review(initial.request, {"
+        }
+      }
+    },
+    "nativeReadback": {
+      "project": {
+        "id": "prj_9ef51e9826817323b774d5d3b900520f",
+        "slug": "renewal-engine",
+        "name": "Renewal Engine"
+      },
+      "proposal": {
+        "id": "prp_dc23eeda9235cb75b05469c22c83342f",
+        "revision": 1,
+        "status": "DISCUSSION",
+        "publicationId": "tpub_7edf546ba722af40bbcaad11daf2958e",
+        "canMaintain": true,
+        "votes": 0
+      },
+      "checks": {
+        "taskMappings": 218,
+        "nativeMatchedTasks": 218,
+        "waves": 26,
+        "dependencyEdges": 424,
+        "draftRevision": 1,
+        "all218Submitted": true,
+        "all218DigestMatch": true,
+        "all218PublicationIdMatch": true,
+        "allTaskIdsMatchDraft": true,
+        "all26WaveMappingsMatch": true,
+        "reviewStatuses": [
+          "FAILED"
+        ],
+        "contentHash": "cb2e36efa4678c13c74db9c35b2a2b690eca80dccba56f9f4653887e076fa4f4"
+      },
+      "representativeRequirements": [
+        {
+          "sample": "new_requirements",
+          "taskId": "tsk_b69744d31e0c03bb0c620ab2ca657c0d",
+          "revision": 1,
+          "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12",
+          "planningRequirements": null,
+          "modelRequirement": null,
+          "completeness": {
+            "status": "INCOMPLETE",
+            "issues": [
+              {
+                "path": "planningRequirements",
+                "code": "MISSING",
+                "message": "Add the task planning requirements."
+              }
+            ]
+          }
+        },
+        {
+          "sample": "historical_requirements",
+          "taskId": "tsk_17cb9d58845743cb4d031739f78f3ab1",
+          "revision": 3,
+          "repositoryId": "repo_ee03f828c0ad9fee23ad67dd857b2d12",
+          "planningRequirements": {
+            "models": {
+              "allowed": [
+                {
+                  "model": "gpt-6-astra",
+                  "effort": "medium",
+                  "provider": "openai"
+                },
+                {
+                  "model": "claude-fable-5-1",
+                  "effort": "medium",
+                  "provider": "anthropic"
+                }
+              ],
+              "fallback": {
+                "model": "claude-fable-5-1",
+                "effort": "medium",
+                "provider": "anthropic"
+              },
+              "recommended": {
+                "model": "gpt-6-astra",
+                "effort": "medium",
+                "provider": "openai"
+              }
+            },
+            "repository": {
+              "baseSha": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+              "baseBranch": "main",
+              "connectionId": "repo_ee03f828c0ad9fee23ad67dd857b2d12"
+            },
+            "deliverable": {
+              "kind": "pull_request",
+              "description": "Pick a maintained open-source fixture and a bounded dependency or framework change.\n\nEvidence artifact: docs/work/W1-T1/acceptance.md plus the actual patch, fixtures and logs within the approved task scope.\n\nMaintainer accepts the scoped design protocol; this is not product implementation."
+            },
+            "verification": {
+              "manual": {
+                "steps": [
+                  "Inspect the chosen open-source fixture at a pinned revision and record its license, old/new runtime and bounded migration. Run or document the actual baseline behavior and identify intentionally unchanged contracts."
+                ],
+                "evidence": [
+                  "docs/work/W1-T1/acceptance.md",
+                  "Record setup/fixtures, actions, expected and observed results, relevant logs or artifacts, and PASS / FAIL / NOT RUN for each criterion."
+                ],
+                "notApplicableReason": null
+              },
+              "automated": {
+                "commands": [
+                  "git rev-parse HEAD",
+                  "git status --short",
+                  "git diff --check 8af461149e2c4b6b3b17d54a10b3559168f8b32f"
+                ],
+                "notApplicableReason": null
+              }
+            },
+            "schemaVersion": 1,
+            "requiredSkills": [
+              {
+                "name": "tanduna-contribution",
+                "path": ".agents/skills/tanduna-contribution/SKILL.md",
+                "commitSha": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd",
+                "downloadUrl": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+                "repositoryUrl": "https://github.com/thepianistdirector/context-harbor"
+              },
+              {
+                "name": "renewal-engine-validation",
+                "path": ".agents/skills/renewal-engine-validation/SKILL.md",
+                "commitSha": "8af461149e2c4b6b3b17d54a10b3559168f8b32f",
+                "downloadUrl": "https://raw.githubusercontent.com/thepianistdirector/renewal-engine/8af461149e2c4b6b3b17d54a10b3559168f8b32f/.agents/skills/renewal-engine-validation/SKILL.md",
+                "repositoryUrl": "https://github.com/thepianistdirector/renewal-engine"
+              }
+            ],
+            "acceptanceWorkflow": [
+              "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+              "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+              "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+              "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+            ]
+          },
+          "modelRequirement": {
+            "note": "Prepared reciprocal primary/fallback instructions at the stated effort; declaration is not evidence of an executed model.",
+            "allowed": [
+              {
+                "model": "gpt-6-astra",
+                "provider": "openai",
+                "minEffort": "medium"
+              },
+              {
+                "model": "claude-fable-5-1",
+                "provider": "anthropic",
+                "minEffort": "medium"
+              }
+            ]
+          },
+          "completeness": {
+            "status": "COMPLETE",
+            "issues": []
+          }
+        }
+      ],
+      "review": {
+        "currentStatus": "FAILED",
+        "source": "Current tasks.list publication summaries for all 218 mapped tasks",
+        "currentReason": "UNKNOWN_NOT_EXPOSED",
+        "currentAttempt": "UNKNOWN_NOT_EXPOSED",
+        "currentReviewRequestId": "NOT_RETURNED_BY_CURRENT_READ_TOOLS",
+        "knownReviewRequestId": "tpr_cf62e2dc60f551288671c335fdc90d73",
+        "knownReviewRequestIdSource": "Preserved original submit_draft response / existing evidence; not freshly read",
+        "priorState": {
+          "status": "PENDING",
+          "reason": "disabled",
+          "attempt": null,
+          "source": "Original submission response retained in tanduna-native-evidence-20260908-01a0811e.json; superseded by current FAILED status"
+        }
+      }
+    },
+    "recoveryDiscovery": {
+      "exposedNativeTools": [
+        "mcp__tanduna__tanduna_channels_post_message",
+        "mcp__tanduna__tanduna_channels_read",
+        "mcp__tanduna__tanduna_projects_create",
+        "mcp__tanduna__tanduna_projects_get",
+        "mcp__tanduna__tanduna_projects_join",
+        "mcp__tanduna__tanduna_projects_search",
+        "mcp__tanduna__tanduna_projects_update_story",
+        "mcp__tanduna__tanduna_proposals_create",
+        "mcp__tanduna__tanduna_proposals_get",
+        "mcp__tanduna__tanduna_proposals_list",
+        "mcp__tanduna__tanduna_proposals_open_vote",
+        "mcp__tanduna__tanduna_proposals_vote",
+        "mcp__tanduna__tanduna_repositories_candidates",
+        "mcp__tanduna__tanduna_task_plans_get_draft",
+        "mcp__tanduna__tanduna_task_plans_list_published",
+        "mcp__tanduna__tanduna_task_plans_save_draft",
+        "mcp__tanduna__tanduna_task_plans_submit_draft",
+        "mcp__tanduna__tanduna_task_questions_create",
+        "mcp__tanduna__tanduna_task_questions_get",
+        "mcp__tanduna__tanduna_task_questions_history",
+        "mcp__tanduna__tanduna_task_questions_list",
+        "mcp__tanduna__tanduna_task_questions_record_decision",
+        "mcp__tanduna__tanduna_tasks_brief",
+        "mcp__tanduna__tanduna_tasks_claim",
+        "mcp__tanduna__tanduna_tasks_create",
+        "mcp__tanduna__tanduna_tasks_get",
+        "mcp__tanduna__tanduna_tasks_get_requirements",
+        "mcp__tanduna__tanduna_tasks_list",
+        "mcp__tanduna__tanduna_tasks_release",
+        "mcp__tanduna__tanduna_tasks_set_model_requirement",
+        "mcp__tanduna__tanduna_tasks_set_requirements",
+        "mcp__tanduna__tanduna_tasks_update"
+      ],
+      "exposedRetryOrManualReviewTool": null,
+      "metadataOrReviewResourceErrors": [
+        "resources/list: MCP -32601 Method not found",
+        "resources/templates/list: MCP -32601 Method not found"
+      ],
+      "capability": "proposals.get returned canMaintain=true; no native review-recovery capability/role details exposed.",
+      "gap": "No callable read tool exposes this failed review's reason/attempt and no callable recovery/manual-review tool is available. No endpoint, configuration change or review retry was attempted or proposed as an exposed supported action."
+    },
+    "runtime": {
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "source": "Current session turn_context",
+      "timestamp": "2026-09-08T13:49:09.545Z",
+      "host": "Darwin",
+      "architecture": "arm64"
+    },
+    "preservedMappingFile": "tanduna-native-evidence-20260908-01a0811e.json"
+  },
+  "nextRequiredAction": "Parent should report the changed FAILED status and the missing failure-detail/recovery surface. Obtain an actually supported recovery action before any retry; do not infer a configuration change or recreate native objects."
+}

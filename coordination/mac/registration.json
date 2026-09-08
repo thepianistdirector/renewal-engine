@@ -14,14 +14,15 @@
     "kind": "heartbeat",
     "status": "ACTIVE",
     "intervalMinutes": 15,
-    "nextRunAt": "2026-09-08T13:22:17.647000+00:00",
+    "nextRunAt": "2026-09-08T14:01:17.473000+00:00",
     "targetTaskId": "01a0811a-9fe7-7b23-9107-8222da04124f",
     "modelSelection": "inherits target task; current model verified gpt-6-astra",
     "workspaceBinding": "Existing local task attachment retained; recurring prompt explicitly selects a separate private Mac helper workspace.",
     "readback": "Native create/view and read-only native persisted schedule record.",
-    "timerFiring": "NOT TESTED: initial manual cycle completed; no native last-run timestamp while the target task remains active.",
-    "lastRunAt": null,
-    "readbackAt": "2026-09-08T13:22:01.596022+00:00"
+    "timerFiring": "RUNTIME VERIFIED: actual native heartbeat returned to the existing local Mac task; current runtime model verified gpt-6-astra/high.",
+    "lastRunAt": "2026-09-08T13:46:17.482000+00:00",
+    "readbackAt": "2026-09-08T13:49:53.178476+00:00",
+    "firstObservedScheduledRunAt": "2026-09-08T13:46:17.482000+00:00"
   },
   "supportedKinds": [
     "helper_setup",
@@ -32,7 +33,7 @@
   "requestBranch": "codex/renewal-engine-0.1",
   "requestFile": "coordination/mac/requests.json",
   "resultBranch": "codex/mac-helper-results",
-  "updatedAt": "2026-09-08T13:22:01.596027+00:00",
+  "updatedAt": "2026-09-08T13:49:53.178478+00:00",
   "limitations": [
     "Mac must remain powered on with Codex desktop running.",
     "Heartbeat model follows the target task; every cycle verifies it before acting.",

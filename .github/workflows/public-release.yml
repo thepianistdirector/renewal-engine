@@ -1,0 +1,74 @@
+name: Verify published 0.1.0 externally
+on:
+  push:
+    branches: [codex/renewal-engine-public-verification]
+permissions: {}
+jobs:
+  public-download:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Download public release without credentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir downloads
+          cd downloads
+          base=https://github.com/thepianistdirector/renewal-engine/releases/download/v0.1.0
+          curl --fail --location --retry 2 "$base/renewal-engine-0.1.0.tar.gz" --output renewal-engine-0.1.0.tar.gz
+          echo '2bf2d535ab2c27b87305f960f793151f630d8e70186a52e34ec704cf1eb0c48e  renewal-engine-0.1.0.tar.gz' | sha256sum --check
+          tar -xzf renewal-engine-0.1.0.tar.gz
+          python3 renewal-engine-0.1.0/install.py --prefix ../installed
+          echo 'ee6b2b9e6ba3ffc3e34102dc70ac596b1e3f8479bacd8a6e99072a7c78c80047  ../installed/bin/renewal-engine' | sha256sum --check
+      - name: Build two actual pinned interpreters from official source
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir runtimes
+          cd runtimes
+          curl --fail --location --retry 2 https://www.python.org/ftp/python/3.11.16/Python-3.11.16.tar.xz --output baseline.tar.xz
+          echo '91bcdebfdde239a003ae93738a7fce0f9230fee5c4bc2b86f6e6e8c6f98aabe8  baseline.tar.xz' | sha256sum --check
+          curl --fail --location --retry 2 https://www.python.org/ftp/python/3.12.14/Python-3.12.14.tar.xz --output target.tar.xz
+          echo '5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a  target.tar.xz' | sha256sum --check
+          tar -xf baseline.tar.xz
+          tar -xf target.tar.xz
+          for version in 3.11.16 3.12.14; do
+            cd "Python-$version"
+            ./configure --without-ensurepip --disable-test-modules > configure.log 2>&1
+            make -j2 > build.log 2>&1
+            ./python -I -S -B --version
+            cd ..
+          done
+      - name: Run published normal, negative, idempotence and real interruption checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 downloads/renewal-engine-0.1.0/tools/verify_runtime.py \
+            --cli installed/bin/renewal-engine \
+            --baseline runtimes/Python-3.11.16/python \
+            --target runtimes/Python-3.12.14/python \
+            --out verified
+      - name: Retain public runtime evidence in the workflow log
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64,io,json,os,platform,tarfile
+          from pathlib import Path
+          root=Path('verified')
+          payload={'provider':'GitHub-hosted ubuntu-24.04','runId':os.environ['GITHUB_RUN_ID'],'runAttempt':os.environ['GITHUB_RUN_ATTEMPT'],'platform':platform.platform(),'machine':platform.machine(),'sourceArchiveSha256':'2bf2d535ab2c27b87305f960f793151f630d8e70186a52e34ec704cf1eb0c48e','humanValidation':False,'files':{}}
+          for path in sorted(root.rglob('*')):
+              relative=path.relative_to(root).as_posix()
+              if path.is_file() and relative.split('/')[0] in {'normal','negative','repeat','restart','interrupted-candidate','interrupted-comparison'}:
+                  payload['files'][relative]=base64.b64encode(path.read_bytes()).decode()
+          record=root/'runtime-verification.json'
+          if record.exists():
+              data=record.read_text().replace(str(Path.cwd()),'EXTERNAL_WORKSPACE')
+              payload['verification']=json.loads(data)
+          else:
+              payload['verification']={'status':'INCOMPLETE','reason':'No completed verification transcript'}
+          packed=base64.b64encode(__import__('gzip').compress(json.dumps(payload).encode(),mtime=0)).decode()
+          print('RENEWAL_PUBLIC_EVIDENCE_BEGIN')
+          for i in range(0,len(packed),3000):print(packed[i:i+3000])
+          print('RENEWAL_PUBLIC_EVIDENCE_END')
+          PY

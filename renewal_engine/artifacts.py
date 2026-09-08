@@ -24,7 +24,18 @@ def atomic_json(path: Path, value):
 
 
 def read_regular(path: Path, limit=1_048_576) -> bytes:
-    fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK)
+    path = Path(path).absolute()
+    parent_fd = os.open('/', os.O_RDONLY | os.O_DIRECTORY)
+    try:
+        for name in path.parts[1:-1]:
+            if name == '..':
+                raise ValueError('parent traversal is not supported')
+            child = os.open(name, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=parent_fd)
+            os.close(parent_fd)
+            parent_fd = child
+        fd = os.open(path.name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=parent_fd)
+    finally:
+        os.close(parent_fd)
     with os.fdopen(fd, "rb") as stream:
         info = os.fstat(stream.fileno())
         if not stat.S_ISREG(info.st_mode) or info.st_size > limit:
@@ -83,7 +94,7 @@ def new_run(destination: Path):
                                             "recovery": "Retain this directory; restart into a new destination."})
 
 
-def save_sources(destination: Path, sources: dict[str, bytes], *, shadowed=False):
+def save_sources(destination: Path, sources: dict[str, bytes], *, shadowed=False, recipe_ids=None, shadowed_modules=()):
     original = destination / "original"
     candidate = destination / "candidate"
     original.mkdir()
@@ -94,8 +105,22 @@ def save_sources(destination: Path, sources: dict[str, bytes], *, shadowed=False
         # Names come from a snapshot; never accept archive/member paths here.
         if Path(name).is_absolute() or ".." in Path(name).parts:
             raise ValueError("invalid source member path")
-        discovered = discover(data, shadowed=shadowed)
-        transformed = transform(data, discovered)
+        steps = None
+        if recipe_ids is None:
+            discovered = discover(data, shadowed=shadowed)
+            transformed = transform(data, discovered)
+            details = discovered.json()
+        else:
+            from .recipes import compose
+            modules = set(shadowed_modules)
+            if shadowed:
+                modules.add('configparser')
+            if any(Path(n).name == 'pathlib.py' or 'pathlib' in Path(n).parts[:-1] for n in sources):
+                modules.add('pathlib')
+            transformed, steps = compose(data, recipe_ids, shadowed_modules=modules)
+            details = {'source_sha256': digest(data), 'steps':steps,
+                       'edits':[edit for step in steps for edit in step['edits']],
+                       'findings':[finding for step in steps for finding in step['findings']]}
         for base, content in [(original, data), (candidate, transformed)]:
             target = base / name
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -105,14 +130,25 @@ def save_sources(destination: Path, sources: dict[str, bytes], *, shadowed=False
                 target.chmod(0o444)
         diffs.append(patch(data, transformed, name))
         rows.append({"path": name, "source_sha256": digest(data), "candidate_sha256": digest(transformed),
-                     "changed": transformed != data, **discovered.json()})
+                     "changed": transformed != data, **details})
     for directory, _, _ in os.walk(original, topdown=False):
         Path(directory).chmod(0o555)
     (destination / "changes.patch").write_text("".join(diffs), encoding="utf-8", newline="")
     return rows
 
 
-def inspect(source: Path, destination: Path):
+def metadata_snapshot(source: Path):
+    context = source.parent if source.is_file() else source
+    metadata = {}
+    for path in sorted(context.iterdir()):
+        if path.name in {'pyproject.toml','poetry.lock','uv.lock','Pipfile.lock','setup.cfg','tox.ini'} or path.name.startswith('requirements') and path.suffix == '.txt':
+            metadata[path.name] = read_regular(path)
+    if sum(map(len, metadata.values())) > 4 * 1048576:
+        raise ValueError('metadata exceeds 4 MiB')
+    return metadata
+
+
+def inspect(source: Path, destination: Path, recipe_ids=None):
     from . import __version__
     from .report import render
 
@@ -120,14 +156,30 @@ def inspect(source: Path, destination: Path):
     destination = destination.absolute()
     if destination.resolve() == source.resolve() or source.is_dir() and source.resolve() in destination.resolve().parents:
         raise ValueError("run destination must be outside the selected source directory")
+    from .recipes import select
+    selected = select(recipe_ids)
+    recipe_ids = [r['id'] for r in selected]
     sources = snapshot(source)
+    context = source.parent if source.is_file() else source
+    metadata = metadata_snapshot(source)
     new_run(destination)
     try:
         context = source.parent if source.is_file() else source
         shadowed = any((context / name).exists() or (context / name).is_symlink()
                        for name in ("configparser.py", "configparser"))
-        rows = save_sources(destination, sources, shadowed=shadowed)
-        manifest = {"schema": 1, "tool_version": __version__, "mode": "inspection",
+        modules = [m for m in ('configparser','pathlib') if any((context / n).exists() or (context / n).is_symlink() for n in (m, m+'.py'))]
+        modules = sorted(set(modules) | {m for m in ('configparser','pathlib') if any(Path(n).name == m+'.py' or m in Path(n).parts[:-1] for n in sources)})
+        rows = save_sources(destination, sources, shadowed=shadowed, recipe_ids=recipe_ids, shadowed_modules=modules)
+        from .impact import analyze
+        impact = analyze(sources, metadata, [r['path'] for r in rows if r['changed']])
+        atomic_json(destination / 'impact.json', impact)
+        (destination / 'metadata').mkdir()
+        for name, data in metadata.items():
+            (destination / 'metadata' / name).write_bytes(data)
+        manifest = {"schema": 2, "tool_version": __version__, "mode": "inspection",
+                    "recipes": selected, "shadowed_modules": modules,
+                    "metadata_sha256": {n:digest(d) for n,d in metadata.items()},
+                    "impact_sha256": digest((destination / "impact.json").read_bytes()),
                     "recipe": "configparser-local-prefix-v1", "runtimes": None,
                     "scope": "Python source snapshot only; non-Python resources and excluded directories are not copied",
                     "excluded_directories": sorted(EXCLUDED), "files": rows}

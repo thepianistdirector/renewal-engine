@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "configparser-local-prefix-v1",
+  "version": "1.0.0",
+  "engine_schema": 1,
+  "baseline": {
+    "min": [
+      3,
+      11
+    ],
+    "max_exclusive": [
+      3,
+      12
+    ]
+  },
+  "target": {
+    "min": [
+      3,
+      12
+    ],
+    "max_exclusive": [
+      3,
+      13
+    ]
+  },
+  "preconditions": [
+    "UTF-8 source without BOM",
+    "Unmodified standard-library import environment",
+    "Proved local import/construction/call prefix",
+    "Whole input digest and exact source spans match"
+  ],
+  "effects": [
+    "return values",
+    "exceptions and diagnostics",
+    "warnings",
+    "stream position and closure",
+    "file bytes"
+  ],
+  "policy_owner": "Maintainer freezes comparison policy before characterization; transform cannot authorize differences",
+  "dependencies": [],
+  "fixtures": [
+    {
+      "name": "supported",
+      "source": "def load(stream, source):\n    import configparser\n    p = configparser.ConfigParser()\n    p.readfp(fp=stream, filename=source)\n    return p\n",
+      "expected": "def load(stream, source):\n    import configparser\n    p = configparser.ConfigParser()\n    p.read_file(f=stream, source=source)\n    return p\n",
+      "source_sha256": "7d050e0ce4dbb2d96ad5ebedf5bdfd6fe64ab8ecb689562fd6e0725a762c09f6",
+      "expected_sha256": "9ed42f4c4202afab69703e124ab715b92280792c09a23b8b899be4d568cec12b",
+      "kind": "positive"
+    },
+    {
+      "name": "ambiguous",
+      "source": "def load(stream, source):\n    import configparser\n    p = configparser.ConfigParser()\n    other.readfp(fp=stream, filename=source)\n    return p\n",
+      "expected": "def load(stream, source):\n    import configparser\n    p = configparser.ConfigParser()\n    other.readfp(fp=stream, filename=source)\n    return p\n",
+      "source_sha256": "cb2df98cdc40157d3d2c0d6cbf66cb0012bcfcea0a4916b82dbc351c2e76bb08",
+      "expected_sha256": "cb2df98cdc40157d3d2c0d6cbf66cb0012bcfcea0a4916b82dbc351c2e76bb08",
+      "kind": "refusal"
+    }
+  ],
+  "limitations": [
+    "Static support is not behavioral equivalence",
+    "No dynamic import hooks, subclasses or monkey-patching proof",
+    "Runtime claims require retained actual baseline and candidate observations"
+  ]
+}

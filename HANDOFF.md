@@ -1,6 +1,6 @@
 # Renewal Engine execution handoff
 
-**Public 0.1.0 and fresh external runtime reproduction are verified.**
+**Current owner target: 0.5.0 local release candidate (see GOAL.md). Public 0.1.0 remains verified and immutable.**
 Human maintainer review and native Tanduna publication remain unfinished.
 
 Public release:
@@ -9,6 +9,28 @@ https://github.com/thepianistdirector/renewal-engine/releases/tag/v0.1.0
 External verification:
 https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566
 
+
+## 0.5 candidate checkpoint
+
+Local implementation now includes versioned shipped recipes/composition, the Path
+hard-link migration, static impact, strict repeated observations and narrow
+policies, exact hunk/approval/stale checks, private summary export and verified
+narrow Python isolation. **72 tests and 27 packaged CLI checks pass**, as do real
+SIGINT/restart checks. Evidence is in docs/evidence/0.5; usage is docs/0.5-guide.md.
+The candidate is in dist/0.5.0; 0.1 dist assets and tag are not replaced.
+
+0.5 publication, a fresh public-download external run, second-recipe human review
+and native plan publication are unfinished. The prepared external workflow is
+`docs/publication/0.5-external-workflow.yml`; it requires approved exact asset
+hashes and uses the existing Linux profile without weakening runner security.
+Do not call a 0.5 number or local test a completed public goal.
+
+RE-MAC-005 supersedes the old PENDING/disabled checkpoint: all 218 current task
+reviews are FAILED; deployed failure cause, attempt and recovery action are not
+exposed. Missing planningRequirements are not established as that cause. The
+existing IDs/revision/submitted hash stay frozen, RE-MAC-003 stays HOLD, and no
+retry/vote/resubmission occurred. Mac native heartbeat firing is now verified.
+
 ## Ownership and approvals
 
 Continue the same native Goal in Codex task
@@ -16,8 +38,8 @@ Continue the same native Goal in Codex task
 handoff. The native tool still reports blocked and offers no resume action;
 do not duplicate the Goal or treat that status as cancellation. The remaining
 conditions have changed: Mac setup and login succeeded; the native draft now
-exists, but its reviewer is disabled and full human evidence remains missing.
-The complete public-product/native-plan objective is unchanged. Execution
+exists, but its current review is FAILED with no exposed cause; full human evidence remains missing.
+The owner expanded the product target to 0.5 on September 8; public-plan and human evidence obligations remain. Execution
 metadata verified OpenAI gpt-6-astra, high effort, including leaf critics.
 
 The owner approved the original fixture and actual runtime comparison, necessary
@@ -71,8 +93,8 @@ sudo or shared machine installation was used. Decision 004 records its scope.
 
 The Mac helper is established on task `01a0811a-9fe7-7b23-9107-8222da04124f`,
 host `local`, native heartbeat `lucas-mac-helper`, every 15 minutes. Its setup,
-initial cycle and scoped transport passed. Native scheduled firing remains
-unobserved in its registration snapshot. Local Tanduna login succeeded;
+initial cycle and scoped transport passed. Native scheduled firing is now
+verified in its updated registration snapshot. Local Tanduna login succeeded;
 credentials stay in the official Mac login child and must never be transferred.
 
 The complete native 218-task/26-wave/424-edge draft was saved and submitted.
@@ -82,12 +104,11 @@ the canonical plan. Preserve the twelve historical IDs and the existing new IDs.
 Do not recreate tasks, infer a passing review, cast votes or publish without the
 specific reviewed-option approval.
 
-Textual review is PENDING with reason `disabled` and no attempt. The 218
-structured planningRequirements fields are null. RE-MAC-005 is a new read-only
-request for actual tool schemas, applicable long-term-planning policy and
-supported recovery controls. No Tanduna app/configuration change is authorized.
-RE-MAC-003 revision 1 is held to preserve the frozen submission. Prepare a new
-versioned request only after the missing facts establish the appropriate change.
+Current native review is FAILED with cause, attempt and recovery unavailable.
+The 218 structured planningRequirements remain null. RE-MAC-005 completed
+read-only schema/policy discovery; absence of requirements is not established as
+the failure cause. No Tanduna app/configuration change is authorized. RE-MAC-003
+stays HOLD. Obtain supported failure/recovery details before any new request.
 
 Partial Mac public-package inspection/reopening passed on arm64 CPython 3.14.6.
 The participant reported report-review approval; detailed negative-control
@@ -115,8 +136,9 @@ python3 tools/plan.py check
 
 Run implementation tests again when code changes justify it. Do not repeat
 successful runtime jobs to substitute for missing human/native evidence.
-The next later-0.x outcome is an explicit versioned recipe contract; it is
-outside this bounded 0.1 gate.
+The 0.5 scoped product is implemented locally. Remaining release work is concrete
+publication authorization, public artifact readback, fresh external reproduction,
+human second-recipe evidence and supported native-plan recovery/publication.
 
 ## Mac request/results bridge
 
@@ -125,7 +147,7 @@ Source requests: `coordination/mac/requests.json` on
 `coordination/mac/registration.json` and `coordination/mac/results/` on
 `codex/mac-helper-results`. Preserve that result branch; this root writes only
 requests and its canonical/evidence files. Latest reconciled Mac result commit:
-`b9304597937b4d7307f2ea195537e4b48418ebe2`.
+`87d1f8144f6c3165137d80f4c382567d36527e6d`.
 
 The Mac task can notify this existing remote owner through the supported task
 message path. Root can read/wait on the known Mac task using host `local`;

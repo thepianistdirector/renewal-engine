@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pathlib-local-hardlink-v1",
+  "version": "1.0.0",
+  "engine_schema": 1,
+  "baseline": {
+    "min": [
+      3,
+      11
+    ],
+    "max_exclusive": [
+      3,
+      12
+    ]
+  },
+  "target": {
+    "min": [
+      3,
+      12
+    ],
+    "max_exclusive": [
+      3,
+      13
+    ]
+  },
+  "preconditions": [
+    "UTF-8 source without BOM",
+    "Unmodified standard-library import environment",
+    "Proved local import/construction/call prefix",
+    "Whole input digest and exact source spans match"
+  ],
+  "effects": [
+    "hard-link inode relationship",
+    "file create/delete and content",
+    "exceptions errno filename filename2",
+    "warnings"
+  ],
+  "policy_owner": "Maintainer freezes comparison policy before characterization; transform cannot authorize differences",
+  "dependencies": [],
+  "fixtures": [
+    {
+      "name": "supported",
+      "source": "def link(source, target):\n    from pathlib import Path\n    s = Path(source)\n    t = Path(target)\n    s.link_to(t)\n",
+      "expected": "def link(source, target):\n    from pathlib import Path\n    s = Path(source)\n    t = Path(target)\n    t.hardlink_to(s)\n",
+      "source_sha256": "4eebd65e37c2ef4f8a928dc9bf6d2bb484c4a187a387327664c1dd535dd23679",
+      "expected_sha256": "3908b1ae064f06ff6c94a1d39c45d0d35cfdac6ecf52bda614eb7372521f3abd",
+      "kind": "positive"
+    },
+    {
+      "name": "ambiguous",
+      "source": "def link(source, target):\n    from pathlib import Path\n    s = Path(source)\n    t = Path(target)\n    s.link_to(make_target())\n",
+      "expected": "def link(source, target):\n    from pathlib import Path\n    s = Path(source)\n    t = Path(target)\n    s.link_to(make_target())\n",
+      "source_sha256": "6d6c20812fc00557963a0a482100d5983777590c9d98d9f7007229dcfa1b509f",
+      "expected_sha256": "6d6c20812fc00557963a0a482100d5983777590c9d98d9f7007229dcfa1b509f",
+      "kind": "refusal"
+    }
+  ],
+  "limitations": [
+    "Static support is not behavioral equivalence",
+    "No dynamic import hooks, subclasses or monkey-patching proof",
+    "Runtime claims require retained actual baseline and candidate observations"
+  ]
+}

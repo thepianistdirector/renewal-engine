@@ -1,0 +1,43 @@
+{
+  "evidence_level": "RUNTIME VERIFIED",
+  "platform": "Linux x86_64",
+  "backend": "bubblewrap-seccomp-python-v1",
+  "probe_checks": {
+    "environment": true,
+    "exec": true,
+    "fork": true,
+    "host_read": true,
+    "host_write": true,
+    "network": true,
+    "no_proc": true,
+    "root_create": true,
+    "work_create": true
+  },
+  "verified": true,
+  "runtime_hashes": {
+    "executable_sha256": "f7c6210eb40fadcd3c2889dddd24a15fc2c9f926aec5a03bf9da66e12d581526",
+    "bwrap_sha256": "eb767688b8224d8d3dbe1f8cb30ac3dff9ae8b02ff0452eaec9f94874d4e0011",
+    "runtime_tree_sha256": "249640096471125310100deeb9953928339a7cee3c1d98299bb1c9684426026e"
+  },
+  "entrypoint": "main.py",
+  "snapshot_manifest": [
+    {
+      "path": "main.py",
+      "type": "file",
+      "size": 105,
+      "sha256": "1e760bfd5bc55421ae4de98960e6169d052c90ed47758e30c5c90cb91afda63b"
+    }
+  ],
+  "snapshot_sha256": "b89cff1e10d9bec27c0fd28b11f87eafa3aeecf07277637e71152550554f5a63",
+  "returncode": 0,
+  "failure": null,
+  "stdout": "isolated output\n",
+  "work_output_hex": "65786163742066696c6520656666656374",
+  "work_output_sha256": "c406d0662cccbe2c6608f8b2fd0b08df0e580a12e97a2c4c3d179760f764650b",
+  "work_output_size": 17,
+  "omitted": [
+    "absolute runtime executable and prefix paths"
+  ],
+  "human_observation": false,
+  "external_observation": false
+}

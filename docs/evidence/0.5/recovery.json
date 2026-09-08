@@ -1,0 +1,187 @@
+{
+  "status": "RUNTIME VERIFIED",
+  "cli_sha256": "dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428",
+  "scope": "Real pinned runtimes on the same Linux host, packaged CLI, deterministic stage fault injection and real SIGINT; not external or human validation.",
+  "checks": [
+    {
+      "command": [
+        "demo",
+        "--baseline",
+        "LOCAL_WORKSPACE/.local/runtime-build/Python-3.11.16/python",
+        "--target",
+        "TRUSTED_TARGET_RUNTIME",
+        "--out",
+        "normal"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: saved report.html, changes.patch, manifest.json and candidate/.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify",
+        "normal"
+      ],
+      "returncode": 0,
+      "stdout": "VERIFIED SAVED EVIDENCE: PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "demo",
+        "--baseline",
+        "LOCAL_WORKSPACE/.local/runtime-build/Python-3.11.16/python",
+        "--target",
+        "TRUSTED_TARGET_RUNTIME",
+        "--out",
+        "negative",
+        "--negative-control"
+      ],
+      "returncode": 1,
+      "stdout": "REGRESSION: saved report.html, changes.patch, manifest.json and candidate/.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify",
+        "negative"
+      ],
+      "returncode": 0,
+      "stdout": "VERIFIED SAVED EVIDENCE: REGRESSION\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "demo",
+        "--baseline",
+        "LOCAL_WORKSPACE/.local/runtime-build/Python-3.11.16/python",
+        "--target",
+        "TRUSTED_TARGET_RUNTIME",
+        "--out",
+        "normal"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Renewal Engine: [Errno 17] File exists: 'LOCAL_WORKSPACE/.runs/recovery-05-final/normal'\n"
+    },
+    {
+      "command": [
+        "inspect",
+        "normal/candidate/program.py",
+        "--out",
+        "repeat"
+      ],
+      "returncode": 0,
+      "stdout": "INSPECTION ONLY: saved report.html, changes.patch, manifest.json and candidate/.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify",
+        "repeat"
+      ],
+      "returncode": 0,
+      "stdout": "VERIFIED SAVED EVIDENCE: INSPECTION ONLY\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify",
+        "interrupted-candidate"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Renewal Engine: run is incomplete; retain it and restart\n"
+    },
+    {
+      "check": "real SIGINT during candidate",
+      "result": "PASS",
+      "original_preserved": true,
+      "state": {
+        "stage": "INCOMPLETE",
+        "complete": false,
+        "recovery": "Keep all evidence and restart into a new directory."
+      },
+      "exit_code": 130
+    },
+    {
+      "command": [
+        "verify",
+        "interrupted-comparison"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Renewal Engine: run is incomplete; retain it and restart\n"
+    },
+    {
+      "check": "real SIGINT during comparison",
+      "result": "PASS",
+      "original_preserved": true,
+      "state": {
+        "stage": "INCOMPLETE",
+        "complete": false,
+        "recovery": "Keep all evidence and restart into a new directory."
+      },
+      "exit_code": 130
+    },
+    {
+      "command": [
+        "demo",
+        "--baseline",
+        "LOCAL_WORKSPACE/.local/runtime-build/Python-3.11.16/python",
+        "--target",
+        "TRUSTED_TARGET_RUNTIME",
+        "--out",
+        "restart"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: saved report.html, changes.patch, manifest.json and candidate/.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify",
+        "restart"
+      ],
+      "returncode": 0,
+      "stdout": "VERIFIED SAVED EVIDENCE: PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify",
+        "normal"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Renewal Engine: saved case inputs changed\n"
+    },
+    {
+      "command": [
+        "verify",
+        "normal"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Renewal Engine: saved policy changed\n"
+    },
+    {
+      "command": [
+        "verify",
+        "normal"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "Renewal Engine: candidate source changed since the run\n"
+    },
+    {
+      "command": [
+        "verify",
+        "normal"
+      ],
+      "returncode": 0,
+      "stdout": "VERIFIED SAVED EVIDENCE: PASS\n",
+      "stderr": ""
+    }
+  ]
+}

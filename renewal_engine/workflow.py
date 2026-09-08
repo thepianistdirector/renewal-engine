@@ -1,6 +1,7 @@
 """Trusted-reference workflow. No API accepts a user repository command."""
 
 from __future__ import annotations
+from .jsonio import loads as strict_loads
 
 from importlib.resources import files
 import json
@@ -22,7 +23,7 @@ def resource_bytes(name):
 def trusted_assets():
     assets = {name: resource_bytes("reference/" + name)
               for name in ("program.py", "harness.py", "cases.json", "trust.json", "policy.json")}
-    trust = json.loads(assets["trust.json"])
+    trust = strict_loads(assets["trust.json"])
     for name, expected in [("program.py", trust["program_hashes"]["original"]),
                            ("harness.py", trust["harness_sha256"]), ("cases.json", trust["cases_sha256"])]:
         if digest(assets[name]) != expected:
@@ -33,8 +34,8 @@ def trusted_assets():
 def demo(destination: Path, baseline: Path, target: Path, negative_control=False):
     destination = destination.absolute()
     assets, trust = trusted_assets()
-    cases = json.loads(assets["cases.json"])
-    policy = json.loads(assets["policy.json"])
+    cases = strict_loads(assets["cases.json"])
+    policy = strict_loads(assets["policy.json"])
     new_run(destination)
     try:
         reference = destination / "reference"
@@ -96,7 +97,7 @@ def demo(destination: Path, baseline: Path, target: Path, negative_control=False
                 atomic_json(cwd / "process.json", process)
                 if process["failure"] or process["returncode"] != 0 or process["stderr"]:
                     raise ValueError("trusted case execution failed; retained " + side + "/" + case["id"] + "/process.json")
-                observation = json.loads(process["stdout"])
+                observation = strict_loads(process["stdout"])
                 # Collect declared filesystem effects independently of fixture
                 # instrumentation, before saving observation evidence itself.
                 file_effects = {}
@@ -138,12 +139,21 @@ def demo(destination: Path, baseline: Path, target: Path, negative_control=False
 
 def verify_saved(directory: Path):
     """Reopen retained evidence; never execute a source file or interpreter."""
-    manifest = json.loads((directory / "manifest.json").read_text())
-    state = json.loads((directory / "state.json").read_text())
+    from .artifacts import read_regular
+    manifest = strict_loads(read_regular(directory / "manifest.json",limit=32*1048576))
+    if type(manifest) is not dict:
+        raise ValueError("saved manifest must be a JSON object")
+    if manifest.get('mode') == 'trusted-hardlink':
+        from .hardlink import verify
+        return verify(directory)
+    if manifest.get('mode') in {'repeated-comparison','isolated-execution'}:
+        from .session import verify
+        return verify(directory)
+    state = strict_loads(read_regular(directory / "state.json"))
     if not state.get("complete"):
         raise ValueError("run is incomplete; retain it and restart")
-    result = json.loads((directory / "results.json").read_text())
-    if result.get("files") != manifest.get("files"):
+    result = strict_loads(read_regular(directory / "results.json",limit=32*1048576))
+    if differences(result.get("files"), manifest.get("files")):
         raise ValueError("result file identities differ from the manifest")
     expected_patch = ""
     for row in manifest["files"]:
@@ -151,13 +161,44 @@ def verify_saved(directory: Path):
             path = Path(row["path"])
             if path.is_absolute() or ".." in path.parts:
                 raise ValueError("invalid manifest member path")
-            if digest((directory / side / path).read_bytes()) != row[key]:
+            if digest(read_regular(directory / side / path)) != row[key]:
                 raise ValueError(side + " source changed since the run")
-        expected_patch += patch((directory / "original" / path).read_bytes(),
-                                (directory / "candidate" / path).read_bytes(), row["path"])
-    if (directory / "changes.patch").read_bytes() != expected_patch.encode("utf-8"):
+        expected_patch += patch(read_regular(directory / "original" / path),
+                                read_regular(directory / "candidate" / path), row["path"])
+    if read_regular(directory / "changes.patch",limit=32*1048576) != expected_patch.encode("utf-8"):
         raise ValueError("saved patch differs from retained source snapshots")
     if manifest["mode"] == "inspection":
+        if type(manifest.get('schema')) is not int or manifest['schema'] not in {1,2}:
+            raise ValueError('unsupported inspection schema')
+        from .artifacts import snapshot
+        expected_paths = {row['path'] for row in manifest['files']}
+        if len(expected_paths) != len(manifest['files']):
+            raise ValueError('duplicate inspection source member')
+        for side in ('original','candidate'):
+            if set(snapshot(directory / side)) != expected_paths:
+                raise ValueError('saved source snapshot membership changed')
+        if manifest.get('schema') == 2:
+            from .recipes import select, compose
+            from .impact import analyze
+            from .artifacts import read_regular
+            ids = [r['id'] for r in manifest['recipes']]
+            if differences(select(ids),manifest['recipes']):
+                raise ValueError('recipe contract changed; use matching tool version')
+            originals = {r['path']:read_regular(directory / 'original' / r['path']) for r in manifest['files']}
+            for row in manifest['files']:
+                candidate, steps = compose(originals[row['path']], ids, shadowed_modules=manifest['shadowed_modules'])
+                if digest(candidate) != row['candidate_sha256'] or differences(steps,row['steps']):
+                    raise ValueError('saved recipe trace differs from recomputed transform')
+            metadata = {}
+            for name, expected in manifest['metadata_sha256'].items():
+                if Path(name).name != name or name in {'.','..'}:
+                    raise ValueError('invalid metadata member')
+                metadata[name] = read_regular(directory / 'metadata' / name)
+                if digest(metadata[name]) != expected:
+                    raise ValueError('saved metadata changed')
+            impact_data = read_regular(directory / 'impact.json',limit=8*1048576)
+            if digest(impact_data) != manifest['impact_sha256'] or differences(strict_loads(impact_data),analyze(originals, metadata, [r['path'] for r in manifest['files'] if r['changed']])):
+                raise ValueError('saved impact differs from retained source')
         if (result.get("status") != "INSPECTION ONLY" or result.get("behavior_measured") is not False
                 or state.get("stage") != "INSPECTED" or state.get("behavior_measured") is not False
                 or manifest.get("runtimes") is not None):
@@ -176,16 +217,16 @@ def verify_saved(directory: Path):
             raise ValueError("comparison state is incomplete or inconsistent")
         for name, expected in [("harness.py", manifest["fixture_sha256"]["harness_sha256"]),
                                ("program.py", manifest["fixture_sha256"]["program_hashes"]["original"])]:
-            if digest((directory / "reference" / name).read_bytes()) != expected:
+            if digest(read_regular(directory / "reference" / name)) != expected:
                 raise ValueError("saved reference source changed: " + name)
-        policy_data = (directory / "reference/policy.json").read_bytes()
+        policy_data = read_regular(directory / "reference/policy.json")
         if digest(policy_data) != manifest["policy_sha256"]:
             raise ValueError("saved policy changed")
-        cases_data = (directory / "reference/cases.json").read_bytes()
+        cases_data = read_regular(directory / "reference/cases.json")
         if digest(cases_data) != manifest["fixture_sha256"]["cases_sha256"]:
             raise ValueError("saved case inputs changed")
-        policy, cases = json.loads(policy_data), json.loads(cases_data)
-        retained_trust = json.loads((directory / "reference/trust.json").read_text())
+        policy, cases = strict_loads(policy_data), strict_loads(cases_data)
+        retained_trust = strict_loads(read_regular(directory / "reference/trust.json"))
         if retained_trust != manifest["fixture_sha256"]:
             raise ValueError("retained fixture trust record differs from the manifest")
         for side, version_key in [("original", "baseline"), ("candidate", "target")]:
@@ -197,22 +238,22 @@ def verify_saved(directory: Path):
             records = []
             for side in ("original", "candidate"):
                 cwd = directory / "observations" / side / case["id"]
-                process = json.loads((cwd / "process.json").read_text())
+                process = strict_loads(read_regular(cwd / "process.json"))
                 validate_capture(process)
-                instrumented = json.loads(process["stdout"])
-                record = json.loads((cwd / "observation.json").read_text())
+                instrumented = strict_loads(process["stdout"])
+                record = strict_loads(read_regular(cwd / "observation.json"))
                 file_effects = {}
                 for path in sorted(cwd.iterdir()):
                     if path.name in {"process.json", "observation.json"}:
                         continue
                     if not path.is_file() or path.is_symlink():
                         raise ValueError("saved effect has an unexpected file type")
-                    data = path.read_bytes()
+                    data = read_regular(path)
                     file_effects[path.name] = {"sha256": digest(data), "size": len(data)}
                 instrumented["effects"]["files"] = file_effects
-                if instrumented != record:
+                if differences(instrumented,record):
                     raise ValueError("saved observation differs from process output or filesystem effects")
-                if (cwd / "input.ini").read_bytes() != case["content"].encode("utf-8"):
+                if read_regular(cwd / "input.ini") != case["content"].encode("utf-8"):
                     raise ValueError("saved input differs from the frozen characterization case")
                 records.append(record)
             recomputed.append(compare_case(case, *records, policy))
@@ -221,7 +262,7 @@ def verify_saved(directory: Path):
         count = sum(c["status"] == "REGRESSION" for c in recomputed)
         expected_status = "REGRESSION" if count else "PASS"
         if (result.get("status") != expected_status or state.get("result") != expected_status
-                or result.get("behavior_measured") is not True or result.get("regressions") != count
+                or result.get("behavior_measured") is not True or type(result.get("regressions")) is not int or result.get("regressions") != count
                 or result.get("expected_changes") != sum(len(c["expected_changes"]) for c in recomputed)):
             raise ValueError("saved comparison summary differs from recomputed evidence")
     else:

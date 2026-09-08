@@ -1,8 +1,8 @@
 # Renewal Engine roadmap
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `36c70785e48fe61afd43c6ad641df5a3898f5b55d90706d2bb3724380c00d1b0`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `3188005bd104589c51124d6d15920b1626e557cdf4d1116c5199e8f443ebbffb`.
 
-Public 0.1.0 and external runtime reproduction verified; native 218-task draft submitted with reviewer disabled; human walkthrough evidence incomplete
+0.5.0 local release candidate: 72 tests and 27 packaged checks pass; public release remains 0.1.0; native review FAILED with cause unavailable; human evidence incomplete
 
 218 outcome tasks in 26 waves. 0.1: 50; later 0.x: 72; long-term: 80; exploratory: 16.
 
@@ -150,14 +150,14 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N06-01` — Version recipe contracts (PLANNED)
-- `renewal-engine:N06-02` — Express runtime ranges (PLANNED)
-- `renewal-engine:N06-03` — Declare syntax preconditions (PLANNED)
-- `renewal-engine:N06-04` — Declare effect coverage (PLANNED)
-- `renewal-engine:N06-05` — Declare expected-change policy ownership (PLANNED)
-- `renewal-engine:N06-06` — Distribute negative fixtures with recipes (PLANNED)
-- `renewal-engine:N06-07` — Define contract upgrade compatibility (PLANNED)
-- `renewal-engine:N06-08` — Validate a complete recipe envelope (PLANNED)
+- `renewal-engine:N06-01` — Version recipe contracts (IN PROGRESS)
+- `renewal-engine:N06-02` — Express runtime ranges (IN PROGRESS)
+- `renewal-engine:N06-03` — Declare syntax preconditions (IN PROGRESS)
+- `renewal-engine:N06-04` — Declare effect coverage (IN PROGRESS)
+- `renewal-engine:N06-05` — Declare expected-change policy ownership (IN PROGRESS)
+- `renewal-engine:N06-06` — Distribute negative fixtures with recipes (IN PROGRESS)
+- `renewal-engine:N06-07` — Define contract upgrade compatibility (IN PROGRESS)
+- `renewal-engine:N06-08` — Validate a complete recipe envelope (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N06-01 through renewal-engine:N06-08. Recipe contracts can drift from their actual supported domain. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -171,13 +171,13 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N07-01` — Prioritize Python migration demand (PLANNED)
-- `renewal-engine:N07-02` — Clear the second fixture rights (PLANNED)
-- `renewal-engine:N07-03` — Characterize a second API contract (PLANNED)
-- `renewal-engine:N07-04` — Prove the second recipe transformation (PLANNED)
-- `renewal-engine:N07-05` — Measure combined recipe interactions (PLANNED)
-- `renewal-engine:N07-06` — Control recipe selection (PLANNED)
-- `renewal-engine:N07-07` — Bound Python support claims (PLANNED)
+- `renewal-engine:N07-01` — Prioritize Python migration demand (IN PROGRESS)
+- `renewal-engine:N07-02` — Clear the second fixture rights (IN PROGRESS)
+- `renewal-engine:N07-03` — Characterize a second API contract (IN PROGRESS)
+- `renewal-engine:N07-04` — Prove the second recipe transformation (IN PROGRESS)
+- `renewal-engine:N07-05` — Measure combined recipe interactions (IN PROGRESS)
+- `renewal-engine:N07-06` — Control recipe selection (IN PROGRESS)
+- `renewal-engine:N07-07` — Bound Python support claims (IN PROGRESS)
 - `renewal-engine:N07-08` — Review second-recipe external usefulness (PLANNED)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N07-01 through renewal-engine:N07-08. Recipe expansion can imply unsafe general Python modernization. Retain failing and unrun evidence; require the named human or runtime observation where specified.
@@ -192,14 +192,14 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N08-01` — Map declared dependencies (PLANNED)
-- `renewal-engine:N08-02` — Trace imported symbols (PLANNED)
-- `renewal-engine:N08-03` — Map configuration entry points (PLANNED)
-- `renewal-engine:N08-04` — Identify public interface exposure (PLANNED)
-- `renewal-engine:N08-05` — Represent uncertainty in impact maps (PLANNED)
-- `renewal-engine:N08-06` — Connect edits to migration requirements (PLANNED)
-- `renewal-engine:N08-07` — Expose transitive dependency effects (PLANNED)
-- `renewal-engine:N08-08` — Validate the impact inventory against a fixture (PLANNED)
+- `renewal-engine:N08-01` — Map declared dependencies (IN PROGRESS)
+- `renewal-engine:N08-02` — Trace imported symbols (IN PROGRESS)
+- `renewal-engine:N08-03` — Map configuration entry points (IN PROGRESS)
+- `renewal-engine:N08-04` — Identify public interface exposure (IN PROGRESS)
+- `renewal-engine:N08-05` — Represent uncertainty in impact maps (IN PROGRESS)
+- `renewal-engine:N08-06` — Connect edits to migration requirements (IN PROGRESS)
+- `renewal-engine:N08-07` — Expose transitive dependency effects (IN PROGRESS)
+- `renewal-engine:N08-08` — Validate the impact inventory against a fixture (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N08-01 through renewal-engine:N08-08. Static impact maps can omit configuration and dynamically selected interfaces. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -213,14 +213,14 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N09-01` — Define bounded filesystem observations (PLANNED)
-- `renewal-engine:N09-02` — Capture file creation and deletion (PLANNED)
-- `renewal-engine:N09-03` — Capture serialized data contracts (PLANNED)
+- `renewal-engine:N09-01` — Define bounded filesystem observations (IN PROGRESS)
+- `renewal-engine:N09-02` — Capture file creation and deletion (IN PROGRESS)
+- `renewal-engine:N09-03` — Capture serialized data contracts (IN PROGRESS)
 - `renewal-engine:N09-04` — Capture protocol transcripts locally (PLANNED)
-- `renewal-engine:N09-05` — Capture process exit behavior (PLANNED)
-- `renewal-engine:N09-06` — Observe resource lifecycle effects (PLANNED)
-- `renewal-engine:N09-07` — Control sensitive evidence retention (PLANNED)
-- `renewal-engine:N09-08` — Validate observer independence (PLANNED)
+- `renewal-engine:N09-05` — Capture process exit behavior (IN PROGRESS)
+- `renewal-engine:N09-06` — Observe resource lifecycle effects (IN PROGRESS)
+- `renewal-engine:N09-07` — Control sensitive evidence retention (IN PROGRESS)
+- `renewal-engine:N09-08` — Validate observer independence (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N09-01 through renewal-engine:N09-08. Rich observations risk leaking private data or missing destructive effects. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -234,14 +234,14 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N10-01` — Detect repeated-run variance (PLANNED)
-- `renewal-engine:N10-02` — Declare timestamp normalization (PLANNED)
+- `renewal-engine:N10-01` — Detect repeated-run variance (IN PROGRESS)
+- `renewal-engine:N10-02` — Declare timestamp normalization (IN PROGRESS)
 - `renewal-engine:N10-03` — Declare random-input reproducibility (PLANNED)
-- `renewal-engine:N10-04` — Preserve meaningful ordering (PLANNED)
-- `renewal-engine:N10-05` — Separate locale and encoding variance (PLANNED)
-- `renewal-engine:N10-06` — Bound tolerance policies (PLANNED)
-- `renewal-engine:N10-07` — Audit normalization changes (PLANNED)
-- `renewal-engine:N10-08` — Expose unresolved variance to users (PLANNED)
+- `renewal-engine:N10-04` — Preserve meaningful ordering (IN PROGRESS)
+- `renewal-engine:N10-05` — Separate locale and encoding variance (IN PROGRESS)
+- `renewal-engine:N10-06` — Bound tolerance policies (IN PROGRESS)
+- `renewal-engine:N10-07` — Audit normalization changes (IN PROGRESS)
+- `renewal-engine:N10-08` — Expose unresolved variance to users (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N10-01 through renewal-engine:N10-08. Overbroad normalization can erase genuine regressions. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -255,14 +255,14 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N11-01` — Identify the patch application base (PLANNED)
-- `renewal-engine:N11-02` — Detect concurrent candidate modification (PLANNED)
-- `renewal-engine:N11-03` — Explain conflicting hunks (PLANNED)
-- `renewal-engine:N11-04` — Preserve unrelated local edits (PLANNED)
-- `renewal-engine:N11-05` — Support selective change rejection (PLANNED)
-- `renewal-engine:N11-06` — Recharacterize an updated source base (PLANNED)
-- `renewal-engine:N11-07` — Bind approvals to exact artifacts (PLANNED)
-- `renewal-engine:N11-08` — Rehearse conflict recovery (PLANNED)
+- `renewal-engine:N11-01` — Identify the patch application base (IN PROGRESS)
+- `renewal-engine:N11-02` — Detect concurrent candidate modification (IN PROGRESS)
+- `renewal-engine:N11-03` — Explain conflicting hunks (IN PROGRESS)
+- `renewal-engine:N11-04` — Preserve unrelated local edits (IN PROGRESS)
+- `renewal-engine:N11-05` — Support selective change rejection (IN PROGRESS)
+- `renewal-engine:N11-06` — Recharacterize an updated source base (IN PROGRESS)
+- `renewal-engine:N11-07` — Bind approvals to exact artifacts (IN PROGRESS)
+- `renewal-engine:N11-08` — Rehearse conflict recovery (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N11-01 through renewal-engine:N11-08. A valid patch can become unsafe when its source base changes. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -276,14 +276,14 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N12-01` — Inventory local data flows (PLANNED)
-- `renewal-engine:N12-02` — Prove offline default behavior (PLANNED)
-- `renewal-engine:N12-03` — Constrain diagnostic logging (PLANNED)
-- `renewal-engine:N12-04` — Separate raw and shareable evidence (PLANNED)
-- `renewal-engine:N12-05` — Require explicit provider scope (PLANNED)
-- `renewal-engine:N12-06` — Enforce workspace boundaries (PLANNED)
+- `renewal-engine:N12-01` — Inventory local data flows (IN PROGRESS)
+- `renewal-engine:N12-02` — Prove offline default behavior (IN PROGRESS)
+- `renewal-engine:N12-03` — Constrain diagnostic logging (IN PROGRESS)
+- `renewal-engine:N12-04` — Separate raw and shareable evidence (IN PROGRESS)
+- `renewal-engine:N12-05` — Require explicit provider scope (IN PROGRESS)
+- `renewal-engine:N12-06` — Enforce workspace boundaries (IN PROGRESS)
 - `renewal-engine:N12-07` — Support private artifact cleanup (PLANNED)
-- `renewal-engine:N12-08` — Audit the privacy boundary end to end (PLANNED)
+- `renewal-engine:N12-08` — Audit the privacy boundary end to end (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N12-01 through renewal-engine:N12-08. Local processing alone does not establish every data boundary. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -297,12 +297,12 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N13-01` — Publish an authoring contract (PLANNED)
-- `renewal-engine:N13-02` — Provide a minimal recipe example (PLANNED)
-- `renewal-engine:N13-03` — Expose a conformance runner (PLANNED)
-- `renewal-engine:N13-04` — Document reviewable edit rules (PLANNED)
-- `renewal-engine:N13-05` — Package contributor evidence (PLANNED)
-- `renewal-engine:N13-06` — Support independent recipe maintenance (PLANNED)
+- `renewal-engine:N13-01` — Publish an authoring contract (IN PROGRESS)
+- `renewal-engine:N13-02` — Provide a minimal recipe example (IN PROGRESS)
+- `renewal-engine:N13-03` — Expose a conformance runner (IN PROGRESS)
+- `renewal-engine:N13-04` — Document reviewable edit rules (IN PROGRESS)
+- `renewal-engine:N13-05` — Package contributor evidence (IN PROGRESS)
+- `renewal-engine:N13-06` — Support independent recipe maintenance (IN PROGRESS)
 - `renewal-engine:N13-07` — Observe a second maintainer authoring (PLANNED)
 - `renewal-engine:N13-08` — Close authoring gaps from observation (PLANNED)
 
@@ -318,14 +318,14 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 **Assigned outcomes:**
 
-- `renewal-engine:N14-01` — Define execution threat boundaries (PLANNED)
-- `renewal-engine:N14-02` — Select an approved isolation backend (PLANNED)
-- `renewal-engine:N14-03` — Deny host filesystem escape (PLANNED)
-- `renewal-engine:N14-04` — Deny unauthorized network access (PLANNED)
-- `renewal-engine:N14-05` — Constrain descendants and resource use (PLANNED)
-- `renewal-engine:N14-06` — Exclude inherited credentials (PLANNED)
-- `renewal-engine:N14-07` — Expose isolation profile limitations (PLANNED)
-- `renewal-engine:N14-08` — Admit approved arbitrary-repository execution (PLANNED)
+- `renewal-engine:N14-01` — Define execution threat boundaries (IN PROGRESS)
+- `renewal-engine:N14-02` — Select an approved isolation backend (IN PROGRESS)
+- `renewal-engine:N14-03` — Deny host filesystem escape (IN PROGRESS)
+- `renewal-engine:N14-04` — Deny unauthorized network access (IN PROGRESS)
+- `renewal-engine:N14-05` — Constrain descendants and resource use (IN PROGRESS)
+- `renewal-engine:N14-06` — Exclude inherited credentials (IN PROGRESS)
+- `renewal-engine:N14-07` — Expose isolation profile limitations (IN PROGRESS)
+- `renewal-engine:N14-08` — Admit approved arbitrary-repository execution (IN PROGRESS)
 
 **Exit evidence:** Criterion-level acceptance records for renewal-engine:N14-01 through renewal-engine:N14-08. A subprocess is not a sandbox; untrusted execution requires denial evidence. Retain failing and unrun evidence; require the named human or runtime observation where specified.
 
@@ -583,6 +583,6 @@ Download renewal-engine-0.1.0.tar.gz and SHA256SUMS from the versioned GitHub re
 
 ## Publication boundary
 
-Authenticated Mac helper saved/submitted all native rows. Textual reviewer is disabled and no passing review or poll approval exists. All 218 structured planningRequirements are absent; inspect actual schema/policy before editing the frozen submission. Public pages still show only the historical twelve tasks.
+Current native readback reports FAILED for all 218 mapped tasks; failure cause, attempt and supported recovery are not exposed. Structured requirements are missing but this is not established as the failure cause. Existing submission remains frozen; no retry, vote or publication authorized from the read-only result.
 
 The generated [publication export](docs/publication/tanduna-plan-export.json) is a local review artifact, not a supported API payload or proof of native publication. See the [source mapping](docs/planning/source-mapping.md).

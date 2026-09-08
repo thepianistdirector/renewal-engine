@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedFrom": "project-plan.json",
-  "canonicalSha256": "36c70785e48fe61afd43c6ad641df5a3898f5b55d90706d2bb3724380c00d1b0",
+  "canonicalSha256": "3188005bd104589c51124d6d15920b1626e557cdf4d1116c5199e8f443ebbffb",
   "meaning": "Generated new outcome contracts and mappings; frozen original contracts remain in lineage.",
   "sourceMappings": [
     {
@@ -3505,8 +3505,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An unknown schema version fails with a migration instruction and leaves source unchanged.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_42161a03aad6049ae370a51c4d9ad0bd"
     },
     {
@@ -3539,8 +3545,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Boundary-version fixtures distinguish admitted, excluded and unverified interpreter versions.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_ecd3422461c4d3052fae11ce21981098"
     },
     {
@@ -3573,8 +3585,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Removing a required binding precondition causes contract validation to reject the recipe.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_c25cef3dc1deda3d8d0efb9b79bca749"
     },
     {
@@ -3607,8 +3625,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A recipe claiming filesystem preservation without an effect observer fails admission.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_c9f648d36b8c526f9878964dc07a44a6"
     },
     {
@@ -3641,8 +3665,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A recipe attempting to change expectations during execution is rejected.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_b7824959292fb647d763085e712aca27"
     },
     {
@@ -3675,8 +3705,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A recipe package missing a runnable negative control cannot be marked verified.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_7c8520d6ecef537a277a31aaa06b2a8b"
     },
     {
@@ -3709,8 +3745,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A contract migration round trip preserves old expectations or explicitly refuses unsupported conversion.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_91e6eb84fdc9790ac8d11b0b7d480137"
     },
     {
@@ -3773,8 +3815,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A clean environment resolves no undeclared recipe input; missing input causes a named refusal.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_3419dd4853a6e9f67cc983bd5451b0b5"
     },
     {
@@ -3808,8 +3856,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Record candidate evidence and reject a rename-only case with no demonstrated user need.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_caaf11408d287087e9eb4970cedd3281"
     },
     {
@@ -3844,8 +3898,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Its pinned provenance covers tests, data and code; an incompatible asset prevents release.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_5ab772944c8b54baa7424c5901fbc9b2"
     },
     {
@@ -3879,8 +3939,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Its error-path fixture fails when an API-specific return value or effect is altered.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_0e44dc180696285c12bf7b93e14e5d52"
     },
     {
@@ -3914,8 +3980,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Positive edits preserve unrelated bytes and at least one plausible ambiguous form is refused.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_9d01fd79de95f0bc6b096d168efc12fe"
     },
     {
@@ -3949,8 +4021,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Run both orders on an overlap fixture; noncommutative edits require an explicit order or refusal.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_e01294c6c532258b279319b8683862c7"
     },
     {
@@ -3984,8 +4062,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A fixture containing both APIs changes only sites owned by the selected recipe.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_c6a731bbd72e5dfbfdd0b1edae16e6f0"
     },
     {
@@ -4019,8 +4103,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An untested runtime pair never inherits verified status from another recipe.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_e3542426b35c1c112d1046dc2d445938"
     },
     {
@@ -4118,8 +4208,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Conflicting manifest and lockfile versions are reported with source locations.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_44e41231518e3346c1842e35027cc538"
     },
     {
@@ -4152,8 +4248,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A re-export fixture exposes its chain while unresolved dynamic imports stay uncertain.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_a42edff9e38a13290aa64772e5ea6d03"
     },
     {
@@ -4186,8 +4288,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A configuration-only API selection appears in the affected surface inventory.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_6dceffb99c17a41b317c5ae0a30464cf"
     },
     {
@@ -4220,8 +4328,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A changed exported signature is highlighted even when internal tests pass.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_3d9cd801d4539955461b4d5d5fdf0679"
     },
     {
@@ -4254,8 +4368,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Unknown plugin loading yields an explicit coverage gap rather than a zero-impact claim.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_bf31da0e7a9750117199b072b67fead1"
     },
     {
@@ -4288,8 +4408,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A hunk with no requirement or call-site identity fails review export validation.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_17d36ec17b169edc4ec3e6bd6b793fee"
     },
     {
@@ -4322,8 +4448,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An added transitive package appears in the impact diff with origin and license-review gate.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_1ed7c0a45976be4adc24bd6617806c2d"
     },
     {
@@ -4386,8 +4518,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A planted config dependency and public re-export are found; unrelated modules are not labeled certainly affected.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_3ba6e4bbf879f49a032c514a464ed6b8"
     },
     {
@@ -4421,8 +4559,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Changes outside the declared observation set are labeled unmeasured, not preserved.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_1bd40f40a24c44d6f0b64d56097623a0"
     },
     {
@@ -4456,8 +4600,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A deliberate missing output file and unexpected created file both fail comparison.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_7acff7ef9b6a45580c98bee8796a2c04"
     },
     {
@@ -4491,8 +4641,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Null, empty string, integer and stringified-number mutants are distinguished.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_54f014c279bd9af821723a7a13ccd8bd"
     },
     {
@@ -4561,8 +4717,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A same-output candidate with a different exit status fails comparison.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_245f9edaaa3010675b3ce1d013038fea"
     },
     {
@@ -4596,8 +4758,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An omitted close or flush is detected by an instrumented trusted fixture.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_00403ef959357ab61cfb837c200ea30f"
     },
     {
@@ -4631,8 +4799,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A seeded sensitive field is excluded from a publishable export without silently altering raw local evidence.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_f5b061e9585b7c3e76e60f41377a2007"
     },
     {
@@ -4696,8 +4870,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An observer-only negative corpus detects dropped writes, reordered messages and altered value types.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_16b1f780cbcd15e6737b21965a9f6099"
     },
     {
@@ -4731,8 +4911,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Repeated unchanged runs expose a seeded varying field before comparison is accepted.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_441232080ab433e51928442a157a2fed"
     },
     {
@@ -4766,8 +4952,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An allowed timestamp shift passes while a changed duration or date boundary fails.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_5a49672d87de806d450c0164d840478b"
     },
     {
@@ -4836,8 +5028,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A reordered command or protocol sequence is reported as a regression.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_42893c4895706b83c92b5a74140238ba"
     },
     {
@@ -4871,8 +5069,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A locale-sensitive fixture is either pinned and reproduced or marked unsupported.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_ae59d6c69110fb878676128d5a133d40"
     },
     {
@@ -4906,8 +5110,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Values inside and outside the declared tolerance yield distinct results with raw values retained.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_a1c64f570dd0af7cfa17e956927c84e6"
     },
     {
@@ -4941,8 +5151,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Changing a policy hash creates a new comparison instead of rewriting the old report.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_77c46fd5926b49835641c7c7f53f0d2a"
     },
     {
@@ -5006,8 +5222,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: The report shows repetition count, differing fields and unresolved status for a seeded flaky case.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_2a38ba6b431cf108709882552ce6ddbc"
     },
     {
@@ -5041,8 +5263,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Applying to a changed file fails before modification even when surrounding text still matches.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_cecea42f8d1cbaf9d491c37bf656642a"
     },
     {
@@ -5076,8 +5304,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Editing a candidate after comparison marks its report stale.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_3145df919a782627d40035b537e02082"
     },
     {
@@ -5111,8 +5345,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Two edits targeting overlapping spans produce a conflict with both origins and no partial application.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_360aa7c00e743ebbb243be19c4af90d2"
     },
     {
@@ -5146,8 +5386,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A fixture with unrelated uncommitted changes retains those bytes after safe application.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_04d6395f48f3647e11aa55c0a31d6f72"
     },
     {
@@ -5181,8 +5427,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Removing one hunk invalidates the relevant candidate comparison instead of keeping a green status.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_f1846d15d4f1b9babe103f8e31a59e9c"
     },
     {
@@ -5216,8 +5468,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A source hash change forces fresh baseline characterization and links the superseded run.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_84b6260da9503d9aede3538c5b0f0248"
     },
     {
@@ -5251,8 +5509,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Changing one hunk invalidates the prior approval binding.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_39ac1917fe96017c4c926540fca44531"
     },
     {
@@ -5316,8 +5580,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Inject a conflict mid-workflow and recover without losing original or accepted evidence.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_040bfbbf7b7da1c7c62eb968caad6232"
     },
     {
@@ -5350,8 +5620,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A reviewed flow inventory accounts for source, logs, reports and runtime inputs.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_3051b0cb01eb377b4782a0a8c1f381f7"
     },
     {
@@ -5384,8 +5660,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A network-denial run completes; attempted remote fetches are surfaced rather than silently retried.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_1cbb673eb71a7fefe45dcb5841393452"
     },
     {
@@ -5418,8 +5700,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Seeded secrets in environment and path inputs do not appear in shareable logs.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_77f5a802714acaa026471b29481d1d56"
     },
     {
@@ -5453,8 +5741,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An export manifest lists omitted data and preserves local raw evidence hashes.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_cd6ba25471a47f04610000e79de91c2a"
     },
     {
@@ -5487,8 +5781,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: No provider request occurs without named fields, destination and explicit configuration.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_08f0bba830c13b7875c2858e62ef9254"
     },
     {
@@ -5521,8 +5821,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Symlink and traversal fixtures cannot access a neighboring canary directory.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_0137ff8f6df20705881eda983d55c7ca"
     },
     {
@@ -5619,8 +5925,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A full run with canaries and network monitoring matches the published data inventory.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_e677a4ab329225b9560670135f81d15c"
     },
     {
@@ -5658,8 +5970,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: The public contract covers discovery, edits, fixtures, policy, evidence and refusal behavior.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_50ea2c21283e0aa023a73c2a213f0c8c"
     },
     {
@@ -5692,8 +6010,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A fresh checkout executes the example's positive and negative cases using documented commands.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_02da1471edeb6ec7f304011a0d89d960"
     },
     {
@@ -5726,8 +6050,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A malformed recipe receives field and case-specific errors rather than a generic failure.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_5670fe09a459a18a2d4c1fdf2e221db4"
     },
     {
@@ -5760,8 +6090,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: The guide includes binding, source-span and idempotence counterexamples with expected outcomes.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_5da8c4e919ca04cd34814013ba23d514"
     },
     {
@@ -5794,8 +6130,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A proposed recipe lacking runtime identities or a negative control fails submission validation.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_af45dece4811898dbc387754ef47c927"
     },
     {
@@ -5828,8 +6170,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A compatible recipe revision passes conformance with no core file changes.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "AUTOMATED PASS",
+          "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_94795c07e48ac18b8c71c0b797cd3e25"
     },
     {
@@ -5961,8 +6309,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: The threat model identifies filesystem, network, process, credentials and shared-host authority.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_a07bc2ea5131d906e8af29034ec976e7"
     },
     {
@@ -5996,8 +6350,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: A bounded backend decision records version, license, resource cost and replacement path before adoption.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_1114bae9215d00057f82c8ff8dfa5f8d"
     },
     {
@@ -6031,8 +6391,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Traversal, symlink and mount escape attempts fail with retained denial evidence.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_2a09911342ac95ac420e0cc3ae5dff0b"
     },
     {
@@ -6066,8 +6432,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: DNS, direct IP and proxy escape fixtures fail under the declared profile.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_796f4a79f05f389b833978d82dccf251"
     },
     {
@@ -6101,8 +6473,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Fork, memory and output stress cases terminate without orphaned processes or exceeded host allocation.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_e00aa58e7694d3a9835bd79d5b1153ab"
     },
     {
@@ -6136,8 +6514,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: Environment, home-directory and agent-socket canaries cannot be read by the test program.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_d72461417d2394de5ef59afb3d2723f9"
     },
     {
@@ -6171,8 +6555,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: The report includes profile identity, verified denials and untested escape classes.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_4df4d70efbfd84562d6c29cfd5991b91"
     },
     {
@@ -6236,8 +6626,14 @@
         "requiredEvidence": "Retain the setup, actual observed result and reproducible counterexample for: An approved disposable repository runs inside the verified profile; missing authorization or profile refuses execution.",
         "humanEvidence": "PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute."
       },
-      "status": "PLANNED",
-      "evidence": [],
+      "status": "IN PROGRESS",
+      "evidence": [
+        {
+          "path": "docs/evidence/0.5/README.md",
+          "level": "RUNTIME VERIFIED",
+          "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."
+        }
+      ],
       "platformId": "tsk_038c7dd10b23a68bd7e1889c685ba063"
     },
     {

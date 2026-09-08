@@ -9,6 +9,16 @@ transformation produces two regressions. Packaged runtime and interruption
 checks pass on Linux x86_64, including a [fresh external Ubuntu 24.04 run](https://github.com/thepianistdirector/renewal-engine/actions/runs/34226941566)
 using the publicly downloaded release. Human validation remains pending.
 
+## Current development: 0.5.0 candidate
+
+The owner expanded this task through 0.5 on September 8. The current checkout adds
+versioned recipes and composition, a Path hard-link migration, static project
+impact, repeated-observation policies, hunk selection and exact approval,
+private summary export, and explicitly authorized execution in a verified narrow
+Linux isolation profile. See [the 0.5 guide](docs/0.5-guide.md) and [current objective](GOAL.md).
+**0.5 is not yet publicly released or externally/human validated.** The public
+0.1 release and its evidence above remain unchanged.
+
 ## Try the working inspection
 
 Prerequisite: Python 3.11 or newer. The current CLI checks ran on Linux x86_64

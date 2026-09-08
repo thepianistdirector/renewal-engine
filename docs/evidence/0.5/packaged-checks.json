@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "cli_sha256": "dcffb786ce0cd7d3109c241ab7f2e18be93060290285033deae9ba7b005f2428",
+  "checks": [
+    {
+      "id": "version",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "conformance",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "inspection",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "inspection-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hunks",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "approval",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "approval-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "stale-refused",
+      "exitcode": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "id": "inspection-updated",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "configparser-normal",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "configparser-normal-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "configparser-negative",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "configparser-negative-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hardlink-normal",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hardlink-normal-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "hardlink-negative",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "hardlink-negative-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "comparison",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "comparison-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "summary",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "comparison-regression",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "comparison-unstable",
+      "exitcode": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "id": "execution-authorization-refused",
+      "exitcode": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "id": "isolation-probe",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "execution",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "execution-reopen",
+      "exitcode": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "id": "strict-tamper-refused",
+      "exitcode": 2,
+      "expected": 2,
+      "passed": true
+    }
+  ],
+  "check_count": 27,
+  "environment": "Local Linux x86_64; actual packaged CLI with CPython 3.11.16 / 3.12.14",
+  "human_observation": false,
+  "external_observation": false,
+  "public_artifact": false
+}

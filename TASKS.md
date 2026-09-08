@@ -1,6 +1,6 @@
 # Renewal Engine task outcomes
 
-Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `36c70785e48fe61afd43c6ad641df5a3898f5b55d90706d2bb3724380c00d1b0`.
+Generated from `project-plan.json` by `python3 tools/plan.py generate`. Do not edit this view. Canonical SHA-256: `3188005bd104589c51124d6d15920b1626e557cdf4d1116c5199e8f443ebbffb`.
 
 Statuses are evidence levels, not a claim that planning proves implementation. Change `project-plan.json`, retain evidence, then regenerate all views. Frozen historical contracts are preserved separately.
 
@@ -56,78 +56,78 @@ renewal-engine:N05-07 | Prepare a lawful release candidate | 0.1 | IMPLEMENTED
 renewal-engine:N05-08 | Publish and read back versioned 0.1 | 0.1 | RELEASE VERIFIED
 renewal-engine:N05-09 | Obtain external maintainer evidence | 0.1 | IN PROGRESS
 renewal-engine:N05-10 | Publish and verify the native Tanduna plan | 0.1 | IN PROGRESS
-renewal-engine:N06-01 | Version recipe contracts | later 0.x | PLANNED
-renewal-engine:N06-02 | Express runtime ranges | later 0.x | PLANNED
-renewal-engine:N06-03 | Declare syntax preconditions | later 0.x | PLANNED
-renewal-engine:N06-04 | Declare effect coverage | later 0.x | PLANNED
-renewal-engine:N06-05 | Declare expected-change policy ownership | later 0.x | PLANNED
-renewal-engine:N06-06 | Distribute negative fixtures with recipes | later 0.x | PLANNED
-renewal-engine:N06-07 | Define contract upgrade compatibility | later 0.x | PLANNED
-renewal-engine:N06-08 | Validate a complete recipe envelope | later 0.x | PLANNED
-renewal-engine:N07-01 | Prioritize Python migration demand | later 0.x | PLANNED
-renewal-engine:N07-02 | Clear the second fixture rights | later 0.x | PLANNED
-renewal-engine:N07-03 | Characterize a second API contract | later 0.x | PLANNED
-renewal-engine:N07-04 | Prove the second recipe transformation | later 0.x | PLANNED
-renewal-engine:N07-05 | Measure combined recipe interactions | later 0.x | PLANNED
-renewal-engine:N07-06 | Control recipe selection | later 0.x | PLANNED
-renewal-engine:N07-07 | Bound Python support claims | later 0.x | PLANNED
+renewal-engine:N06-01 | Version recipe contracts | later 0.x | IN PROGRESS
+renewal-engine:N06-02 | Express runtime ranges | later 0.x | IN PROGRESS
+renewal-engine:N06-03 | Declare syntax preconditions | later 0.x | IN PROGRESS
+renewal-engine:N06-04 | Declare effect coverage | later 0.x | IN PROGRESS
+renewal-engine:N06-05 | Declare expected-change policy ownership | later 0.x | IN PROGRESS
+renewal-engine:N06-06 | Distribute negative fixtures with recipes | later 0.x | IN PROGRESS
+renewal-engine:N06-07 | Define contract upgrade compatibility | later 0.x | IN PROGRESS
+renewal-engine:N06-08 | Validate a complete recipe envelope | later 0.x | IN PROGRESS
+renewal-engine:N07-01 | Prioritize Python migration demand | later 0.x | IN PROGRESS
+renewal-engine:N07-02 | Clear the second fixture rights | later 0.x | IN PROGRESS
+renewal-engine:N07-03 | Characterize a second API contract | later 0.x | IN PROGRESS
+renewal-engine:N07-04 | Prove the second recipe transformation | later 0.x | IN PROGRESS
+renewal-engine:N07-05 | Measure combined recipe interactions | later 0.x | IN PROGRESS
+renewal-engine:N07-06 | Control recipe selection | later 0.x | IN PROGRESS
+renewal-engine:N07-07 | Bound Python support claims | later 0.x | IN PROGRESS
 renewal-engine:N07-08 | Review second-recipe external usefulness | later 0.x | PLANNED
-renewal-engine:N08-01 | Map declared dependencies | later 0.x | PLANNED
-renewal-engine:N08-02 | Trace imported symbols | later 0.x | PLANNED
-renewal-engine:N08-03 | Map configuration entry points | later 0.x | PLANNED
-renewal-engine:N08-04 | Identify public interface exposure | later 0.x | PLANNED
-renewal-engine:N08-05 | Represent uncertainty in impact maps | later 0.x | PLANNED
-renewal-engine:N08-06 | Connect edits to migration requirements | later 0.x | PLANNED
-renewal-engine:N08-07 | Expose transitive dependency effects | later 0.x | PLANNED
-renewal-engine:N08-08 | Validate the impact inventory against a fixture | later 0.x | PLANNED
-renewal-engine:N09-01 | Define bounded filesystem observations | later 0.x | PLANNED
-renewal-engine:N09-02 | Capture file creation and deletion | later 0.x | PLANNED
-renewal-engine:N09-03 | Capture serialized data contracts | later 0.x | PLANNED
+renewal-engine:N08-01 | Map declared dependencies | later 0.x | IN PROGRESS
+renewal-engine:N08-02 | Trace imported symbols | later 0.x | IN PROGRESS
+renewal-engine:N08-03 | Map configuration entry points | later 0.x | IN PROGRESS
+renewal-engine:N08-04 | Identify public interface exposure | later 0.x | IN PROGRESS
+renewal-engine:N08-05 | Represent uncertainty in impact maps | later 0.x | IN PROGRESS
+renewal-engine:N08-06 | Connect edits to migration requirements | later 0.x | IN PROGRESS
+renewal-engine:N08-07 | Expose transitive dependency effects | later 0.x | IN PROGRESS
+renewal-engine:N08-08 | Validate the impact inventory against a fixture | later 0.x | IN PROGRESS
+renewal-engine:N09-01 | Define bounded filesystem observations | later 0.x | IN PROGRESS
+renewal-engine:N09-02 | Capture file creation and deletion | later 0.x | IN PROGRESS
+renewal-engine:N09-03 | Capture serialized data contracts | later 0.x | IN PROGRESS
 renewal-engine:N09-04 | Capture protocol transcripts locally | later 0.x | PLANNED
-renewal-engine:N09-05 | Capture process exit behavior | later 0.x | PLANNED
-renewal-engine:N09-06 | Observe resource lifecycle effects | later 0.x | PLANNED
-renewal-engine:N09-07 | Control sensitive evidence retention | later 0.x | PLANNED
-renewal-engine:N09-08 | Validate observer independence | later 0.x | PLANNED
-renewal-engine:N10-01 | Detect repeated-run variance | later 0.x | PLANNED
-renewal-engine:N10-02 | Declare timestamp normalization | later 0.x | PLANNED
+renewal-engine:N09-05 | Capture process exit behavior | later 0.x | IN PROGRESS
+renewal-engine:N09-06 | Observe resource lifecycle effects | later 0.x | IN PROGRESS
+renewal-engine:N09-07 | Control sensitive evidence retention | later 0.x | IN PROGRESS
+renewal-engine:N09-08 | Validate observer independence | later 0.x | IN PROGRESS
+renewal-engine:N10-01 | Detect repeated-run variance | later 0.x | IN PROGRESS
+renewal-engine:N10-02 | Declare timestamp normalization | later 0.x | IN PROGRESS
 renewal-engine:N10-03 | Declare random-input reproducibility | later 0.x | PLANNED
-renewal-engine:N10-04 | Preserve meaningful ordering | later 0.x | PLANNED
-renewal-engine:N10-05 | Separate locale and encoding variance | later 0.x | PLANNED
-renewal-engine:N10-06 | Bound tolerance policies | later 0.x | PLANNED
-renewal-engine:N10-07 | Audit normalization changes | later 0.x | PLANNED
-renewal-engine:N10-08 | Expose unresolved variance to users | later 0.x | PLANNED
-renewal-engine:N11-01 | Identify the patch application base | later 0.x | PLANNED
-renewal-engine:N11-02 | Detect concurrent candidate modification | later 0.x | PLANNED
-renewal-engine:N11-03 | Explain conflicting hunks | later 0.x | PLANNED
-renewal-engine:N11-04 | Preserve unrelated local edits | later 0.x | PLANNED
-renewal-engine:N11-05 | Support selective change rejection | later 0.x | PLANNED
-renewal-engine:N11-06 | Recharacterize an updated source base | later 0.x | PLANNED
-renewal-engine:N11-07 | Bind approvals to exact artifacts | later 0.x | PLANNED
-renewal-engine:N11-08 | Rehearse conflict recovery | later 0.x | PLANNED
-renewal-engine:N12-01 | Inventory local data flows | later 0.x | PLANNED
-renewal-engine:N12-02 | Prove offline default behavior | later 0.x | PLANNED
-renewal-engine:N12-03 | Constrain diagnostic logging | later 0.x | PLANNED
-renewal-engine:N12-04 | Separate raw and shareable evidence | later 0.x | PLANNED
-renewal-engine:N12-05 | Require explicit provider scope | later 0.x | PLANNED
-renewal-engine:N12-06 | Enforce workspace boundaries | later 0.x | PLANNED
+renewal-engine:N10-04 | Preserve meaningful ordering | later 0.x | IN PROGRESS
+renewal-engine:N10-05 | Separate locale and encoding variance | later 0.x | IN PROGRESS
+renewal-engine:N10-06 | Bound tolerance policies | later 0.x | IN PROGRESS
+renewal-engine:N10-07 | Audit normalization changes | later 0.x | IN PROGRESS
+renewal-engine:N10-08 | Expose unresolved variance to users | later 0.x | IN PROGRESS
+renewal-engine:N11-01 | Identify the patch application base | later 0.x | IN PROGRESS
+renewal-engine:N11-02 | Detect concurrent candidate modification | later 0.x | IN PROGRESS
+renewal-engine:N11-03 | Explain conflicting hunks | later 0.x | IN PROGRESS
+renewal-engine:N11-04 | Preserve unrelated local edits | later 0.x | IN PROGRESS
+renewal-engine:N11-05 | Support selective change rejection | later 0.x | IN PROGRESS
+renewal-engine:N11-06 | Recharacterize an updated source base | later 0.x | IN PROGRESS
+renewal-engine:N11-07 | Bind approvals to exact artifacts | later 0.x | IN PROGRESS
+renewal-engine:N11-08 | Rehearse conflict recovery | later 0.x | IN PROGRESS
+renewal-engine:N12-01 | Inventory local data flows | later 0.x | IN PROGRESS
+renewal-engine:N12-02 | Prove offline default behavior | later 0.x | IN PROGRESS
+renewal-engine:N12-03 | Constrain diagnostic logging | later 0.x | IN PROGRESS
+renewal-engine:N12-04 | Separate raw and shareable evidence | later 0.x | IN PROGRESS
+renewal-engine:N12-05 | Require explicit provider scope | later 0.x | IN PROGRESS
+renewal-engine:N12-06 | Enforce workspace boundaries | later 0.x | IN PROGRESS
 renewal-engine:N12-07 | Support private artifact cleanup | later 0.x | PLANNED
-renewal-engine:N12-08 | Audit the privacy boundary end to end | later 0.x | PLANNED
-renewal-engine:N13-01 | Publish an authoring contract | later 0.x | PLANNED
-renewal-engine:N13-02 | Provide a minimal recipe example | later 0.x | PLANNED
-renewal-engine:N13-03 | Expose a conformance runner | later 0.x | PLANNED
-renewal-engine:N13-04 | Document reviewable edit rules | later 0.x | PLANNED
-renewal-engine:N13-05 | Package contributor evidence | later 0.x | PLANNED
-renewal-engine:N13-06 | Support independent recipe maintenance | later 0.x | PLANNED
+renewal-engine:N12-08 | Audit the privacy boundary end to end | later 0.x | IN PROGRESS
+renewal-engine:N13-01 | Publish an authoring contract | later 0.x | IN PROGRESS
+renewal-engine:N13-02 | Provide a minimal recipe example | later 0.x | IN PROGRESS
+renewal-engine:N13-03 | Expose a conformance runner | later 0.x | IN PROGRESS
+renewal-engine:N13-04 | Document reviewable edit rules | later 0.x | IN PROGRESS
+renewal-engine:N13-05 | Package contributor evidence | later 0.x | IN PROGRESS
+renewal-engine:N13-06 | Support independent recipe maintenance | later 0.x | IN PROGRESS
 renewal-engine:N13-07 | Observe a second maintainer authoring | later 0.x | PLANNED
 renewal-engine:N13-08 | Close authoring gaps from observation | later 0.x | PLANNED
-renewal-engine:N14-01 | Define execution threat boundaries | later 0.x | PLANNED
-renewal-engine:N14-02 | Select an approved isolation backend | later 0.x | PLANNED
-renewal-engine:N14-03 | Deny host filesystem escape | later 0.x | PLANNED
-renewal-engine:N14-04 | Deny unauthorized network access | later 0.x | PLANNED
-renewal-engine:N14-05 | Constrain descendants and resource use | later 0.x | PLANNED
-renewal-engine:N14-06 | Exclude inherited credentials | later 0.x | PLANNED
-renewal-engine:N14-07 | Expose isolation profile limitations | later 0.x | PLANNED
-renewal-engine:N14-08 | Admit approved arbitrary-repository execution | later 0.x | PLANNED
+renewal-engine:N14-01 | Define execution threat boundaries | later 0.x | IN PROGRESS
+renewal-engine:N14-02 | Select an approved isolation backend | later 0.x | IN PROGRESS
+renewal-engine:N14-03 | Deny host filesystem escape | later 0.x | IN PROGRESS
+renewal-engine:N14-04 | Deny unauthorized network access | later 0.x | IN PROGRESS
+renewal-engine:N14-05 | Constrain descendants and resource use | later 0.x | IN PROGRESS
+renewal-engine:N14-06 | Exclude inherited credentials | later 0.x | IN PROGRESS
+renewal-engine:N14-07 | Expose isolation profile limitations | later 0.x | IN PROGRESS
+renewal-engine:N14-08 | Admit approved arbitrary-repository execution | later 0.x | IN PROGRESS
 renewal-engine:N15-01 | Choose a language from demonstrated demand | exploratory | PLANNED
 renewal-engine:N15-02 | Assess parser fidelity | exploratory | PLANNED
 renewal-engine:N15-03 | Define symbol attribution rules | exploratory | PLANNED
@@ -1329,7 +1329,7 @@ Retained evidence: [{"path": "docs/evidence/mac-helper/results/RE-MAC-003/r1.jso
 
 Consumers can reject incompatible recipe metadata.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N05-10
 
@@ -1345,13 +1345,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N06-02 — Express runtime ranges
 
 A recipe declares old and target version intervals.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-01
 
@@ -1367,13 +1367,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N06-03 — Declare syntax preconditions
 
 Recipe authors enumerate safe forms rather than infer them from success.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-01
 
@@ -1389,13 +1389,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N06-04 — Declare effect coverage
 
 Each recipe names measured and excluded observable effects.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-01
 
@@ -1411,13 +1411,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N06-05 — Declare expected-change policy ownership
 
 A reviewer controls intentional differences independently of transforms.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-01
 
@@ -1433,13 +1433,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N06-06 — Distribute negative fixtures with recipes
 
 Users can verify that a recipe's checks detect failure.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-01
 
@@ -1455,13 +1455,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N06-07 — Define contract upgrade compatibility
 
 Older reports retain their original interpretation.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-01
 
@@ -1477,13 +1477,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N06-08 — Validate a complete recipe envelope
 
 One admitted recipe is reproducible solely from its declared inputs.
 
-Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W06. Area: Recipe inputs are explicit. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-01, renewal-engine:N06-02, renewal-engine:N06-03, renewal-engine:N06-04, renewal-engine:N06-05, renewal-engine:N06-06, renewal-engine:N06-07
 
@@ -1499,13 +1499,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Closed shipped recipe schemas, hash-pinned conformance and deterministic composition are implemented. General recipe admission/observer completeness and schema migration acceptance remain narrower than this wave. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-01 — Prioritize Python migration demand
 
 The next API is selected from concrete maintainer pain.
 
-Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-08
 
@@ -1521,13 +1521,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-02 — Clear the second fixture rights
 
 A second migration has an independently redistributable reference.
 
-Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N07-01
 
@@ -1543,13 +1543,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-03 — Characterize a second API contract
 
 The second recipe measures behavior specific to its API.
 
-Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N07-01
 
@@ -1565,13 +1565,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-04 — Prove the second recipe transformation
 
 A new API migration has supported and refused syntax forms.
 
-Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N07-01
 
@@ -1587,13 +1587,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-05 — Measure combined recipe interactions
 
 Applying two recipes cannot silently corrupt shared call sites.
 
-Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N07-01
 
@@ -1609,13 +1609,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-06 — Control recipe selection
 
 Users can select one recipe without enabling unrelated transformations.
 
-Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N07-01
 
@@ -1631,13 +1631,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-07 — Bound Python support claims
 
 Documentation ties each recipe to tested runtime pairs.
 
-Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W07. Area: More Python API migrations are defensible. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N07-01
 
@@ -1653,7 +1653,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Actual five-case Path migration with two repetitions per side and an independent wrong-direction control; human usefulness review and genuine overlapping-recipe conflicts remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N07-08 — Review second-recipe external usefulness
 
@@ -1681,7 +1681,7 @@ Retained evidence: None recorded for this proposed task.
 
 Maintainers see which manifests establish a migration's versions.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-08
 
@@ -1697,13 +1697,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N08-02 — Trace imported symbols
 
 Call sites link back to their import and dependency identity.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-01
 
@@ -1719,13 +1719,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N08-03 — Map configuration entry points
 
 Settings that select changed APIs become part of the review.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-01
 
@@ -1741,13 +1741,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N08-04 — Identify public interface exposure
 
 Maintainers can see downstream contracts touched by an edit.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-01
 
@@ -1763,13 +1763,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N08-05 — Represent uncertainty in impact maps
 
 Missing knowledge remains distinguishable from absence of impact.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-01
 
@@ -1785,13 +1785,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N08-06 — Connect edits to migration requirements
 
 Each hunk has a traceable technical reason.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-01
 
@@ -1807,13 +1807,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N08-07 — Expose transitive dependency effects
 
 Users can inspect indirect version changes caused by the upgrade.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-01
 
@@ -1829,13 +1829,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N08-08 — Validate the impact inventory against a fixture
 
 The map is checked against known affected and unaffected surfaces.
 
-Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W08. Area: Dependency changes have inspectable impact. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-01, renewal-engine:N08-02, renewal-engine:N08-03, renewal-engine:N08-04, renewal-engine:N08-05, renewal-engine:N08-06, renewal-engine:N08-07
 
@@ -1851,13 +1851,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Static import/reexport graph, exported signatures and conservative manifest/configuration/lock hints. No lock resolver, transitive package/license diff or hunk-requirement admission validator is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N09-01 — Define bounded filesystem observations
 
 Users can declare files and metadata whose changes matter.
 
-Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-08
 
@@ -1873,13 +1873,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N09-02 — Capture file creation and deletion
 
 A recipe can detect changes in filesystem shape.
 
-Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N09-01
 
@@ -1895,13 +1895,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N09-03 — Capture serialized data contracts
 
 Structured outputs retain type and value distinctions.
 
-Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N09-01
 
@@ -1917,7 +1917,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N09-04 — Capture protocol transcripts locally
 
@@ -1945,7 +1945,7 @@ Retained evidence: None recorded for this proposed task.
 
 Exit codes and termination signals are first-class observations.
 
-Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N09-01
 
@@ -1961,13 +1961,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N09-06 — Observe resource lifecycle effects
 
 Important close, flush and cleanup behavior can be characterized.
 
-Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N09-01
 
@@ -1983,13 +1983,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N09-07 — Control sensitive evidence retention
 
 Characterization data has explicit retention and disclosure rules.
 
-Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N09-01
 
@@ -2005,13 +2005,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N09-08 — Validate observer independence
 
 Effect observers catch defects without trusting recipe declarations.
 
-Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W09. Area: Characterization covers richer effects. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N09-01, renewal-engine:N09-02, renewal-engine:N09-03, renewal-engine:N09-04, renewal-engine:N09-05, renewal-engine:N09-06, renewal-engine:N09-07
 
@@ -2027,13 +2027,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Bounded file-byte/type/presence observations, structured comparisons and exit capture implemented. Local protocol endpoint and broader resource lifecycle corpus remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N10-01 — Detect repeated-run variance
 
 A maintainer learns when baseline behavior is unstable.
 
-Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N09-08
 
@@ -2049,13 +2049,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N10-02 — Declare timestamp normalization
 
 Time differences are tolerated only where the contract allows them.
 
-Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N10-01
 
@@ -2071,7 +2071,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N10-03 — Declare random-input reproducibility
 
@@ -2099,7 +2099,7 @@ Retained evidence: None recorded for this proposed task.
 
 Normalization cannot sort away ordering contracts.
 
-Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N10-01
 
@@ -2115,13 +2115,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N10-05 — Separate locale and encoding variance
 
 Environment differences have explicit measured boundaries.
 
-Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N10-01
 
@@ -2137,13 +2137,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N10-06 — Bound tolerance policies
 
 Numeric tolerances have domain justification and sharp limits.
 
-Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N10-01
 
@@ -2159,13 +2159,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N10-07 — Audit normalization changes
 
 Relaxed policies require review and invalidate previous equivalence claims.
 
-Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N10-01
 
@@ -2181,13 +2181,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N10-08 — Expose unresolved variance to users
 
 A flaky baseline cannot earn a clean preservation claim.
 
-Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W10. Area: Nondeterminism is not hidden. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N10-01, renewal-engine:N10-02, renewal-engine:N10-03, renewal-engine:N10-04, renewal-engine:N10-05, renewal-engine:N10-06, renewal-engine:N10-07
 
@@ -2203,13 +2203,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Repeated variance, exact JSON pointer timestamp/unordered/numeric policies and immutable result directories implemented. Seed replay and cross-locale execution coverage remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-01 — Identify the patch application base
 
 Each patch names the source bytes it was reviewed against.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N08-08
 
@@ -2225,13 +2225,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-02 — Detect concurrent candidate modification
 
 User edits cannot silently invalidate retained evidence.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N11-01
 
@@ -2247,13 +2247,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-03 — Explain conflicting hunks
 
 A maintainer can locate the incompatible source change.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N11-01
 
@@ -2269,13 +2269,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-04 — Preserve unrelated local edits
 
 An approved application workflow does not discard maintainer work.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N11-01
 
@@ -2291,13 +2291,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-05 — Support selective change rejection
 
 Maintainers can reject a change and see evidence become incomplete.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N11-01
 
@@ -2313,13 +2313,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-06 — Recharacterize an updated source base
 
 A revised base gets new original observations.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N11-01
 
@@ -2335,13 +2335,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-07 — Bind approvals to exact artifacts
 
 A review decision cannot float to a changed patch.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N11-01
 
@@ -2357,13 +2357,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N11-08 — Rehearse conflict recovery
 
 A failed application leaves a usable original and review trail.
 
-Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W11. Area: Review survives concurrent source changes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N11-01, renewal-engine:N11-02, renewal-engine:N11-03, renewal-engine:N11-04, renewal-engine:N11-05, renewal-engine:N11-06, renewal-engine:N11-07
 
@@ -2379,13 +2379,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Exact line-hunk selection, source/metadata stale refusal and approval identity verification implemented; no automatic apply, three-way merge or overlap-origin conflict resolution is claimed. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N12-01 — Inventory local data flows
 
 Maintainers can see every file, process and optional network boundary.
 
-Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N05-10
 
@@ -2401,13 +2401,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N12-02 — Prove offline default behavior
 
 The full trusted workflow succeeds with network denied.
 
-Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N12-01
 
@@ -2423,13 +2423,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N12-03 — Constrain diagnostic logging
 
 Useful diagnostics avoid accidental credential retention.
 
-Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N12-01
 
@@ -2445,13 +2445,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N12-04 — Separate raw and shareable evidence
 
 Users can export a report without exposing private source.
 
-Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N12-01
 
@@ -2467,13 +2467,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N12-05 — Require explicit provider scope
 
 Optional remote assistance has a reviewable data contract.
 
-Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N12-01
 
@@ -2489,13 +2489,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N12-06 — Enforce workspace boundaries
 
 A selected private tree cannot cause unrelated reads or writes.
 
-Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N12-01
 
@@ -2511,7 +2511,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N12-07 — Support private artifact cleanup
 
@@ -2539,7 +2539,7 @@ Retained evidence: None recorded for this proposed task.
 
 The documented no-upload workflow has reproducible denial evidence.
 
-Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W12. Area: Private operation is verifiable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N12-01, renewal-engine:N12-02, renewal-engine:N12-03, renewal-engine:N12-04, renewal-engine:N12-05, renewal-engine:N12-06, renewal-engine:N12-07
 
@@ -2555,13 +2555,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Private runs, bounded nofollow reads, offline inspection and allowlisted verified summary export implemented. Automated scoped cleanup preview and complete monitored data-flow audit remain deferred. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N13-01 — Publish an authoring contract
 
 A contributor can implement a recipe without internal knowledge.
 
-Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N06-08, renewal-engine:N07-08
 
@@ -2577,13 +2577,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N13-02 — Provide a minimal recipe example
 
 An example teaches the complete contribution path.
 
-Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N13-01
 
@@ -2599,13 +2599,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N13-03 — Expose a conformance runner
 
 Recipe authors get actionable contract violations.
 
-Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N13-01
 
@@ -2621,13 +2621,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N13-04 — Document reviewable edit rules
 
 Contributors understand why seemingly easy rewrites are refused.
 
-Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N13-01
 
@@ -2643,13 +2643,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N13-05 — Package contributor evidence
 
 A contribution carries its reproducible acceptance record.
 
-Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N13-01
 
@@ -2665,13 +2665,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N13-06 — Support independent recipe maintenance
 
 A contributor can update a recipe without rewriting core code.
 
-Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W13. Area: Maintainers author independent recipes. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N13-01
 
@@ -2687,7 +2687,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "AUTOMATED PASS", "scope": "Shipped author contract, original example and conformance CLI implemented. General third-party recipe admission and human contributor observation remain pending. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N13-07 — Observe a second maintainer authoring
 
@@ -2737,7 +2737,7 @@ Retained evidence: None recorded for this proposed task.
 
 A proposed isolation profile names exactly what it protects.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N12-08
 
@@ -2753,13 +2753,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N14-02 — Select an approved isolation backend
 
 The backend's dependency and operational costs are reviewed.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N14-01
 
@@ -2775,13 +2775,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N14-03 — Deny host filesystem escape
 
 Untrusted fixtures cannot read or write host canaries.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N14-01
 
@@ -2797,13 +2797,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N14-04 — Deny unauthorized network access
 
 Execution cannot upload source or contact undeclared services.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N14-01
 
@@ -2819,13 +2819,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N14-05 — Constrain descendants and resource use
 
 Forking and memory exhaustion stay inside the allocated envelope.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N14-01
 
@@ -2841,13 +2841,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N14-06 — Exclude inherited credentials
 
 The isolation boundary blocks ambient identity material.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N14-01
 
@@ -2863,13 +2863,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N14-07 — Expose isolation profile limitations
 
 Users know which authority denials were actually verified.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N14-01
 
@@ -2885,13 +2885,13 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N14-08 — Admit approved arbitrary-repository execution
 
 Execution is enabled only after the profile and user scope are accepted.
 
-Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **PLANNED**.
+Wave: RE-W14. Area: Runtime isolation is enforceable. Target: later 0.x. Basis: source-derived proposal. Status: **IN PROGRESS**.
 
 Prerequisites: renewal-engine:N14-01, renewal-engine:N14-02, renewal-engine:N14-03, renewal-engine:N14-04, renewal-engine:N14-05, renewal-engine:N14-06, renewal-engine:N14-07
 
@@ -2907,7 +2907,7 @@ Evidence needed: Retain the setup, actual observed result and reproducible count
 
 PENDING when participant, maintainer or qualified review is required; agent execution cannot substitute.
 
-Retained evidence: None recorded for this proposed task.
+Retained evidence: [{"path": "docs/evidence/0.5/README.md", "level": "RUNTIME VERIFIED", "scope": "Dedicated-runtime bubblewrap/seccomp profile and twelve actual denial/resource tests plus packaged authorized execution implemented. Only one writable file, no sockets/children/threads; broader execution profiles remain unverified. This is scoped progress, not a claim that every acceptance criterion for this task has passed."}]
 
 ## renewal-engine:N15-01 — Choose a language from demonstrated demand
 

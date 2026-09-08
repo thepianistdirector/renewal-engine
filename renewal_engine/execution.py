@@ -1,6 +1,7 @@
 """Bounded invocation of approved runtimes. Process limits are not a sandbox."""
 
 from __future__ import annotations
+from .jsonio import loads as strict_loads
 
 import json
 import os
@@ -107,11 +108,12 @@ def runtime_identity(executable: Path, expected: str, cwd: Path):
             "'version':platform.python_version(),'build':sys.version,"
             "'platform':platform.system(),'machine':platform.machine(),"
             "'configparser_sha256':hashlib.sha256(pathlib.Path(configparser.__file__).read_bytes()).hexdigest(),"
+            "'pathlib_sha256':hashlib.sha256(pathlib.Path(pathlib.__file__).read_bytes()).hexdigest(),"
             "'readfp':hasattr(configparser.ConfigParser,'readfp')}))")
     observed = run_process([str(executable), "-I", "-S", "-B", "-X", "utf8", "-c", code], cwd)
     if observed["failure"] or observed["returncode"] != 0 or observed["stderr"]:
         raise ValueError("runtime identity probe failed: " + json.dumps(observed))
-    identity = json.loads(observed["stdout"])
+    identity = strict_loads(observed["stdout"])
     if (identity["implementation"] != "CPython" or identity["version"] != expected
             or identity["platform"] != "Linux" or identity["machine"] != "x86_64"):
         raise ValueError("unsupported runtime: expected Linux CPython " + expected + "; observed " + json.dumps(identity))

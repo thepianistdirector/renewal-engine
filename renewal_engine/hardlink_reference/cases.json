@@ -1,0 +1,42 @@
+[
+  {
+    "id": "create",
+    "source": "original.txt",
+    "target": "link.txt",
+    "source_exists": true,
+    "target_kind": "absent",
+    "content_hex": "636166c3a90a"
+  },
+  {
+    "id": "missing",
+    "source": "missing.txt",
+    "target": "link.txt",
+    "source_exists": false,
+    "target_kind": "absent",
+    "content_hex": "636166c3a90a"
+  },
+  {
+    "id": "existing",
+    "source": "original.txt",
+    "target": "link.txt",
+    "source_exists": true,
+    "target_kind": "file",
+    "content_hex": "636166c3a90a"
+  },
+  {
+    "id": "directory",
+    "source": "original.txt",
+    "target": "link.txt",
+    "source_exists": true,
+    "target_kind": "directory",
+    "content_hex": "636166c3a90a"
+  },
+  {
+    "id": "unicode",
+    "source": "caf\u00e9.txt",
+    "target": "enlace.txt",
+    "source_exists": true,
+    "target_kind": "absent",
+    "content_hex": "636166c3a90a"
+  }
+]

@@ -15,8 +15,9 @@ This is not an accepted or publicly published replacement plan.
 | Approval option | approve_complete_plan |
 | Option ID | opt_a9f6fb26c21a74ff896397674aaf9c41 |
 
-Source evidence is the Mac result branch at
-`b9304597937b4d7307f2ea195537e4b48418ebe2`. Exact result records are retained under
+Original submission evidence is the Mac result branch at
+`b9304597937b4d7307f2ea195537e4b48418ebe2`; current read-only correction and schema
+evidence are at `87d1f8144f6c3165137d80f4c382567d36527e6d`. Exact result records are retained under
 `docs/evidence/mac-helper/`. Root reconciliation verifies that all 218 canonical
 tasks map to unique new native task IDs, all 26 waves map uniquely, and none of
 those new task IDs replaces the twelve frozen historical identities. The
@@ -31,21 +32,25 @@ revision; never create another batch of 218 tasks to retry the work.
 
 ## Actual gaps
 
-The native publication is SUBMITTED, textual review is PENDING, reason is
-`disabled`, attempt ID is null, and no passing review exists. No poll has been
-opened or voted on. This is not an actively running review to wait on.
+Current RE-MAC-005 readback at 2026-09-08T13:55Z reports FAILED for all
+218 mapped task reviews. The tasks remain SUBMITTED and the proposal remains
+DISCUSSION with zero votes. Failure cause, current attempt and supported recovery
+action are not exposed. The earlier PENDING/disabled result is a historical
+checkpoint, not current reviewer configuration. No passing review or publication
+is established.
 
-All 218 snapshots have null structured `planningRequirements`. Their full
-canonical records/contracts are retained in native bodies. Null alone does not
-establish which fields the platform requires for publishing long-horizon plans.
-RE-MAC-005 requests exact schemas, constraints, applicable policy and supported
-review-recovery actions through read-only authenticated tools. Until those facts
-arrive, do not invent execution commands, prematurely expand the entire backlog,
-or mutate the frozen draft to satisfy an assumed schema.
+All 218 snapshots have null structured `planningRequirements`. The new sample is
+INCOMPLETE/MISSING and the historical sample is COMPLETE. The exact exposed
+schemas, optional/required fields, restrictions and unknown deployed limits are
+retained in `docs/evidence/mac-helper/results/RE-MAC-005/r1.json`. Missing fields
+are not established as the reason for FAILED. Candidate-source review rules are
+explicitly separated from deployed policy, which remains unknown from live reads.
 
-A platform configuration/application change remains outside this repository's
-authority. If the only recovery is enabling a disabled service, return the exact
-maintainer action rather than changing Tanduna or bypassing its review.
+Obtain the actual failure detail and supported maintainer recovery action before
+any retry. Do not invent a retry endpoint, unfreeze/resubmit the draft, create
+replacement tasks, infer a vote, or edit Tanduna's separate application/config.
+RE-MAC-003 stays HOLD. RE-MAC-005 performed read-only inspection and grants no
+additional mutation authority. The Mac's native scheduled firing is now verified.
 
 Current unauthenticated readback still shows twelve historical task IDs on the
 roadmap/tasks pages. The new proposal URL returns HTTP 404 anonymously. The

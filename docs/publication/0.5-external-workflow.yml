@@ -1,0 +1,79 @@
+# Prepared template only. Replace both hashes with approved asset identities
+# before committing to the dedicated verification branch. No host security edits.
+name: Verify published 0.5.0 externally
+on:
+  push:
+    branches: [codex/renewal-engine-0.5-public-verification]
+permissions: {}
+env:
+  RENEWAL_SOURCE_SHA256: REPLACE_WITH_APPROVED_SOURCE_SHA256
+  RENEWAL_CLI_SHA256: REPLACE_WITH_APPROVED_CLI_SHA256
+jobs:
+  public-download:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Require existing isolation tool and download exact public release
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -x /usr/bin/bwrap
+          [[ "$RENEWAL_SOURCE_SHA256" =~ ^[0-9a-f]{64}$ ]]
+          [[ "$RENEWAL_CLI_SHA256" =~ ^[0-9a-f]{64}$ ]]
+          mkdir downloads
+          cd downloads
+          base=https://github.com/thepianistdirector/renewal-engine/releases/download/v0.5.0
+          curl --fail --location --retry 2 "$base/renewal-engine-0.5.0.tar.gz" --output renewal-engine-0.5.0.tar.gz
+          echo "$RENEWAL_SOURCE_SHA256  renewal-engine-0.5.0.tar.gz" | sha256sum --check
+          tar -xzf renewal-engine-0.5.0.tar.gz
+          python3 renewal-engine-0.5.0/install.py --prefix ../installed
+          echo "$RENEWAL_CLI_SHA256  ../installed/bin/renewal-engine" | sha256sum --check
+      - name: Build dedicated trusted interpreters from pinned official sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir runtimes
+          cd runtimes
+          curl --fail --location --retry 2 https://www.python.org/ftp/python/3.11.16/Python-3.11.16.tar.xz --output baseline.tar.xz
+          echo '91bcdebfdde239a003ae93738a7fce0f9230fee5c4bc2b86f6e6e8c6f98aabe8  baseline.tar.xz' | sha256sum --check
+          curl --fail --location --retry 2 https://www.python.org/ftp/python/3.12.14/Python-3.12.14.tar.xz --output target.tar.xz
+          echo '5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a  target.tar.xz' | sha256sum --check
+          tar -xf baseline.tar.xz
+          tar -xf target.tar.xz
+          for version in 3.11.16 3.12.14; do
+            cd "Python-$version"
+            ./configure --prefix="$GITHUB_WORKSPACE/runtimes/installed-$version" --without-ensurepip --disable-test-modules > configure.log 2>&1
+            make -j2 > build.log 2>&1
+            make -j2 altinstall > install.log 2>&1
+            cd ..
+          done
+      - name: Exercise published package, isolation, negative controls and recovery
+        shell: bash
+        run: |
+          set -euo pipefail
+          baseline=runtimes/installed-3.11.16/bin/python3.11
+          target=runtimes/installed-3.12.14/bin/python3.12
+          "$target" downloads/renewal-engine-0.5.0/tools/check_05.py \
+            --cli installed/bin/renewal-engine --baseline "$baseline" --target "$target" --out verified
+          "$target" downloads/renewal-engine-0.5.0/tools/verify_runtime.py \
+            --cli installed/bin/renewal-engine --baseline "$baseline" --target "$target" --out recovery
+      - name: Retain public fixture evidence and hard-link topology
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64,gzip,io,json,os,platform,tarfile
+          from pathlib import Path
+          stream=io.BytesIO()
+          with tarfile.open(fileobj=stream,mode='w',dereference=False) as archive:
+              for name in ('verified','recovery'):
+                  if Path(name).is_dir():archive.add(name,arcname=name)
+          payload={'provider':'GitHub-hosted ubuntu-24.04','runId':os.environ['GITHUB_RUN_ID'],
+                   'platform':platform.platform(),'machine':platform.machine(),'humanValidation':False,
+                   'sourceArchiveSha256':os.environ['RENEWAL_SOURCE_SHA256'],
+                   'evidenceTarGzipBase64':base64.b64encode(gzip.compress(stream.getvalue(),mtime=0)).decode()}
+          packed=base64.b64encode(gzip.compress(json.dumps(payload).encode(),mtime=0)).decode()
+          print('RENEWAL_05_PUBLIC_EVIDENCE_BEGIN')
+          for i in range(0,len(packed),3000):print(packed[i:i+3000])
+          print('RENEWAL_05_PUBLIC_EVIDENCE_END')
+          PY

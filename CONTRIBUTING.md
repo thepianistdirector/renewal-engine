@@ -1,7 +1,7 @@
 # Current owner-directed development
 
-The September 7, 2026 launch authorizes the narrow local 0.1 implementation in
-this repository. GPT-6 Astra owns all work, including UI/UX; older reciprocal
+The September 7 launch and September 8 owner extension authorize development
+through 0.5 in this repository. See docs/recipes.md and docs/0.5-guide.md. GPT-6 Astra owns all work, including UI/UX; older reciprocal
 model fallback prose below is preserved history and no longer applies to this
 owner-directed scope. The historical task revisions remain frozen. New work is
 mapped in project-plan.json rather than retroactively accepted against them.
@@ -10,7 +10,8 @@ Run `python3 -m unittest discover -s tests -v`, `python3 tools/plan.py validate`
 `python3 tools/plan.py self-test`, and `python3 tools/plan.py check`. Synthetic
 orchestration tests are labeled and cannot replace real runtime or human
 validation. Keep every test artifact under this project’s .local or .runs.
-Do not execute a selected third-party source tree or auto-apply its candidate.
+Inspection never executes selected source. Project execution requires its explicit
+command, scope authorization and a verified isolation profile; do not auto-apply a candidate.
 Use a new run directory after failure; retain prior evidence and original bytes.
 
 The repository’s initial planning guide follows for context. Its complete

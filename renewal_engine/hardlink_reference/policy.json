@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "owner": "Renewal Engine reviewed reference fixture",
+  "reason": "Only the exact removed pathlib deprecation warning is allowed to disappear",
+  "warning": {
+    "category": "DeprecationWarning",
+    "message": "pathlib.Path.link_to() is deprecated and is scheduled for removal in Python 3.12. Use pathlib.Path.hardlink_to() instead.",
+    "lineno": 5
+  },
+  "baseline": "3.11.16",
+  "target": "3.12.14",
+  "repetitions": 2
+}

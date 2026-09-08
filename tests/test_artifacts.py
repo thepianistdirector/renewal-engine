@@ -89,5 +89,20 @@ class ArtifactTests(unittest.TestCase):
         (out/'results.json').write_text(json.dumps(result))
         with self.assertRaisesRegex(ValueError,'cannot claim'):verify_saved(out)
 
+    def test_saved_schema_membership_and_manifest_symlink_refused(self):
+        out=self.root/'checked';inspect(self.source,out)
+        original=(out/'manifest.json').read_bytes()
+        (out/'candidate/injected.py').write_text('print("unexpected")')
+        with self.assertRaisesRegex(ValueError,'membership'):verify_saved(out)
+        (out/'candidate/injected.py').unlink()
+        manifest=json.loads(original);manifest['schema']=999
+        (out/'manifest.json').chmod(0o600);(out/'manifest.json').write_text(json.dumps(manifest))
+        with self.assertRaisesRegex(ValueError,'schema'):verify_saved(out)
+        (out/'manifest.json').unlink();(self.root/'outside.json').write_bytes(original)
+        (out/'manifest.json').symlink_to(self.root/'outside.json')
+        with self.assertRaises(OSError):verify_saved(out)
+        (out/'manifest.json').unlink();os.mkfifo(out/'manifest.json')
+        with self.assertRaisesRegex(ValueError,'regular'):verify_saved(out)
+
 
 if __name__ == '__main__':unittest.main()

@@ -17,7 +17,7 @@ def render(result, manifest):
         findings = "".join(f'<li><strong>{esc(f["status"])}</strong> · Line {f["line"]}: {esc(f["reason"])}</li>' for f in row.get("findings", []))
         edits = "".join(f'<li><code>{esc(e["before"])}</code> → <code>{esc(e["after"])}</code> — {esc(e["reason"])}</li>' for e in row.get("edits", []))
         blocks.append(f'<article><h3>{esc(row["path"])}</h3><p>{"Candidate edits available" if row.get("changed") else "Unchanged"}</p>'
-                      f'<ul>{findings or "<li>No syntactic readfp call found.</li>"}</ul>'
+                      f'<ul>{findings or "<li>No selected migration call found.</li>"}</ul>'
                       f'<details><summary>Edits and source identity</summary><ul>{edits or "<li>No edits.</li>"}</ul>'
                       f'<p>Original SHA-256</p><code class="hash">{esc(row["source_sha256"])}</code>'
                       f'<p>Candidate SHA-256</p><code class="hash">{esc(row["candidate_sha256"])}</code></details></article>')
@@ -31,7 +31,7 @@ def render(result, manifest):
                      f'</details></article>')
     limits = "".join(f'<li>{esc(text)}</li>' for text in result.get("limitations", []))
     measured = "Behavior was measured only for the declared cases and exact runtimes." if result.get("behavior_measured") else "Behavior has not been measured. This report describes source inspection only."
-    control_note = '<p><strong>Deliberately wrong candidate:</strong> this run changes a diagnostic source name to WRONG.ini. A regression is the required negative-control result.</p>' if result.get("negative_control") else ''
+    control_note = '<p><strong>Deliberately wrong candidate:</strong> ' + esc(result.get('negative_control_description', 'This run changes a diagnostic source name to WRONG.ini. A regression is the required negative-control result.')) + '</p>' if result.get('negative_control') else ''
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
@@ -50,7 +50,7 @@ footer{{font-size:.9rem;border-top:1px solid #a6b4ae}}@media(max-width:480px){{h
 @media print{{details{{display:block}}nav,.skip{{display:none}}article{{break-inside:avoid}}}}
 </style></head><body><a class="skip" href="#main">Skip to review</a>
 <header><p class="eyebrow">Renewal Engine · local migration review</p><h1>Understand every change.</h1>
-<p>A bounded ConfigParser migration, with its evidence kept beside the patch.</p>
+<p>A bounded Python migration, with its evidence kept beside the patch.</p>
 <div class="status" role="status"><strong>{esc(result["status"])}</strong><p>{measured}</p>{control_note}</div>
 <nav aria-label="Saved evidence"><a href="changes.patch">Review patch</a><a href="results.json">Results JSON</a><a href="manifest.json">Run manifest</a><a href="state.json">Recovery state</a></nav></header>
 <main id="main"><div class="metrics"><p><strong>{len(files)}</strong>Python files inspected</p><p><strong>{changed}</strong>Files with edits</p><p><strong>{review}</strong>Unsupported findings</p></div>
